@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Específico del proyecto ---
+# CSVs originales de OULAD: datos crudos, no se versionan
+data/raw/
+
+# macOS
+.DS_Store
