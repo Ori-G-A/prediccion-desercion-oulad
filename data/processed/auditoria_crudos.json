@@ -1,0 +1,68 @@
+{
+  "duplicados": {
+    "courses_exactos": 0,
+    "assessments_id": 0,
+    "vle_id_site": 0,
+    "studentInfo_exactos": 0,
+    "studentInfo_llave": 0,
+    "studentReg_llave": 0,
+    "studentAssess_llave": 0,
+    "studentVle_exactos": 787170,
+    "studentVle_sesiones_mismo_dia_sitio": 2195960
+  },
+  "rangos": {
+    "score_fuera_0_100": 0,
+    "score_nulos": 173,
+    "sum_click_menor_1": 0,
+    "sum_click_max": 6977,
+    "date_vle_rango": [
+      -25,
+      269
+    ],
+    "weight_negativo": 0,
+    "reg_rango": [
+      -322.0,
+      167.0
+    ],
+    "unreg_rango": [
+      -365.0,
+      444.0
+    ],
+    "cursos_pesos_distinto_200": 5
+  },
+  "consistencia": {
+    "retiro_antes_matricula": 0,
+    "entregas_sin_inscripcion": 0,
+    "interacciones_sin_inscripcion": 0,
+    "sitios_vle_no_descritos": 0
+  },
+  "integridad": {
+    "estudiantes_info": 28785,
+    "estudiantes_reg": 28785,
+    "info_no_reg": 0,
+    "reg_no_info": 0,
+    "vle_no_info": 0,
+    "info_sin_vle": 2711,
+    "cursos_coinciden": "True"
+  },
+  "objetivo": {
+    "n_total": 32593,
+    "n_abandono": 10072,
+    "momento_retiro": {
+      "n": {
+        "post_ventana": 5032,
+        "pre_inicio": 2678,
+        "en_ventana": 2362
+      },
+      "pct": {
+        "post_ventana": 49.96,
+        "pre_inicio": 26.59,
+        "en_ventana": 23.45
+      }
+    }
+  },
+  "interacciones_pre_curso": {
+    "n": 688988,
+    "pct": 6.47
+  }
+}
