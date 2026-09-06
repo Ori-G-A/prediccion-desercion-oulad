@@ -223,3 +223,4 @@ data/raw/
 
 # macOS
 .DS_Store
+data/processed/*.parquet
