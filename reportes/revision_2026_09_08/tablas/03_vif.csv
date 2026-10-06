@@ -1,0 +1,12 @@
+﻿escenario,variable,n,VIF,dependencia_numerica_exacta
+con_identidad,total_clics,27515,inf,True
+con_identidad,clics_quincena_1,27515,inf,True
+con_identidad,clics_quincena_2,27515,inf,True
+con_identidad,dias_activos,27515,4.643764892307115,False
+con_identidad,n_registros_vle,27515,10.770630765655623,False
+con_identidad,n_evaluaciones_entregadas,27515,1.3132815299499616,False
+sin_total,clics_quincena_1,27515,2.99491472600577,False
+sin_total,clics_quincena_2,27515,3.16884871092803,False
+sin_total,dias_activos,27515,4.643764892307114,False
+sin_total,n_registros_vle,27515,10.770630765655621,False
+sin_total,n_evaluaciones_entregadas,27515,1.3132815299499614,False

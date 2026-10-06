@@ -1,0 +1,18 @@
+{
+  "cortes": [
+    7,
+    14,
+    28,
+    42,
+    56
+  ],
+  "bootstrap_repeticiones": 500,
+  "semilla": 20260908,
+  "unidad_remuestreo": "persona dentro de cada corte",
+  "intervalos": "puntuales exploratorios, no contrastes entre cortes",
+  "inscripciones_comunes": 26429,
+  "evento_comun": "56 < retiro <= final",
+  "analisis_principal": "población elegible y evento propios de cada corte",
+  "modelos_entrenados": false,
+  "ventana_optima_identificada": false
+}

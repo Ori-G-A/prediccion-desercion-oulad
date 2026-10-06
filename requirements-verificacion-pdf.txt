@@ -1,0 +1,3 @@
+# Dependencias opcionales para scripts/verificar_informes.py
+PyMuPDF==1.27.2.3
+Pillow==12.2.0

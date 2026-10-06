@@ -1,0 +1,8 @@
+﻿tabla,variable,n,faltantes,porcentaje,tipo
+assessments,date,206,11,5.339805825242718,float64
+vle,week_from,6364,5243,82.3852922690132,float64
+vle,week_to,6364,5243,82.3852922690132,float64
+studentInfo,imd_band,32593,1111,3.408707391157611,object
+studentRegistration,date_registration,32593,45,0.13806645598748196,float64
+studentRegistration,date_unregistration,32593,22521,69.09765900653515,float64
+studentAssessment,score,173912,173,0.09947559685358112,float64

@@ -1,0 +1,25 @@
+{
+  "version": "correcciones_2026_09_10",
+  "estado": "adoptada_para_esta_version_por_el_usuario",
+  "evidencia": "El usuario solicitó proceder después de la propuesta de cortes 7, 14, 28, 42 y 56 y de la explicación del protocolo de observación hasta el cierre de cada corte.",
+  "aprobacion_institucional": "No se aporta acta ni se presume aprobación adicional de la dirección.",
+  "cortes": [
+    7,
+    14,
+    28,
+    42,
+    56
+  ],
+  "ventana_acumulada": "0 <= date <= corte; incluye el día 0: corte + 1 días de calendario",
+  "elegibilidad": "date_registration conocida y <= corte; date_unregistration ausente o > corte; module_presentation_length > corte",
+  "evento": "corte < date_unregistration <= module_presentation_length",
+  "horizonte": "Hasta final de presentación; variable entre presentaciones y decreciente al aumentar el corte",
+  "seguimiento": "Se supone cobertura administrativa hasta el final; no verificable individualmente con fecha de última comprobación",
+  "cambio_respecto_version_anterior": "Se mantiene población, etiqueta y ventana inclusiva. Se excluye n_registros_vle de predictores y se evalúa CV activo como indicador adicional.",
+  "puntajes": "Solo auditoría; fecha de disponibilidad de calificaciones no verificable",
+  "inactividad": "Indicador complementario, no segunda etiqueta de abandono",
+  "modelado": "No se entrenan clasificadores ni se selecciona una ventana óptima en esta fase",
+  "version_previa": "multiventana_2026_09_08",
+  "diversidad": "Excluida de esta versión por delimitación del conjunto de indicadores; su utilidad no ha sido evaluada.",
+  "autorizacion_correcciones": "El usuario aprobó proceder con el plan de cinco pasos después de la revisión de su bitácora."
+}

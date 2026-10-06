@@ -1,0 +1,44 @@
+﻿variable,rol,tipo,faltantes,definicion,origen,dominio,disponibilidad
+code_module,identificador,category,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+code_presentation,identificador,category,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+id_student,identificador,int64,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+date_registration,auditoria_no_predictor,float64,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+date_unregistration,auditoria_no_predictor,float64,22502,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+gender,contexto_condicionado,object,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no verificable a nivel de actualización individual
+region,contexto_condicionado,object,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no verificable a nivel de actualización individual
+highest_education,contexto_condicionado,object,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no verificable a nivel de actualización individual
+imd_band,contexto_condicionado,object,1027,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no verificable a nivel de actualización individual
+age_band,contexto_condicionado,object,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no verificable a nivel de actualización individual
+num_of_prev_attempts,contexto_condicionado,int64,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no verificable a nivel de actualización individual
+studied_credits,contexto_condicionado,int64,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no verificable a nivel de actualización individual
+disability,contexto_condicionado,object,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no verificable a nivel de actualización individual
+final_result,auditoria_no_predictor,object,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+module_presentation_length,auditoria_no_predictor,int64,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+retiro_registrado,auditoria_no_predictor,int8,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+momento_retiro,auditoria_no_predictor,object,0,Campo de la fuente; véase descriptor OULAD,Fuente original,Según descriptor y auditoría,no usar automáticamente como predictor
+total_clics,predictor_candidato,float64,0,Suma de clics registrados en días 0 a 27,studentVle,entero >= 0; ausencia de registros = 0,hasta día 27; calendario conocido al corte
+dias_activos,predictor_candidato,int64,0,Número de días con clics registrados en días 0 a 27,studentVle,entero entre 0 y 28,hasta día 27; calendario conocido al corte
+n_registros_vle,predictor_candidato,float64,0,Número de filas originales en días 0 a 27; no son sesiones,studentVle,entero >= 0,hasta día 27; calendario conocido al corte
+promedio_clics_por_dia_activo,predictor_candidato,float64,1223,total_clics / dias_activos,studentVle,positivo; NaN si dias_activos = 0,hasta día 27; calendario conocido al corte
+coef_variacion_clics,predictor_candidato,float64,1223,Desviación estándar muestral de 28 totales diarios / media diaria,studentVle,>= 0; NaN si total_clics = 0,hasta día 27; calendario conocido al corte
+semanas_activas,predictor_candidato,int64,0,"Número de bloques 0-6, 7-13, 14-20 y 21-27 con clics",studentVle,entero entre 0 y 4,hasta día 27; calendario conocido al corte
+dias_desde_ultima_interaccion,predictor_candidato,float64,1223,27 - último día con clics dentro de la ventana,studentVle,0 a 27; NaN sin actividad,hasta día 27; calendario conocido al corte
+clics_quincena_1,predictor_candidato,float64,0,Suma de clics en días 0 a 13,studentVle,entero >= 0,hasta día 27; calendario conocido al corte
+clics_quincena_2,predictor_candidato,float64,0,Suma de clics en días 14 a 27,studentVle,entero >= 0,hasta día 27; calendario conocido al corte
+log_ratio_actividad,predictor_candidato,float64,1223,ln((clics_quincena_2 + 1)/(clics_quincena_1 + 1)),studentVle,real; NaN si ambas quincenas son cero,hasta día 27; calendario conocido al corte
+sin_actividad_ventana,predictor_candidato,int8,0,1 cuando no existen clics registrados en días 0 a 27,studentVle,0 o 1,hasta día 27; calendario conocido al corte
+clics_pre_inicio,predictor_candidato,float64,0,Suma de clics con date < 0; límite inicial dado por la fuente,studentVle,entero >= 0,hasta día 27; calendario conocido al corte
+sin_actividad_ultimos_7d,auditoria_no_predictor,int8,0,1 si no hay clics en los últimos 7 días de la ventana terminada en 27,studentVle,0 o 1; indicador exploratorio complementario,no usar automáticamente como predictor
+sin_actividad_ultimos_14d,auditoria_no_predictor,int8,0,1 si no hay clics en los últimos 14 días de la ventana terminada en 27,studentVle,0 o 1; indicador exploratorio complementario,no usar automáticamente como predictor
+sin_actividad_ultimos_28d,auditoria_no_predictor,int8,0,1 si no hay clics en los últimos 28 días de la ventana terminada en 27,studentVle,0 o 1; indicador exploratorio complementario,no usar automáticamente como predictor
+n_evaluaciones_entregadas,predictor_candidato,int32,0,"Número de evaluaciones distintas, no Exam y no banked, entregadas en días 0 a 27",studentAssessment + assessments,entero >= 0,hasta día 27; calendario conocido al corte
+n_puntajes_observados,auditoria_no_predictor,int32,0,Número de puntajes no nulos en entregas tempranas,studentAssessment,entero >= 0; auditoría,no usar automáticamente como predictor
+score_promedio_temprano,auditoria_no_predictor,float64,7803,Promedio de puntajes no nulos de entregas no Exam/no banked en días 0-27,studentAssessment + assessments,0 a 100; NaN sin puntaje; auditoría,no usar automáticamente como predictor
+n_entregas_pre_inicio,predictor_candidato,int32,0,Número de entregas no Exam y no banked con date_submitted < 0,studentAssessment + assessments,entero >= 0,hasta día 27; calendario conocido al corte
+n_evaluaciones_programadas,predictor_candidato,int32,0,Evaluaciones no Exam con fecha de calendario en días 0 a 27,assessments,entero >= 0; calendario de presentación,hasta día 27; calendario conocido al corte
+n_programadas_entregadas_al_corte,predictor_candidato,int32,0,"Evaluaciones del calendario 0-27 entregadas antes de 28, sin banked",studentAssessment + assessments,0 hasta n_evaluaciones_programadas,hasta día 27; calendario conocido al corte
+sin_evaluacion_programada,predictor_candidato,int8,0,1 si n_evaluaciones_programadas = 0,assessments,0 o 1,hasta día 27; calendario conocido al corte
+sin_entregas_ventana,predictor_candidato,int8,0,1 si n_evaluaciones_entregadas = 0; no significa incumplimiento,studentAssessment + assessments,0 o 1,hasta día 27; calendario conocido al corte
+proporcion_programadas_entregadas,predictor_candidato,float64,4988,n_programadas_entregadas_al_corte / n_evaluaciones_programadas,studentAssessment + assessments,0 a 1; NaN si denominador = 0,hasta día 27; calendario conocido al corte
+sin_vle_en_todo_registro,auditoria_no_predictor,int64,0,Ausencia de registros VLE en toda la fuente para la inscripción,studentVle,0 o 1; retrospectivo,no usar automáticamente como predictor
+retiro_futuro,objetivo,int8,0,1 si 28 < date_unregistration <= module_presentation_length,studentRegistration + courses,0 o 1; solo población elegible,no usar automáticamente como predictor

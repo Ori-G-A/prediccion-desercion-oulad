@@ -1,0 +1,22 @@
+﻿version,id,severidad,estado,ubicacion,evidencia_o_condicion_de_cierre
+correcciones_2026_09_10,B01/B02/B22,mayor,parcial; ratificación pendiente,desarrollo2.tex / A3.1; decision_temporal.json,Evento registrado e inactividad complementaria explícitos; falta acuerdo académico. No se presume acta obligatoria.
+correcciones_2026_09_10,B03,mayor,implementado y comprobado,src/ventanas_oulad.py; corr:identidadcv; corr:cv,CV activo adicional; identidad general y comparación sobre casos comunes.
+correcciones_2026_09_10,B04,menor,no aplicable al error alegado,descripcion.tex / formulación probabilística,Se conserva Pr(Y=1 dado X=x).
+correcciones_2026_09_10,B05/B06,mayor,implementado y comprobado,corr:simbolos; corr:elegibilidad; corr:evento,"Probabilidad individual, prevalencia, matrícula, retiro ausente o futuro, horizonte y preinicio diferenciados."
+correcciones_2026_09_10,B07,mayor,implementado y comprobado,corr:diccionario; 02_diccionario.csv,26 candidatos y conteo separado para auditoría; nombres del código.
+correcciones_2026_09_10,B08,menor,cerrado documentalmente para esta versión,desarrollo2.tex / selección de indicadores,Ausencia de diversidad justificada; utilidad no evaluada.
+correcciones_2026_09_10,B09,mayor,implementado,desarrollo2.tex / notación y tendencias,"Suavizado, inversión de signo y pérdida de invariancia de escala precisados."
+correcciones_2026_09_10,B10,mayor,implementado y ejecutado,corr:pcasens; 03_sensibilidad_pca.csv,Tres especificaciones con los mismos casos; interpretación limitada de varianza.
+correcciones_2026_09_10,B11,menor,propuesta no incorporada,desarrollo1.tex / efecto biserial,No se usa equivalencia r-AUC como evaluación predictiva; desarrollo adicional opcional.
+correcciones_2026_09_10,B12,mayor,implementado,desarrollo1.tex / V de Cramér,Fórmula y límites; no se afirma aumento inevitable por desbalance.
+correcciones_2026_09_10,B13,mayor,parcial; protocolo de métricas pendiente,descripcion.tex / costes; desarrollo3.tex,"Probabilidad individual precisada; AP, calibración y comparabilidad se fijarán en el protocolo."
+correcciones_2026_09_10,B14/B15,mayor,implementado con selección de figuras,corr:flujos; corr:calendario; corr:observabilidad; multi02:figpoblacion,"Cascadas secuenciales, partición sin solapamientos, fechas, calendario y evolución con ejes numéricos."
+correcciones_2026_09_10,B16,mayor,cerrado para el conjunto candidato actual,src/ventanas_oulad.py; corr:vif,n_registros_vle excluido de los cinco conjuntos; VIF y n publicados.
+correcciones_2026_09_10,B17,menor,implementado en el alcance de la entrega,abstract.tex; descripcion.tex; anexos.tex,"Denominadores, alcance de equidad, historia de versión y presentación."
+correcciones_2026_09_10,B18,menor,parcial: comprobado; desglose de pesos no añadido como tabla,01 / auditoría; desarrollo2.tex / entregas,No se impone total 200; se distingue evaluación programada de actividad de entrega.
+correcciones_2026_09_10,B19/V1,mayor,cerrado documentalmente,corr:niveles; corr:numericos; corr:flujos,Contexto y cascadas publicados en el trabajo de grado con remisiones; créditos e intentos añadidos.
+correcciones_2026_09_10,B20/B21,mayor,implementado; limitación declarada,desarrollo2.tex / notación y selección; desarrollo3.tex,13/27 primeros cortes posibles; 14/28 primeros elegidos; no se presume optimalidad ni prueba intacta.
+correcciones_2026_09_10,B23/V12,mayor,implementado y ejecutado,corr:bootstrap; verificaciones_ampliacion.json,"5.000 remuestreos; 66/66 cambios dentro de 0,005; máximo 0,00299394."
+correcciones_2026_09_10,B24,menor,parcial / pendiente,revision_bitacora_2026_09_10/revision.md,No se declara bibliografía exhaustivamente verificada ni revisión del PDF anotado.
+correcciones_2026_09_10,P01,bloqueante,pendiente para comparación predictiva,desarrollo3.tex,"Fijar generalización, particiones, métricas, calibración, umbral y tratamiento de exploración previa."
+correcciones_2026_09_10,P02,mayor,no iniciado,desarrollo3.tex; desarrollo4.tex; desarrollo5.tex,"Comparación de clasificadores, SHAP y prototipo."

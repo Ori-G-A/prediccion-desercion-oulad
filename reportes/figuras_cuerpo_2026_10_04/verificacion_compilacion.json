@@ -1,0 +1,41 @@
+{
+  "paginas_pdf": 91,
+  "figuras_nuevas": {
+    "contexto-asociaciones": {
+      "figura": "3.5",
+      "pagina_impresa": "31"
+    },
+    "contexto-edad": {
+      "figura": "3.6",
+      "pagina_impresa": "32"
+    },
+    "contexto-discapacidad": {
+      "figura": "3.7",
+      "pagina_impresa": "32"
+    },
+    "contexto-imd": {
+      "figura": "3.8",
+      "pagina_impresa": "33"
+    },
+    "contexto-region": {
+      "figura": "3.9",
+      "pagina_impresa": "34"
+    },
+    "contexto-cortes": {
+      "figura": "3.10",
+      "pagina_impresa": "35"
+    },
+    "contexto-region-cortes": {
+      "figura": "3.11",
+      "pagina_impresa": "36"
+    },
+    "cv-actividad": {
+      "figura": "4.8",
+      "pagina_impresa": "53"
+    }
+  },
+  "referencias_definidas": true,
+  "sin_avisos_overfull": true,
+  "figuras_totales": 21,
+  "tablas_totales": 31
+}

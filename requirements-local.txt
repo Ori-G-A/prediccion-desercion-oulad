@@ -1,0 +1,4 @@
+# Python 3.11.9. Analisis y aplicacion para abrir los notebooks.
+-r requirements-revision.txt
+jupyterlab==4.6.4
+ipykernel==7.4.0

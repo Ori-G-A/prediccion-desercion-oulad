@@ -1,0 +1,401 @@
+[
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Ahora bien, desde la perspectiva de la Analítica de Aprendizaje y la Minería de Datos Educativos, el comportamiento estudiantil en entornos LMS puede entenderse como el conjunto de patrones observables de interacción digital que reflejan cómo, cuándo, cuánto y con qué continuidad un estudiante participa en el entorno virtual. Esto significa que se puede operacionalizar el comportamiento a partir de señales registradas por la plataforma sin asumir que dichas variables midan directamente estados psicológicos como motivación o intención de abandono \\cite{sdata2017171,0007767901540164,bonviewJDSIS42023777}. En este sentido, más que como un volumen acumulado de actividad, la baja interacción debe analizarse como parte de una trayectoria temporal, pues el riesgo de abandono puede intensificarse de manera progresiva y variar según el patrón previo del estudiante \\cite{1049482020222124425,arXiv260408870}. Por ello, el problema consiste en representar adecuadamente las señales académicas, conductuales y temporales que permiten identificar patrones tempranos de riesgo. \\cite{bdcc9110297,03064190261439624}.",
+    "despues": "Desde la perspectiva de la analítica de aprendizaje y la minería de datos educativos, el comportamiento en un LMS se describe mediante patrones observables de interacción: cómo, cuándo, cuánto y con qué continuidad participa un estudiante. Estos patrones permiten construir indicadores a partir de los registros de la plataforma, sin asumir que midan directamente la motivación o la intención de abandonar \\cite{sdata2017171,0007767901540164,bonviewJDSIS42023777}. La baja interacción requiere examinarse dentro de una trayectoria temporal, porque su relación con el riesgo puede variar según la participación previa \\cite{1049482020222124425,arXiv260408870}. Por ello, el problema consiste en representar las señales académicas, conductuales y temporales que pueden ayudar a identificar riesgo temprano \\cite{bdcc9110297,03064190261439624}."
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "La denominación varía en la literatura. En sentido estricto, el término designa una infraestructura de alcance institucional que gestiona el aprendizaje de toda una organización, mientras que la plataforma que opera específicamente en el nivel del curso corresponde a un sistema de gestión de cursos. Sin embargo, el uso corriente de un término para referirse al otro ha borrado esta distinción hasta volver ambos términos intercambiables, y esta situación incluso llega a extenderse a otros contextos \\cite{watson2007}. Por ejemplo, en la tradición británica se emplea la expresión entorno virtual de aprendizaje (VLE, \\textit{Virtual Learning Environment}), y con ese nombre la Open University designa su plataforma institucional, de donde OULAD hereda la denominación de sus tablas \\cite{sdata2017171}.",
+    "despues": "La literatura utiliza distintas denominaciones para estas plataformas. En sentido estricto, un LMS gestiona el aprendizaje de una organización, mientras un sistema de gestión de cursos se concentra en el curso. Sin embargo, ambos nombres suelen usarse de manera intercambiable \\cite{watson2007}. En la tradición británica también se utiliza entorno virtual de aprendizaje (VLE, \\textit{Virtual Learning Environment}). La Open University emplea esa denominación para su plataforma y OULAD la conserva en los nombres de sus tablas \\cite{sdata2017171}."
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Esta condición se ve radicalizada en el caso de la educación a distancia y en línea, pues",
+    "despues": "En la educación a distancia y en línea,",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Para alcanzar este objetivo, la literatura lo organiza",
+    "despues": "La literatura distingue el abandono",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "El dato que sostiene esa observación del comportamiento es la huella de interacción o \\textit{clickstream}, que consiste en el registro secuencial y con marca temporal de las acciones que el estudiante ejecuta sobre los objetos del entorno virtual. En un LMS no se captura el aprendizaje, sino los eventos que lo acompañan (accesos a la plataforma, aperturas de recursos, reproducciones de material, publicaciones en foros, intentos de cuestionario, envíos de evaluaciones), cada uno asociado a un actor, un objeto y un instante \\cite{03064190261439624,educsci11090552}. Esa huella se interpreta habitualmente como manifestación del compromiso o \\textit{engagement} estudiantil, constructo que la investigación educativa descompone en tres dimensiones \\cite{fredricks2004}:",
+    "despues": "La huella de interacción o \\textit{clickstream} reúne acciones digitales con una referencia temporal. En un LMS puede incluir accesos, aperturas de recursos, reproducciones de material, publicaciones en foros, intentos de cuestionario y envíos de evaluaciones, asociados a un estudiante, un recurso y un momento. Estos eventos acompañan el proceso educativo, pero no miden directamente el aprendizaje \\cite{03064190261439624,educsci11090552}. La literatura suele relacionarlos con el compromiso estudiantil o \\textit{engagement}, que comprende tres dimensiones \\cite{fredricks2004}:"
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Es habitual acortar la ventana de observación en busca de una predicción lo más temprana posible; sin embargo, esa anticipación se paga en señal disponible, pues un estudiante que apenas ha comenzado a interactuar deja pocos rastros medibles. Por eso, el balance entre anticipación y capacidad discriminante debe evaluarse probando varias ventanas, en lugar de fijar una arbitrariamente.",
+    "despues": "Una ventana corta permite predecir antes, pero reúne menos información: al comienzo del curso puede haber pocos registros de participación. Por ello, la comparación de varias ventanas debe examinar conjuntamente la anticipación disponible y la capacidad para distinguir inscripciones con y sin retiro futuro.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Es importante tener presente que el uso de la huella de interacción en un diseño de predicción temprana está delimitado por dos restricciones. La primera atañe a su comparabilidad entre cursos, pues la generalización de modelos entre asignaturas puede verse limitada cuando las condiciones instruccionales difieren, porque un mismo nivel de actividad significa cosas distintas según cuánto peso otorgue el diseño del curso al entorno virtual \\cite{gasevic2016}. Como OULAD reúne módulos de áreas y duraciones distintas, la comprobación de la generalización entre ellos forma parte de la evaluación y no se da por supuesta. La segunda, está relacionada con su validez temporal. Toda variable debe calcularse con información disponible dentro de la ventana de observación y ninguna puede incorporar registros posteriores al momento en que la predicción se emitiría. El incumplimiento de esta condición produce fuga de información y un desempeño optimista que no se sostiene en uso real \\cite{kaufman2012,gardnerbrooks2018}. ",
+    "despues": "La huella de interacción tiene dos límites para la predicción temprana. El primero es su comparabilidad entre cursos: un mismo volumen de actividad puede tener significados distintos según el uso educativo de la plataforma \\cite{gasevic2016}. OULAD reúne módulos de áreas y duraciones diferentes; por ello, la generalización entre ellos deberá comprobarse durante la evaluación. El segundo límite es temporal. Cada predictor debe utilizar información disponible al momento de emitir la predicción. Incorporar registros posteriores produce fuga de información: el modelo aprovecha datos que no tendría al utilizarse y puede mostrar un desempeño demasiado favorable \\cite{kaufman2012,gardnerbrooks2018}."
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Se incluyen así un modelo lineal generalizado, un ensamble por \\textit{bagging}, dos implementaciones de \\textit{gradient boosting} sobre árboles y una arquitectura profunda diseñada para datos tabulares.",
+    "despues": "Se incluyen un modelo lineal generalizado, un ensamble que combina árboles ajustados sobre muestras aleatorias (\\textit{bagging}), dos métodos que añaden árboles para corregir errores sucesivos (\\textit{gradient boosting}) y una red neuronal para datos tabulares, organizados en filas y columnas.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "La regresión logística modela la probabilidad de la clase positiva mediante la función logística aplicada a una combinación lineal de los predictores,",
+    "despues": "La regresión logística permite estimar la probabilidad de retiro futuro a partir de los predictores. Para ello, transforma una combinación lineal de sus valores mediante la función logística, que produce un resultado entre cero y uno:",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "y la inversión de esa expresión revela la escala en que el modelo es lineal, que es también el fundamento de su interpretabilidad:",
+    "despues": "Aquí $\\eta$ es la combinación lineal, $\\beta_0$ es el intercepto y $\\beta_j$ pondera el predictor $x_j$. Para interpretar esos coeficientes se utiliza el \\textit{logit}, es decir, el logaritmo de la razón entre la probabilidad del evento y la de su ausencia:",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Random Forest ajusta $B$ árboles de decisión sobre muestras \\textit{bootstrap} del conjunto de entrenamiento y promedia sus estimaciones,",
+    "despues": "Random Forest combina árboles de decisión para estimar la probabilidad de retiro. Cada uno se ajusta sobre una muestra \\textit{bootstrap}, obtenida al seleccionar filas del entrenamiento con reposición. Con $B$ árboles y $\\hat p^{(b)}(\\mathbf x)$ como la probabilidad estimada por el árbol $b$, el resultado es su promedio:",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "El promedio puede reducir la varianza de las predicciones; ese resultado depende tanto del número de árboles como de su covarianza. No constituye por sí solo una afirmación sobre todo el error predictivo, que también depende del sesgo y del problema evaluado.",
+    "despues": "Promediar árboles puede reducir la variación de las predicciones, pero el beneficio depende de cuánto se parezcan sus errores. Esta relación se expresa mediante la covarianza, que describe cómo varían conjuntamente. Añadir árboles no garantiza una mejora de todas las métricas, porque el error también depende del sesgo y del problema evaluado. El Anexo~\\ref{editorial:rf} conserva la expresión matemática, sus supuestos y la demostración \\cite{breiman2001}."
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "La idea es que promediar árboles puede reducir la variación de sus predicciones, pero el beneficio depende de cuánto se parezcan sus errores. Añadir árboles no garantiza que todas las métricas mejoren. El Anexo~\\ref{editorial:rf} conserva la expresión matemática, sus supuestos y la demostración \\cite{breiman2001}.",
+    "despues": ""
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Para clasificación logística, $z_i$ denota la puntuación antes de aplicar la función logística, y $\\pi_i=\\sigma_{\\mathrm{log}}(z_i)$. El \\textit{gradient boosting} construye el ensamble de manera aditiva y secuencial, $z_i^{(t_{\\mathrm{boost}})}=z_i^{(t_{\\mathrm{boost}}-1)}+\\nu f_{t_{\\mathrm{boost}}}(\\mathbf{x}_{i})$, donde $f_{t_{\\mathrm{boost}}}$ es el árbol incorporado en la iteración $t_{\\mathrm{boost}}$ y $\\nu$ una tasa de aprendizaje que escala su contribución. Cada árbol se ajusta a la dirección de descenso de la función de pérdida evaluada en las predicciones acumuladas, de modo que el modelo corrige progresivamente sus propios errores en lugar de promediar estimadores independientes \\cite{friedman2001}. La derivación de XGBoost considera primero el árbol candidato sin contracción ($\\nu=1$); la tasa $\\nu$ se aplica después al incorporar el árbol al ensamble. El objetivo regularizado de esa etapa es",
+    "despues": "XGBoost construye árboles sucesivos para reducir el error del ensamble. En clasificación logística, $z_i$ es la puntuación de la inscripción $i$ antes de transformarla en probabilidad y $\\pi_i=\\sigma_{\\mathrm{log}}(z_i)$ es esa probabilidad. Cada actualización se expresa como $z_i^{(t_{\\mathrm{boost}})}=z_i^{(t_{\\mathrm{boost}}-1)}+\\nu f_{t_{\\mathrm{boost}}}(\\mathbf{x}_{i})$: el árbol $f_{t_{\\mathrm{boost}}}$ se añade a la puntuación anterior y la tasa de aprendizaje $\\nu$ regula su aporte. El índice $t_{\\mathrm{boost}}$ cuenta iteraciones, no días del curso. Cada árbol se ajusta a partir de la dirección de descenso de la pérdida, que mide el error de las predicciones acumuladas \\cite{friedman2001}. Para derivar el ajuste se considera primero el árbol sin reducir su aporte ($\\nu=1$); la tasa se aplica después al incorporarlo. El objetivo regularizado es"
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Aquí $T$ es el número de hojas, $\\mathbf w$ reúne sus pesos y $t_{\\mathrm{boost}}$ identifica la iteración, no el día de predicción.",
+    "despues": "Aquí $l$ es la pérdida individual, $\\mathcal L$ combina las pérdidas con la penalización $\\Omega$, $T$ cuenta las hojas y $\\mathbf w$ reúne sus pesos. Los coeficientes $\\gamma_{\\mathrm{XGB}}$ y $\\lambda_{\\mathrm{XGB}}$ penalizan el número de hojas y la magnitud de sus pesos, respectivamente.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "La regularización controla aspectos diferentes del árbol. El coeficiente $\\lambda_{\\mathrm{XGB}}$ figura en el denominador y contrae por tanto los pesos de las hojas, con mayor contracción relativa cuando la suma de Hessianos es pequeña. El coeficiente $\\gamma_{\\mathrm{XGB}}$ opera como umbral mínimo de ganancia, de modo que un corte se descarta cuando su mejora no compensa el costo de una hoja adicional, mecanismo que incorpora la poda al propio criterio de división. ",
+    "despues": "La regularización limita tanto los pesos como el número de hojas. En la solución del Anexo~\\ref{editorial:xgb}, $\\lambda_{\\mathrm{XGB}}$ aparece en el denominador del peso: al aumentarlo, ese peso se reduce en magnitud, especialmente cuando la suma de segundas derivadas de la pérdida es pequeña. Por su parte, $\\gamma_{\\mathrm{XGB}}$ exige que la mejora de una división compense el coste de añadir una hoja. Así se puede descartar una división que reduzca poco el error."
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "El tratamiento del desbalance se integra en la misma formulación al ponderar $g_{i}$ y $h_{i}$ de la clase minoritaria por un factor constante.",
+    "despues": "El desbalance puede tratarse ponderando por un factor constante las primeras y segundas derivadas de la pérdida, $g_i$ y $h_i$, para los casos de la clase minoritaria. Estas cantidades se definen en el Anexo~\\ref{editorial:xgb}; la ponderación concreta deberá fijarse en el entrenamiento.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "La selección de variables es por tanto aprendida y específica de cada observación, y la agregación de las máscaras a lo largo de los pasos produce una atribución de importancia por instancia sin recurrir a técnicas externas, lo que la diferencia tanto de la selección global previa al entrenamiento como de las atribuciones \\textit{post-hoc}. Su desempeño relativo frente a los ensambles de árboles no está establecido de manera concluyente: las evaluaciones comparativas sobre colecciones amplias de conjuntos tabulares encuentran que los métodos basados en árboles siguen siendo competitivos o superiores, y que las arquitecturas profundas requieren un esfuerzo de ajuste considerablemente mayor para aproximarse a ellos \\cite{shwartzziv2022,grinsztajn2022}. Esa evidencia es razón para poner la comparación a prueba en este dominio antes que para darla por resuelta, y a ello se suma que TabNet es, junto con la regresión logística, el único candidato cuya interpretabilidad no depende de una técnica auxiliar. El estudio comparativo lo incorpora por tanto en igualdad de condiciones con los demás modelos. La Tabla \\ref{tab:modelos-candidatos} resume los cinco candidatos.",
+    "despues": "La selección mediante máscaras depende de cada observación. Al reunirlas a lo largo de los pasos se obtiene una importancia por caso, distinta de la selección global de variables antes del entrenamiento y de las atribuciones \\textit{post-hoc}. Las comparaciones sobre conjuntos tabulares muestran que los ensambles de árboles siguen siendo competitivos o superiores y que las redes profundas pueden requerir mayor esfuerzo de ajuste \\cite{shwartzziv2022,grinsztajn2022}. Por ello, el desempeño de TabNet deberá evaluarse en OULAD. El proyecto lo incorpora como candidato con reglas comunes de comparación; junto con la regresión logística, ofrece una interpretación basada en su propia estructura. La Tabla~\\ref{tab:modelos-candidatos} resume los cinco candidatos."
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "mediante las curvas ROC y de precisión y exhaustividad, junto con métricas calculadas para el umbral elegido",
+    "despues": "mediante las curvas ROC, que relacionan la proporción de retiros detectados con la proporción de falsas alertas, y las curvas de precisión y exhaustividad, que relacionan la proporción de alertas correctas con la proporción de retiros detectados. También se utilizarán métricas para el umbral elegido",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "CRISP-DM ofrece una forma",
+    "despues": "CRISP-DM (\\textit{Cross-Industry Standard Process for Data Mining}) ofrece una forma",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "La interpretabilidad no constituye una propiedad única sino un conjunto de exigencias distintas según el destinatario y el propósito de la explicación, razón por la cual carece de una definición formal consensuada y su evaluación depende del contexto de uso \\cite{doshivelez2017}. Dos distinciones organizan el campo. La primera opone los modelos intrínsecamente interpretables, cuya estructura admite lectura directa, a las técnicas \\textit{post-hoc}, que producen una explicación aproximada de un modelo ya entrenado sin modificarlo. La segunda opone la interpretabilidad global, referida al comportamiento del modelo sobre la población, a la local, referida a la justificación de una predicción individual \\cite{03064190261439624,bdcc9110297}. Ambas distinciones son necesarias en este proyecto: la lectura global orienta la comprensión de los factores asociados al abandono en el conjunto de estudiantes, mientras la local sustenta la alerta sobre un estudiante concreto, que es la unidad sobre la que se decide una intervención.",
+    "despues": "La interpretabilidad busca que una explicación sea comprensible para su destinatario y responda a una pregunta concreta; por ello, su definición y evaluación dependen del contexto \\cite{doshivelez2017}. Se distinguen los modelos cuya estructura permite una lectura directa y las técnicas \\textit{post-hoc}, aplicadas después del entrenamiento. También se distingue la explicación global, que resume el comportamiento del modelo sobre un conjunto de casos, de la local, que examina una predicción particular \\cite{03064190261439624,bdcc9110297}. En este proyecto, la lectura global permitirá reconocer qué variables utiliza el modelo y la local examinará su predicción para una inscripción. Ambas forman parte del análisis previsto; no constituyen una intervención educativa evaluada."
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "La pertinencia de las técnicas \\textit{post-hoc} ha sido objetada con un argumento que conviene recoger. La explicación producida sobre un modelo opaco es, por construcción, una aproximación a su comportamiento y no una descripción de él, de modo que puede resultar fiel en promedio e incorrecta en casos particulares; de ahí la recomendación de emplear modelos intrínsecamente interpretables cuando la decisión afecta a personas y el desempeño no se degrada de forma sustantiva \\cite{rudin2019}. La objeción no invalida el uso de estas técnicas, pero fija dos condiciones que este trabajo asume: incluir una línea base intrínsecamente interpretable en la comparación, de modo que la eventual pérdida de desempeño por optar por ella sea un dato y no un supuesto, y presentar las explicaciones como atribuciones del modelo y no como afirmaciones causales sobre las razones del abandono.",
+    "despues": "Las explicaciones \\textit{post-hoc} requieren cautela: una aproximación que representa bien el comportamiento promedio del modelo puede resultar poco fiel en casos particulares. Por ello, se ha recomendado utilizar modelos de lectura directa cuando las decisiones afectan a personas y su desempeño resulta comparable \\cite{rudin2019}. El proyecto conserva dos condiciones para la comparación: incluir un modelo base interpretable, de modo que la diferencia de desempeño pueda medirse, y presentar las explicaciones como atribuciones del modelo. Estas atribuciones no identifican causas del abandono."
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "SHAP permite descomponer",
+    "despues": "SHAP (\\textit{SHapley Additive exPlanations}) permite descomponer",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "La explicación parte de un valor de referencia, que bajo la formulación habitual es",
+    "despues": "En la identidad, $f(\\mathbf x)$ es la salida explicada para la inscripción, $\\phi_0$ es el valor de referencia y $\\phi_j$ es la contribución de la variable $j$, entre las $p$ variables. El conjunto vacío $\\varnothing$ representa la referencia sin variables presentes en la explicación. Bajo la formulación habitual, ese valor es",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "descripcion.tex",
+    "antes": "Las atribuciones locales pueden agregarse en medidas globales de importancia, definidas como $I_{\\mathrm{SHAP},j}=n^{-1}\\sum_{i=1}^{n}\\big|\\phi_{j}^{(i)}\\big|$, así como en efectos de interacción y curvas de dependencia. Esta última propiedad es la que hace de SHAP una elección coherente para este proyecto: las explicaciones globales no se obtienen de un procedimiento distinto del local, sino de la agregación del mismo, lo que vincula ambos niveles con el mismo procedimiento de atribución. Esta construcción no certifica ausencia de sesgo ni resuelve automáticamente la dependencia entre predictores.",
+    "despues": "Para resumir la importancia de una variable en un conjunto de casos se promedian las magnitudes de sus contribuciones: $I_{\\mathrm{SHAP},j}=n^{-1}\\sum_{i=1}^{n}\\big|\\phi_{j}^{(i)}\\big|$. Aquí $n$ es el número de casos explicados y $\\phi_j^{(i)}$ la atribución de la variable $j$ al caso $i$. El valor absoluto evita que contribuciones positivas y negativas se cancelen; por ello, esta medida resume magnitud, no dirección. Las atribuciones también permiten examinar interacciones y curvas de dependencia. Su agregación vincula la lectura local y la global mediante un mismo procedimiento, pero no certifica ausencia de sesgo ni resuelve automáticamente la dependencia entre predictores."
+  },
+  {
+    "archivo": "abstract.tex",
+    "antes": "El entrenamiento, la interpretación mediante SHAP",
+    "despues": "El entrenamiento, la interpretación mediante SHAP (atribuciones de las variables a las predicciones del modelo)",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "introduccion.tex",
+    "antes": "utiliza OULAD, un conjunto de datos",
+    "despues": "utiliza OULAD (\\textit{Open University Learning Analytics Dataset}), un conjunto de datos",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo1.tex",
+    "antes": "La dependencia entre variabilidad y frecuencia impide presentar estas asociaciones como evidencia independiente. Sin embargo, las magnitudes cambian al variar simultáneamente la historia observada, la población y el horizonte;",
+    "despues": "La variabilidad y la frecuencia están relacionadas por sus propias definiciones; por ello, estas asociaciones no representan aportes independientes. Además, las magnitudes cambian al variar simultáneamente la historia observada, la población y el horizonte;",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo1.tex",
+    "antes": "La comparación de proporciones y recencias relativas reduce la dependencia aritmética de la duración observada, pero no iguala las oportunidades educativas.",
+    "despues": "Dividir la actividad y la recencia por los días observados facilita comparar ventanas de distinta duración. Sin embargo, esta operación no iguala las oportunidades de participación y evaluación de los cursos.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo1.tex",
+    "antes": "Categoría de privación socioeconómica del área de residencia (IMD)",
+    "despues": "Categoría del índice de privación múltiple del área de residencia (IMD)",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo1.tex",
+    "antes": "La categoría IMD corresponde al área de residencia",
+    "despues": "El índice de privación múltiple (IMD, \\textit{Index of Multiple Deprivation}) corresponde al área de residencia",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Ningún CV se presenta como evidencia independiente de la frecuencia por el solo hecho de tener otro nombre.",
+    "despues": "Por tanto, cambiar el nombre o la definición del CV no demuestra que aporte información independiente de la frecuencia de actividad.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "quedan 2\\,643 retiros preinicio",
+    "despues": "quedan 2\\,643 retiros anteriores al inicio",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "El sumando 1 de la tendencia permite cocientes finitos con un bloque nulo. Se trata de un suavizado: intercambiar los bloques invierte exactamente el signo, pero escalar los conteos no conserva necesariamente el valor.",
+    "despues": "En la fórmula, $s$ es la duración de cada bloque y $T_{i,s}(t)$ es la tendencia de la inscripción $i$. El numerador suma los clics del bloque más reciente y el denominador los del anterior. Un valor positivo indica más clics recientes y uno negativo, menos. Añadir 1 permite calcular el cociente cuando uno de los bloques no tiene clics. Este suavizado conserva la inversión del signo al intercambiar los bloques, pero multiplicar todos los conteos por una misma cantidad puede cambiar el valor.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Ninguna de estas banderas sustituye",
+    "despues": "Ninguno de estos indicadores binarios, con valores 0 o 1, sustituye",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "El primer vencimiento continuo varía",
+    "despues": "El primer vencimiento de evaluación continua varía",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Primer vencimiento no Exam por módulo y presentación.",
+    "despues": "Primer vencimiento de una evaluación distinta de examen (\\textit{Exam}), por módulo y presentación.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Observabilidad de cada indicador; porcentaje",
+    "despues": "Disponibilidad de cada indicador para su cálculo; porcentaje",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Se calcularon correlaciones de Spearman y se contó cuántos pares de datos estaban disponibles en cada corte.",
+    "despues": "Se calcularon correlaciones de Spearman, que comparan el orden de los valores de dos indicadores. Un signo positivo indica que valores mayores de uno tienden a acompañarse de valores mayores del otro; un signo negativo indica el orden contrario. Se contó cuántos pares de datos estaban disponibles en cada corte.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Sus valores describen la dependencia lineal de ese conjunto, pero no determinan qué variables serán más útiles para predecir el retiro.",
+    "despues": "El VIF indica cuánto aumenta la varianza de un coeficiente lineal por su relación con los demás predictores del conjunto. Un valor mayor señala más redundancia lineal, pero no determina qué variables serán más útiles para predecir el retiro.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Las variables se estandarizan para llevarlas a una escala comparable",
+    "despues": "Las variables se estandarizan restando su media y dividiendo por su desviación estándar, para llevarlas a una escala comparable",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Por ello, los componentes de un corte",
+    "despues": "Cada componente es una combinación lineal de los indicadores que resume parte de su variación conjunta. El porcentaje de varianza de la Tabla~\\ref{multi03:pca} expresa cuánto de esa variación recogen los dos primeros componentes. Por ello, los componentes de un corte",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "También se utilizó MCD para revisar",
+    "despues": "También se utilizó el método de determinante mínimo de covarianza (MCD) para revisar",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "Cambio del efecto biserial al retirar exactos:",
+    "despues": "Cambio del efecto biserial al retirar duplicados exactos:",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo2.tex",
+    "antes": "El signo corresponde a alternativa menos fuente original;",
+    "despues": "La diferencia se calcula restando el efecto de la fuente original al de la alternativa sin duplicados exactos;",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "desarrollo3.tex",
+    "antes": "El entrenamiento y la comparación de clasificadores no se han ejecutado en esta versión. La fase deberá fijar la generalización buscada, particiones compatibles con personas repetidas y presentaciones, modelos base y reglas comunes de evaluación. El ajuste de transformaciones, selección de variables, hiperparámetros y umbrales deberá limitarse al entrenamiento y la validación; también deberán evaluarse calibración y anticipación disponible. La exploración previa de la fuente completa impide afirmar que una prueba final permanezca intacta sin evidencia adicional.",
+    "despues": "El entrenamiento y la comparación de clasificadores no se han ejecutado en esta versión. Esta fase deberá establecer qué casos nuevos se espera predecir y cómo separar los datos para evaluarlos, teniendo en cuenta las personas con varias inscripciones y las distintas presentaciones. También deberá incluir modelos base y reglas comunes de comparación.\n\nLas transformaciones, la selección de variables, los hiperparámetros y los umbrales se ajustarán con entrenamiento y validación. La evaluación deberá comprobar la calibración, es decir, la correspondencia entre las probabilidades estimadas y los retiros observados, y el tiempo disponible entre la predicción y el evento. Como ya se exploró la fuente completa, no puede afirmarse que una prueba final permanezca intacta sin evidencia adicional."
+  },
+  {
+    "archivo": "desarrollo4.tex",
+    "antes": "El análisis SHAP permanece pendiente de disponer de un modelo ajustado y evaluado. Su desarrollo deberá documentar la variante, el conjunto de referencia, la escala explicada y el tratamiento de predictores dependientes. Las atribuciones describirán el comportamiento del modelo y no efectos causales sobre la permanencia estudiantil.",
+    "despues": "El análisis SHAP requiere un modelo ajustado y evaluado; por ello, permanece pendiente. Su propósito será explicar cómo intervienen las variables en las predicciones. Al ejecutarlo deberán documentarse la variante utilizada, los datos de referencia, la escala de la salida explicada y el tratamiento de predictores relacionados entre sí. Las atribuciones describirán el comportamiento del modelo, sin interpretarse como efectos causales sobre la permanencia estudiantil."
+  },
+  {
+    "archivo": "Conclusiones.tex",
+    "antes": "utilizar otro CV o variar los indicadores del PCA.",
+    "despues": "utilizar otra definición del coeficiente de variación (CV) o variar los indicadores del análisis de componentes principales (PCA).",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Se contrastaron clics, días activos y CV activo sobre toda la fuente para las inscripciones elegibles de los cinco cortes; también se comprobaron fronteras de fechas, conjuntos candidatos, etiquetas e invariancia frente a información futura. La alternativa sin exactos conserva población y evento. Los intervalos utilizan 5\\,000 remuestreos de personas y su estabilidad se describe comparando prefijos de 500 y 2\\,000; no se presenta esta comparación como prueba de convergencia universal.",
+    "despues": "Se contrastaron los clics, los días activos y el CV entre días activos sobre toda la fuente, para las inscripciones elegibles de los cinco cortes. También se comprobaron los límites de fechas, los indicadores candidatos y las etiquetas, así como que añadir información futura no modificara los predictores del corte. La alternativa sin duplicados exactos conserva la población y el evento. Los intervalos utilizan 5\\,000 remuestreos de personas; su estabilidad numérica se examina comparando las primeras 500 y 2\\,000 repeticiones con la secuencia completa. Esta comprobación no demuestra una convergencia universal."
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Los registros independientes y los hashes identifican la ejecución y los artefactos.",
+    "despues": "Los registros independientes y las huellas digitales de los archivos permiten identificar la ejecución documentada y sus productos.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Cada celda informa retiros futuros sobre inscripciones elegibles y el porcentaje correspondiente.",
+    "despues": "Cada celda presenta el número de retiros futuros, el total de inscripciones elegibles de esa categoría y el porcentaje obtenido al dividir ambos conteos. Las columnas corresponden a días de corte; sus poblaciones y periodos de seguimiento pueden variar.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Se documentan 26 candidatos, incluidos ambos CV;",
+    "despues": "El diccionario permite relacionar los indicadores del texto con los nombres utilizados en el código. Se documentan 26 candidatos, incluidos ambos CV;",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Los identificadores, el contexto y los desenlaces permanecen separados.",
+    "despues": "Los identificadores, las variables de contexto y los desenlaces permanecen separados. En la tabla, $t$ es el día de corte; los intervalos de días incluyen ambos extremos. NaN identifica un valor que no puede calcularse con la información disponible, no un cero; SD significa desviación estándar. La función \\texttt{floor} toma la parte entera inferior y permite contar semanas completas.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Estas derivaciones amplían las formulaciones del marco teórico; su traslado conserva las hipótesis y los resultados.",
+    "despues": "Estas derivaciones explican la relación entre las formulaciones del marco teórico y sus condiciones matemáticas. Se conserva el detalle para consultar cómo se obtienen los resultados y bajo qué hipótesis son válidos.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "\\subsection{Varianza del promedio en Random Forest}\\label{editorial:rf}",
+    "despues": "\\subsection{Varianza del promedio en Random Forest}\\label{editorial:rf}\nLa proposición permite examinar por qué promediar árboles puede reducir la variación de las predicciones. Cada $T_b$ representa un estimador, $B$ cuenta los árboles, $\\sigma_{\\mathrm{RF}}^2$ es su varianza común y $\\rho_{\\mathrm{RF}}$ su correlación común por pares. Se trata de un caso idealizado que explicita las condiciones del resultado.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "El objetivo aproximado tiene, fijada la estructura del árbol, una solución en forma cerrada.",
+    "despues": "Una vez fijadas las divisiones del árbol, se busca el peso que minimiza el objetivo de cada hoja. La siguiente proposición expresa ese peso mediante las sumas de derivadas y calcula cuánto mejora el objetivo al dividir una hoja en dos.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "\\subsection{Condiciones de unicidad de la atribución SHAP}\\label{editorial:shap}",
+    "despues": "\\subsection{Condiciones de unicidad de la atribución SHAP}\\label{editorial:shap}\nEste resultado delimita cuándo las contribuciones de las variables quedan determinadas por las propiedades de la explicación. Una coalición es un conjunto de variables consideradas presentes; su función de valor establece la salida que se les asigna. La unicidad solo se afirma después de fijar esas elecciones.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Los parámetros se estiman por máxima verosimilitud, mediante la maximización de",
+    "despues": "El ajuste busca parámetros que asignen mayor probabilidad a las etiquetas observadas en el entrenamiento. La máxima verosimilitud lo expresa mediante la maximización de",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "problema que carece de solución cerrada y se resuelve por métodos iterativos de segundo orden, habitualmente Newton-Raphson en su forma de mínimos cuadrados ponderados iterativamente \\cite{hosmer2013,james2023}.",
+    "despues": "Aquí $\\ell$ es la log-verosimilitud, $y_i$ la etiqueta y $\\pi_i$ la probabilidad estimada para la inscripción $i$; $n$ cuenta las inscripciones del entrenamiento. Cada término recompensa asignar una probabilidad alta a la clase observada. La solución no se obtiene mediante una fórmula cerrada: se aproxima actualizando los coeficientes de forma iterativa, habitualmente con Newton--Raphson expresado como mínimos cuadrados ponderados iterativamente \\cite{hosmer2013,james2023}.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Se asume $\\lambda_{\\mathrm{LR}}\\geq0$ y $0\\leq\\alpha\\leq1$.",
+    "despues": "Se asume $\\lambda_{\\mathrm{LR}}\\geq0$ y $0\\leq\\alpha\\leq1$. El primero regula la intensidad de la penalización y el segundo combina la suma de cuadrados ($\\ell_2$) con la suma de valores absolutos ($\\ell_1$). Así, el objetivo equilibra el ajuste a las etiquetas y la magnitud de los coeficientes.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "El procedimiento GOSS conserva",
+    "despues": "El muestreo unilateral basado en gradientes (GOSS) busca reducir los casos utilizados sin perder la contribución de los que presentan mayores gradientes. El procedimiento conserva",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "La agrupación EFB combina características suficientemente excluyentes para reducir el trabajo sobre matrices dispersas.",
+    "despues": "La agrupación de características excluyentes (EFB) combina variables que rara vez toman valores distintos de cero simultáneamente. Su propósito es reducir el trabajo sobre matrices dispersas, en las que predominan los ceros.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "La dispersión de las máscaras se induce además mediante un término de entropía añadido a la pérdida,",
+    "despues": "Para favorecer máscaras que concentren el peso en pocas variables, se añade a la pérdida un término de entropía. La entropía mide cómo se reparte el peso entre las componentes de la máscara:",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "con $N_{b}$ el tamaño del lote, ponderado por un coeficiente $\\lambda_{\\text{disp}}$ que, junto con el número de pasos y la dimensión de las representaciones internas, constituye el conjunto de hiperparámetros propios de la arquitectura.",
+    "despues": "Aquí $N_b$ es el número de casos del lote, $N_s$ el número de pasos y $\\mathbf M_{b,j}[s_{\\mathrm{TN}}]$ el peso de la variable $j$ para el caso $b$ en ese paso. El valor positivo $\\epsilon$ estabiliza el logaritmo. El término se pondera con $\\lambda_{\\text{disp}}$; ese peso, el número de pasos y la dimensión de las representaciones internas son hiperparámetros que deberán ajustarse durante el entrenamiento.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "donde $h_{s_{\\mathrm{TN}}}$ es una transformación entrenable",
+    "despues": "En estas expresiones, $\\mathbf a$ es el estado interno, $\\mathbf M$ la máscara y $\\mathbf P$ el factor que regula el uso previo de variables. El operador $\\odot$ multiplica las componentes correspondientes y $\\prod$ acumula esos factores entre pasos. La función $h_{s_{\\mathrm{TN}}}$ es una transformación entrenable",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "donde $v_x(S)$, abreviado como $v(S)$, es el valor asignado a la coalición $S$ para la observación $x$.",
+    "despues": "Aquí $S$ recorre los subconjuntos de variables que no incluyen a $j$, y $v_x(S)$, abreviado como $v(S)$, es el valor asignado a cada conjunto para la observación $x$. La diferencia entre corchetes mide cuánto cambia ese valor al incorporar $j$. El símbolo $|S|$ cuenta sus variables y $!$ denota el factorial utilizado en la ponderación.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "anexos.tex",
+    "antes": "Una elección condicional es $\\mathbb{E}[f(X)\\mid X_S=x_S]$; otra integra $f(x_S,X_{-S})$ sobre una distribución de referencia.",
+    "despues": "Una elección condicional es $\\mathbb{E}[f(X)\\mid X_S=x_S]$: promedia la salida del modelo condicionada a los valores observados de las variables de $S$. Otra integra $f(x_S,X_{-S})$ sobre una distribución de referencia, fijando esas variables y variando las restantes. $X_S$ es el subvector de variables de $S$, $x_S$ sus valores observados y $X_{-S}$ las variables complementarias.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "figura_indicadores.tex",
+    "antes": "Se preservan claves y faltantes estructurales.",
+    "despues": "Se conservan las claves y los indicadores que no pueden calcularse.",
+    "ocurrencias": 1
+  },
+  {
+    "archivo": "notacion.tex",
+    "antes": "$F;\\ S;\\ j;\\ p$ & Conjunto de características, coalición, característica explicada",
+    "despues": "$F;\\ S;\\ j;\\ p$ & Conjunto de características, subconjunto o coalición, característica explicada",
+    "ocurrencias": 1
+  }
+]

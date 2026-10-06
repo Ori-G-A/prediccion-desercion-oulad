@@ -1,0 +1,12 @@
+{
+  "fecha": "2026-10-04",
+  "entornos_tabla_conservados": 32,
+  "contenido_de_todas_las_tablas_sin_cambios": true,
+  "codigo_celdas_notebook_sin_cambios": true,
+  "sintaxis_python_correcta": true,
+  "archivos_analiticos_sin_cambios": 71,
+  "imagen_oulad_original_identica": true,
+  "figuras_tex_antes": 13,
+  "figuras_tex_despues": 21,
+  "ejecucion_completa_notebooks": false
+}

@@ -1,0 +1,7 @@
+\label{editorial:modelos}
+\section{Estado del modelado}
+El entrenamiento y la comparación de clasificadores no se han ejecutado en esta versión. Esta fase deberá establecer qué casos nuevos se espera predecir y cómo separar los datos para evaluarlos, teniendo en cuenta las personas con varias inscripciones y las distintas presentaciones. También deberá incluir modelos base y reglas comunes de comparación.
+
+La actividad A3.2 del anteproyecto propone una partición estratificada, que busca conservar la proporción de clases en entrenamiento y prueba. Antes de aplicarla debe precisarse cómo se tratarán las inscripciones de una misma persona y las presentaciones de distintos periodos. Conservar la proporción de retiros no evita, por sí solo, que una persona aparezca en ambos conjuntos ni permite evaluar cualquier escenario de uso. Esta precisión del protocolo se someterá a revisión del director; en esta versión no se ha ejecutado una partición ni se presenta una alternativa como aprobada.
+
+Las transformaciones, la selección de variables, los hiperparámetros y los umbrales se ajustarán con entrenamiento y validación. La evaluación deberá comprobar la calibración, es decir, la correspondencia entre las probabilidades estimadas y los retiros observados, y el tiempo disponible entre la predicción y el evento. Como ya se exploró la fuente completa, no puede afirmarse que una prueba final permanezca intacta sin evidencia adicional.

@@ -1,0 +1,16 @@
+{
+  "version": "revision_bitacora_2026_09_10",
+  "alcance": "Revisión de propuestas y comprobaciones adicionales; originales conservados",
+  "hallazgos": 24,
+  "archivos": {
+    "reportes\\revision_bitacora_2026_09_10\\contraste_cv.csv": "d18c67515e85d05ccfe5f9c06b98416c5fc9ae0345946dc13d804e39600f2e9c",
+    "reportes\\revision_bitacora_2026_09_10\\particion_exclusiones.csv": "888aecac33635bcca649f5479c1dd58de7f9dc544fbd6dcbeb2deb64173f0910",
+    "reportes\\revision_bitacora_2026_09_10\\pesos_distintos_200.csv": "6965d1db4ba23f36e1af8ef599325431d0f506efdfda7ca87fadb625c765f4eb",
+    "reportes\\revision_bitacora_2026_09_10\\primera_evaluacion_continua.csv": "37552b3303f89498f976aba933c25f9da12c5fcb029482b3fc0574c612634d5b",
+    "reportes\\revision_bitacora_2026_09_10\\registro_hallazgos.csv": "a9ff4f394464da075ea4d8431c2b8f91b5881fae9795412be88269e40d71eaaf",
+    "reportes\\revision_bitacora_2026_09_10\\revision.md": "95d4f7c181a97dcb464f4e1596e61016d828c5ccbea7292b98dc4f4535abeb30",
+    "reportes\\revision_bitacora_2026_09_10\\revision_antes_respuesta_usuario.md": "b5eb0008fff190fc05e514616a37078315f607fb65742e8ef8ae39cf0088540e",
+    "reportes\\revision_bitacora_2026_09_10\\verificaciones.json": "f134a309f0a689946e7d1cec4632e4b4fd5f54455ae5af9def486d7dc892cd76"
+  },
+  "revision_dictamen": "Incorpora respuesta del usuario: publicación documental, conteo de filas y diversidad."
+}

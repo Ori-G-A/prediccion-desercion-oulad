@@ -1,0 +1,798 @@
+{
+  "version": "correcciones_2026_09_10",
+  "registrado_utc": "2026-09-10T22:39:51.935904+00:00",
+  "fuentes_originales_sha256_coinciden": true,
+  "comprobaciones_independientes": 49,
+  "ampliacion": {
+    "filas_csv_leidas": 10655280,
+    "cortes": [
+      {
+        "corte": 7,
+        "inscripciones": 29076,
+        "clics_dias_cv_desde_csv_completo": true,
+        "conteo_filas_fuera_candidatos": true
+      },
+      {
+        "corte": 14,
+        "inscripciones": 28054,
+        "clics_dias_cv_desde_csv_completo": true,
+        "conteo_filas_fuera_candidatos": true
+      },
+      {
+        "corte": 28,
+        "inscripciones": 27515,
+        "clics_dias_cv_desde_csv_completo": true,
+        "conteo_filas_fuera_candidatos": true
+      },
+      {
+        "corte": 42,
+        "inscripciones": 27005,
+        "clics_dias_cv_desde_csv_completo": true,
+        "conteo_filas_fuera_candidatos": true
+      },
+      {
+        "corte": 56,
+        "inscripciones": 26506,
+        "clics_dias_cv_desde_csv_completo": true,
+        "conteo_filas_fuera_candidatos": true
+      }
+    ],
+    "identidad_cv_verificada": true,
+    "poblacion_y_evento_invariantes_deduplicacion": true,
+    "bootstrap_tolerancia_extremos": 0.005,
+    "bootstrap_comparaciones": 66,
+    "bootstrap_dentro_tolerancia": 66,
+    "bootstrap_cambio_max": 0.0029939438026947,
+    "modelos_entrenados": false
+  },
+  "paginas_proyecto": 79,
+  "informes": [
+    {
+      "nombre": "01_exploracion",
+      "paginas": 6
+    },
+    {
+      "nombre": "02_ingenieria",
+      "paginas": 10
+    },
+    {
+      "nombre": "03_estadistica",
+      "paginas": 10
+    }
+  ],
+  "ubicaciones_documentales": {
+    "corr:histograma": {
+      "numero": "3.2",
+      "pagina_impresa": "28"
+    },
+    "corr:numericos": {
+      "numero": "3.10",
+      "pagina_impresa": "33"
+    },
+    "corr:simbolos": {
+      "numero": "4.1",
+      "pagina_impresa": "35"
+    },
+    "corr:elegibilidad": {
+      "numero": "4.1",
+      "pagina_impresa": "35"
+    },
+    "corr:evento": {
+      "numero": "4.2",
+      "pagina_impresa": "35"
+    },
+    "corr:prevalencia": {
+      "numero": "4.3",
+      "pagina_impresa": "35"
+    },
+    "corr:actividad": {
+      "numero": "4.4",
+      "pagina_impresa": "36"
+    },
+    "corr:identidadcv": {
+      "numero": "4.5",
+      "pagina_impresa": "36"
+    },
+    "corr:flujos": {
+      "numero": "4.4",
+      "pagina_impresa": "39"
+    },
+    "corr:calendario": {
+      "numero": "4.2",
+      "pagina_impresa": "42"
+    },
+    "corr:observabilidad": {
+      "numero": "4.3",
+      "pagina_impresa": "43"
+    },
+    "corr:vif": {
+      "numero": "4.7",
+      "pagina_impresa": "44"
+    },
+    "corr:cv": {
+      "numero": "4.8",
+      "pagina_impresa": "45"
+    },
+    "corr:pcasens": {
+      "numero": "4.9",
+      "pagina_impresa": "45"
+    },
+    "corr:duplicadosefectos": {
+      "numero": "4.10",
+      "pagina_impresa": "46"
+    },
+    "corr:bootstrap": {
+      "numero": "4.11",
+      "pagina_impresa": "46"
+    },
+    "corr:anexocontexto": {
+      "numero": "9.2",
+      "pagina_impresa": "57"
+    },
+    "corr:niveles": {
+      "numero": "9.1",
+      "pagina_impresa": "57"
+    },
+    "corr:anexodiccionario": {
+      "numero": "9.3",
+      "pagina_impresa": "59"
+    },
+    "corr:diccionario": {
+      "numero": "9.2",
+      "pagina_impresa": "59"
+    }
+  },
+  "revision_visual": "Descrita en entrega.md; este script no la ejecuta.",
+  "ajuste_posterior_a_ejecucion": {
+    "cambio": "Leyenda fuera de las curvas; celda gráfica regenerada desde la tabla ejecutada",
+    "tabla_sha256_antes_y_despues": "4751967206adfdb34af13276465da5f84ea8ab17aee2da72d20c7404a58f9f4f",
+    "recalculo_estadistico": false,
+    "ejecucion_completa_previa": "Consultar 03_analisis_estadistico_ejecucion.json; el ajuste posterior solo afecta la figura y su salida guardada."
+  },
+  "archivos": {
+    "01_carga_exploracion.ipynb": {
+      "sha256": "952364158a04748e21613fd79bd8cf4ab4d593045b9e528910e87f6459f97672",
+      "bytes": 52632
+    },
+    "02_feature_engineering.ipynb": {
+      "sha256": "b5a8ef29039ec07548605fd98c3d775434dd47ec355ee15e79fd3eb7afed3024",
+      "bytes": 88646
+    },
+    "03_analisis_estadistico.ipynb": {
+      "sha256": "863e94a3fe8b159cb5d060be76b07a33353179bb225756aeec16902bcac73988",
+      "bytes": 390037
+    },
+    "data/processed/correcciones_2026_09_10/actividad_diaria.parquet": {
+      "sha256": "ee41928b3d545ba33db67d8c97f0171813a8f1e396254501cff169aa5446aa43",
+      "bytes": 6152930
+    },
+    "data/processed/correcciones_2026_09_10/actividad_diaria_sin_exactos.parquet": {
+      "sha256": "12368dc81664e20d400405761ca487c1675af9f211156ac00c206e4f7c769b99",
+      "bytes": 6137625
+    },
+    "data/processed/correcciones_2026_09_10/base_auditoria.parquet": {
+      "sha256": "34ea9a95c2b26bf96d6d056e26fd0e94770ed0504aaceccf7328b24bda0f4b57",
+      "bytes": 371050
+    },
+    "data/processed/correcciones_2026_09_10/dataset_corte_07.parquet": {
+      "sha256": "d04732fc2af8d368e8ce0cad492a8fa2306d6731ddb01a65e5fd1bf2a71d154d",
+      "bytes": 929117
+    },
+    "data/processed/correcciones_2026_09_10/dataset_corte_14.parquet": {
+      "sha256": "0aac2f5803827c49e844df02b3a0eadbaafce5e0fbaa5997724b09cc5dbf9efb",
+      "bytes": 1214594
+    },
+    "data/processed/correcciones_2026_09_10/dataset_corte_28.parquet": {
+      "sha256": "84f5581c8654a305f2089100f42fa33b733120b7eeb3ecaec71d9c45e8eb1ae7",
+      "bytes": 1530662
+    },
+    "data/processed/correcciones_2026_09_10/dataset_corte_42.parquet": {
+      "sha256": "254c52adc7251e28942108cc061d7242e5748c8345c16b821e81f6a8d189a9e2",
+      "bytes": 1525030
+    },
+    "data/processed/correcciones_2026_09_10/dataset_corte_56.parquet": {
+      "sha256": "0845db2b0ef13f9a921591490b410d792d24752e9fb018868d96bf43b2d7f767",
+      "bytes": 1535070
+    },
+    "data/processed/correcciones_2026_09_10/dataset_multiventana.parquet": {
+      "sha256": "0158528460287ba05550b785a338ab77aa87f419cc373102b1b591c8f08c0a58",
+      "bytes": 5882301
+    },
+    "data/processed/correcciones_2026_09_10/entregas_metadatos.parquet": {
+      "sha256": "2b5fdd84fb81c2e0c4499e18c8cf7ebbeef1950625e9a4120a170c05bae62537",
+      "bytes": 734774
+    },
+    "data/processed/correcciones_2026_09_10/inscripciones_comunes.parquet": {
+      "sha256": "86437f177f40b91973fe32d39dad3d713dc0faab5e62da6925412ba6d0fb10b2",
+      "bytes": 168370
+    },
+    "data/processed/correcciones_2026_09_10/objetivo_corte_07.parquet": {
+      "sha256": "6822869f5fbf86b14d83d3a751465dc353c61e271bf634e9afed2011fd5b0e8c",
+      "bytes": 182095
+    },
+    "data/processed/correcciones_2026_09_10/objetivo_corte_14.parquet": {
+      "sha256": "99f89178eec161eefebe4bb0906f426bff8c8a3dca2f057aaddda97cbd840897",
+      "bytes": 176634
+    },
+    "data/processed/correcciones_2026_09_10/objetivo_corte_28.parquet": {
+      "sha256": "a975242ac05ad54359b5fa59661972ae565359cc97822ae17e17403d59bb6bcd",
+      "bytes": 173884
+    },
+    "data/processed/correcciones_2026_09_10/objetivo_corte_42.parquet": {
+      "sha256": "f6c5cc31271999248e8d6fc2a5a06a8e5ac042aef0abddf051fe9b6542905847",
+      "bytes": 171411
+    },
+    "data/processed/correcciones_2026_09_10/objetivo_corte_56.parquet": {
+      "sha256": "77f86a5bd1cbe635b77ff0df3e6cefec8d7f82458b8fedb7c2ed4e79ef846c61",
+      "bytes": 168694
+    },
+    "data/processed/correcciones_2026_09_10/predictores_corte_07.parquet": {
+      "sha256": "af3a48308805bfd265a8ace9c4a1ba71e53107292d59564cf4fc3b6a7bbffe71",
+      "bytes": 733897
+    },
+    "data/processed/correcciones_2026_09_10/predictores_corte_14.parquet": {
+      "sha256": "7878650091f670fc876169755bbc4140aa6b672fe73487d6a5a2ddc62c993cc2",
+      "bytes": 1020928
+    },
+    "data/processed/correcciones_2026_09_10/predictores_corte_28.parquet": {
+      "sha256": "a09b18372327a096fb7e20fcd5f7c46d593fda7f7cf7cf80f4d28fec3a1cb808",
+      "bytes": 1317306
+    },
+    "data/processed/correcciones_2026_09_10/predictores_corte_42.parquet": {
+      "sha256": "16f645c47b250dd116900086a3576830845b6e8682e85161446c8d30f4bb71d9",
+      "bytes": 1309367
+    },
+    "data/processed/correcciones_2026_09_10/predictores_corte_56.parquet": {
+      "sha256": "117425fb15b4052663dcd638fcb9d4a7f4f697ede9427f529aab2c0b4584bc46",
+      "bytes": 1314229
+    },
+    "data/processed/correcciones_2026_09_10/sensibilidad_duplicados.parquet": {
+      "sha256": "7c0408326e3b60fd0d01a3bc9f4bc4f1ccb0c4e3d22918004975b56f372bd19a",
+      "bytes": 288831
+    },
+    "decision_temporal.json": {
+      "sha256": "83cf462541c822d2dff56987709d666a6278ba8612ea4d518102cfe4448bf63a",
+      "bytes": 1776
+    },
+    "Plantilla_ProyAplicado/abstract.tex": {
+      "sha256": "47426b5e0f7c881e17c2cd29f615f4067c7df75e8f894ed0dd676975a8909e7d",
+      "bytes": 1787
+    },
+    "Plantilla_ProyAplicado/anexos.tex": {
+      "sha256": "94d5941b3cc214eaeab4d8f414cf47dc4362c30103689266fa65c51573936307",
+      "bytes": 13406
+    },
+    "Plantilla_ProyAplicado/anteproyecto.pdf": {
+      "sha256": "a7a58ca943743ecef24aa53b5c796e09338b55752efcfe79551b3c748232d87a",
+      "bytes": 231788
+    },
+    "Plantilla_ProyAplicado/biblio.bib": {
+      "sha256": "d808e790da4564c07b5cd830023a65c106c885989c696723216e29ad03e0bc27",
+      "bytes": 36382
+    },
+    "Plantilla_ProyAplicado/Conclusiones.tex": {
+      "sha256": "a4dc143d64a2199d012c73911c1d5a06b6192031a09cd93b1003362328f07754",
+      "bytes": 2684
+    },
+    "Plantilla_ProyAplicado/desarrollo1.tex": {
+      "sha256": "a4edf82bd3a278bdf4253530f72a1456ba4da41c9b04d514f292af1422357ccc",
+      "bytes": 23724
+    },
+    "Plantilla_ProyAplicado/desarrollo2.tex": {
+      "sha256": "b2c8ac9261c858b92ebefdc766a26f6868dcca6877dfba205e135eea803f0da5",
+      "bytes": 31193
+    },
+    "Plantilla_ProyAplicado/desarrollo3.tex": {
+      "sha256": "b71f44af02a51b931f31517fc9ba0700acf07813848465ae12609979a369dbbb",
+      "bytes": 615
+    },
+    "Plantilla_ProyAplicado/desarrollo4.tex": {
+      "sha256": "a5afe63a9e04cc797c611091d7c2114570be3d3887e72496440b726f95e3d0ed",
+      "bytes": 392
+    },
+    "Plantilla_ProyAplicado/desarrollo5.tex": {
+      "sha256": "fa7d868a05a17fe507fa2a6c8c67b2d9c6ce076374e3110e73af89e497ac2cef",
+      "bytes": 381
+    },
+    "Plantilla_ProyAplicado/descripcion.tex": {
+      "sha256": "eb1eb98df6e04323f25320f30a6f8d7071723851b2ab94ac2b767ee8047fe481",
+      "bytes": 69798
+    },
+    "Plantilla_ProyAplicado/fig_abandono_implicito.pdf": {
+      "sha256": "92e368332b5d4833df8ecd8fea7bb5c0f08e0fb76c39539328374c3a32a78bae",
+      "bytes": 26632
+    },
+    "Plantilla_ProyAplicado/fig_faltantes_fuente.pdf": {
+      "sha256": "5908480fd988be234f3f6c5694f0ad20401503f38961aaa0ee7818c5c2476d64",
+      "bytes": 22388
+    },
+    "Plantilla_ProyAplicado/fig_logratio.pdf": {
+      "sha256": "2d34e8d6955eb7d1f34b32c95640ed51dbced467140e1a376671edb92fe0151e",
+      "bytes": 38728
+    },
+    "Plantilla_ProyAplicado/fig_mahalanobis.pdf": {
+      "sha256": "4b67ec2d64c792b007e0a38c8cc0a402ac4207327b4968a7d67e507d0a4c1f34",
+      "bytes": 34574
+    },
+    "Plantilla_ProyAplicado/fig_momento_retiro.pdf": {
+      "sha256": "eb000181ce23eced3b11165f35367e7506497a4e06b97f55356751b4cb9b4b39",
+      "bytes": 26670
+    },
+    "Plantilla_ProyAplicado/fig_objetivo.pdf": {
+      "sha256": "b87d39f17bf09173517ed86ab3e53c3a404d99df82b1aaf080409cb8de6f41e4",
+      "bytes": 25234
+    },
+    "Plantilla_ProyAplicado/fig_pca.pdf": {
+      "sha256": "b7d847210271d863521cd9a6070b668e70f611a2435e82bd69f0e01ccd4fa34b",
+      "bytes": 127070
+    },
+    "Plantilla_ProyAplicado/figuras_multiventana/01_fechas_retiro.pdf": {
+      "sha256": "9be5746a139ccade0ebdc27a4c9e989b1dfd7b44bd0ec8446f100eb090009dff",
+      "bytes": 13968
+    },
+    "Plantilla_ProyAplicado/figuras_multiventana/01_momento_retiro.pdf": {
+      "sha256": "59376ccb656d4a8a075b6e82d6ffd630c0a9b8bc3802e751f9d4022ee02ab9f1",
+      "bytes": 12521
+    },
+    "Plantilla_ProyAplicado/figuras_multiventana/02_calendario_evaluaciones.pdf": {
+      "sha256": "f599de41ef09f81c3d41a954fa348ec81559f77675beafb2ed91540df1b1e1e2",
+      "bytes": 13836
+    },
+    "Plantilla_ProyAplicado/figuras_multiventana/02_disponibilidad_indicadores.pdf": {
+      "sha256": "89873c215971dff2f424d32caf2760449611efb86da1ffdbb891616ef121f3cb",
+      "bytes": 21497
+    },
+    "Plantilla_ProyAplicado/figuras_multiventana/02_poblacion_cortes.pdf": {
+      "sha256": "da7c7f307603f847162ca3a80b6ff9abfed80d2839b369f126484ca22cfb9254",
+      "bytes": 15247
+    },
+    "Plantilla_ProyAplicado/figuras_multiventana/03_distribuciones_cortes.pdf": {
+      "sha256": "c8d1727b4d3ce32872903bcf8858a58e40fc16d443d9c0d60d91d7ff5a385c12",
+      "bytes": 20392
+    },
+    "Plantilla_ProyAplicado/figuras_multiventana/03_efectos_cortes.pdf": {
+      "sha256": "76ba11b2373d80011bff6388a701ebdda3ad40d7679aea4e4add536798006f95",
+      "bytes": 17381
+    },
+    "Plantilla_ProyAplicado/format.tex": {
+      "sha256": "2cc596d9c71b35a3d53e08d87bfe3241c22fa632ebe806ecca04c16aceb634e9",
+      "bytes": 6810
+    },
+    "Plantilla_ProyAplicado/introduccion.tex": {
+      "sha256": "d8cd5887e5df7d0835807e1ab9fd1f509bbbb39fbfcf5297714996fe71303310",
+      "bytes": 1886
+    },
+    "Plantilla_ProyAplicado/proyecto.pdf": {
+      "sha256": "8edfad10ed4b32eeaf262d24e5ea3a4d5307b188413773807fd6b3fb9f39186c",
+      "bytes": 884331
+    },
+    "Plantilla_ProyAplicado/proyecto.tex": {
+      "sha256": "3aa92b009a627313041edf19faef903ec8d607f0b62066f2271cfc62968b77e6",
+      "bytes": 3241
+    },
+    "README_REVISION.md": {
+      "sha256": "417e9dbcc4c9a08cd15971cf98139652468e4c3e86a8b81d9fb89722a4e8d1c7",
+      "bytes": 10924
+    },
+    "reportes/correcciones_2026_09_10/01_carga_exploracion_ejecucion.json": {
+      "sha256": "a02da8e1971483a247b798093932afb90840217a15aab05043e4350cce0edcff",
+      "bytes": 310
+    },
+    "reportes/correcciones_2026_09_10/01_resumen.json": {
+      "sha256": "16d41a01ff9fc515847c015981b452f592a38168818669cabbfc7baada6d9202",
+      "bytes": 1378
+    },
+    "reportes/correcciones_2026_09_10/02_feature_engineering_ejecucion.json": {
+      "sha256": "1f5211696056d96366ebce4f2cf9aac1132ed1b0d371209e95f3834879d143b9",
+      "bytes": 312
+    },
+    "reportes/correcciones_2026_09_10/02_resumen.json": {
+      "sha256": "226937e162766930afb0c40bcc00585655cb198e026eac07b970e0c79571f295",
+      "bytes": 3084
+    },
+    "reportes/correcciones_2026_09_10/03_analisis_estadistico_ejecucion.json": {
+      "sha256": "37c178b4bd0f757844d0b6d07fd8a353d4c9488b8dcbd2541eac898221ed5b1b",
+      "bytes": 312
+    },
+    "reportes/correcciones_2026_09_10/03_resumen.json": {
+      "sha256": "4b672e4caf3947d234046e7eee0cd749adc34bf21872739a79ad519622594758",
+      "bytes": 484
+    },
+    "reportes/correcciones_2026_09_10/actualizacion_asesor.md": {
+      "sha256": "d83a9f960d5de6b17a3dd0fab055f7c46b4d009a57b153eb36e779075ba3638a",
+      "bytes": 7725
+    },
+    "reportes/correcciones_2026_09_10/ajuste_editorial_figura.json": {
+      "sha256": "39400d107bed040a86c106ff3099935e133e6ec55745ee2619960b21b6da6e2b",
+      "bytes": 386
+    },
+    "reportes/correcciones_2026_09_10/decision_temporal.json": {
+      "sha256": "83cf462541c822d2dff56987709d666a6278ba8612ea4d518102cfe4448bf63a",
+      "bytes": 1776
+    },
+    "reportes/correcciones_2026_09_10/entorno.json": {
+      "sha256": "0685b10cae195aa075d8cd08af886ebc54a9c31d28ecc337a222398bff45358e",
+      "bytes": 204
+    },
+    "reportes/correcciones_2026_09_10/entrega.md": {
+      "sha256": "97d356794a98f0ff7be7ce89336623238d861ebfbe95871a847129a158e259d0",
+      "bytes": 10607
+    },
+    "reportes/correcciones_2026_09_10/figuras/01_fechas_retiro.pdf": {
+      "sha256": "9be5746a139ccade0ebdc27a4c9e989b1dfd7b44bd0ec8446f100eb090009dff",
+      "bytes": 13968
+    },
+    "reportes/correcciones_2026_09_10/figuras/01_momento_retiro.pdf": {
+      "sha256": "59376ccb656d4a8a075b6e82d6ffd630c0a9b8bc3802e751f9d4022ee02ab9f1",
+      "bytes": 12521
+    },
+    "reportes/correcciones_2026_09_10/figuras/02_calendario_evaluaciones.pdf": {
+      "sha256": "f599de41ef09f81c3d41a954fa348ec81559f77675beafb2ed91540df1b1e1e2",
+      "bytes": 13836
+    },
+    "reportes/correcciones_2026_09_10/figuras/02_disponibilidad_indicadores.pdf": {
+      "sha256": "89873c215971dff2f424d32caf2760449611efb86da1ffdbb891616ef121f3cb",
+      "bytes": 21497
+    },
+    "reportes/correcciones_2026_09_10/figuras/02_poblacion_cortes.pdf": {
+      "sha256": "da7c7f307603f847162ca3a80b6ff9abfed80d2839b369f126484ca22cfb9254",
+      "bytes": 15247
+    },
+    "reportes/correcciones_2026_09_10/figuras/03_distribuciones_cortes.pdf": {
+      "sha256": "c8d1727b4d3ce32872903bcf8858a58e40fc16d443d9c0d60d91d7ff5a385c12",
+      "bytes": 20392
+    },
+    "reportes/correcciones_2026_09_10/figuras/03_efectos_cortes.pdf": {
+      "sha256": "76ba11b2373d80011bff6388a701ebdda3ad40d7679aea4e4add536798006f95",
+      "bytes": 17381
+    },
+    "reportes/correcciones_2026_09_10/fuentes.json": {
+      "sha256": "2f8e19f117f44620fe8ea13f338e0e012dac0852362021aea376ceb921c65d8d",
+      "bytes": 915
+    },
+    "reportes/correcciones_2026_09_10/informes/01_exploracion.pdf": {
+      "sha256": "0ba699592ed9b28f077ce5f9c05695f831848bd1e128891ecc29afc89df40d55",
+      "bytes": 157096
+    },
+    "reportes/correcciones_2026_09_10/informes/01_exploracion.tex": {
+      "sha256": "bea00c4ef2958c99c56d01138f4aed4e25925b488291de7792b45acfbf096064",
+      "bytes": 1073
+    },
+    "reportes/correcciones_2026_09_10/informes/01_exploracion_contenido.tex": {
+      "sha256": "f0c1343b6d915d7b700734e59d75dde3218e5c5de9ebf051633b16aff5df653a",
+      "bytes": 13115
+    },
+    "reportes/correcciones_2026_09_10/informes/02_ingenieria.pdf": {
+      "sha256": "c5a96c5f42d5bcf730906d41b6c57afb1d5af016c5166dd2a6edd53c9ac6a132",
+      "bytes": 290972
+    },
+    "reportes/correcciones_2026_09_10/informes/02_ingenieria.tex": {
+      "sha256": "307cfc573cc25528852ce0aac008469abda438e3bd72b9d534b36d09b43a9a29",
+      "bytes": 1057
+    },
+    "reportes/correcciones_2026_09_10/informes/02_ingenieria_contenido.tex": {
+      "sha256": "4a71a1b35dff8919a425bc7963175abb86082d3397f653fef137803fed936ad1",
+      "bytes": 25630
+    },
+    "reportes/correcciones_2026_09_10/informes/03_estadistica.pdf": {
+      "sha256": "6d48bb0457efd69b09d1fabfb813f41eacd6cda86668e4a27e07c32a9067c303",
+      "bytes": 249719
+    },
+    "reportes/correcciones_2026_09_10/informes/03_estadistica.tex": {
+      "sha256": "08bd2958a7c4279a6e0ebf4feaa716c7f44fbf84492eaa1c695d461211697351",
+      "bytes": 1068
+    },
+    "reportes/correcciones_2026_09_10/informes/03_estadistica_contenido.tex": {
+      "sha256": "7e820632c0dd3d2e2c0fba564eedf5ceb42a47ca902fa0e7d150c2cbe839f998",
+      "bytes": 28313
+    },
+    "reportes/correcciones_2026_09_10/informes/referencias_revision.bib": {
+      "sha256": "e156a1b945994fb0f7ea50aa3ae76b52786c4ba2f9e46e90a73782a8b51e1edb",
+      "bytes": 1490
+    },
+    "reportes/correcciones_2026_09_10/productos_02.json": {
+      "sha256": "4e571a5bc4da0d19f11b65be237853ede22ba213c147abdd3ad7ed1cfc7ea214",
+      "bytes": 1720
+    },
+    "reportes/correcciones_2026_09_10/registro_hallazgos.csv": {
+      "sha256": "5238b10c83b8796b12aedcfa062309385f0745bdd47c101a9e6cd3cf7a28b24a",
+      "bytes": 4127
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_consistencia_temporal.csv": {
+      "sha256": "a2d89a8d68e72cf95a87ad44316c5b296236fe762af30a353384fa5ac7b1c39c",
+      "bytes": 418
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_dimensiones.csv": {
+      "sha256": "28683cad9c2efca5e4a247d9b85f9e8cd83b9fc733826a5df58b7b7962daa4c0",
+      "bytes": 220
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_discrepancias_retiro.csv": {
+      "sha256": "62dcb757048befc82627de06f5529f28fb30f87edfd18610a694c5220269e17b",
+      "bytes": 3026
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_duplicados.csv": {
+      "sha256": "276b26f72cd41f605bdc11c85959b7e0a08846238444ec1bd79cb6a0d0557581",
+      "bytes": 191
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_faltantes.csv": {
+      "sha256": "ce059fcc555230e687163c56189a560146dcb78400d2a99b4439481f498ae673",
+      "bytes": 473
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_fechas_evaluacion_ausentes.csv": {
+      "sha256": "f8db6730f2030d795f6867f1069760d69f92f87ccd91d2090657db17483a395b",
+      "bytes": 304
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_integridad.csv": {
+      "sha256": "110dcfff6bd25b4d860d2f18abad8514b6e2f3af5efb4af20f52e7bd908a9aeb",
+      "bytes": 337
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_momento_retiro.csv": {
+      "sha256": "29cc185b3613c9826b1604c7076ed13df60b1b6fb959e4e38f368c8b819e93e5",
+      "bytes": 262
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_pesos.csv": {
+      "sha256": "df2577e886f6a5ad846e79408e41186562d57c23e76f0f459332935c982b3596",
+      "bytes": 1193
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_rangos.csv": {
+      "sha256": "2f27ddeaf550c5eaaa05c72f99ad4686b4fd82b4ece992c214ad7be92f412362",
+      "bytes": 320
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_retiro_resultado.csv": {
+      "sha256": "b3eb1a666de8e9245673df6807c98a2a3de439691af259d8a062ce6ad9483e7c",
+      "bytes": 91
+    },
+    "reportes/correcciones_2026_09_10/tablas/01_sensibilidad_cortes.csv": {
+      "sha256": "776b07ccb55e654185758de380c2ade16c9896d265c29d581ca5bf7f13a7d13f",
+      "bytes": 406
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_comparacion_cortes.csv": {
+      "sha256": "5cff1bb411a2890e62f7db3af6e016afe4ca8122cab4eb247a338aeaa8627f2b",
+      "bytes": 528
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_diccionario.csv": {
+      "sha256": "54db6c1278182826fa969764f32a71f867024527959d42e729b693ddb351543b",
+      "bytes": 6162
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_disponibilidad.csv": {
+      "sha256": "fda5f064dd56c70950f397ff7acec8b22da523356f580e41396604afa9118cc0",
+      "bytes": 7106
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_enlace_corte28.csv": {
+      "sha256": "40c15db0f48fc9ae128df6c87858379cdddaa319f188aaa3c21791b7154ce03e",
+      "bytes": 186
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_flujos.csv": {
+      "sha256": "c9f923a3068106a0de63a5ad7b9b8d55dda1c1566623440720c6d19a055d2a38",
+      "bytes": 998
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_inactividad.csv": {
+      "sha256": "6fccf3daf83dfed6291c36b4a22bda666a139de0dae3b56b2f492f76e2a362cc",
+      "bytes": 607
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_particion_exclusiones.csv": {
+      "sha256": "93a1eef6fc587b8bcfa5d7d4e841c79ce46fb21c8acdb499c8d8803fc41d80f7",
+      "bytes": 274
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_por_presentacion.csv": {
+      "sha256": "e82b2a573d8ec15a767b4013911dde967c4f8158154503dbca0b14c087d79ca6",
+      "bytes": 3268
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_primera_evaluacion.csv": {
+      "sha256": "f77546521d33b71a9d6c99251e1bc54593ae7a70ab3eaa22107874516edd8c78",
+      "bytes": 400
+    },
+    "reportes/correcciones_2026_09_10/tablas/02_transiciones.csv": {
+      "sha256": "102285082db2c13dadda01d39d2064e932d476797cc13af83b727643dab56b2d",
+      "bytes": 115
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_atipicos.csv": {
+      "sha256": "621c1a7c2e3b369da5c8f2d4e17860a9e0081cb8de6d1a7d84a5222c66aa4ccf",
+      "bytes": 4473
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_categoricas.csv": {
+      "sha256": "c9a191234257e007f02234802311b6d8ba6c32971095dddb36e29554eb3178bb",
+      "bytes": 2291
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_cohorte_comun.csv": {
+      "sha256": "13726c6a968cf05afd7cbec5e6d4b3e57f69781b6d7af6868b5cb25c291c2762",
+      "bytes": 1619
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_comparacion_cv.csv": {
+      "sha256": "3aaa200cc72dfdcacd090e49c63180f8ce81eedaefda1fc721a6c661c7ed7d66",
+      "bytes": 516
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_condiciones.csv": {
+      "sha256": "c88d26b8e011c6d48a69a15c19b01fa03debf2196cd9c55d5414b82f96a9f40e",
+      "bytes": 2619
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_contexto_numerico.csv": {
+      "sha256": "8e35e46eb0ee0afd1e3c2f711cdb3239119f7d178b5091f95c2da1266f370951",
+      "bytes": 825
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_descriptivos.csv": {
+      "sha256": "c2f83deecbe0b7fe8f45c562be3a1219fd442a4c1678536747795ceacd08f71f",
+      "bytes": 9344
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_efectos.csv": {
+      "sha256": "4751967206adfdb34af13276465da5f84ea8ab17aee2da72d20c7404a58f9f4f",
+      "bytes": 7828
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_estabilidad_bootstrap.csv": {
+      "sha256": "a8c357a9614e3dbade8f9d0835721365b1a399dc8c6c2d05b5f1678badef03ce",
+      "bytes": 18183
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_estabilidad_resumen.csv": {
+      "sha256": "5fcfe79d4d7c598234f43b861e01ef5821e236bd2ef5077c13040fa73e3fd9b0",
+      "bytes": 6964
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_mcd.csv": {
+      "sha256": "d3a91ab5e45b2ef54952b4af1db8587be58320ef674a4cbb4c8a77f24fb7ad2e",
+      "bytes": 239
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_niveles.csv": {
+      "sha256": "da06ff22725b8706642e1368761c05f58652b320b0926688eac193f87794a03d",
+      "bytes": 12262
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_pca.csv": {
+      "sha256": "30dcf880750d2e57233b2b0957a40da4797969e22d751a5608c204fd4968692c",
+      "bytes": 1267
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_pca_cargas.csv": {
+      "sha256": "2804ecda0715ac94c69d6c0cec16f8a75c922a90edaa44cc9360dc994eacd001",
+      "bytes": 4819
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_sensibilidad_duplicados_efectos.csv": {
+      "sha256": "a079a974aacf0b6c381568a801e10e3721ec3bdf788cc44c21ea3f098f67cba3",
+      "bytes": 3093
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_sensibilidad_pca.csv": {
+      "sha256": "5eb37e96cff7ce6fbaf12643a70bf114af2df4a9e98010fa56375f905b0fc5f8",
+      "bytes": 1746
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_07.csv": {
+      "sha256": "f0e3398086f7393582c092eb6de39fac46d7d9c9ad09cdc36e8fdd6a0b5271e5",
+      "bytes": 2709
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_14.csv": {
+      "sha256": "a8777905ee1ba876b284a0996ee351440f6563d6d341f1b29c9840ea6f0a59d7",
+      "bytes": 3741
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_28.csv": {
+      "sha256": "d2a25bd88b817f023e6248e651a51692e82496ec8ba536026be9994a5acf890f",
+      "bytes": 4298
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_42.csv": {
+      "sha256": "8643fa877c51c2077f3a1d1036f1b21b810de48b7d89916e2594478b0ae61885",
+      "bytes": 4318
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_56.csv": {
+      "sha256": "9a229e43b99d38f2fdfdf3a7d8f7218fa6c5d785f45cbfbcd95f699f9aece398",
+      "bytes": 4306
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_n_07.csv": {
+      "sha256": "e3f9002ca36e12208183c2e764fac3ab249e8f12017260fb449c41cd5b542dc7",
+      "bytes": 1211
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_n_14.csv": {
+      "sha256": "35e6179c6e5fb5d1e599f2e3cf6ef1db935e95d73ae1f40f9c3e3f8bf1f94f5d",
+      "bytes": 1568
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_n_28.csv": {
+      "sha256": "c5f4494bae229452b9f803c800f311015f2fc9f6ecd884b155989027c912e264",
+      "bytes": 1786
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_n_42.csv": {
+      "sha256": "797222950b332d77f037a753d7133843759b2992c9703abe51887496ff138de0",
+      "bytes": 1786
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_spearman_n_56.csv": {
+      "sha256": "afc7ff555c9c0221efc4457f694de28148f6dc8b3fe08266fae67482bb5d9676",
+      "bytes": 1786
+    },
+    "reportes/correcciones_2026_09_10/tablas/03_vif.csv": {
+      "sha256": "6e2d9bbf6096ca125ac2111eb0f4a66b06c0fa42c6c7f94484f9db77c7c1caba",
+      "bytes": 980
+    },
+    "reportes/correcciones_2026_09_10/verificacion_documental.json": {
+      "sha256": "1121ddfaebb318d20c4c32cdcfedbfb20f66c03e56406462aa5bfb3c39e90428",
+      "bytes": 19525
+    },
+    "reportes/correcciones_2026_09_10/verificacion_informes.json": {
+      "sha256": "94c1e7bdc2ddaa1260198b812b254655df480ad3650b50d80a215a6fb24bf119",
+      "bytes": 924
+    },
+    "reportes/correcciones_2026_09_10/verificaciones_ampliacion.json": {
+      "sha256": "6671efda65dd5371cc47464eebf150f21a4ca142b19226493c01c8d295d04ec2",
+      "bytes": 1142
+    },
+    "reportes/correcciones_2026_09_10/verificaciones_independientes.json": {
+      "sha256": "0e7cef396c78ed45e0e77129473f2e76ad52fdfc78d7cdef8bbecd611045ed74",
+      "bytes": 4776
+    },
+    "scripts/ajustar_figura_efectos.py": {
+      "sha256": "60b0ed534c376a739a38b4379bfb25fc54082be62750077f0a85098c598660de",
+      "bytes": 1906
+    },
+    "scripts/auditar_bitacora_correcciones.py": {
+      "sha256": "25f12a88cedffbafe090b6b20fdcd410ac378ab36c29380a702d1c680d531810",
+      "bytes": 4571
+    },
+    "scripts/compilar_informes.ps1": {
+      "sha256": "6e323c271a352ce1676ce04fc1345ecaa5d9bb0049e4dfc973610530bd51693b",
+      "bytes": 1138
+    },
+    "scripts/compilar_proyecto.ps1": {
+      "sha256": "4e7056ca8351478391e4d7dc016ccec72d1a47b9d6d1ebeb62b605f9a76e5c0c",
+      "bytes": 1158
+    },
+    "scripts/contenido_correcciones.py": {
+      "sha256": "6088149ee669e7ff5bb6c273b482bd7779c617caa78e84a3bbbba1fd3631a310",
+      "bytes": 17462
+    },
+    "scripts/ejecutar_notebooks.py": {
+      "sha256": "7112f5056f28ea9698ce45a322f6eefededf95f04bd94ee161829a9887d2680a",
+      "bytes": 3815
+    },
+    "scripts/generar_informe_asesor.py": {
+      "sha256": "506e0b9c49e93fbbb39f8a8641387b8cab62fc0063274955246ec69b2c13abb2",
+      "bytes": 7947
+    },
+    "scripts/generar_informes.py": {
+      "sha256": "01f8eb46b2600627a0158fea3eb5ee3a55a73bb59a5ba83cef6b45f810621463",
+      "bytes": 3863
+    },
+    "scripts/generar_multiventana.py": {
+      "sha256": "47e7e649e60f17dac5009c5f01742f15aae8f63d8039fb2deec5e4c579c8450f",
+      "bytes": 22844
+    },
+    "scripts/integrar_correcciones.py": {
+      "sha256": "a501329238c9eb941e333d9343e34e20e69537e6119c96ca27795665786cd391",
+      "bytes": 8090
+    },
+    "scripts/registrar_entrega_correcciones.py": {
+      "sha256": "e1a15a7ae2b0fb8318f9e9b0188763499b2b0c9ad2681ee40e2fa208f9f8687b",
+      "bytes": 7666
+    },
+    "scripts/verificar_informes.py": {
+      "sha256": "0558b98af463dacc61669eea4446fa2110b73ac7229a0316de7b890d5d8f1786",
+      "bytes": 3103
+    },
+    "scripts/verificar_matematica_marco.py": {
+      "sha256": "835379b01f2dcbeb5482cb2d3d3ab9cc1c326dc035959cac140138399ef466b2",
+      "bytes": 4179
+    },
+    "scripts/verificar_multiventana.py": {
+      "sha256": "c209690312b3a62c4fc79694ff99b90c622a4d7a49657ffa49b9a57cec3f3dce",
+      "bytes": 6379
+    },
+    "scripts/verificar_proyecto.py": {
+      "sha256": "329e404570b77b25e0a2a68aa3da1c213d7ad39e643a229e559d401932aab2d1",
+      "bytes": 3578
+    },
+    "scripts/verificar_revision.py": {
+      "sha256": "31bd86f201b7f8cdec6554812bb689509cb6f92dbc4e920432c4761961d81d50",
+      "bytes": 129
+    },
+    "src/AGENTS.md": {
+      "sha256": "f09e57d1a935ca0553df56771ee5acde5f75a001d70aa86656a1b5b8ba7a8f57",
+      "bytes": 3772
+    },
+    "src/ampliacion_oulad.py": {
+      "sha256": "3f81d30b9e695474969a28e61200d0f6d51f6f9f9a3b3be793de617d663f09d1",
+      "bytes": 8812
+    },
+    "src/diccionario_oulad.py": {
+      "sha256": "f443aa74042bf220b040b7aff017495a4e25be9fe317c963212d71bde8f38e0c",
+      "bytes": 3369
+    },
+    "src/oulad_revision.py": {
+      "sha256": "d055357fb4d56b55af363cf0a74021d5b4dcfe8fbfad600a2913721929cf28d6",
+      "bytes": 4804
+    },
+    "src/ventanas_oulad.py": {
+      "sha256": "ace199597f60469d7ab74c6bbfa8ab26a939d0eaeaa8541790329c9566b3f59e",
+      "bytes": 9742
+    }
+  }
+}

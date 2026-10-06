@@ -1,0 +1,26 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\babelprovide[import,main]{spanish}
+\renewcommand{\tablename}{Tabla}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,longtable,array,xcolor,hyperref,needspace,float}
+\let\originalsection\section
+\renewcommand{\section}{\Needspace{.42\textheight}\originalsection}
+\definecolor{azul}{RGB}{0,73,118}
+\hypersetup{colorlinks=true,linkcolor=azul,urlcolor=azul,citecolor=azul}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\title{\color{azul}Auditoría de OULAD para el análisis de cinco ventanas temporales}
+\author{Oriana Giraldo Arcia \and Luis Javier Rubio Hernández}
+\date{Proyecto Aplicado de Ciencia de Datos, PUJ Cali\\Revisión técnica: 10 de septiembre de 2026}
+\begin{document}
+\renewcommand{\tablename}{Tabla}
+\maketitle
+\input{01_exploracion_contenido.tex}
+\par\vspace{6pt}
+\bibliographystyle{plain}
+\bibliography{referencias_revision}
+\end{document}
