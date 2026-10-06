@@ -30,7 +30,7 @@ Los notebooks de `notebooks/historico_2026_09_06/`, las figuras de `reportes/fig
 3. Desde la raíz ejecutar `python scripts/ejecutar_notebooks.py`. Genera los archivos procesados ignorados por Git y actualiza las salidas guardadas. El tercer notebook utiliza 5.000 remuestreos y puede tardar; respaldar los productos antes de repetirlo.
 4. Ejecutar `python scripts/verificar_entrega_2026_10_06.py`. Requiere los productos procesados del paso anterior. La ejecución actual de comprobaciones no implica que todos los notebooks se hayan repetido en esta integración.
 
-Guía detallada: [EJECUCION_LOCAL.md](EJECUCION_LOCAL.md). Los notebooks encuentran la raíz mediante `OULAD_ROOT` o desde el directorio de trabajo. No subir los CSV, nuevos parquet, entornos o respaldos.
+Los notebooks encuentran la raíz mediante `OULAD_ROOT` o desde el directorio de trabajo. No subir los CSV, nuevos parquet, entornos o respaldos. Las guías personales de trabajo (`AGENTS.md`, `EJECUCION_LOCAL.md` y `ESTILO_VISUAL.md`) se conservan localmente y están excluidas del seguimiento de Git.
 
 Para compilar las fuentes vigentes, usar `./scripts/compilar_proyecto.ps1`, con MiKTeX instalado. Se puede indicar `-PdfLatex` y `-BibTex`, o disponer de ambos ejecutables en PATH. No se instalan paquetes automáticamente. **No ejecutar integradores o migradores históricos sobre las fuentes actuales:** pueden recuperar texto anterior y eliminar correcciones posteriores. Los scripts históricos de revisión que comparan con `respaldo/` requieren los respaldos locales, que no se publican.
 

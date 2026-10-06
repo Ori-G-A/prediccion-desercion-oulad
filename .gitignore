@@ -256,3 +256,8 @@ TESIS APROBADAS/
 **/qa/
 **/compilacion*.txt
 *.bbl
+
+# Guías de trabajo locales; no publicar en ninguna subcarpeta
+AGENTS.md
+EJECUCION_LOCAL.md
+ESTILO_VISUAL.md
