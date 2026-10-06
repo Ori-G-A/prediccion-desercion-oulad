@@ -1,0 +1,56 @@
+{
+  "fecha": "2026-10-06",
+  "notebooks": [
+    {
+      "copia": "trabajo_local",
+      "ruta": "notebooks/01_carga_exploracion.ipynb",
+      "bytes_identicos": true,
+      "celdas_sintaxis_valida": 8,
+      "sha256": "63b1c525b6e20e8b4f158afb7a4e352f7a30768c36844c1b549cf90f4d1d3f38"
+    },
+    {
+      "copia": "trabajo_local",
+      "ruta": "notebooks/02_feature_engineering.ipynb",
+      "bytes_identicos": true,
+      "celdas_sintaxis_valida": 5,
+      "sha256": "a1a05fcd0f55c2c81e9a018f728b49230c31ab0be9a47bc00611ae8de6036748"
+    },
+    {
+      "copia": "trabajo_local",
+      "ruta": "notebooks/03_analisis_estadistico.ipynb",
+      "bytes_identicos": true,
+      "celdas_sintaxis_valida": 8,
+      "sha256": "95a57fb7c35721d513d5844e5b0d09038f6f65aeb27ead954f7f459acd291dfc"
+    },
+    {
+      "copia": "repositorio",
+      "ruta": "notebooks/01_carga_exploracion.ipynb",
+      "bytes_identicos": true,
+      "celdas_sintaxis_valida": 8,
+      "sha256": "63b1c525b6e20e8b4f158afb7a4e352f7a30768c36844c1b549cf90f4d1d3f38"
+    },
+    {
+      "copia": "repositorio",
+      "ruta": "notebooks/02_feature_engineering.ipynb",
+      "bytes_identicos": true,
+      "celdas_sintaxis_valida": 5,
+      "sha256": "a1a05fcd0f55c2c81e9a018f728b49230c31ab0be9a47bc00611ae8de6036748"
+    },
+    {
+      "copia": "repositorio",
+      "ruta": "notebooks/03_analisis_estadistico.ipynb",
+      "bytes_identicos": true,
+      "celdas_sintaxis_valida": 8,
+      "sha256": "95a57fb7c35721d513d5844e5b0d09038f6f65aeb27ead954f7f459acd291dfc"
+    }
+  ],
+  "analisis_integral_reejecutado": false,
+  "historicos_sin_cambios": true,
+  "ejecutor_tres_notebooks_prueba": "correcto; solo arranque real y lectura de muestra, no análisis completo",
+  "apertura_desde_notebooks_sin_variable_entorno": "tres arranques correctos",
+  "verificaciones_independientes": 49,
+  "alcance": "Traslado íntegro, sintaxis, rutas, arranque y 49 verificaciones; sin repetir bootstrap, PCA ni todos los análisis.",
+  "kernel_jupyter_real": "correcto desde notebooks/: dependencias, lectura de siete CSV, sintaxis y celda inicial",
+  "comando_kernel": ".venv/Scripts/python.exe scripts/verificar_entorno_local.py",
+  "limite_comprobaciones": "Tres de las 49 verificaciones inspeccionan salidas guardadas; no equivalen a ejecutar notebooks completos."
+}

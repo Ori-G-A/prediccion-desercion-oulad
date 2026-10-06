@@ -25,7 +25,7 @@ def main():
     previous=json.loads((ROOT/'reportes/multiventana_2026_09_08/fuentes.json').read_text(encoding='utf-8'))
     for name,info in read('fuentes.json').items():
         assert digest(ROOT/'data/raw'/f'{name}.csv')==info['sha256']==previous[name]['sha256']
-    notebooks=sorted(ROOT.glob('0[123]*.ipynb'))
+    notebooks=sorted((ROOT/'notebooks').glob('0[123]*.ipynb'))
     for p in notebooks:
         for cell in json.loads(p.read_text(encoding='utf-8'))['cells']:
             if cell['cell_type']=='code':

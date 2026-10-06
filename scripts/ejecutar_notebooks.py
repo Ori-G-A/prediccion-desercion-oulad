@@ -24,7 +24,7 @@ def execute(name):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    path = ROOT / name
+    path = ROOT / 'notebooks' / name
     nb = json.loads(path.read_text(encoding='utf-8'))
     namespace = {'__name__': '__main__'}
     count = 0

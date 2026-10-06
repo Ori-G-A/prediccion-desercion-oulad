@@ -81,7 +81,7 @@ def update_notebooks(figures):
         '03_analisis_estadistico.ipynb': [('03_distribuciones_cortes','distribuciones_cortes(datasets)'), ('03_efectos_cortes','efectos_cortes(effects, CUTS)')]
     }
     for name, calls in mapping.items():
-        p = ROOT / name; notebook = json.loads(p.read_text(encoding='utf-8'))
+        p = ROOT / 'notebooks' / name; notebook = json.loads(p.read_text(encoding='utf-8'))
         before_sources = [c.get('source') for c in notebook['cells']]
         for figure_name, call in calls:
             candidates = [c for c in notebook['cells'] if c['cell_type']=='code' and f"figure('{figure_name}')" in ''.join(c['source'])]

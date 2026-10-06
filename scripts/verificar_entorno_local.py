@@ -48,7 +48,7 @@ def main():
     first_cell = None
     for name in ['01_carga_exploracion.ipynb', '02_feature_engineering.ipynb',
                  '03_analisis_estadistico.ipynb']:
-        nb = json.loads((ROOT / name).read_text(encoding='utf-8'))
+        nb = json.loads((ROOT / 'notebooks' / name).read_text(encoding='utf-8'))
         code = [c for c in nb['cells'] if c['cell_type'] == 'code']
         for i, cell in enumerate(code):
             compile(''.join(cell['source']), f'{name}:code{i}', 'exec')
@@ -59,7 +59,7 @@ def main():
     km = KernelManager(kernel_name='python3')
     kc = None
     try:
-        km.start_kernel(cwd=str(ROOT), env=os.environ.copy())
+        km.start_kernel(cwd=str(ROOT / 'notebooks'), env=os.environ.copy())
         kc = km.client()
         kc.start_channels()
         kc.wait_for_ready(timeout=90)

@@ -1,3 +1,5 @@
+> Actualización de estructura — 6 de octubre de 2026: los tres notebooks vigentes están en `notebooks/`. El ejecutor y los scripts de verificación ya utilizan esa ubicación. Las referencias a la raíz en los apartados históricos describen la organización anterior.
+
 # Versión documental para revisión del director: 6 de octubre de 2026
 
 El paquete vigente para la primera entrega está en `reportes/entrega_avance_2026_10_06/LEER_PRIMERO.md`: PDF de avance, informe del cronograma y consultas para el director. La actividad cierra el 19 de octubre a las 23:59. La revisión del director y los acuerdos de calendario siguen pendientes; no se ha enviado el paquete ni realizado la entrega.

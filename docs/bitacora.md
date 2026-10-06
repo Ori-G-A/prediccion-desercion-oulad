@@ -128,3 +128,11 @@ el jurado y alimenta directamente la redacción del documento final.
 - **Límite:** las fechas detalladas y el cierre estimado de mayo no se presentan como aprobados. Los commits de junio y julio documentan antecedentes, no modifican automáticamente el inicio previsto.
 - **Salida → destino:** `docs/cronograma_estimado.md` → seguimiento y próxima actualización de la entrega.
 - **Commit:** véase el historial de esta entrada.
+
+### [2026-10-06] · Organización — Notebooks vigentes en su carpeta
+
+- **Solicitud:** organizar los notebooks activos dentro de `notebooks/` y conservar el funcionamiento del proyecto.
+- **Decisión que sustituye la ubicación anterior:** los tres notebooks vigentes pasan de la raíz a `notebooks/`. Se conserva la subcarpeta histórica sin cambios. El traslado se aplica también a la carpeta de trabajo local.
+- **Cambios:** se actualizan siete scripts que localizan notebooks, la orientación del lanzador de Jupyter y las guías de uso. No se modifica el código ni las salidas de los notebooks.
+- **Validación:** identidad de archivos antes y después, sintaxis, arranque desde la nueva carpeta, prueba aislada del ejecutor y 49 comprobaciones independientes. No se repiten todos los análisis. Evidencia en `docs/validacion_estructura_notebooks_2026_10_06.json`.
+- **Guías locales:** `AGENTS.md`, `EJECUCION_LOCAL.md` y `ESTILO_VISUAL.md` permanecen fuera del seguimiento por solicitud del usuario; el README público contiene las instrucciones de reproducción.

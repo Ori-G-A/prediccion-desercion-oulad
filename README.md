@@ -12,7 +12,7 @@ La unidad es la inscripción (persona, módulo y presentación). Se utilizan los
 
 | Contenido | Ubicación |
 |---|---|
-| Tres notebooks, en orden de ejecución | `01_carga_exploracion.ipynb`, `02_feature_engineering.ipynb`, `03_analisis_estadistico.ipynb`, en la raíz |
+| Tres notebooks, en orden de ejecución | `notebooks/01_carga_exploracion.ipynb`, `notebooks/02_feature_engineering.ipynb`, `notebooks/03_analisis_estadistico.ipynb` |
 | Funciones de análisis y figuras | `src/` |
 | Fuentes vigentes del documento y PDF compilado | `Plantilla_ProyAplicado/` |
 | Tablas, figuras y evidencia analítica | `reportes/correcciones_2026_09_10/` |

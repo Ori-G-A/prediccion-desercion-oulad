@@ -15,7 +15,7 @@ sys.path.insert(0,str(ROOT/'src'))
 from src.oulad_revision import OUT, GRAY, figure, save_json
 from src.figuras_oulad import efectos_cortes
 
-path=ROOT/'03_analisis_estadistico.ipynb'
+path=ROOT/'notebooks/03_analisis_estadistico.ipynb'
 notebook=json.loads(path.read_text(encoding='utf-8'))
 cell=next(c for c in notebook['cells'] if c['cell_type']=='code' and "table('03_efectos',effects)" in ''.join(c['source']))
 table_path=OUT/'tablas/03_efectos.csv'

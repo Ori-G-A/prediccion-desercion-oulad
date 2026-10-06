@@ -66,7 +66,7 @@ def main():
     expected=2*stats.mannwhitneyu(xx[yy==1],xx[yy==0]).statistic/((yy==1).sum()*(yy==0).sum())-1
     check('Bootstrap ponderado y empates',np.isclose(weighted_rank_effect(x,y,w),expected))
     for name in ['01_carga_exploracion.ipynb','02_feature_engineering.ipynb','03_analisis_estadistico.ipynb']:
-        nb=json.loads((ROOT/name).read_text(encoding='utf-8'));cells=[c for c in nb['cells'] if c['cell_type']=='code']
+        nb=json.loads((ROOT/'notebooks'/name).read_text(encoding='utf-8'));cells=[c for c in nb['cells'] if c['cell_type']=='code']
         check(f'Ejecución completa: {name}',all(c['execution_count'] is not None and all(o['output_type']!='error' for o in c['outputs']) for c in cells))
     save_json('verificaciones_independientes.json',checks)
     print(f'{len(checks)} verificaciones satisfactorias.')

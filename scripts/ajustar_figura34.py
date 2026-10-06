@@ -47,7 +47,7 @@ def main():
         fig.savefig(path,dpi=180,bbox_inches='tight')
         shutil.copy2(path,ROOT/'Plantilla_ProyAplicado/figuras_multiventana'/path.name)
     plt.close(fig)
-    notebook_path=ROOT/'03_analisis_estadistico.ipynb'
+    notebook_path=ROOT/'notebooks/03_analisis_estadistico.ipynb'
     nb=json.loads(notebook_path.read_text(encoding='utf-8'))
     original_sources=[c['source'] for c in nb['cells']]
     cells=[c for c in nb['cells'] if c['cell_type']=='code' and "figure('03_distribuciones_cortes')" in ''.join(c['source'])]
