@@ -108,3 +108,23 @@ el jurado y alimenta directamente la redacción del documento final.
 - **Commit:** —
 
 <!-- Nueva entrada debajo de esta línea -->
+
+
+### [2026-10-06] · A1-A3 — Integración de la etapa local y actualización de decisiones
+
+- **Condición detectada:** main conserva el trabajo hasta el 6 de septiembre. La versión local incorpora revisiones posteriores de temporalidad, variables y documentación. La bitácora inicial no las recoge.
+- **Decisión:** conservar el historial y añadir la versión local en una rama para revisión. Los tres notebooks activos se ubican en la raíz, y los cuatro anteriores se conservan sin modificación en `notebooks/historico_2026_09_06/`.
+- **Justificación:** permite enlazar el trabajo previo y los cambios posteriores sin borrar la evidencia. La selección de rutas mantiene el flujo de ejecución ya utilizado localmente.
+- **Cambios metodológicos:** se utilizan cinco cortes inclusivos; se seleccionan inscripciones vigentes al corte y se define retiro futuro hasta el final de la presentación. Las notas permanecen para auditoría y la inactividad es complementaria. Se separan 26 indicadores candidatos y atributos de contexto. La definición dual registrada en junio se conserva como antecedente; esta versión no implementa inactividad como segunda etiqueta. La autorización de implementación del usuario no se presenta como ratificación académica del director.
+- **Evidencia:** `decision_temporal.json`, `src/ventanas_oulad.py`, `reportes/correcciones_2026_09_10/` y `reportes/entrega_avance_2026_10_06/`. Los 49 controles del 6 de octubre no equivalen a reejecutar todos los notebooks.
+- **Salida → destino:** fuentes y resultados locales → caracterización, ingeniería, conclusiones y anexos. Modelos, SHAP y prototipo siguen pendientes.
+- **Commit:** véase el historial de esta entrada en la rama `actualizacion/avance-local-2026-10-06`.
+
+### [2026-10-06] · Seguimiento — Calendario continuo y revisión del plan
+
+- **Condición detectada:** los autores aclararon el inicio previsto el 27 de julio de 2026 y la intención de finalizar en mayo de 2027, trabajando en el receso.
+- **Decisión:** proponer diez bloques mensuales consecutivos hasta el 26 de mayo de 2027 y revisar el plan al finalizar el semestre, según la orientación del director comunicada por el usuario.
+- **Justificación:** permite relacionar los bloques M1-M10 con fechas estimadas sin esperar el calendario académico de 2027 ni confundir la entrega final del curso de noviembre con la terminación del proyecto.
+- **Límite:** las fechas detalladas y el cierre estimado de mayo no se presentan como aprobados. Los commits de junio y julio documentan antecedentes, no modifican automáticamente el inicio previsto.
+- **Salida → destino:** `docs/cronograma_estimado.md` → seguimiento y próxima actualización de la entrega.
+- **Commit:** véase el historial de esta entrada.

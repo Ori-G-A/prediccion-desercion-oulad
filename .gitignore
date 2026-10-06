@@ -224,3 +224,35 @@ data/raw/
 # macOS
 .DS_Store
 data/processed/*.parquet
+
+# Actualización local del 6 de octubre de 2026
+.jupyter/
+respaldo/
+tmp/
+OneDrive*/
+Papers Proyecto Aplicado/
+TESIS APROBADAS/
+*.zip
+*.parquet
+*.feather
+*.pkl
+*.joblib
+.env*
+!.env.example
+*.pem
+*.key
+*.aux
+*.blg
+*.log
+*.idx
+*.lof
+*.lot
+*.maf
+*.mtc*
+*.out
+*.toc
+*.texshop
+**/paginas/
+**/qa/
+**/compilacion*.txt
+*.bbl

@@ -1,0 +1,44 @@
+{
+  "poblacion": {
+    "inscripciones": 32593,
+    "personas": 28785,
+    "personas_con_varias_inscripciones": 3538,
+    "modulos": 7,
+    "presentaciones_modulo": 22
+  },
+  "rangos": {
+    "puntajes_fuera_0_100": 0,
+    "puntajes_ausentes": 173,
+    "clics_no_positivos": 0,
+    "pesos_fuera_0_100": 0,
+    "retiros_antes_matricula": 0,
+    "matriculas_sin_fecha": 45,
+    "matriculas_despues_dia28": 16,
+    "retiros_despues_final_presentacion": 1,
+    "entregas_antes_dia0": 2057,
+    "entregas_reconocidas_banked": 1909,
+    "bandera_banked_fuera_0_1": 0,
+    "registros_vle_antes_matricula": 0,
+    "registros_vle_despues_retiro": 29440,
+    "entregas_despues_retiro": 601
+  },
+  "duplicados_tempranos": {
+    "registros_exactos_tempranos": 140592,
+    "inscripciones_afectadas": 22770,
+    "clics_originales": 7781403,
+    "clics_sin_exactos": 7526875
+  },
+  "integridad": {
+    "inscripciones_info_sin_registro": 0,
+    "inscripciones_registro_sin_info": 0,
+    "entregas_sin_evaluacion": 0,
+    "inscripciones_entregas_sin_registro": 0,
+    "inscripciones_vle_sin_registro": 0,
+    "recursos_con_modulo_presentacion_incorrectos": 0,
+    "inscripciones_sin_presentacion": 0,
+    "evaluaciones_sin_presentacion": 0,
+    "recursos_sin_presentacion": 0
+  },
+  "retiros_registrados": 10072,
+  "discrepancias_retiro_resultado": 102
+}

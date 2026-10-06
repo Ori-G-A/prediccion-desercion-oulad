@@ -1,0 +1,44 @@
+[
+  {
+    "fuente": "Kuzilek, Hlosta y Zdrahal (2017), Scientific Data 4:170171",
+    "url": "https://oro.open.ac.uk/53873/1/Untitled.pdf",
+    "consulta": "Texto del descriptor; estructura relacional y registros diarios",
+    "fecha": "2026-09-08"
+  },
+  {
+    "fuente": "Field y Welsh (2007), JRSS B 69(3):369-390",
+    "url": "https://bemlar.ism.ac.jp/zhuang/Refs/Refs/field2007jrssb.pdf",
+    "consulta": "Introducción y definición de cluster bootstrap; no se extrapolan garantías particulares de cobertura",
+    "fecha": "2026-09-08"
+  },
+  {
+    "fuente": "SciPy: mannwhitneyu",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mannwhitneyu.html",
+    "consulta": "Documentación de U y empates; no se usa p iid para inferencia",
+    "fecha": "2026-09-08"
+  },
+  {
+    "fuente": "Scikit-learn: PCA",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html",
+    "consulta": "Documentación de implementación",
+    "fecha": "2026-09-08"
+  },
+  {
+    "fuente": "Scikit-learn: MinCovDet",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.covariance.MinCovDet.html",
+    "consulta": "Documentación de implementación y límites de aplicación",
+    "fecha": "2026-09-08"
+  },
+  {
+    "fuente": "Scikit-learn: Common pitfalls",
+    "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+    "consulta": "Separación entrenamiento/prueba y transformaciones aprendidas",
+    "fecha": "2026-09-08"
+  },
+  {
+    "fuente": "Little y Rubin (2019), Statistical Analysis with Missing Data, tercera edición",
+    "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119482260",
+    "consulta": "Solo ficha bibliográfica; no se afirma haber consultado el libro completo ni se usa como prueba de mecanismos de los datos",
+    "fecha": "2026-09-08"
+  }
+]

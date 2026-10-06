@@ -1,0 +1,16 @@
+﻿corte,especificacion,n,variables,columnas,varianza_2_pct
+7,original_mismos_casos,18704,5,log_volumen | proporcion_activa | log_intensidad | recencia | CV_calendario,84.27122937966844
+7,sin_volumen,18704,4,proporcion_activa | log_intensidad | recencia | CV_calendario,80.53263891397633
+7,intensidad_activa,18704,4,proporcion_activa | log_intensidad | recencia | CV_activo,68.57205352276137
+14,original_mismos_casos,22779,5,log_volumen | proporcion_activa | log_intensidad | recencia | CV_calendario,84.72865363893509
+14,sin_volumen,22779,4,proporcion_activa | log_intensidad | recencia | CV_calendario,81.25432302193116
+14,intensidad_activa,22779,4,proporcion_activa | log_intensidad | recencia | CV_activo,68.99727827206841
+28,original_mismos_casos,25227,5,log_volumen | proporcion_activa | log_intensidad | recencia | CV_calendario,85.9547914332375
+28,sin_volumen,25227,4,proporcion_activa | log_intensidad | recencia | CV_calendario,82.90656820850715
+28,intensidad_activa,25227,4,proporcion_activa | log_intensidad | recencia | CV_activo,70.48245875257916
+42,original_mismos_casos,25323,5,log_volumen | proporcion_activa | log_intensidad | recencia | CV_calendario,86.61359816504525
+42,sin_volumen,25323,4,proporcion_activa | log_intensidad | recencia | CV_calendario,83.72215414824107
+42,intensidad_activa,25323,4,proporcion_activa | log_intensidad | recencia | CV_activo,70.76057562263085
+56,original_mismos_casos,25147,5,log_volumen | proporcion_activa | log_intensidad | recencia | CV_calendario,86.33589798630469
+56,sin_volumen,25147,4,proporcion_activa | log_intensidad | recencia | CV_calendario,83.4111960460879
+56,intensidad_activa,25147,4,proporcion_activa | log_intensidad | recencia | CV_activo,69.77434864582486

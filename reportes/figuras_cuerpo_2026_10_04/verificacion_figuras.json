@@ -1,0 +1,49 @@
+{
+  "filas_csv": 235,
+  "celdas_anexo_cotejadas": 145,
+  "conteos_y_porcentajes_coinciden": true,
+  "totales_por_corte": {
+    "7": {
+      "n": 29076,
+      "retiros": 6632
+    },
+    "14": {
+      "n": 28054,
+      "retiros": 5580
+    },
+    "28": {
+      "n": 27515,
+      "retiros": 5012
+    },
+    "42": {
+      "n": 27005,
+      "retiros": 4500
+    },
+    "56": {
+      "n": 26506,
+      "retiros": 3998
+    }
+  },
+  "fecha": "2026-10-04",
+  "figuras": [
+    "contexto_age_band_28",
+    "contexto_disability_28",
+    "contexto_imd_band_28",
+    "contexto_region_28",
+    "contexto_cortes",
+    "contexto_region_cortes",
+    "asociaciones_contexto",
+    "relacion_cv_actividad"
+  ],
+  "sha256_fuentes": {
+    "03_niveles.csv": "da06ff22725b8706642e1368761c05f58652b320b0926688eac193f87794a03d",
+    "03_categoricas.csv": "c9a191234257e007f02234802311b6d8ba6c32971095dddb36e29554eb3178bb",
+    "03_comparacion_cv.csv": "3aaa200cc72dfdcacd090e49c63180f8ce81eedaefda1fc721a6c661c7ed7d66"
+  },
+  "celdas_cramer_cotejadas": 40,
+  "correlaciones_cv_cotejadas": 10,
+  "tablas_analiticas_modificadas": false,
+  "ejecucion_analitica_completa": false,
+  "tamano_diseno_pulgadas": 6.8,
+  "textos_dentro_del_lienzo": true
+}

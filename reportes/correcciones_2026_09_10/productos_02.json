@@ -1,0 +1,19 @@
+{
+  "dataset_corte_07.parquet": "d04732fc2af8d368e8ce0cad492a8fa2306d6731ddb01a65e5fd1bf2a71d154d",
+  "dataset_corte_14.parquet": "0aac2f5803827c49e844df02b3a0eadbaafce5e0fbaa5997724b09cc5dbf9efb",
+  "dataset_corte_28.parquet": "84f5581c8654a305f2089100f42fa33b733120b7eeb3ecaec71d9c45e8eb1ae7",
+  "dataset_corte_42.parquet": "254c52adc7251e28942108cc061d7242e5748c8345c16b821e81f6a8d189a9e2",
+  "dataset_corte_56.parquet": "0845db2b0ef13f9a921591490b410d792d24752e9fb018868d96bf43b2d7f767",
+  "dataset_multiventana.parquet": "0158528460287ba05550b785a338ab77aa87f419cc373102b1b591c8f08c0a58",
+  "inscripciones_comunes.parquet": "86437f177f40b91973fe32d39dad3d713dc0faab5e62da6925412ba6d0fb10b2",
+  "objetivo_corte_07.parquet": "6822869f5fbf86b14d83d3a751465dc353c61e271bf634e9afed2011fd5b0e8c",
+  "objetivo_corte_14.parquet": "99f89178eec161eefebe4bb0906f426bff8c8a3dca2f057aaddda97cbd840897",
+  "objetivo_corte_28.parquet": "a975242ac05ad54359b5fa59661972ae565359cc97822ae17e17403d59bb6bcd",
+  "objetivo_corte_42.parquet": "f6c5cc31271999248e8d6fc2a5a06a8e5ac042aef0abddf051fe9b6542905847",
+  "objetivo_corte_56.parquet": "77f86a5bd1cbe635b77ff0df3e6cefec8d7f82458b8fedb7c2ed4e79ef846c61",
+  "predictores_corte_07.parquet": "af3a48308805bfd265a8ace9c4a1ba71e53107292d59564cf4fc3b6a7bbffe71",
+  "predictores_corte_14.parquet": "7878650091f670fc876169755bbc4140aa6b672fe73487d6a5a2ddc62c993cc2",
+  "predictores_corte_28.parquet": "a09b18372327a096fb7e20fcd5f7c46d593fda7f7cf7cf80f4d28fec3a1cb808",
+  "predictores_corte_42.parquet": "16f645c47b250dd116900086a3576830845b6e8682e85161446c8d30f4bb71d9",
+  "predictores_corte_56.parquet": "117425fb15b4052663dcd638fcb9d4a7f4f697ede9427f529aab2c0b4584bc46"
+}

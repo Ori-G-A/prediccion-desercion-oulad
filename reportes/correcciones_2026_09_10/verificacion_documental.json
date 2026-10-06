@@ -1,0 +1,497 @@
+{
+  "pdf": "Plantilla_ProyAplicado/proyecto.pdf",
+  "paginas": 79,
+  "citas_con_clave": 69,
+  "etiquetas_unicas": 58,
+  "figuras_referidas": 8,
+  "figuras_migradas_identicas": true,
+  "errores_relevantes_latex": [],
+  "advertencias_latex": [
+    "LaTeX Warning: You have requested document class `thesis',",
+    "Package tocbasic Warning: `tocbibind' redefinition of `\\listoffigures'",
+    "Package tocbasic Warning: `tocbibind' redefinition of `\\listoftables'",
+    "Package minitoc(hints) Warning: W0030",
+    "Package minitoc(hints) Warning: W0023",
+    "Package minitoc(hints) Warning: W0028",
+    "Package minitoc(hints) Warning: W0023",
+    "Package minitoc(hints) Warning: W0078",
+    "Package minitoc(hints) Warning: W0024"
+  ],
+  "paginas_revision": [
+    {
+      "pagina_pdf": 1,
+      "palabras": 56,
+      "fuera_margen_seguro": 0,
+      "inicio": "Ponti\u001ccia Universidad Javeriana Cali\nFacultad de Ingeniería y Ciencias\nMaestría en Ciencia de Datos\nProyecto Aplicado\nModelo predi"
+    },
+    {
+      "pagina_pdf": 2,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 3,
+      "palabras": 253,
+      "fuera_margen_seguro": 0,
+      "inicio": "Resumen\nEl proyecto estudia la predicción temprana del abandono en entornos de gestión del aprendizaje\nmediante variables académic"
+    },
+    {
+      "pagina_pdf": 4,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 5,
+      "palabras": 980,
+      "fuera_margen_seguro": 0,
+      "inicio": "Índice\nÍndice de \u001cguras\nvii\nÍndice de tablas\nix\n1\nIntroducción\n1\n2\nContextualización del Proyecto\n3\n2.1\nDe\u001cnición del Problema . ."
+    },
+    {
+      "pagina_pdf": 6,
+      "palabras": 664,
+      "fuera_margen_seguro": 0,
+      "inicio": "vi\nÍndice\n4.5\nConstrucción y disponibilidad de indicadores\n. . . . . . . . . . . . . . . . . . . . . .\n40\n4.6\nDisponibilidad y cal"
+    },
+    {
+      "pagina_pdf": 7,
+      "palabras": 214,
+      "fuera_margen_seguro": 0,
+      "inicio": "Índice de \u001cguras\n3.1\nConteos de la fuente completa. El día 28 se mantiene separado de los eventos futuros.\n27\n3.2\nDistribución de "
+    },
+    {
+      "pagina_pdf": 8,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 9,
+      "palabras": 743,
+      "fuera_margen_seguro": 0,
+      "inicio": "Índice de tablas\n2.1\nFamilias de indicadores derivables de los registros de plataforma y riesgo asociado a\ncada una. Elaboración p"
+    },
+    {
+      "pagina_pdf": 10,
+      "palabras": 48,
+      "fuera_margen_seguro": 0,
+      "inicio": "x\nÍndice de tablas\n9.2\nDiccionario de candidatos y conteo de \u001clas de auditoría; nombres idénticos al código.\n59\n9.3\nEfecto de incl"
+    },
+    {
+      "pagina_pdf": 11,
+      "palabras": 265,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 1\nIntroducción\nLa identi\u001ccación temprana del riesgo de abandono en entornos LMS requiere transformar registros\nde partici"
+    },
+    {
+      "pagina_pdf": 12,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 13,
+      "palabras": 428,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 2\nContextualización del Proyecto\n2.1\nDe\u001cnición del Problema\n2.1.1\nPlanteamiento del Problema\nLa deserción estudiantil en "
+    },
+    {
+      "pagina_pdf": 14,
+      "palabras": 354,
+      "fuera_margen_seguro": 0,
+      "inicio": "4\nCapítulo 2. Contextualización del Proyecto\nobservables de interacción digital que re\u001dejan cómo, cuándo, cuánto y con qué continu"
+    },
+    {
+      "pagina_pdf": 15,
+      "palabras": 401,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.3. Alcance y estado de desarrollo\n5\n2.2.2\nObjetivos Especí\u001ccos\n Identi\u001ccar las variables académicas, conductuales y temporales "
+    },
+    {
+      "pagina_pdf": 16,
+      "palabras": 504,
+      "fuera_margen_seguro": 0,
+      "inicio": "6\nCapítulo 2. Contextualización del Proyecto\n2.4\nMarco de Referencia\n2.4.1\nMarco Teórico\nEl presente proyecto se fundamenta en la "
+    },
+    {
+      "pagina_pdf": 17,
+      "palabras": 495,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.4. Marco de Referencia\n7\nción, en el que la integración insu\u001cciente reduce el compromiso institucional y eleva la probabilidad\nd"
+    },
+    {
+      "pagina_pdf": 18,
+      "palabras": 542,
+      "fuera_margen_seguro": 0,
+      "inicio": "8\nCapítulo 2. Contextualización del Proyecto\nlos entornos en que ocurre [LS11, AZA21]. Su distinción respecto a la minería de dato"
+    },
+    {
+      "pagina_pdf": 19,
+      "palabras": 464,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.4. Marco de Referencia\n9\nTabla 2.1: Familias de indicadores derivables de los registros de plataforma y riesgo asociado a cada\nu"
+    },
+    {
+      "pagina_pdf": 20,
+      "palabras": 533,
+      "fuera_margen_seguro": 0,
+      "inicio": "10\nCapítulo 2. Contextualización del Proyecto\nˆp(x) = c\nPr(Y = 1 | X = x), y la asignación de clase resulta de comparar esa estima"
+    },
+    {
+      "pagina_pdf": 21,
+      "palabras": 459,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.4. Marco de Referencia\n11\nproblema que carece de solución cerrada y se resuelve por métodos iterativos de segundo orden,\nhabitua"
+    },
+    {
+      "pagina_pdf": 22,
+      "palabras": 499,
+      "fuera_margen_seguro": 0,
+      "inicio": "12\nCapítulo 2. Contextualización del Proyecto\nDemostración. La expansión de la varianza da\n1\nB2\n\" B\nX\nb=1\nVar(Tb) + 2\nX\nb<c\nCov(Tb"
+    },
+    {
+      "pagina_pdf": 23,
+      "palabras": 551,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.4. Marco de Referencia\n13\nrespecto del árbol candidato, se obtiene:\nL(t) ≃\nn\nX\ni=1\nh\ngift(xi) + 1\n2hif2\nt (xi)\ni\n+ Ω(ft),\ngi =\n∂"
+    },
+    {
+      "pagina_pdf": 24,
+      "palabras": 504,
+      "fuera_margen_seguro": 0,
+      "inicio": "14\nCapítulo 2. Contextualización del Proyecto\nLightGBM\nLightGBM utiliza histogramas para agrupar valores continuos y buscar cortes"
+    },
+    {
+      "pagina_pdf": 25,
+      "palabras": 468,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.4. Marco de Referencia\n15\npreparación concreta dependerá de la implementación y se ajustará dentro del entrenamiento. Las\nmáscar"
+    },
+    {
+      "pagina_pdf": 26,
+      "palabras": 575,
+      "fuera_margen_seguro": 0,
+      "inicio": "16\nCapítulo 2. Contextualización del Proyecto\n2.4.1.5\nMetodología CRISP-DM\nUn proyecto de minería de datos requiere un marco de pr"
+    },
+    {
+      "pagina_pdf": 27,
+      "palabras": 454,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.4. Marco de Referencia\n17\n(recolección, preprocesamiento, aplicación de técnicas de minería, interpretación y acción sobre el\nen"
+    },
+    {
+      "pagina_pdf": 28,
+      "palabras": 574,
+      "fuera_margen_seguro": 0,
+      "inicio": "18\nCapítulo 2. Contextualización del Proyecto\n2.4.1.6\nInterpretabilidad post-hoc: SHAP\nLa interpretabilidad no constituye una prop"
+    },
+    {
+      "pagina_pdf": 29,
+      "palabras": 528,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.4. Marco de Referencia\n19\nlocal, ausencia de atribución a las variables no presentes y consistencia frente a cambios del modelo,"
+    },
+    {
+      "pagina_pdf": 30,
+      "palabras": 461,
+      "fuera_margen_seguro": 0,
+      "inicio": "20\nCapítulo 2. Contextualización del Proyecto\nTabla 2.4: Alternativas de interpretabilidad consideradas en el proyecto. Elaboració"
+    },
+    {
+      "pagina_pdf": 31,
+      "palabras": 549,
+      "fuera_margen_seguro": 0,
+      "inicio": "2.4. Marco de Referencia\n21\nproceso cuyo riesgo evoluciona a partir de señales conductuales y de desempeño, en lugar de tratarse\nc"
+    },
+    {
+      "pagina_pdf": 32,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 33,
+      "palabras": 256,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 3\nCaracterización de variables académicas,\nconductuales y temporales\n3.1\nPropósito y alcance de la auditoría\nLa preparaci"
+    },
+    {
+      "pagina_pdf": 34,
+      "palabras": 283,
+      "fuera_margen_seguro": 0,
+      "inicio": "24\nCapítulo 3. Caracterización de variables\nLa relación entre las tablas se comprobó sobre sus claves completas. Las evaluaciones "
+    },
+    {
+      "pagina_pdf": 35,
+      "palabras": 233,
+      "fuera_margen_seguro": 0,
+      "inicio": "3.4. Faltantes, rangos y fechas\n25\nTabla 3.3: Sensibilidad de los clics en cada ventana, sobre la fuente\ncompleta.\nCorte\nClics ori"
+    },
+    {
+      "pagina_pdf": 36,
+      "palabras": 265,
+      "fuera_margen_seguro": 0,
+      "inicio": "26\nCapítulo 3. Caracterización de variables\nTabla 3.5: Hallazgos de fechas y reconocimiento de entregas.\nVeri\u001ccación\nCasos\nMatrícu"
+    },
+    {
+      "pagina_pdf": 37,
+      "palabras": 142,
+      "fuera_margen_seguro": 0,
+      "inicio": "3.5. De\u001cnición administrativa del retiro\n27\nTabla 3.7: Contraste de fecha de retiro y resultado \u001cnal; 0 = no, 1\n= sí.\nFecha presen"
+    },
+    {
+      "pagina_pdf": 38,
+      "palabras": 228,
+      "fuera_margen_seguro": 0,
+      "inicio": "28\nCapítulo 3. Caracterización de variables\n3.6\nConclusiones y productos de la fase\nLa estructura relacional permite integrar las "
+    },
+    {
+      "pagina_pdf": 39,
+      "palabras": 319,
+      "fuera_margen_seguro": 0,
+      "inicio": "3.8. Exploración estadística por corte\n29\n3.8\nExploración estadística por corte\n3.8.1\nPropósito y alcance estadístico\nEl análisis "
+    },
+    {
+      "pagina_pdf": 40,
+      "palabras": 264,
+      "fuera_margen_seguro": 0,
+      "inicio": "30\nCapítulo 3. Caracterización de variables\nTabla 3.8: Efecto biserial por rangos en cada corte; no aplica indica\nausencia de obse"
+    },
+    {
+      "pagina_pdf": 41,
+      "palabras": 231,
+      "fuera_margen_seguro": 0,
+      "inicio": "3.8. Exploración estadística por corte\n31\n0,036. Este resultado no respalda una dirección clara de asociación para ese indicador e"
+    },
+    {
+      "pagina_pdf": 42,
+      "palabras": 182,
+      "fuera_margen_seguro": 0,
+      "inicio": "32\nCapítulo 3. Caracterización de variables\nTabla 3.9: V de Cramér descriptiva; sin interpretación causal ni\npruebas por \u001clas inde"
+    },
+    {
+      "pagina_pdf": 43,
+      "palabras": 179,
+      "fuera_margen_seguro": 0,
+      "inicio": "3.9. Resultados ampliados de las variables de contexto\n33\nTabla 3.10: Distribución y asociación de créditos e intentos previos;\nef"
+    },
+    {
+      "pagina_pdf": 44,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 45,
+      "palabras": 264,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 4\nIngeniería de características para la\npredicción temprana de la deserción\n4.1\nNotación y de\u001cnición de la tarea temporal"
+    },
+    {
+      "pagina_pdf": 46,
+      "palabras": 370,
+      "fuera_margen_seguro": 0,
+      "inicio": "36\nCapítulo 4. Ingeniería de características\nLa función 1 vale uno cuando se cumple su condición y cero en otro caso; en particula"
+    },
+    {
+      "pagina_pdf": 47,
+      "palabras": 358,
+      "fuera_margen_seguro": 0,
+      "inicio": "4.2. Selección de indicadores y diferencias respecto del anteproyecto\n37\n4.2\nSelección de indicadores y diferencias respecto del a"
+    },
+    {
+      "pagina_pdf": 48,
+      "palabras": 184,
+      "fuera_margen_seguro": 0,
+      "inicio": "38\nCapítulo 4. Ingeniería de características\n4.3\nPoblación elegible y cambio de composición\nTabla 4.2: Población y evento propios "
+    },
+    {
+      "pagina_pdf": 49,
+      "palabras": 218,
+      "fuera_margen_seguro": 0,
+      "inicio": "4.3. Población elegible y cambio de composición\n39\n7\n14\n28\n42\n56\nDía del corte\n0\n20\n40\n60\n80\n100\nÍndice, corte 7 = 100\nInscripcion"
+    },
+    {
+      "pagina_pdf": 50,
+      "palabras": 434,
+      "fuera_margen_seguro": 0,
+      "inicio": "40\nCapítulo 4. Ingeniería de características\nCorte\nEtapa\nInscripciones\nPersonas\nExcluidas\n28\nMatrícula conocida\n32 548\n28 755\n45\n2"
+    },
+    {
+      "pagina_pdf": 51,
+      "palabras": 236,
+      "fuera_margen_seguro": 0,
+      "inicio": "4.5. Construcción y disponibilidad de indicadores\n41\nobservable, no como actividad ni como inactividad. Ninguna de estas banderas "
+    },
+    {
+      "pagina_pdf": 52,
+      "palabras": 108,
+      "fuera_margen_seguro": 0,
+      "inicio": "42\nCapítulo 4. Ingeniería de características\n4.6\nDisponibilidad y calendario\nEl primer vencimiento continuo varía entre los días 1"
+    },
+    {
+      "pagina_pdf": 53,
+      "palabras": 239,
+      "fuera_margen_seguro": 0,
+      "inicio": "4.7. Redundancia y estructura multivariada\n43\n7\n14\n28\n42\n56\nCorte\nDías activos (proporción)\nCV calendario\nCV días activos\nRecencia"
+    },
+    {
+      "pagina_pdf": 54,
+      "palabras": 246,
+      "fuera_margen_seguro": 0,
+      "inicio": "44\nCapítulo 4. Ingeniería de características\nTabla 4.6: Resumen descriptivo del PCA ajustado separadamente\npor corte.\nCorte\nCasos "
+    },
+    {
+      "pagina_pdf": 55,
+      "palabras": 294,
+      "fuera_margen_seguro": 0,
+      "inicio": "4.9. Sensibilidad de variabilidad y componentes principales\n45\n4.9\nSensibilidad de variabilidad y componentes principales\nTabla 4."
+    },
+    {
+      "pagina_pdf": 56,
+      "palabras": 245,
+      "fuera_margen_seguro": 0,
+      "inicio": "46\nCapítulo 4. Ingeniería de características\n4.10\nSensibilidad de asociaciones a los duplicados exactos\nTabla 4.10: Cambio del efe"
+    },
+    {
+      "pagina_pdf": 57,
+      "palabras": 348,
+      "fuera_margen_seguro": 0,
+      "inicio": "4.12. Sensibilidad con población y evento comunes\n47\n4.12\nSensibilidad con población y evento comunes\nLa intersección de las pobla"
+    },
+    {
+      "pagina_pdf": 58,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 59,
+      "palabras": 94,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 5\nDesarrollo y comparación de modelos\npredictivos de deserción\n5.1\nEstado del modelado\nEl entrenamiento y la comparación "
+    },
+    {
+      "pagina_pdf": 60,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 61,
+      "palabras": 60,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 6\nInterpretabilidad del modelo mediante\nSHAP\n6.1\nEstado del análisis de interpretabilidad\nEl análisis SHAP permanece pend"
+    },
+    {
+      "pagina_pdf": 62,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 63,
+      "palabras": 61,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 7\nPrototipo de visualización para la\ncomunicación de resultados\n7.1\nEstado del prototipo de visualización\nEl prototipo pe"
+    },
+    {
+      "pagina_pdf": 64,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 65,
+      "palabras": 380,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 8\nConclusiones y trabajos futuros\n8.1\nConclusiones de la fase ejecutada\nLa auditoría permitió integrar las fuentes sobre "
+    },
+    {
+      "pagina_pdf": 66,
+      "palabras": 0,
+      "fuera_margen_seguro": 0,
+      "inicio": ""
+    },
+    {
+      "pagina_pdf": 67,
+      "palabras": 311,
+      "fuera_margen_seguro": 0,
+      "inicio": "Capítulo 9\nAnexos\n9.1\nReproducibilidad y decisiones de la versión\nLa versión correcciones_2026_09_10 conserva el protocolo tempora"
+    },
+    {
+      "pagina_pdf": 68,
+      "palabras": 381,
+      "fuera_margen_seguro": 0,
+      "inicio": "58\nAnexos\nNivel\n7\n14\n28\n42\n56\nDiscapacidad / N\n5 780/26 298\n(22,0%)\n4 833/25 379\n(19,0%)\n4 335/24 908\n(17,4%)\n3 886/24 461\n(15,9%)"
+    },
+    {
+      "pagina_pdf": 69,
+      "palabras": 293,
+      "fuera_margen_seguro": 0,
+      "inicio": "Anexos\n59\nNivel\n7\n14\n28\n42\n56\nRegión / South East\nRegion\n410/1 872\n(21,9%)\n337/1 799\n(18,7%)\n303/1 767\n(17,1%)\n264/1 729\n(15,3%)\n2"
+    },
+    {
+      "pagina_pdf": 70,
+      "palabras": 222,
+      "fuera_margen_seguro": 0,
+      "inicio": "60\nAnexos\nVariable\nDe\u001cnición\nDominio y ausencia\nproporcion_semanas_\ncompletas_activas\nSemanas completas activas / \u001door((t+1)/7)\n[0"
+    },
+    {
+      "pagina_pdf": 71,
+      "palabras": 233,
+      "fuera_margen_seguro": 0,
+      "inicio": "Anexos\n61\n9.4\nEnlace con la versión anterior y productos\nLa versión anterior del corte 28 observaba actividad hasta el día 27. La "
+    },
+    {
+      "pagina_pdf": 72,
+      "palabras": 14,
+      "fuera_margen_seguro": 0,
+      "inicio": "62\nAnexos\n9.5\nEsquema relacional OULAD\nFigura 9.1: Esquema relacional de OULAD. Fuente: [KHZ17].\n"
+    },
+    {
+      "pagina_pdf": 73,
+      "palabras": 288,
+      "fuera_margen_seguro": 0,
+      "inicio": "Bibliografía\n[AJL21]\nKjersti Aas, Martin Jullum, and Anders Løland. Explaining individual predictions\nwhen features are dependent:"
+    },
+    {
+      "pagina_pdf": 74,
+      "palabras": 322,
+      "fuera_margen_seguro": 0,
+      "inicio": "64\nBibliografía\n[DGC+26]\nBeatriz Duro, Anabela Gomes, Fernanda Brito Correia, Ana Rosa Borges, and\nJorge Bernardino. Machine learn"
+    },
+    {
+      "pagina_pdf": 75,
+      "palabras": 342,
+      "fuera_margen_seguro": 0,
+      "inicio": "Bibliografía\n65\n[HHG15]\nCurtis R. Henrie, Lisa R. Halverson, and Charles R. Graham. Measuring student\nengagement in technology-med"
+    },
+    {
+      "pagina_pdf": 76,
+      "palabras": 310,
+      "fuera_margen_seguro": 0,
+      "inicio": "66\nBibliografía\nlocal explanations to global understanding with explainable ai for trees. Nature\nMachine Intelligence, 2(1):56\u001567,"
+    },
+    {
+      "pagina_pdf": 77,
+      "palabras": 260,
+      "fuera_margen_seguro": 0,
+      "inicio": "Bibliografía\n67\n[Rov03]\nAlfred P. Rovai. In search of higher persistence rates in distance education online\nprograms. The Internet"
+    },
+    {
+      "pagina_pdf": 78,
+      "palabras": 310,
+      "fuera_margen_seguro": 0,
+      "inicio": "68\nBibliografía\n[Sha53]\nLloyd S. Shapley. A value for n-person games. In Harold W. Kuhn and Albert W.\nTucker, editors, Contributio"
+    },
+    {
+      "pagina_pdf": 79,
+      "palabras": 113,
+      "fuera_margen_seguro": 0,
+      "inicio": "Bibliografía\n69\n[WH00]\nRüdiger Wirth and Jochen Hipp. Crisp-dm: Towards a standard process model for\ndata mining. In Proceedings o"
+    }
+  ],
+  "sha256_pdf": "8edfad10ed4b32eeaf262d24e5ea3a4d5307b188413773807fd6b3fb9f39186c"
+}

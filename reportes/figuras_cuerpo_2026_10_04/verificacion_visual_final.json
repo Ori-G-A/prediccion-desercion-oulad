@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-10-04",
+  "pdf_sha256": "80afd5bff3e63f7f7cb048d8512df539b994744a578788da7a5843a8d9d84862",
+  "paginas": 91,
+  "tablas_numeradas_antes_y_despues": 31,
+  "figuras_antes": 13,
+  "figuras_despues": 21,
+  "paginas_pdf_figuras_nuevas": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    65
+  ],
+  "esquema_original_pagina_pdf": 80,
+  "revision_visual": "Hojas de contacto completas y paginas nuevas ampliadas; correcciones finales verificadas en portada, indices y paginas 43 a 49.",
+  "laminas_contexto_revisadas": 6
+}

@@ -1,0 +1,40 @@
+{
+  "fuente": "base_auditoria.parquet guardada; no reconstruida desde CSV originales",
+  "resultados": [
+    {
+      "corte": 7,
+      "inscripciones": 29076,
+      "personas": 26030,
+      "retiros_futuros": 6632,
+      "porcentaje": 22.81
+    },
+    {
+      "corte": 14,
+      "inscripciones": 28054,
+      "personas": 25220,
+      "retiros_futuros": 5580,
+      "porcentaje": 19.89
+    },
+    {
+      "corte": 28,
+      "inscripciones": 27515,
+      "personas": 24826,
+      "retiros_futuros": 5012,
+      "porcentaje": 18.22
+    },
+    {
+      "corte": 42,
+      "inscripciones": 27005,
+      "personas": 24491,
+      "retiros_futuros": 4500,
+      "porcentaje": 16.66
+    },
+    {
+      "corte": 56,
+      "inscripciones": 26506,
+      "personas": 24105,
+      "retiros_futuros": 3998,
+      "porcentaje": 15.08
+    }
+  ]
+}

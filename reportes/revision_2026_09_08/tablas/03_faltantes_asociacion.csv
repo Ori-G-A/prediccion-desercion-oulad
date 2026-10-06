@@ -1,0 +1,11 @@
+﻿indicador,presente,inscripciones,personas,retiros,tasa
+sin_actividad,False,26292,23780,4753,0.18077742279020234
+sin_actividad,True,1223,1204,259,0.21177432542927227
+sin_entregas_ventana,False,19718,18605,3434,0.174155593873618
+sin_entregas_ventana,True,7797,7482,1578,0.20238553289726818
+sin_evaluacion_programada,False,22527,20776,4484,0.19905002885426376
+sin_evaluacion_programada,True,4988,4939,528,0.10585404971932638
+entrega_sin_ningun_puntaje,False,27509,24820,5007,0.18201315932967393
+entrega_sin_ningun_puntaje,True,6,6,5,0.8333333333333334
+imd_ausente,False,26488,23922,4860,0.18347931138628812
+imd_ausente,True,1027,904,152,0.14800389483933787

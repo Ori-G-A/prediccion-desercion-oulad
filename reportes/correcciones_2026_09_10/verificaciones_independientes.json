@@ -1,0 +1,198 @@
+[
+  {
+    "verificacion": "Huellas de los siete CSV",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Clave inscripción y corte única",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "7: población exacta",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "7: evento futuro dentro del seguimiento",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "7: candidatos sin desenlaces ni notas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "7: clics desde CSV para muestra de 60 personas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "7: entregas desde toda la fuente CSV",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "7: faltantes estructurales",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "7: denominador inclusive",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "14: población exacta",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "14: evento futuro dentro del seguimiento",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "14: candidatos sin desenlaces ni notas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "14: clics desde CSV para muestra de 60 personas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "14: entregas desde toda la fuente CSV",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "14: faltantes estructurales",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "14: denominador inclusive",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "28: población exacta",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "28: evento futuro dentro del seguimiento",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "28: candidatos sin desenlaces ni notas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "28: clics desde CSV para muestra de 60 personas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "28: entregas desde toda la fuente CSV",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "28: faltantes estructurales",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "28: denominador inclusive",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "42: población exacta",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "42: evento futuro dentro del seguimiento",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "42: candidatos sin desenlaces ni notas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "42: clics desde CSV para muestra de 60 personas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "42: entregas desde toda la fuente CSV",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "42: faltantes estructurales",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "42: denominador inclusive",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "56: población exacta",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "56: evento futuro dentro del seguimiento",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "56: candidatos sin desenlaces ni notas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "56: clics desde CSV para muestra de 60 personas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "56: entregas desde toda la fuente CSV",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "56: faltantes estructurales",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "56: denominador inclusive",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Intersección de cinco cortes",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Fronteras de elegibilidad y etiqueta",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Inclusión t, exclusión t+1, Exam y banked",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "CV activo de dos días calculado manualmente",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Un día activo: CV activo ausente y CV calendario definido",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Conteo de filas conservado solo como auditoría",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Historia insuficiente distinta de cero",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Invariancia frente a información futura",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Bootstrap ponderado y empates",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Ejecución completa: 01_carga_exploracion.ipynb",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Ejecución completa: 02_feature_engineering.ipynb",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Ejecución completa: 03_analisis_estadistico.ipynb",
+    "estado": "correcta"
+  }
+]

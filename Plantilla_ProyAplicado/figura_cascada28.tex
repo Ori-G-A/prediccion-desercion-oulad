@@ -1,0 +1,18 @@
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[font=\small\sffamily,>=Stealth,
+ etapa/.style={draw=PUJAzul,text=PUJTexto,rounded corners,align=center,text width=6.2cm,minimum height=1.03cm,inner sep=5pt}]
+\node[etapa] (a) at (0,0) {\textbf{Fuente completa}\\32\,593 inscripciones; 28\,785 personas};
+\node[etapa] (b) at (0,-1.55) {\textbf{Fecha de matrícula conocida}\\32\,548 inscripciones; 28\,755 personas};
+\node[etapa] (c) at (0,-3.1) {\textbf{Matrícula hasta el día 28}\\32\,532 inscripciones; 28\,748 personas};
+\node[etapa] (d) at (0,-4.65) {\textbf{Sin retiro hasta el día 28 incluido}\\27\,515 inscripciones; 24\,826 personas};
+\node[etapa,fill=PUJClaro] (e) at (0,-6.2) {\textbf{Final posterior al día 28: elegibles}\\27\,515 inscripciones; 24\,826 personas};
+\draw[->,PUJAzul] (a)--(b);\draw[->,PUJAzul] (b)--(c);\draw[->,PUJAzul] (c)--(d);\draw[->,PUJAzul] (d)--(e);
+\node[anchor=west,align=left,text width=4.3cm] at (3.45,-.77) {Se excluyen 45\\sin fecha de matrícula};
+\node[anchor=west,align=left,text width=4.3cm] at (3.45,-2.32) {Se excluyen 16\\con matrícula posterior};
+\node[anchor=west,align=left,text width=4.3cm] at (3.45,-3.87) {Se excluyen 5\,017\\con retiro hasta el corte};
+\node[anchor=west,align=left,text width=4.3cm] at (3.45,-5.42) {Se excluyen 0\\por final no posterior};
+\node[draw=PUJAzul,fill=PUJResalte,align=center,text width=10.4cm,inner sep=8pt] (f) at (1.7,-8) {\textbf{Evento posterior al corte, entre las elegibles}\\5\,012 retiros futuros / 27\,515 inscripciones = 18,22\,\%\\22\,503 inscripciones sin retiro registrado dentro del horizonte};
+\draw[->,PUJAzul] (e.south)--(0,-7.05)--(f.north);
+\end{tikzpicture}
+\caption{Cascada secuencial de elegibilidad en el corte 28. Elaboración propia desde los exportables de la versión analítica del 10 de septiembre; las exclusiones cuentan inscripciones en cada etapa.}\label{editorial:cascada28}
+\end{figure}

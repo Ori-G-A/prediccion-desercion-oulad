@@ -1,0 +1,52 @@
+﻿variable,rol,definicion,dominio
+code_module,identificador,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+code_presentation,identificador,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+id_student,identificador,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+date_registration,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+date_unregistration,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+gender,contexto_condicionado,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+region,contexto_condicionado,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+highest_education,contexto_condicionado,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+imd_band,contexto_condicionado,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+age_band,contexto_condicionado,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+num_of_prev_attempts,contexto_condicionado,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+studied_credits,contexto_condicionado,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+disability,contexto_condicionado,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+final_result,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+module_presentation_length,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+retiro_registrado,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+momento_retiro,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+retiro_futuro,objetivo,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+total_clics,predictor_candidato,Suma de clics en 0..t,entero >= 0
+dias_activos,predictor_candidato,Días con clics en 0..t,0..t+1
+proporcion_dias_activos,predictor_candidato,"dias_activos/(t+1); calendario completo, no exposición individual","[0,1]"
+n_registros_vle,auditoria_no_predictor,Filas de la fuente en 0..t; no son sesiones,entero >= 0
+promedio_clics_por_dia_activo,predictor_candidato,total_clics/dias_activos,NaN sin actividad
+coef_variacion_clics,predictor_candidato,SD muestral de t+1 totales diarios / media; incluye ceros,NaN sin actividad
+cv_intensidad_activa,predictor_candidato,SD muestral / media de clics solo en días activos; intensidad condicional,NaN si días activos < 2
+dias_desde_ultima_interaccion,predictor_candidato,t - último día activo dentro de 0..t,NaN sin actividad
+recencia_relativa,predictor_candidato,Recencia/(t+1),NaN sin actividad
+semanas_completas_activas,predictor_candidato,Bloques completos de 7 días desde 0 con actividad; omite bloque final parcial,0..floor((t+1)/7)
+proporcion_semanas_completas_activas,predictor_candidato,Semanas completas activas / floor((t+1)/7),"[0,1]"
+clics_pre_inicio,predictor_candidato,Clics con fecha < 0,entero >= 0
+sin_actividad_acumulada,predictor_candidato,1 si total_clics=0,0/1
+sin_actividad_ultimos_7d,predictor_candidato,1 si no hay clics en t-6..t,NaN con menos de 7 días observados
+sin_actividad_ultimos_14d,predictor_candidato,1 si no hay clics en t-13..t,NaN con menos de 14 días observados
+sin_actividad_ultimos_28d,predictor_candidato,1 si no hay clics en t-27..t,NaN con menos de 28 días observados
+clics_ultimos_7d,predictor_candidato,Clics en t-6..t,NaN si observación < 7 días
+clics_7d_previos,predictor_candidato,Clics en t-13..t-7,NaN si observación < 14 días
+log_ratio_7d,predictor_candidato,ln((clics últimos 7d+1)/(clics 7d previos+1)),NaN con historia <14 días o cero en ambos bloques
+log_ratio_14d,predictor_candidato,Razón logarítmica suavizada entre últimos dos bloques de 14 días,NaN con historia <28 días o cero en ambos bloques
+n_evaluaciones_entregadas,predictor_candidato,Evaluaciones no Exam ni banked entregadas en 0..t,entero >= 0
+n_puntajes_observados,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+score_promedio_observado,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+n_entregas_pre_inicio,predictor_candidato,Entregas no Exam ni banked anteriores a 0,entero >= 0
+n_evaluaciones_programadas,predictor_candidato,Evaluaciones no Exam con fecha de calendario en 0..t,entero >= 0
+n_programadas_entregadas_al_corte,predictor_candidato,"Evaluaciones programadas en 0..t entregadas hasta t, sin banked",0..n programadas
+proporcion_programadas_entregadas,predictor_candidato,Entregadas programadas / programadas; no mide puntualidad,NaN si no hay programadas
+sin_evaluacion_programada,predictor_candidato,1 si no existen evaluaciones programadas en 0..t,0/1
+sin_entregas_acumuladas,predictor_candidato,1 si no hay entregas no Exam ni banked en 0..t; no implica incumplimiento,0/1
+corte,identificador,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+dias_calendario_observados,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+horizonte_restante,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato
+dias_matriculada_en_ventana,auditoria_no_predictor,Campo de fuente o auditoría; no usar automáticamente para predicción,Según fuente y contrato

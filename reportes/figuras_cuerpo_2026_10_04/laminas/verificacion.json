@@ -1,0 +1,56 @@
+{
+  "filas_csv": 235,
+  "celdas_anexo_cotejadas": 145,
+  "conteos_y_porcentajes_coinciden": true,
+  "totales_por_corte": {
+    "7": {
+      "n": 29076,
+      "retiros": 6632
+    },
+    "14": {
+      "n": 28054,
+      "retiros": 5580
+    },
+    "28": {
+      "n": 27515,
+      "retiros": 5012
+    },
+    "42": {
+      "n": 27005,
+      "retiros": 4500
+    },
+    "56": {
+      "n": 26506,
+      "retiros": 3998
+    }
+  },
+  "familia_tipografica": "Arial",
+  "version_visual": 4,
+  "figuras": [
+    "01_age_band_dia_28",
+    "02_disability_dia_28",
+    "03_imd_band_dia_28",
+    "04_region_dia_28",
+    "05_cortes_contexto",
+    "06_cortes_region"
+  ],
+  "paginas_pdf": 6,
+  "corte_barras": 28,
+  "fuente": "D:\\Trabajo de grado maestria ciencia de datos\\reportes\\correcciones_2026_09_10\\tablas\\03_niveles.csv",
+  "sha256_fuente": "da06ff22725b8706642e1368761c05f58652b320b0926688eac193f87794a03d",
+  "pdf": "D:\\Trabajo de grado maestria ciencia de datos\\output\\pdf\\figuras_contexto_javeriana.pdf",
+  "analisis_oulad_repetido": false,
+  "documento_principal_modificado_por_este_script": false,
+  "anchos_barras_verificados": true,
+  "texto_dentro_de_lienzos": true,
+  "escala_comun_barras_pct": [
+    0,
+    35
+  ],
+  "escala_comun_colores_pct": [
+    0,
+    40
+  ],
+  "contraste_texto_celdas_minimo": 4.5,
+  "limites": "Comparaciones descriptivas sin ajuste; no se estimaron intervalos ni pruebas nuevas."
+}

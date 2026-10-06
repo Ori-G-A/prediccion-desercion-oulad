@@ -1,0 +1,19 @@
+{
+  "version": "2026-10-04",
+  "institucion": "Pontificia Universidad Javeriana Cali",
+  "fuente": "https://www.javerianacali.edu.co/sites/default/files/2024-10/Manual%20de%20Identidad_Javeriana-Cali.pdf",
+  "paginas_manual": {"colores": 43, "arial": 39},
+  "azul": "#2C5697",
+  "acento": "#347B83",
+  "azul_oscuro": "#263C54",
+  "blanco": "#FFFFFF",
+  "negro": "#000000",
+  "texto": "#202020",
+  "texto_secundario": "#595959",
+  "gris": "#B8BDC5",
+  "rejilla": "#E3E5E8",
+  "fuente_graficos": "Arial",
+  "fuente_alternativa": "DejaVu Sans",
+  "regla": "Azul institucional como base; azul verdoso para énfasis y comparación; azules derivados y grises para apoyo. Sin amarillo en elementos propios, por solicitud de los autores.",
+  "alcance": "El azul procede del manual institucional. El azul verdoso, los grises y los azules derivados son recursos editoriales, no colores institucionales adicionales. Se preservan la tipografía académica y la imagen original de OULAD con sus propios colores."
+}

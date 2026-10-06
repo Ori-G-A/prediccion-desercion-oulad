@@ -1,0 +1,4 @@
+﻿escenario,inscripciones,personas,retiros,prevalencia
+Principal: retiro hasta final,27515,24826,5012,0.1821551880792295
+Excluir discordancias fecha/resultado,27421,24749,5011,0.18274315305787536
+Retiro después de 28 sin límite superior,27515,24826,5013,0.18219153189169543

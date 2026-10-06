@@ -1,0 +1,21 @@
+% Generado desde estilo_visual_javeriana.json; no cambia el cuerpo ni las ecuaciones.
+\definecolor{PUJAzul}{HTML}{2C5697}
+\definecolor{PujAcento}{HTML}{347B83}
+\definecolor{PUJGris}{HTML}{B8BDC5}
+\definecolor{PUJTexto}{HTML}{202020}
+\colorlet{PUJClaro}{PUJAzul!6!white}
+\colorlet{PUJResalte}{PujAcento!18!white}
+% etoolbox ya está disponible mediante hyperref; sin nuevas dependencias tipográficas.
+\makeatletter
+\patchcmd{\@makechapterhead}{\normalfont}{\normalfont\color{PUJAzul}}{}{}
+\patchcmd{\@makeschapterhead}{\normalfont}{\normalfont\color{PUJAzul}}{}{}
+\patchcmd{\section}{\normalfont\Large\bfseries}{\normalfont\Large\bfseries\color{PUJAzul}}{}{}
+\patchcmd{\subsection}{\normalfont\large\bfseries}{\normalfont\large\bfseries\color{PUJAzul}}{}{}
+\patchcmd{\subsubsection}{\normalfont\normalsize\bfseries}{\normalfont\normalsize\bfseries\color{PUJAzul}}{}{}
+\makeatother
+\colorlet{linkcol}{PUJAzul}
+\colorlet{citecol}{PUJAzul}
+\arrayrulecolor{PUJAzul}
+\renewcommand{\headrule}{\color{PUJAzul}\headruleORIG}
+\tikzset{puj base/.style={draw=PUJAzul,text=PUJTexto},
+  puj etapa/.style={draw=PUJAzul,text=PUJTexto,rounded corners,line width=.6pt}}

@@ -1,0 +1,51 @@
+{
+  "decision": {
+    "estado": "provisional",
+    "fuente": "propuesta técnica pendiente de ratificación"
+  },
+  "corte": 28,
+  "ventana": [
+    0,
+    27
+  ],
+  "evento": "28 < date_unregistration <= module_presentation_length",
+  "inscripciones": 27515,
+  "personas": 24826,
+  "retiros_futuros": 5012,
+  "prevalencia": 0.1821551880792295,
+  "retiros_fuera_horizonte": 1,
+  "sin_evaluacion_programada": 4988,
+  "personas_repetidas": 2570,
+  "predictores": [
+    "total_clics",
+    "dias_activos",
+    "n_registros_vle",
+    "promedio_clics_por_dia_activo",
+    "coef_variacion_clics",
+    "semanas_activas",
+    "dias_desde_ultima_interaccion",
+    "clics_quincena_1",
+    "clics_quincena_2",
+    "log_ratio_actividad",
+    "sin_actividad_ventana",
+    "clics_pre_inicio",
+    "n_evaluaciones_entregadas",
+    "n_entregas_pre_inicio",
+    "n_evaluaciones_programadas",
+    "n_programadas_entregadas_al_corte",
+    "sin_evaluacion_programada",
+    "sin_entregas_ventana",
+    "proporcion_programadas_entregadas"
+  ],
+  "contexto_condicionado": [
+    "gender",
+    "region",
+    "highest_education",
+    "imd_band",
+    "age_band",
+    "disability",
+    "num_of_prev_attempts",
+    "studied_credits"
+  ],
+  "sin_actividad": 1223
+}

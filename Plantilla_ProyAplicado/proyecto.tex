@@ -1,0 +1,142 @@
+%% Formato para la presentación del documento final de Proyecto Aplicado. 
+%% Maestría en Ciencia de Datos
+%% Pontificia Universidad Javeriana Cali
+%% Mayo 2024
+
+
+\documentclass[11pt,twoside,openany]{thesis}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{url}
+% hyperref se carga al final de format.tex
+\usepackage{makeidx}
+\usepackage{graphics}
+\usepackage[intoc, spanish]{nomencl}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\babelprovide[import,main]{spanish}
+
+
+\setcounter{secnumdepth}{3}   
+
+
+%%%%%%%%%%%%%%%%
+% TÍTULO DEL PROYECTO
+%%%%%%%%%%%%%%%%
+\titulo{Modelo predictivo del abandono estudiantil en entornos LMS mediante aprendizaje automático: análisis de factores académicos, conductuales y temporales}
+
+%%%%%%%
+% AUTORES
+%%%%%%%
+\autorA{9044297}{Oriana Giraldo Arcia}
+
+\autorB{9044267}{Luis Javier Rubio Hernández } %Opcional
+
+%%%%%%%
+% FECHA DE ENTREGA
+%%%%%%%
+
+\fecha{Avance del proyecto: 6 de octubre de 2026}
+
+%%%%%%%%%%%%%%%%%
+% DIRECTOR DEL PROYECTO
+%%%%%%%%%%%%%%%%%
+
+\directorproyecto{Dr.}{Gerardo Mauricio Sarria Montemiranda}
+\directorcarrera{Dr.}{Diego Luis Linares Ospina}
+
+\input{format}
+\makeindex
+
+% Versión digital de avance: evita páginas vacías para iniciar capítulos impares.
+\let\cleardoublepage\clearpage
+\begin{document}
+\raggedbottom
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\listtablename}{Índice de tablas}
+
+
+\frontmatter
+\maketitle
+% Cartas institucionales conservadas en la clase; no se emiten en la versión de trabajo.
+
+%%%%%%%%%%%%%%%%%%
+% ABSTRACT
+%%%%%%%%%%%%%%%%%%
+\chapter*{Resumen} \input{abstract}
+
+%%%%%%%%%%%%%%%%%
+%%%% TABLE OF CONTENTS
+%%%% AND PREABLE
+%%%%%%%%%%%%%%%%%
+  
+  
+ \tableofcontents 
+\listoffigures   
+\listoftables   
+\input{notacion}
+\mainmatter
+
+
+\dominitoc
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%
+% INTRODUCCION
+%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introducción}
+\input{introduccion.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DESCRIPCION DEL PROBLEMA
+%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Contextualización del Proyecto}
+\input{descripcion.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DESARROLLO DEL PROYECTO
+%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Caracterización de variables académicas, conductuales y temporales}
+\chaptermark{Caracterización de variables}
+\input{desarrollo1.tex}
+
+\chapter{Ingeniería de características para la predicción temprana de la deserción}
+\chaptermark{Ingeniería de características}
+\input{desarrollo2.tex}
+
+\chapter{Desarrollo y comparación de modelos predictivos de deserción}
+\input{desarrollo3.tex}
+
+\chapter{Interpretabilidad del modelo mediante SHAP}
+\input{desarrollo4.tex}
+
+\chapter{Prototipo de visualización para la comunicación de resultados}
+\input{desarrollo5.tex}
+%%%%%%%%%%%%%%%%%%%%%%
+% CONCLUSIONES DEL PROYECTO
+%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Conclusiones y trabajos futuros}
+\input{Conclusiones.tex}
+\chapter{Anexos}
+\fancyhead[RE,LO]{\bfseries Anexos}
+\input{anexos.tex}
+\clearpage
+\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}
+\fancyhead[LO]{\bfseries\nouppercase{\rightmark}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAFIA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{alpha}
+\bibliography{biblio}
+
+%%%%%%%%%%%%%%%%
+% GENERAL INDEX
+%%%%%%%%%%%%%%%%
+%\printindex
+
+\end{document}
+%\endinput

@@ -1,0 +1,32 @@
+[
+  {
+    "informe": "01_exploracion",
+    "paginas": 6,
+    "citas_validas": 1,
+    "etiquetas_unicas": 9,
+    "desbordamientos_latex": 0,
+    "texto_dentro_margenes": true,
+    "renderizado_paginas": true,
+    "sha256_pdf": "0ba699592ed9b28f077ce5f9c05695f831848bd1e128891ecc29afc89df40d55"
+  },
+  {
+    "informe": "02_ingenieria",
+    "paginas": 10,
+    "citas_validas": 2,
+    "etiquetas_unicas": 15,
+    "desbordamientos_latex": 0,
+    "texto_dentro_margenes": true,
+    "renderizado_paginas": true,
+    "sha256_pdf": "c5a96c5f42d5bcf730906d41b6c57afb1d5af016c5166dd2a6edd53c9ac6a132"
+  },
+  {
+    "informe": "03_estadistica",
+    "paginas": 10,
+    "citas_validas": 4,
+    "etiquetas_unicas": 13,
+    "desbordamientos_latex": 0,
+    "texto_dentro_margenes": true,
+    "renderizado_paginas": true,
+    "sha256_pdf": "6d48bb0457efd69b09d1fabfb813f41eacd6cda86668e4a27e07c32a9067c303"
+  }
+]

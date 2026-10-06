@@ -1,0 +1,11 @@
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[font=\small\sffamily,>=Stealth,
+ etapa/.style={draw=PUJAzul,text=PUJTexto,rounded corners,align=left,text width=11cm,inner sep=8pt}]
+\node[etapa,fill=PUJClaro] (a) {\textbf{Comprensión y auditoría: ejecutadas}\\Unidad de inscripción, fuentes, duplicados, faltantes y definición del retiro.};
+\node[etapa,fill=PUJClaro,below=5mm of a] (b) {\textbf{Preparación y exploración temporal: ejecutadas}\\Cinco cortes, elegibilidad, indicadores, asociaciones y análisis de sensibilidad.};
+\node[etapa,dashed,below=5mm of b] (c) {\textbf{Protocolo y evaluación predictiva: pendientes}\\Fijar generalización y particiones; ajustar y comparar modelos con prueba final reservada.};
+\node[etapa,dashed,below=5mm of c] (d) {\textbf{Interpretación y comunicación: pendientes}\\Explicar el modelo mediante SHAP y desarrollar el prototipo de visualización.};
+\draw[->,PUJAzul] (a)--(b);\draw[->,PUJAzul] (b)--(c);\draw[->,PUJAzul] (c)--(d);
+\end{tikzpicture}
+\caption{Ruta de lectura y estado del proyecto. Elaboración propia; la secuencia resume productos y admite iteraciones entre fases de CRISP-DM.}\label{editorial:ruta}
+\end{figure}

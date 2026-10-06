@@ -1,0 +1,654 @@
+{
+  "version": "2026-10-05",
+  "archivos": {
+    "Conclusiones.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "abstract.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "anexos.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "avance_objetivos.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "desarrollo1.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "desarrollo2.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "desarrollo3.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "desarrollo4.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "desarrollo5.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "descripcion.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "ejemplo_cv.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "estilo_visual.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "figura_cascada28.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "figura_indicadores.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "figura_ruta.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "figura_temporal.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "format.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "introduccion.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "notacion.tex": {
+      "revisado": true,
+      "modificado": true,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "proyecto.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    },
+    "resultados_contexto_figuras.tex": {
+      "revisado": true,
+      "modificado": false,
+      "formulas_conservadas": true,
+      "citas_conservadas": true,
+      "cifras_tablas_conservadas": true
+    }
+  },
+  "paginas_pdf": 93,
+  "bibliografia_conservada": true,
+  "imagenes_conservadas": true,
+  "etiquetas": 87,
+  "remisiones": 114,
+  "citas_distintas": 69,
+  "errores_latex": [],
+  "advertencias_latex": [
+    "LaTeX Warning: You have requested document class `thesis',",
+    "Package tocbasic Warning: `tocbibind' redefinition of `\\listoffigures'",
+    "Package tocbasic Warning: `tocbibind' redefinition of `\\listoftables'",
+    "Package minitoc(hints) Warning: W0030",
+    "Package minitoc(hints) Warning: W0023",
+    "Package minitoc(hints) Warning: W0028",
+    "Package minitoc(hints) Warning: W0023",
+    "Package minitoc(hints) Warning: W0078",
+    "Package minitoc(hints) Warning: W0024"
+  ],
+  "paginas": [
+    {
+      "pagina_pdf": 1,
+      "palabras": 56,
+      "inicio": "Ponti\u001ccia Universidad Javeriana Cali\nFacultad de Ingeniería y Ciencias\nMaestría en Ciencia de Datos\nProyecto Aplicado\nModelo predictivo del "
+    },
+    {
+      "pagina_pdf": 2,
+      "palabras": 285,
+      "inicio": "Resumen\nEl proyecto busca predecir de forma temprana el retiro de estudiantes en entornos de aprendizaje\nvirtual mediante datos académicos y"
+    },
+    {
+      "pagina_pdf": 3,
+      "palabras": 972,
+      "inicio": "Índice\nÍndice de \u001cguras vi\nÍndice de tablas vii\nGuía de notación y siglas ix\n1 Introducción 1\n2 Contextualización del Proyecto 3\n2.1 De\u001cnici"
+    },
+    {
+      "pagina_pdf": 4,
+      "palabras": 1015,
+      "inicio": "iv Índice\n3.10 Síntesis de la caracterización . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38\n4 Ingeniería de característ"
+    },
+    {
+      "pagina_pdf": 5,
+      "palabras": 144,
+      "inicio": "Índice v\n9.6.3 Condiciones de unicidad de la atribución SHAP . . . . . . . . . . . . . . . . . 71\n9.6.4 Ajuste y regularización de la regres"
+    },
+    {
+      "pagina_pdf": 6,
+      "palabras": 763,
+      "inicio": "Índice de \u001cguras\n1.1 Ruta de lectura y estado del proyecto. Elaboración propia; la secuencia resume pro-\nductos y admite iteraciones entre f"
+    },
+    {
+      "pagina_pdf": 7,
+      "palabras": 770,
+      "inicio": "Índice de tablas\n2.1 Familias de indicadores derivables de los registros de plataforma y riesgo asociado a\ncada una. Elaboración propia a pa"
+    },
+    {
+      "pagina_pdf": 8,
+      "palabras": 152,
+      "inicio": "viii Índice de tablas\n8.1 A vance documentado de los objetivos especí\u001ccos; los nombres se abrevian y su for-\nmulación se conserva en el capí"
+    },
+    {
+      "pagina_pdf": 9,
+      "palabras": 298,
+      "inicio": "Guía de notación y siglas\nEsta guía reúne los símbolos utilizados en las formulaciones del documento. Cada grupo indica su\námbito: una canti"
+    },
+    {
+      "pagina_pdf": 10,
+      "palabras": 326,
+      "inicio": "x Guía de notación y siglas\nSímbolo Signi\u001ccado y ámbito (continuación)\nEstadística exploratoria (capítulo 3)\nrrb;U 1 Efecto biserial por ran"
+    },
+    {
+      "pagina_pdf": 11,
+      "palabras": 326,
+      "inicio": "Guía de notación y siglas xi\nSímbolo Signi\u001ccado y ámbito (continuación)\nTb;σ 2\nRF;ρ RF Estimador por árbol, varianza común y correlación com"
+    },
+    {
+      "pagina_pdf": 12,
+      "palabras": 275,
+      "inicio": "xii Guía de notación y siglas\nSímbolo Signi\u001ccado y ámbito (continuación)\nB;L;DEn el coste de TreeSHAP: árboles, máximo de hojas y profundida"
+    },
+    {
+      "pagina_pdf": 13,
+      "palabras": 399,
+      "inicio": "Capítulo 1\nIntroducción\nEl proyecto busca identi\u001ccar de forma temprana el riesgo de retiro de un curso a partir de la infor-\nmación registra"
+    },
+    {
+      "pagina_pdf": 14,
+      "palabras": 89,
+      "inicio": "2 Capítulo 1. Introducción\nComprensión y auditoría: ejecutadas\nUnidad de inscripción, fuentes, duplicados, faltantes y de\u001cnición del retiro."
+    },
+    {
+      "pagina_pdf": 15,
+      "palabras": 427,
+      "inicio": "Capítulo 2\nContextualización del Proyecto\n2.1 De\u001cnición del Problema\n2.1.1 Planteamiento del Problema\nLa deserción estudiantil en educación "
+    },
+    {
+      "pagina_pdf": 16,
+      "palabras": 309,
+      "inicio": "4 Capítulo 2. Contextualización del Proyecto\ncuánto y con qué continuidad participa un estudiante. Estos patrones permiten construir indicad"
+    },
+    {
+      "pagina_pdf": 17,
+      "palabras": 396,
+      "inicio": "2.3. Alcance y estado de desarrollo 5\n2.2.2 Objetivos Especí\u001ccos\nIdenti\u001ccar las variables académicas, conductuales y temporales disponibles"
+    },
+    {
+      "pagina_pdf": 18,
+      "palabras": 483,
+      "inicio": "6 Capítulo 2. Contextualización del Proyecto\n2.4 Marco de Referencia\n2.4.1 Marco Teórico\nEl presente proyecto se fundamenta en la convergenc"
+    },
+    {
+      "pagina_pdf": 19,
+      "palabras": 491,
+      "inicio": "2.4. Marco de Referencia 7\nde salida [Spa70, Tin75, Tin93]. Su formulación original supone, sin embargo, estudiantes residen-\ntes de tiempo "
+    },
+    {
+      "pagina_pdf": 20,
+      "palabras": 479,
+      "inicio": "8 Capítulo 2. Contextualización del Proyecto\nconstruye indicadores y prevé comparar modelos, pero también busca que sus resultados sean com-"
+    },
+    {
+      "pagina_pdf": 21,
+      "palabras": 455,
+      "inicio": "2.4. Marco de Referencia 9\nTabla 2.1: Familias de indicadores derivables de los registros de plataforma y riesgo asociado a cada\nuna. Elabor"
+    },
+    {
+      "pagina_pdf": 22,
+      "palabras": 460,
+      "inicio": "10 Capítulo 2. Contextualización del Proyecto\nelegirá con datos de validación dentro del entrenamiento, antes de evaluar la prueba \u001cnal [Sci"
+    },
+    {
+      "pagina_pdf": 23,
+      "palabras": 514,
+      "inicio": "2.4. Marco de Referencia 11\ncon reposición. ConBárboles yˆp (b)(x)como la probabilidad estimada por el árbolb, el resultado\nes su promedio:\n"
+    },
+    {
+      "pagina_pdf": 24,
+      "palabras": 543,
+      "inicio": "12 Capítulo 2. Contextualización del Proyecto\nsus pesos, respectivamente. El modelo equilibra dos propósitos: reducir el error de clasi\u001ccaci"
+    },
+    {
+      "pagina_pdf": 25,
+      "palabras": 424,
+      "inicio": "2.4. Marco de Referencia 13\nconservan en el Anexo 9.6.6.\nEl artículo de TabNet utiliza variables numéricas sin normalización global previa y"
+    },
+    {
+      "pagina_pdf": 26,
+      "palabras": 518,
+      "inicio": "14 Capítulo 2. Contextualización del Proyecto\n2.4.1.5 Metodología CRISP-DM\nCRISP-DM (Cross-Industry Standard Process for Data Mining) ofrece"
+    },
+    {
+      "pagina_pdf": 27,
+      "palabras": 399,
+      "inicio": "2.4. Marco de Referencia 15\nTabla 2.3: Correspondencia entre las fases de CRISP-DM y el desarrollo de este proyecto. Elabora-\nción propia a "
+    },
+    {
+      "pagina_pdf": 28,
+      "palabras": 467,
+      "inicio": "16 Capítulo 2. Contextualización del Proyecto\nen [Sha53]. La propiedad de exactitud local se expresa mediante la siguiente identidad:\nf(x) ="
+    },
+    {
+      "pagina_pdf": 29,
+      "palabras": 472,
+      "inicio": "2.4. Marco de Referencia 17\nTabla 2.4: Alternativas de interpretabilidad consideradas en el proyecto. Elaboración propia a partir\nde [Bre01,"
+    },
+    {
+      "pagina_pdf": 30,
+      "palabras": 521,
+      "inicio": "18 Capítulo 2. Contextualización del Proyecto\nJha, Ghergulescu y Moldovan emplearon este dataset para predecir tanto el abandono como el\nres"
+    },
+    {
+      "pagina_pdf": 31,
+      "palabras": 245,
+      "inicio": "Capítulo 3\nCaracterización de variables académicas,\nconductuales y temporales\n3.1 Propósito y alcance de la auditoría\nAntes de construir un "
+    },
+    {
+      "pagina_pdf": 32,
+      "palabras": 261,
+      "inicio": "20 Capítulo 3. Caracterización de variables\nTabla 3.1: Dimensiones veri\u001ccadas de las fuentes locales.\nT abla Filas Columnas\ncourses 22 3\nass"
+    },
+    {
+      "pagina_pdf": 33,
+      "palabras": 267,
+      "inicio": "3.3. Registros repetidos y sensibilidad del volumen 21\nTabla 3.2: Filas adicionales a la primera ocurrencia de cada com-\nbinación.\nT abla Du"
+    },
+    {
+      "pagina_pdf": 34,
+      "palabras": 471,
+      "inicio": "22 Capítulo 3. Caracterización de variables\n3.4 Información faltante y revisión de valores y fechas\nAntes de construir los indicadores, se r"
+    },
+    {
+      "pagina_pdf": 35,
+      "palabras": 474,
+      "inicio": "3.4. Información faltante y revisión de valores y fechas 23\nOULAD incluye además el campois_banked, que indica si el resultado de una evalua"
+    },
+    {
+      "pagina_pdf": 36,
+      "palabras": 348,
+      "inicio": "24 Capítulo 3. Caracterización de variables\ndebe considerarse al interpretar los análisis posteriores.\n3.5 De\u001cnición administrativa del reti"
+    },
+    {
+      "pagina_pdf": 37,
+      "palabras": 317,
+      "inicio": "3.6. Balance de la auditoría y productos 25\n0 5000 10000 15000 20000\nInscripciones\nAntes del inicio\nDespués del día 28\nDía 28\nDías 0 a 27\nSi"
+    },
+    {
+      "pagina_pdf": 38,
+      "palabras": 357,
+      "inicio": "26 Capítulo 3. Caracterización de variables\ndirectamente con porcentajes calculados después de seleccionar las inscripciones de cada corte.\n"
+    },
+    {
+      "pagina_pdf": 39,
+      "palabras": 521,
+      "inicio": "3.8. Exploración estadística por corte 27\nCada porcentaje de retiro utiliza como denominador las inscripciones elegibles del corte o de la\nc"
+    },
+    {
+      "pagina_pdf": 40,
+      "palabras": 499,
+      "inicio": "28 Capítulo 3. Caracterización de variables\nrrb = 2(1)/4−1 =−0,5. El signo negativo resume que, en este ejemplo, las inscripciones con retir"
+    },
+    {
+      "pagina_pdf": 41,
+      "palabras": 319,
+      "inicio": "3.8. Exploración estadística por corte 29\nello, estas asociaciones no representan aportes independientes. Además, las magnitudes cambian al\n"
+    },
+    {
+      "pagina_pdf": 42,
+      "palabras": 225,
+      "inicio": "30 Capítulo 3. Caracterización de variables\nde 0,60 en una proporción de días activos de 0,40 signi\u001ccaría que el 60 por ciento tuvo activida"
+    },
+    {
+      "pagina_pdf": 43,
+      "palabras": 246,
+      "inicio": "3.8. Exploración estadística por corte 31\nTabla 3.9: V de Cramér descriptiva; sin interpretación causal ni\npruebas por \u001clas independientes.\n"
+    },
+    {
+      "pagina_pdf": 44,
+      "palabras": 316,
+      "inicio": "32 Capítulo 3. Caracterización de variables\nDía 7 Día 14 Día 28 Día 42 Día 56\nMódulo\nPresentación\nDiscapacidad registrada\nEducación previa\nP"
+    },
+    {
+      "pagina_pdf": 45,
+      "palabras": 279,
+      "inicio": "3.9. Resultados ampliados de las variables de contexto 33\n3.9.1 Edad y discapacidad registrada\nLa Figura 3.6 permite comparar los porcentaje"
+    },
+    {
+      "pagina_pdf": 46,
+      "palabras": 275,
+      "inicio": "34 Capítulo 3. Caracterización de variables\n3.9.2 Privación del área de residencia y región\nLas bandas de IMD se mantienen en su orden origi"
+    },
+    {
+      "pagina_pdf": 47,
+      "palabras": 230,
+      "inicio": "3.9. Resultados ampliados de las variables de contexto 35\n0 % 10 % 20 % 30 %\nWest Midlands (n = 2.088)\nNorth Western (n = 2.331)\nEast Midlan"
+    },
+    {
+      "pagina_pdf": 48,
+      "palabras": 346,
+      "inicio": "36 Capítulo 3. Caracterización de variables\nDía 7\nn = 29.076\nDía 14\nn = 28.054\nDía 28\nn = 27.515\nDía 42\nn = 27.005\nDía 56\nn = 26.506\nEdad\n0–"
+    },
+    {
+      "pagina_pdf": 49,
+      "palabras": 240,
+      "inicio": "3.9. Resultados ampliados de las variables de contexto 37\nDía 7\nn = 29.076\nDía 14\nn = 28.054\nDía 28\nn = 27.515\nDía 42\nn = 27.005\nDía 56\nn = "
+    },
+    {
+      "pagina_pdf": 50,
+      "palabras": 356,
+      "inicio": "38 Capítulo 3. Caracterización de variables\n3.9.4 Créditos e intentos previos\nTabla 3.10: Distribución y asociación de créditos e intentos p"
+    },
+    {
+      "pagina_pdf": 51,
+      "palabras": 394,
+      "inicio": "Capítulo 4\nIngeniería de características para la\npredicción temprana de la deserción\n4.1 Momento de predicción e indicadores de actividad\nEl"
+    },
+    {
+      "pagina_pdf": 52,
+      "palabras": 377,
+      "inicio": "40 Capítulo 4. Ingeniería de características\nObservación\n[0,28]\nSeguimiento\n(28,100]\n0 28 100\nEjemplo hipotético: cortet= 28y \u001cnalL i = 100\n"
+    },
+    {
+      "pagina_pdf": 53,
+      "palabras": 498,
+      "inicio": "4.1. Momento de predicción e indicadores de actividad 41\nLa recencia indica cuántos días han pasado desde la última interacción. Se denotaR "
+    },
+    {
+      "pagina_pdf": 54,
+      "palabras": 376,
+      "inicio": "42 Capítulo 4. Ingeniería de características\nRegistros de actividad disponibles hasta el corte\nIdenti\u001ccación de la inscripción, fecha y clic"
+    },
+    {
+      "pagina_pdf": 55,
+      "palabras": 189,
+      "inicio": "4.1. Momento de predicción e indicadores de actividad 43\n0 1 2 3 4 5 6 7\nDía relativo al inicio\n0\n5\n10\n15\n20Clics diarios\n8/8 días activos; "
+    },
+    {
+      "pagina_pdf": 56,
+      "palabras": 507,
+      "inicio": "44 Capítulo 4. Ingeniería de características\nejemplos establece una regla de abandono. Cuando todos los días tienen cero clics, ambos CV\nper"
+    },
+    {
+      "pagina_pdf": 57,
+      "palabras": 356,
+      "inicio": "4.4. Cascadas completas de elegibilidad 45\nTabla 4.2: Población y evento propios de cada corte; el porcentaje\nusa inscripciones elegibles.\nC"
+    },
+    {
+      "pagina_pdf": 58,
+      "palabras": 219,
+      "inicio": "46 Capítulo 4. Ingeniería de características\n7 14 28 42 56\nDía del corte\n0\n20\n40\n60\n80\n100Índice, corte 7 = 100\nInscripciones elegibles\nReti"
+    },
+    {
+      "pagina_pdf": 59,
+      "palabras": 446,
+      "inicio": "4.5. Construcción y disponibilidad de indicadores 47\nCorte Etapa Inscripciones Personas Excluidas\n42 Matrícula conocida 32 548 28 755 45\n42 "
+    },
+    {
+      "pagina_pdf": 60,
+      "palabras": 147,
+      "inicio": "48 Capítulo 4. Ingeniería de características\nFuente completa\n32 593 inscripciones; 28 785 personas\nFecha de matrícula conocida\n32 548 inscri"
+    },
+    {
+      "pagina_pdf": 61,
+      "palabras": 312,
+      "inicio": "4.6. Disponibilidad y calendario 49\nvalores 0 o 1, sustituye la etiqueta administrativa; su interpretación depende del calendario y de las\no"
+    },
+    {
+      "pagina_pdf": 62,
+      "palabras": 77,
+      "inicio": "50 Capítulo 4. Ingeniería de características\n10 20 30 40 50 60\nDía de primera evaluación continua\nAAA 2013J\nAAA 2014J\nBBB 2013B\nBBB 2013J\nBB"
+    },
+    {
+      "pagina_pdf": 63,
+      "palabras": 341,
+      "inicio": "4.7. Redundancia y estructura multivariada 51\n7 14 28 42 56\nCorte\nDías activos (proporción)\nCV calendario\nCV días activos\nRecencia relativa\n"
+    },
+    {
+      "pagina_pdf": 64,
+      "palabras": 326,
+      "inicio": "52 Capítulo 4. Ingeniería de características\nde días activos, el logaritmo de uno más los clics por día activo, la recencia relativa y el CV"
+    },
+    {
+      "pagina_pdf": 65,
+      "palabras": 336,
+      "inicio": "4.9. Sensibilidad de variabilidad y componentes principales 53\nTabla 4.7: VIF con intercepto en la especi\u001ccación de auditoría de\ncuatro indi"
+    },
+    {
+      "pagina_pdf": 66,
+      "palabras": 187,
+      "inicio": "54 Capítulo 4. Ingeniería de características\nde días activos, mientras el CV entre días activos muestra valores positivos próximos a cero. E"
+    },
+    {
+      "pagina_pdf": 67,
+      "palabras": 324,
+      "inicio": "4.10. Sensibilidad de asociaciones a los duplicados exactos 55\nTabla 4.9: Varianza porcentual de dos componentes; comparación\ndescriptiva so"
+    },
+    {
+      "pagina_pdf": 68,
+      "palabras": 265,
+      "inicio": "56 Capítulo 4. Ingeniería de características\n4.11 Estabilidad de los intervalos por remuestreo\nLa Tabla 4.11 examina cuánto cambian los extr"
+    },
+    {
+      "pagina_pdf": 69,
+      "palabras": 293,
+      "inicio": "4.13. Conclusiones y continuidad 57\nTabla 4.12: Efectos descriptivos en la cohorte común, sin intervalos\nni contraste entre cortes.\nIndicado"
+    },
+    {
+      "pagina_pdf": 70,
+      "palabras": 134,
+      "inicio": "Capítulo 5\nDesarrollo y comparación de modelos\npredictivos de deserción\n5.1 Estado del modelado\nEl entrenamiento y la comparación de clasi\u001cc"
+    },
+    {
+      "pagina_pdf": 71,
+      "palabras": 80,
+      "inicio": "Capítulo 6\nInterpretabilidad del modelo mediante\nSHAP\n6.1 Estado del análisis de interpretabilidad\nEl análisis SHAP requiere un modelo ajust"
+    },
+    {
+      "pagina_pdf": 72,
+      "palabras": 61,
+      "inicio": "Capítulo 7\nPrototipo de visualización para la\ncomunicación de resultados\n7.1 Estado del prototipo de visualización\nEl prototipo permanece pe"
+    },
+    {
+      "pagina_pdf": 73,
+      "palabras": 377,
+      "inicio": "Capítulo 8\nConclusiones y trabajos futuros\n8.1 Conclusiones de la fase ejecutada\nLa revisión permitió reunir las fuentes y analizar cada ins"
+    },
+    {
+      "pagina_pdf": 74,
+      "palabras": 306,
+      "inicio": "62 Capítulo 8. Conclusiones y trabajos futuros\nTabla 8.1: A vance documentado de los objetivos especí\u001ccos; los\nnombres se abrevian y su form"
+    },
+    {
+      "pagina_pdf": 75,
+      "palabras": 317,
+      "inicio": "Capítulo 9\nAnexos\n9.1 Reproducibilidad y decisiones de la versión\nLa versióncorrecciones_2026_09_10conserva el protocolo temporal de la vers"
+    },
+    {
+      "pagina_pdf": 76,
+      "palabras": 364,
+      "inicio": "64 Anexos\nArchivo Información que permite consultar\n01_pesos.csv Cantidad de evaluaciones y suma de sus pesos por\nmódulo, edición y grupo de"
+    },
+    {
+      "pagina_pdf": 77,
+      "palabras": 381,
+      "inicio": "Anexos 65\nNivel 7 14 28 42 56\nIMD / 20-30% 881/3 217\n(27,4%)\n723/3 060\n(23,6%)\n640/2 979\n(21,5%)\n581/2 920\n(19,9%)\n522/2 861\n(18,2%)\nIMD / 3"
+    },
+    {
+      "pagina_pdf": 78,
+      "palabras": 302,
+      "inicio": "66 Anexos\nNivel 7 14 28 42 56\nRegión / West\nMidlands Region\n568/2 238\n(25,4%)\n459/2 133\n(21,5%)\n413/2 088\n(19,8%)\n362/2 037\n(17,8%)\n325/2 00"
+    },
+    {
+      "pagina_pdf": 79,
+      "palabras": 201,
+      "inicio": "Anexos 67\nV ariable De\u001cnición Dominio y ausencia\nsin_actividad_ultimos_7d 1 si no hay clics en t-6..t NaN con menos de 7\ndías observados\nsin"
+    },
+    {
+      "pagina_pdf": 80,
+      "palabras": 233,
+      "inicio": "68 Anexos\n9.4 Enlace con la versión anterior y productos\nLa versión anterior del corte 28 observaba actividad hasta el día 27. La versión ac"
+    },
+    {
+      "pagina_pdf": 81,
+      "palabras": 14,
+      "inicio": "Anexos 69\n9.5 Esquema relacional OULAD\nFigura 9.1: Esquema relacional de OULAD. Fuente: [KHZ17]."
+    },
+    {
+      "pagina_pdf": 82,
+      "palabras": 358,
+      "inicio": "70 Anexos\n9.6 Desarrollos matemáticos complementarios\nEstas derivaciones explican la relación entre las formulaciones del marco teórico y su"
+    },
+    {
+      "pagina_pdf": 83,
+      "palabras": 457,
+      "inicio": "Anexos 71\nUna vez \u001cjadas las divisiones del árbol, se busca el peso que minimiza el objetivo de cada hoja.\nLa siguiente proposición expresa "
+    },
+    {
+      "pagina_pdf": 84,
+      "palabras": 513,
+      "inicio": "72 Anexos\nAquíℓes la log-verosimilitud,y i la etiqueta yπ i la probabilidad estimada para la inscripcióni;\nncuenta las inscripciones del ent"
+    },
+    {
+      "pagina_pdf": 85,
+      "palabras": 431,
+      "inicio": "Anexos 73\nen las que predominan los ceros. Estas técnicas pueden mejorar la e\u001cciencia, pero no garantizan\nigualdad de desempeño en todos los"
+    },
+    {
+      "pagina_pdf": 86,
+      "palabras": 233,
+      "inicio": "74 Anexos\n[Sha53]. Trasladado a la predicción, el juego es la salida del modelo para una observación, los\njugadores son laspvariables del co"
+    },
+    {
+      "pagina_pdf": 87,
+      "palabras": 277,
+      "inicio": "Bibliografía\n[AJL21] Kjersti Aas, Martin Jullum, and Anders Løland. Explaining individual predictions\nwhen features are dependent: More accu"
+    },
+    {
+      "pagina_pdf": 88,
+      "palabras": 304,
+      "inicio": "76 Bibliografía\n[DGC +26] Beatriz Duro, Anabela Gomes, Fernanda Brito Correia, Ana Rosa Borges, and\nJorge Bernardino. Machine learning and d"
+    },
+    {
+      "pagina_pdf": 89,
+      "palabras": 330,
+      "inicio": "Bibliografía 77\n[HHG15] Curtis R. Henrie, Lisa R. Halverson, and Charles R. Graham. Measuring student\nengagement in technology-mediated lear"
+    },
+    {
+      "pagina_pdf": 90,
+      "palabras": 299,
+      "inicio": "78 Bibliografía\nlocal explanations to global understanding with explainable ai for trees.Nature\nMachine Intelligence, 2(1):56\u001567, 2020.\n[Lig"
+    },
+    {
+      "pagina_pdf": 91,
+      "palabras": 245,
+      "inicio": "Bibliografía 79\n[Rov03] Alfred P. Rovai. In search of higher persistence rates in distance education online\nprograms.The Internet and Higher"
+    },
+    {
+      "pagina_pdf": 92,
+      "palabras": 293,
+      "inicio": "80 Bibliografía\n[Sha53] Lloyd S. Shapley. A value forn-person games. In Harold W. Kuhn and Albert W.\nTucker, editors,Contributions to the Th"
+    },
+    {
+      "pagina_pdf": 93,
+      "palabras": 106,
+      "inicio": "Bibliografía 81\n[WH00] Rüdiger Wirth and Jochen Hipp. Crisp-dm: Towards a standard process model for\ndata mining. InProceedings of the 4th I"
+    }
+  ],
+  "sha256_pdf": "e13e6454edec306530c2ae92a2b8940bef354c7c2a7562c99b0bf6d7d49dca1b",
+  "alcance": "Integridad editorial y compilación; no reproduce análisis ni verifica afirmaciones bibliográficas.",
+  "revision_visual": {
+    "hojas_contacto_revisadas": 8,
+    "paginas_detalle_revisadas": [
+      2,
+      23,
+      41,
+      42,
+      60,
+      78,
+      85,
+      86
+    ],
+    "metodo": "Poppler 95 ppp; composición global de 93 páginas y ampliación de páginas seleccionadas",
+    "incidencias_detectadas": []
+  }
+}

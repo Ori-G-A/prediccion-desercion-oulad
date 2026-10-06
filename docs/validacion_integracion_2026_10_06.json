@@ -1,0 +1,33 @@
+{
+  "fecha": "2026-10-06",
+  "base": "ec19d357b004397fd3d2ec49aeb02211d8c03012",
+  "comprobaciones_analiticas": 49,
+  "fuente_de_datos": "CSV y productos procesados locales; no se publica nueva copia de datos",
+  "notebooks_reejecutados": false,
+  "entorno_reinstalado": false,
+  "sintaxis_python": "correcta",
+  "patrones_credenciales": "sin coincidencias en archivos de texto seleccionados",
+  "fuentes_tex_identicas_al_documento_revisado": 21,
+  "compilacion": "MiKTeX, BibTeX y pasadas de resolución desde la rama",
+  "paginas": 94,
+  "errores_latex": [],
+  "pdf_compilado_sha256": "cbda5ba47effba8ed9dbeb87630f56b519c8b9d86c41d8f5b96515a8a8a3f018",
+  "pdf_distribuido_sha256": "f23476006fc80b143c92636dfe29fceaa2b0d7a8eece9b19f88fa7e90b8183ae",
+  "nota_pdf": "Se conserva el PDF ya inspeccionado visualmente; recompilación comprobada con las mismas fuentes.",
+  "advertencias": "Clase thesis, tocbibind y minitoc conocidas; TinyTeX en PATH no tenía nomencl; comprobación final con MiKTeX.",
+  "scripts_adaptados": [
+    "scripts/compilar_proyecto.ps1",
+    "scripts/compilar_informes.ps1"
+  ],
+  "scripts_adaptados_ejecutados": [
+    "scripts/compilar_proyecto.ps1"
+  ],
+  "limites": [
+    "No ejecución integral de notebooks ni entrenamiento.",
+    "Scripts históricos de comparación requieren respaldos externos excluidos.",
+    "Cronograma PDF inicial pendiente de actualización con nuevas aclaraciones."
+  ],
+  "revision_archivos_nuevos": "383 archivos añadidos; sin datos crudos, nuevos parquet, respaldos, cachés ni archivos mayores de 20 MB",
+  "historicos_y_licencia": "Cuatro notebooks históricos, licencia y prefijo de bitácora iguales a main",
+  "diff_check": "Avisos de espacios y finales de línea en fuentes importadas; se conservó su contenido sin reformateo masivo"
+}

@@ -1,0 +1,13 @@
+El proyecto busca identificar de forma temprana el riesgo de retiro de un curso a partir de la información registrada en una plataforma de aprendizaje. Para ello, utiliza OULAD (\textit{Open University Learning Analytics Dataset}), un conjunto de datos que reúne matrículas, evaluaciones y actividad de estudiantes de la Open University. El propósito es desarrollar un modelo que permita estimar ese riesgo y explicar qué información interviene en sus predicciones.
+
+Esta versión presenta el trabajo necesario para preparar los datos antes de entrenar el modelo. Se revisaron siete tablas y se distinguió entre personas e inscripciones: una misma persona puede aparecer en más de un curso. Después se definieron cinco momentos de observación, en los días 7, 14, 28, 42 y 56. En cada uno se utilizaron los datos disponibles hasta ese día y se excluyeron las inscripciones cuyo retiro ya había ocurrido.
+
+La comparación permitió observar que disponer de más días de información también cambia el grupo analizado y el tiempo que queda para registrar un retiro. Por esta razón, las diferencias entre cortes no permiten elegir todavía el mejor momento para predecir. Se compararon los resultados con los de un grupo común de inscripciones para examinar este cambio de población. La inactividad se mantuvo como una señal de participación, sin considerarla por sí sola evidencia de abandono.
+
+\paragraph{Orientación para la lectura}
+La lectura comienza con el problema, los objetivos y el alcance del proyecto. El capítulo~\ref{cap:caracterizacion} presenta las fuentes, su revisión y los resultados exploratorios; antes de las comparaciones por corte se explican la población analizada, el retiro futuro y los indicadores principales. El capítulo~\ref{cap:ingenieria} desarrolla las reglas y los cálculos utilizados para construirlos. Los capítulos de modelos, SHAP y prototipo indican el trabajo pendiente, y las conclusiones recogen los hallazgos y sus límites.
+
+Las figuras se interpretan junto con el texto que las acompaña y las tablas permiten consultar las cifras exactas. Los anexos amplían el detalle cuando una remisión lo requiere. Los notebooks documentan cómo se obtuvieron los resultados y se consultan para verificar o reproducir los procedimientos; no se requiere leerlos antes del documento.
+
+La Figura~\ref{editorial:ruta} resume el avance y las etapas pendientes. La guía preliminar permite consultar los símbolos; el Anexo~\ref{corr:anexodiccionario} relaciona los indicadores con las columnas del conjunto de datos. Las formulaciones y demostraciones más especializadas se consultan en el Anexo~\ref{editorial:matematica}.
+\input{figura_ruta}

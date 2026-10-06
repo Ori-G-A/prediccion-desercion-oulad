@@ -1,0 +1,42 @@
+{
+  "filas_csv_leidas": 10655280,
+  "cortes": [
+    {
+      "corte": 7,
+      "inscripciones": 29076,
+      "clics_dias_cv_desde_csv_completo": true,
+      "conteo_filas_fuera_candidatos": true
+    },
+    {
+      "corte": 14,
+      "inscripciones": 28054,
+      "clics_dias_cv_desde_csv_completo": true,
+      "conteo_filas_fuera_candidatos": true
+    },
+    {
+      "corte": 28,
+      "inscripciones": 27515,
+      "clics_dias_cv_desde_csv_completo": true,
+      "conteo_filas_fuera_candidatos": true
+    },
+    {
+      "corte": 42,
+      "inscripciones": 27005,
+      "clics_dias_cv_desde_csv_completo": true,
+      "conteo_filas_fuera_candidatos": true
+    },
+    {
+      "corte": 56,
+      "inscripciones": 26506,
+      "clics_dias_cv_desde_csv_completo": true,
+      "conteo_filas_fuera_candidatos": true
+    }
+  ],
+  "identidad_cv_verificada": true,
+  "poblacion_y_evento_invariantes_deduplicacion": true,
+  "bootstrap_tolerancia_extremos": 0.005,
+  "bootstrap_comparaciones": 66,
+  "bootstrap_dentro_tolerancia": 66,
+  "bootstrap_cambio_max": 0.0029939438026947,
+  "modelos_entrenados": false
+}

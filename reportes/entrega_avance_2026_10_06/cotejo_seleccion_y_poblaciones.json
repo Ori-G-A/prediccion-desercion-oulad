@@ -1,0 +1,75 @@
+{
+  "fecha": "2026-10-06",
+  "candidatos": [
+    "total_clics",
+    "dias_activos",
+    "proporcion_dias_activos",
+    "promedio_clics_por_dia_activo",
+    "coef_variacion_clics",
+    "cv_intensidad_activa",
+    "dias_desde_ultima_interaccion",
+    "recencia_relativa",
+    "semanas_completas_activas",
+    "proporcion_semanas_completas_activas",
+    "clics_pre_inicio",
+    "clics_ultimos_7d",
+    "clics_7d_previos",
+    "log_ratio_7d",
+    "log_ratio_14d",
+    "sin_actividad_acumulada",
+    "sin_actividad_ultimos_7d",
+    "sin_actividad_ultimos_14d",
+    "sin_actividad_ultimos_28d",
+    "n_evaluaciones_entregadas",
+    "n_entregas_pre_inicio",
+    "n_evaluaciones_programadas",
+    "n_programadas_entregadas_al_corte",
+    "proporcion_programadas_entregadas",
+    "sin_evaluacion_programada",
+    "sin_entregas_acumuladas"
+  ],
+  "contexto_condicionado": [
+    "gender",
+    "region",
+    "highest_education",
+    "imd_band",
+    "age_band",
+    "disability",
+    "num_of_prev_attempts",
+    "studied_credits"
+  ],
+  "diccionario_coincide_con_codigo": true,
+  "poblaciones": [
+    {
+      "corte": 7,
+      "inscripciones": 29076,
+      "personas": 26030,
+      "retiros_futuros": 6632
+    },
+    {
+      "corte": 14,
+      "inscripciones": 28054,
+      "personas": 25220,
+      "retiros_futuros": 5580
+    },
+    {
+      "corte": 28,
+      "inscripciones": 27515,
+      "personas": 24826,
+      "retiros_futuros": 5012
+    },
+    {
+      "corte": 42,
+      "inscripciones": 27005,
+      "personas": 24491,
+      "retiros_futuros": 4500
+    },
+    {
+      "corte": 56,
+      "inscripciones": 26506,
+      "personas": 24105,
+      "retiros_futuros": 3998
+    }
+  ],
+  "alcance": "Reejecución de verificaciones independientes; no reejecución integral de notebooks ni entrenamiento."
+}

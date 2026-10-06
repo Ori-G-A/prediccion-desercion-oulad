@@ -1,0 +1,6 @@
+{
+  "cambio": "Leyenda fuera de las curvas; celda gráfica regenerada desde la tabla ejecutada",
+  "tabla_sha256_antes_y_despues": "4751967206adfdb34af13276465da5f84ea8ab17aee2da72d20c7404a58f9f4f",
+  "recalculo_estadistico": false,
+  "ejecucion_completa_previa": "Consultar 03_analisis_estadistico_ejecucion.json; el ajuste posterior solo afecta la figura y su salida guardada."
+}

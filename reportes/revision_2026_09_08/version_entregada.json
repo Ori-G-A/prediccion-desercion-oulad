@@ -1,0 +1,19 @@
+{
+  "01_carga_exploracion.ipynb": "daf826e61c5a1d1147af2c3d64c8c6b1b0218b4a473308d1602c9e9c5e1d0428",
+  "02_feature_engineering.ipynb": "e3b61da3408c858dbb13a3598c5e374c9988683bdc4e49e3bcf13ab8e8417bcd",
+  "03_analisis_estadistico.ipynb": "b7e1f497cf05f2b9319d7f5282d9b957a675aa117051bd15e9d26086ca77b488",
+  "src/diccionario_oulad.py": "f443aa74042bf220b040b7aff017495a4e25be9fe317c963212d71bde8f38e0c",
+  "src/oulad_revision.py": "654171765dd6533097887e8efe4947616f2193b567a659f6e2cf1b96aaaf43e5",
+  "scripts/compilar_informes.ps1": "2ad329b40f537c92fc9886d78c71402eef593dc24d56ffc0534998f95cd9f512",
+  "scripts/ejecutar_notebooks.py": "8c7ab7b99523ed404c25a9c52dfd1114bf2d56d4bdc47074e912c0e208028a39",
+  "scripts/generar_informes.py": "1fb1c23a6bb26aff1414d09d266e433d2e1accc8a3d05f1d9662b19a00bd2b69",
+  "scripts/verificar_informes.py": "44419d30692b61983ccf303ff9b2fb2e6cb1b8a6c470e8f561767d110f19c06e",
+  "scripts/verificar_revision.py": "7d92fd564f2fe666ee48548d8efe155a3ad940b53383b9bca41a39665e991108",
+  "reportes/revision_2026_09_08/informes/01_exploracion.tex": "bee710cd12c26e36bb90a39cdcee8c25f039eeedfa13a0964d845d9b22125807",
+  "reportes/revision_2026_09_08/informes/01_exploracion_contenido.tex": "60d290ad656df9d43731604242c414fd1647d86179fddc1fa0895015bd37e764",
+  "reportes/revision_2026_09_08/informes/02_ingenieria.tex": "04f076b7bb20b86191fe92363d486f0e42272c7aafe90ad4b7fa3906f23ca611",
+  "reportes/revision_2026_09_08/informes/02_ingenieria_contenido.tex": "44bbe23359bce3457c579ae8d8661b40ce5f267c7ae9c1f2215ad31aee7889a5",
+  "reportes/revision_2026_09_08/informes/03_estadistica.tex": "3c46479634c1407f48767aa0ab00394e51fc2cbbedd70a2f44587277e73d6743",
+  "reportes/revision_2026_09_08/informes/03_estadistica_contenido.tex": "aee098790c833531813161ba7da12ea05c9d6781d1e1df872c15950489e0eb79",
+  "reportes/revision_2026_09_08/informes/referencias_revision.bib": "e156a1b945994fb0f7ea50aa3ae76b52786c4ba2f9e46e90a73782a8b51e1edb"
+}

@@ -1,0 +1,43 @@
+{
+  "fecha": "2026-10-06",
+  "archivos_modificados": [
+    "avance_objetivos.tex",
+    "desarrollo2.tex",
+    "desarrollo3.tex",
+    "descripcion.tex",
+    "proyecto.tex"
+  ],
+  "formulas_y_citas_conservadas": true,
+  "bibliografia_e_imagenes_conservadas": true,
+  "etiquetas": 88,
+  "remisiones": 116,
+  "errores_latex": [],
+  "advertencias_latex": [
+    "LaTeX Warning: You have requested document class `thesis',",
+    "Package tocbasic Warning: `tocbibind' redefinition of `\\listoffigures'",
+    "Package tocbasic Warning: `tocbibind' redefinition of `\\listoftables'",
+    "Package minitoc(hints) Warning: W0030",
+    "Package minitoc(hints) Warning: W0023",
+    "Package minitoc(hints) Warning: W0028",
+    "Package minitoc(hints) Warning: W0023",
+    "Package minitoc(hints) Warning: W0078",
+    "Package minitoc(hints) Warning: W0024"
+  ],
+  "archivos": [
+    {
+      "nombre": "Proyecto_avance_para_revision.pdf",
+      "paginas": 94,
+      "paginas_cambios": [
+        56,
+        71
+      ],
+      "sha256": "f23476006fc80b143c92636dfe29fceaa2b0d7a8eece9b19f88fa7e90b8183ae"
+    },
+    {
+      "nombre": "Cronograma_y_avance_para_revision.pdf",
+      "paginas": 3,
+      "paginas_cambios": [],
+      "sha256": "3d80e86e4f1309e6d4bf9a5ea1197532e65125e3bf1beb1fcd8ebd66b9b68c32"
+    }
+  ]
+}

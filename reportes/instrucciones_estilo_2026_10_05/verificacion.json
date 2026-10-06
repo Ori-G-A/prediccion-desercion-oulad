@@ -1,0 +1,99 @@
+{
+  "fecha": "2026-10-05",
+  "tipo": "Comprobacion estatica de instrucciones; sin ejecucion analitica ni compilacion",
+  "secciones_academicas": [
+    {
+      "seccion": 2,
+      "conservada": true
+    },
+    {
+      "seccion": 4,
+      "conservada": true
+    },
+    {
+      "seccion": 5,
+      "conservada": true
+    },
+    {
+      "seccion": 6,
+      "conservada": true
+    }
+  ],
+  "archivos": [
+    {
+      "ruta": "AGENTS.md",
+      "bytes": 13515,
+      "respaldo": true,
+      "modificado": true
+    },
+    {
+      "ruta": "documento/AGENTS.md",
+      "bytes": 3582,
+      "respaldo": true,
+      "modificado": true
+    },
+    {
+      "ruta": "src/AGENTS.md",
+      "bytes": 3962,
+      "respaldo": true,
+      "modificado": true
+    },
+    {
+      "ruta": "notebooks/AGENTS.md",
+      "bytes": 3962,
+      "respaldo": true,
+      "modificado": true
+    },
+    {
+      "ruta": "ESTILO_VISUAL.md",
+      "bytes": 7036,
+      "respaldo": true,
+      "modificado": true
+    }
+  ],
+  "referencias": [
+    {
+      "ruta": "planteamiento del problema.txt",
+      "existe": true
+    },
+    {
+      "ruta": "referencias/planteamiento_del_problema.txt",
+      "existe": true
+    },
+    {
+      "ruta": "ESTILO_VISUAL.md",
+      "existe": true
+    },
+    {
+      "ruta": "estilo_visual_javeriana.json",
+      "existe": true
+    },
+    {
+      "ruta": "src/estilo_visual.py",
+      "existe": true
+    },
+    {
+      "ruta": "src/figuras_oulad.py",
+      "existe": true
+    },
+    {
+      "ruta": "Plantilla_ProyAplicado/estilo_visual.tex",
+      "existe": true
+    },
+    {
+      "ruta": "reportes/instrucciones_estilo_2026_10_05/resumen_y_revision.md",
+      "existe": true
+    }
+  ],
+  "archivos_protegidos_comprobados": 137,
+  "archivos_protegidos_modificados": [],
+  "muestras_identicas": true,
+  "instrucciones_src_notebooks_identicas": true,
+  "importacion_documentada_corregida": true,
+  "git_local": false,
+  "limites": [
+    "No se edito configuracion externa ni mensaje de sistema interno",
+    "No se comprobo carga automatica en una nueva sesion",
+    "No se evaluo comprension de los autores"
+  ]
+}

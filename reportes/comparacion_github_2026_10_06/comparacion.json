@@ -1,0 +1,31 @@
+{
+  "sha": "ec19d357b004397fd3d2ec49aeb02211d8c03012",
+  "notebooks": [
+    {
+      "remoto": "notebooks/01_carga_exploracion.ipynb",
+      "celdas_remotas": 22,
+      "local": "01_carga_exploracion.ipynb",
+      "celdas_locales": 16,
+      "codigo_igual": false
+    },
+    {
+      "remoto": "notebooks/02_feature_engineering.ipynb",
+      "celdas_remotas": 27,
+      "local": "02_feature_engineering.ipynb",
+      "celdas_locales": 10,
+      "codigo_igual": false
+    },
+    {
+      "remoto": "notebooks/03_analisis_estadistico.ipynb",
+      "celdas_remotas": 42,
+      "local": "03_analisis_estadistico.ipynb",
+      "celdas_locales": 17,
+      "codigo_igual": false
+    },
+    {
+      "remoto": "notebooks/03b_verificacion_v2.ipynb",
+      "celdas_remotas": 18,
+      "local": null
+    }
+  ]
+}

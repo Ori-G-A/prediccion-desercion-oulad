@@ -1,0 +1,17 @@
+﻿version,id,severidad,ubicacion,hallazgo,estado,evidencia,siguiente_paso
+revision_2026_09_08,H01,bloqueante,"02, población y evento",Retiros previos y del corte mezclados con eventos futuros,corregido técnicamente; ratificación pendiente,"Flujo 02, exclusión de 15 retiros del día 28 y verificación independiente",Ratificar la definición temporal
+revision_2026_09_08,H02,mayor,"02, auditoría final histórica",Variables VENTANA_TEMPRANA_DIAS y sa_con_meta sin definición,cerrado,02 ejecutado completo desde proceso limpio,
+revision_2026_09_08,H03,mayor,"03, fuentes",Diagnóstico v1 utilizado para variables v2 modificadas,cerrado,03 lee producto corregido y verifica su SHA-256,
+revision_2026_09_08,H04,mayor,"03, faltantes",MAR/MNAR afirmados solo a partir de asociaciones,cerrado,Redacción y análisis sustituidos por patrones observados,
+revision_2026_09_08,H05,mayor,"01, repeticiones VLE",Se afirmaba que filas repetidas son sesiones separadas,cerrado en interpretación; origen no verificable,Se conserva fuente y se exporta sensibilidad de duplicados,Consultar fuente si se requiere deduplicación definitiva
+revision_2026_09_08,H06,mayor,"02, notas",Fecha de entrega utilizada como disponibilidad de calificación,cerrado en candidatos,score y n_puntajes excluidos del archivo de predictores,Verificar fecha de publicación para incluir puntajes
+revision_2026_09_08,H07,mayor,"02, calendario",Ausencia de entregas sin considerar oportunidades programadas,cerrado,4988 inscripciones elegibles sin evaluación programada; denominador NaN,
+revision_2026_09_08,H08,mayor,"02, banked",Entregas reconocidas confundidas con desempeño actual,cerrado,Se excluye banked; comprobación independiente en toda la fuente,
+revision_2026_09_08,H09,mayor,"03, dependencia",Contrastes por filas suponían independencia de inscripciones,corregido con límites,"Bootstrap de personas; intervalos exploratorios, presentaciones fijas",Definir generalización y validación de modelos
+revision_2026_09_08,H10,mayor,"03, atípicos y Hotelling",Atípicos interpretados como señal cierta y prueba asintótica injustificada,cerrado,Diagnósticos descriptivos; Hotelling retirado; ninguna fila eliminada,
+revision_2026_09_08,H11,mayor,"01/02, retiro",Withdrawn y retiro administrativo no coinciden en 102 inscripciones,limitación abierta,Tabla cruzada y sensibilidad exportadas,Ratificar tratamiento de discordancias y seguimiento
+revision_2026_09_08,H12,mayor,"01, temporalidad de fuente",29440 registros VLE y 601 entregas posteriores al retiro,limitación abierta,Conteos sobre CSV exportados en 01_consistencia_temporal.csv,No atribuir causa sin evidencia del productor
+revision_2026_09_08,H13,mayor,"O2, alcance",Se ejecuta una sola ventana aunque el anteproyecto contempla ventanas,pendiente,Corte 28 y ventana 0-27 declarados en informes,Ratificar o comparar otras ventanas
+revision_2026_09_08,H14,menor,Plantilla definitiva,Duplicaciones y texto provisional de capítulos,pendiente de migración,No se modificó la plantilla; mapa migracion.md,Migrar por bloques y compilar
+revision_2026_09_08,H15,mayor,Validación futura,Fuente completa examinada en trabajos previos,limitación abierta,Informes no declaran prueba final intacta,Documentar validación interna y buscar evaluación independiente apropiada
+revision_2026_09_08,H16,menor,"Anteproyecto, cronograma",Nueve meses en ficha y diez en cronograma,pendiente,Discrepancia del anteproyecto conservada,Unificar cronograma cuando se revise documento final

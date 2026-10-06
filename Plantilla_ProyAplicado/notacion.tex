@@ -1,0 +1,116 @@
+\chapter*{Guía de notación y siglas}
+\phantomsection\addcontentsline{toc}{chapter}{Guía de notación y siglas}
+\label{editorial:notacion}\markboth{Guía de notación y siglas}{Guía de notación y siglas}
+\fancyhead[RE,LO]{\bfseries Guía de notación y siglas}
+Esta guía reúne los símbolos utilizados en las formulaciones del documento. Cada grupo indica su ámbito: una cantidad referida al calendario no representa un parámetro del modelo. Las definiciones y condiciones se conservan también junto a las ecuaciones. Los nombres de columnas y su correspondencia con los indicadores se consultan en el Anexo~\ref{corr:anexodiccionario}; las siglas se desarrollan al final de esta guía.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.18}
+\begin{longtable}{>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}p{.69\linewidth}}
+\toprule\textbf{Símbolo} & \textbf{Significado y ámbito}\\\midrule\endfirsthead
+\toprule\textbf{Símbolo} & \textbf{Significado y ámbito (continuación)}\\\midrule\endhead
+\bottomrule\endfoot
+\multicolumn{2}{l}{\textbf{Población y temporalidad (capítulo~\ref{cap:ingenieria})}}\\*
+$i$ & Inscripción: persona, módulo y presentación. Una persona puede tener varias inscripciones.\\
+$d; t$ & Día relativo al inicio y corte de predicción. Se estudian $t\in\{7,14,28,42,56\}$.\\
+$n_t=t+1$ & Días del calendario inclusivo observado; no es un tamaño muestral.\\
+$r_i; u_i; L_i$ & Fechas relativas de matrícula, retiro y final operativo de presentación. Las dos primeras pueden faltar en la fuente.\\
+$[0,t];\ (t,L_i]$ & Observación con ambos extremos incluidos; seguimiento con corte excluido y final incluido.\\
+$\mathcal E(t);\ N(t)$ & Conjunto de inscripciones elegibles y número de sus elementos.\\
+$Y_i(t);\ E(t)$ & Indicador de retiro futuro, con valores 0 o 1, y cantidad de esos eventos entre las inscripciones elegibles.\\
+$\pi(t)$ & Prevalencia $E(t)/N(t)$; proporción poblacional, no probabilidad individual estimada.\\
+\midrule
+\multicolumn{2}{l}{\textbf{Actividad e indicadores (capítulo~\ref{cap:ingenieria})}}\\*
+$c_{id};\ A_i(t)$ & Clics diarios no negativos y conjunto de días con actividad en $[0,t]$.\\
+$V_i(t);\ k_i(t)$ & Clics acumulados y número de días activos.\\
+$q_i(t)$ & Proporción de días activos: $k_i(t)/n_t\in[0,1]$.\\
+$m_i(t)$ & Clics por día activo: $V_i(t)/k_i(t)$, definidos si $k_i(t)>0$.\\
+$R_i(t)$ & Recencia: $t-\max A_i(t)$. Ausente sin actividad; la versión relativa es $R_i(t)/n_t$.\\
+$CV_{cal};\ CV_{act}$ & Desviación estándar muestral dividida por media: sobre calendario completo o solo días activos. El segundo requiere al menos dos días activos.\\
+$n,k,q,m,s_{act}$ & En la identidad de los CV: abreviaturas de $n_t,k_i(t),q_i(t),m_i(t)$ y desviación estándar muestral activa.\\
+$s;\ T_{i,s}(t)$ & Longitud del bloque (7 o 14 días) y tendencia logarítmica suavizada entre dos bloques consecutivos.\\
+\midrule
+\multicolumn{2}{l}{\textbf{Estadística exploratoria (capítulo~\ref{cap:caracterizacion})}}\\*
+$r_{rb};\ U_1$ & Efecto biserial por rangos y estadístico de Mann--Whitney del grupo con retiro futuro.\\
+$n_1;\ n_0$ & Cantidades de casos observables de cada grupo para el indicador analizado.\\
+$V_C;\chi^2$ & V de Cramér y estadístico de la tabla de contingencia. $V_C$ se distingue del volumen $V_i(t)$.\\
+$N;\ f,g$ & En V de Cramér: total de la tabla de contingencia y sus cantidades de filas y columnas.\\
+$Q_{25},Q_{50},Q_{75}$ & Cuartiles: percentiles 25, 50 (mediana) y 75 de la variable analizada.\\
+\textit{Rho}; $n$ & En las tablas de diagnóstico: correlación de Spearman y número de casos observados en la especificación indicada. No son la correlación común de árboles ni los días del calendario.\\
+\midrule
+\multicolumn{2}{l}{\textbf{Clasificación y regresión logística (marco y Anexo~\ref{clara:logistica})}}\\*
+$\mathcal D;\ n;\ p$ & Conjunto de entrenamiento, número de inscripciones de ese conjunto y número de características.\\
+$\mathbf x_i;\ x_j;\ y_i$ & Vector de características, componente $j$ de un vector y etiqueta binaria de una inscripción, en un corte fijado.\\
+$\mathbf X;\ Y$ & Vector aleatorio de predictores y respuesta aleatoria. Las minúsculas representan valores observados.\\
+$p(\mathbf x);\hat p(\mathbf x)$ & Probabilidad condicional y su estimación. El sombrero indica una cantidad estimada.\\
+$\hat y;\tau$ & Clase asignada y umbral; en este documento se asigna 1 si $\hat p(\mathbf x)>\tau$.\\
+$c_{FP};\ c_{FN}$ & Costes positivos de falso positivo y falso negativo. Su uso operativo permanece pendiente.\\
+$\sigma_{\mathrm{log}};\eta$ & Función logística $1/(1+e^{-\eta})$ y predictor lineal.\\
+$\beta_0;\boldsymbol\beta;\beta_j$ & Intercepto, vector de pendientes y pendiente del predictor $j$.\\
+$\pi_i$ & Probabilidad individual estimada en regresión logística o en la etapa previa de boosting; distinta de la prevalencia $\pi(t)$.\\
+$\ell;\lambda_{\mathrm{LR}};\alpha$ & Log-verosimilitud, intensidad no negativa de penalización y mezcla entre penalizaciones, $0\leq\alpha\leq1$.\\
+$C$ & Parámetro de regularización de una implementación; su relación con $\lambda_{\mathrm{LR}}$ depende de la normalización de la pérdida.\\
+\midrule
+\multicolumn{2}{l}{\textbf{Random Forest (marco teórico y Anexo~\ref{editorial:rf})}}\\*
+$B;\ b;\hat p^{(b)}$ & Cantidad de árboles, índice del árbol y probabilidad estimada por ese árbol.\\
+$m_{\mathrm{RF}}$ & Número de predictores candidatos en una división; distinto de la intensidad de clics.\\
+$\hat p_{\mathrm{nodo}};\ G$ & Proporción positiva de un nodo y su impureza de Gini.\\
+$T_b;\sigma_{\mathrm{RF}}^2;\rho_{\mathrm{RF}}$ & Estimador por árbol, varianza común y correlación común entre pares en la proposición idealizada.\\
+\midrule
+\multicolumn{2}{l}{\textbf{XGBoost (marco teórico y Anexo~\ref{editorial:xgb})}}\\*
+$t_{\mathrm{boost}};\ z_i$ & Índice de iteración del ensamble y puntuación anterior a la función logística; no son fechas.\\
+$f_{t_{\mathrm{boost}}};\nu$ & Árbol incorporado y tasa de aprendizaje que escala su contribución.\\
+$\mathcal L;\widetilde{\mathcal L};\ l$ & Objetivo regularizado, mínimo aproximado para una estructura fijada y pérdida individual.\\
+$\Omega;\ T;\mathbf w;\ w_j$ & Penalización del árbol, cantidad de hojas, vector de pesos y peso de la hoja $j$.\\
+$\lambda_{\mathrm{XGB}};\gamma_{\mathrm{XGB}}$ & Penalización no negativa de pesos y coste no negativo por hoja.\\
+$g_i;\ h_i;\ G_j;\ H_j$ & Primera y segunda derivadas de la pérdida respecto de la puntuación; sus sumas en la hoja $j$.\\
+$I_j;\ I;\ I_L;\ I_R$ & Conjunto de observaciones de una hoja, de un nodo y de sus hijos izquierdo y derecho.\\
+$w_j^*;\mathcal G$ & Peso óptimo de hoja bajo las hipótesis indicadas y ganancia de una división.\\
+\midrule
+\multicolumn{2}{l}{\textbf{LightGBM y TabNet (Anexos~\ref{clara:lightgbm} y~\ref{clara:tabnet})}}\\*
+$k_{\mathrm{bins}};\ d_{\mathrm{arbol}}$ & Número de intervalos de histograma y profundidad máxima del árbol.\\
+$a;\ b;\ n$ & En GOSS: fracciones del total y número total de filas; se seleccionan $an$ y $bn$ casos.\\
+$N_s; s_{\mathrm{TN}}$ & Número de pasos de decisión e índice del paso de TabNet; el índice no representa una inscripción.\\
+$N_b; b$ & Tamaño del lote e índice del caso dentro del lote en TabNet.\\
+$\mathbf M[s_{\mathrm{TN}}];\mathbf P[s_{\mathrm{TN}}]$ & Máscara de selección y factor acumulado que regula el uso previo de las variables.\\
+$\mathbf a[s_{\mathrm{TN}}];\ h_{s_{\mathrm{TN}}}$ & Estado interno y transformación entrenable del paso de atención.\\
+$\gamma_{\mathrm{TN}};\lambda_{\mathrm{disp}}$ & Parámetro de reutilización y peso de la penalización de dispersión.\\
+$L_{\mathrm{disp}};\epsilon$ & Término de entropía y estabilizador positivo dentro de su logaritmo.\\
+\midrule
+\multicolumn{2}{l}{\textbf{SHAP (marco teórico y Anexo~\ref{editorial:shap})}}\\*
+$F;\ S;\ j;\ p$ & Conjunto de características, subconjunto o coalición, característica explicada y cantidad $p=|F|$.\\
+$v_x(S);\ v(S)$ & Valor de una coalición para la observación $x$; la segunda forma abrevia la primera.\\
+$f(\mathbf x);\phi_j;\phi_0$ & Salida explicada, atribución a la característica $j$ y valor de referencia $v_x(\varnothing)$.\\
+$X_S; x_S; X_{-S}$ & Subvector aleatorio de las características de $S$, sus valores observados y subvector complementario.\\
+$B; L; D$ & En el coste de TreeSHAP: árboles, máximo de hojas y profundidad máxima. $L$ no es el final $L_i$ de presentación.\\
+$I_{\mathrm{SHAP},j};\phi_j^{(i)}$ & Importancia global media absoluta y atribución local de la característica $j$ al caso $i$.\\
+\midrule
+\multicolumn{2}{l}{\textbf{Operadores y convenciones transversales}}\\*
+$\mathbf1\{\cdot\};\ |S|;\varnothing$ & Indicadora de una condición, cardinalidad del conjunto y conjunto vacío.\\
+$\in;\subseteq;\cup;\setminus$ & Pertenencia, inclusión, unión y diferencia de conjuntos.\\
+$\sum;\prod;\max;\min$ & Suma, producto indexado, máximo y mínimo. El índice de cada operación tiene ámbito local.\\
+$\mathbb R^p;\mathbf x^\top\boldsymbol\beta$ & Espacio real de dimensión $p$ y producto escalar.\\
+$\lVert\boldsymbol\beta\rVert_1;\lVert\boldsymbol\beta\rVert_2^2$ & Suma de valores absolutos y suma de cuadrados de las componentes.\\
+$\ln;\log;\exp;\operatorname{logit}$ & Logaritmo natural, exponencial y logaritmo de la razón de probabilidades.\\
+$\operatorname{Var};\operatorname{Cov};\mathbb E$ & Varianza, covarianza y esperanza; la barra vertical en una esperanza indica condicionamiento.\\
+$\Pr;\ {!};\partial;\simeq$ & Probabilidad, factorial, derivada parcial y aproximación.\\
+$\odot;\operatorname{sparsemax}$ & Producto componente a componente y transformación a una máscara no negativa de suma uno con posibles ceros.\\
+$\arg\min;\ O(\cdot)$ & Argumento que minimiza una función y orden asintótico de coste computacional.\\
+\end{longtable}\endgroup
+
+\section*{Siglas de consulta}
+\begin{description}
+\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}
+\item[LMS / VLE] Sistema de gestión del aprendizaje / entorno virtual de aprendizaje.
+\item[OULAD] \textit{Open University Learning Analytics Dataset}.
+\item[CRISP-DM] \textit{Cross-Industry Standard Process for Data Mining}.
+\item[SHAP] \textit{SHapley Additive exPlanations}.
+\item[CV / IC] Coeficiente de variación / intervalo de confianza.
+\item[IQR / MAD] Rango intercuartílico / desviación absoluta mediana.
+\item[PCA / VIF / MCD] Análisis de componentes principales / factor de inflación de varianza / determinante mínimo de covarianza.
+\item[IMD] Índice de privación múltiple (\textit{Index of Multiple Deprivation}).
+\item[MAR / MNAR] Faltantes al azar / faltantes no al azar. Sus mecanismos no se demuestran solo con los datos observados.
+\item[GOSS / EFB] Muestreo unilateral basado en gradientes / agrupación de características excluyentes.
+\end{description}
+\clearpage
+\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}
+\fancyhead[LO]{\bfseries\nouppercase{\rightmark}}

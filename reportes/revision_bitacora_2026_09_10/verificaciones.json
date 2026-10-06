@@ -1,0 +1,137 @@
+{
+  "filas_vle_leidas": 10655280,
+  "cortes_con_contraste_completo": [
+    {
+      "corte": 7,
+      "n": 29076,
+      "n_k_mayor_igual_2": 18704,
+      "n_cv_activo_ausente": 10372,
+      "rho_cv_calendario_q": -0.9223026929988848,
+      "rho_cv_calendario_q_mismos_casos": -0.8475331228143368,
+      "rho_cv_activo_q": 0.1258104889528678,
+      "error_max_identidad_cv_cuadrado": 3.552713678800501e-15,
+      "clics_y_dias_activos_contraste_completo": true
+    },
+    {
+      "corte": 14,
+      "n": 28054,
+      "n_k_mayor_igual_2": 22779,
+      "n_cv_activo_ausente": 5275,
+      "rho_cv_calendario_q": -0.9227265732559463,
+      "rho_cv_calendario_q_mismos_casos": -0.8922940390483667,
+      "rho_cv_activo_q": 0.1530428715795081,
+      "error_max_identidad_cv_cuadrado": 1.2434497875801753e-14,
+      "clics_y_dias_activos_contraste_completo": true
+    },
+    {
+      "corte": 28,
+      "n": 27515,
+      "n_k_mayor_igual_2": 25227,
+      "n_cv_activo_ausente": 2288,
+      "rho_cv_calendario_q": -0.9194700528577817,
+      "rho_cv_calendario_q_mismos_casos": -0.9086553437571661,
+      "rho_cv_activo_q": 0.10162388948448851,
+      "error_max_identidad_cv_cuadrado": 2.842170943040401e-14,
+      "clics_y_dias_activos_contraste_completo": true
+    },
+    {
+      "corte": 42,
+      "n": 27005,
+      "n_k_mayor_igual_2": 25323,
+      "n_cv_activo_ausente": 1682,
+      "rho_cv_calendario_q": -0.9250759822900592,
+      "rho_cv_calendario_q_mismos_casos": -0.9180977308157042,
+      "rho_cv_activo_q": 0.10183760796428956,
+      "error_max_identidad_cv_cuadrado": 3.552713678800501e-14,
+      "clics_y_dias_activos_contraste_completo": true
+    },
+    {
+      "corte": 56,
+      "n": 26506,
+      "n_k_mayor_igual_2": 25147,
+      "n_cv_activo_ausente": 1359,
+      "rho_cv_calendario_q": -0.9308711069202926,
+      "rho_cv_calendario_q_mismos_casos": -0.9258608909427603,
+      "rho_cv_activo_q": 0.07574372006452211,
+      "error_max_identidad_cv_cuadrado": 4.973799150320701e-14,
+      "clics_y_dias_activos_contraste_completo": true
+    }
+  ],
+  "exclusiones": [
+    {
+      "corte": 7,
+      "elegibles": 29076,
+      "matricula_ausente": 45,
+      "matricula_tardia": 93,
+      "retiro_pre_inicio_tras_filtrar_matricula": 2643,
+      "retiro_0_t_tras_filtrar_matricula": 736,
+      "final_no_posterior": 0,
+      "doble_conteo_si_se_usan_2678": 35
+    },
+    {
+      "corte": 14,
+      "elegibles": 28054,
+      "matricula_ausente": 45,
+      "matricula_tardia": 58,
+      "retiro_pre_inicio_tras_filtrar_matricula": 2643,
+      "retiro_0_t_tras_filtrar_matricula": 1793,
+      "final_no_posterior": 0,
+      "doble_conteo_si_se_usan_2678": 35
+    },
+    {
+      "corte": 28,
+      "elegibles": 27515,
+      "matricula_ausente": 45,
+      "matricula_tardia": 16,
+      "retiro_pre_inicio_tras_filtrar_matricula": 2643,
+      "retiro_0_t_tras_filtrar_matricula": 2374,
+      "final_no_posterior": 0,
+      "doble_conteo_si_se_usan_2678": 35
+    },
+    {
+      "corte": 42,
+      "elegibles": 27005,
+      "matricula_ausente": 45,
+      "matricula_tardia": 12,
+      "retiro_pre_inicio_tras_filtrar_matricula": 2643,
+      "retiro_0_t_tras_filtrar_matricula": 2888,
+      "final_no_posterior": 0,
+      "doble_conteo_si_se_usan_2678": 35
+    },
+    {
+      "corte": 56,
+      "elegibles": 26506,
+      "matricula_ausente": 45,
+      "matricula_tardia": 9,
+      "retiro_pre_inicio_tras_filtrar_matricula": 2643,
+      "retiro_0_t_tras_filtrar_matricula": 3390,
+      "final_no_posterior": 0,
+      "doble_conteo_si_se_usan_2678": 35
+    }
+  ],
+  "evaluaciones_sin_fecha_por_tipo": {
+    "Exam": 11
+  },
+  "duracion_min": 234,
+  "duracion_max": 269,
+  "primera_evaluacion_continua_min": 12.0,
+  "primera_evaluacion_continua_max": 61.0,
+  "ejemplos_cv": {
+    "A": {
+      "CV": 1.8516401995451028,
+      "CV_activo": 0.0
+    },
+    "B": {
+      "CV": 0.6172133998483676,
+      "CV_activo": 0.0
+    },
+    "C": {
+      "CV": 2.336732218359104,
+      "CV_activo": 0.9428090415820634
+    }
+  },
+  "tendencia_200_100": -0.6881843912178162,
+  "tendencia_20_10": -0.6466271649250525,
+  "sha256_bitacora": "fced687755a3fd88b88947aced145e2515b97eb828392ab691e6702ed4eaf209",
+  "alcance": "Auditoría independiente; no sustitución del indicador, no PCA ni bootstrap reejecutados, no modelos."
+}

@@ -1,0 +1,25 @@
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[x=.115cm,y=1cm,font=\small\sffamily,>=Stealth]
+\fill[PUJClaro] (0,0) rectangle (28,1);
+\fill[PUJResalte] (28,0) rectangle (100,1);
+\node[align=center] at (14,.5) {Observación\\$[0,28]$};
+\node[align=center] at (64,.5) {Seguimiento\\$(28,100]$};
+\draw[->,PUJAzul] (0,0)--(104,0);
+\foreach \x/\lab in {0/0,28/28,100/100}{\draw (\x,.07)--(\x,-.07) node[below]{\lab};}
+\node[anchor=west] at (0,1.35) {Ejemplo hipotético: corte $t=28$ y final $L_i=100$};
+\draw[dashed,gray] (28,0)--(28,-5.2);
+\draw[gray] (0,-1)--(100,-1);
+\fill[PUJGris] (20,-1) circle (2pt);
+\node[anchor=west,fill=white] at (34,-1) {Retiro en día 20: excluida al corte};
+\draw[gray] (0,-2.2)--(100,-2.2);
+\fill[PUJAzul] (40,-2.2) circle (2pt);
+\node[anchor=west,fill=white] at (43,-2.2) {Retiro en día 40: elegible, $Y_i=1$};
+\draw[gray] (0,-3.4)--(100,-3.4);
+\node[anchor=west,fill=white] at (34,-3.4) {Sin retiro registrado: elegible, $Y_i=0$};
+\draw[gray] (30,-4.6)--(100,-4.6);
+\draw[fill=white] (30,-4.6) circle (2pt);
+\node[anchor=west,fill=white] at (34,-4.6) {Matrícula en día 30: excluida al corte};
+\node[align=left,anchor=north west,text width=11.6cm] at (0,-5.4) {En los tres primeros casos, la matrícula ocurre en el día 0. Un retiro en el propio día 28 también queda excluido. La clase 0 no acredita éxito académico.};
+\end{tikzpicture}
+\caption{Separación entre información observada y evento futuro. Elaboración propia; casos hipotéticos, no observaciones de OULAD.}\label{editorial:temporal}
+\end{figure}

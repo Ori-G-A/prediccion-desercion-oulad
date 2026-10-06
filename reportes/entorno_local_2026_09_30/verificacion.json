@@ -1,0 +1,108 @@
+{
+  "estado": "correcto",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "ejecutable": "D:\\Trabajo de grado maestria ciencia de datos\\.venv\\Scripts\\python.exe",
+  "versiones": {
+    "pandas": "2.3.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.9",
+    "scikit-learn": "1.8.0",
+    "pyarrow": "24.0.0",
+    "jupyterlab": "4.6.4",
+    "ipykernel": "7.4.0"
+  },
+  "datos_lectura_muestra": {
+    "courses": {
+      "bytes": 526,
+      "columnas": [
+        "code_module",
+        "code_presentation",
+        "module_presentation_length"
+      ]
+    },
+    "assessments": {
+      "bytes": 8200,
+      "columnas": [
+        "code_module",
+        "code_presentation",
+        "id_assessment",
+        "assessment_type",
+        "date",
+        "weight"
+      ]
+    },
+    "vle": {
+      "bytes": 260126,
+      "columnas": [
+        "id_site",
+        "code_module",
+        "code_presentation",
+        "activity_type",
+        "week_from",
+        "week_to"
+      ]
+    },
+    "studentInfo": {
+      "bytes": 3461652,
+      "columnas": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "gender",
+        "region",
+        "highest_education",
+        "imd_band",
+        "age_band",
+        "num_of_prev_attempts",
+        "studied_credits",
+        "disability",
+        "final_result"
+      ]
+    },
+    "studentRegistration": {
+      "bytes": 1109984,
+      "columnas": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "date_registration",
+        "date_unregistration"
+      ]
+    },
+    "studentAssessment": {
+      "bytes": 5690310,
+      "columnas": [
+        "id_assessment",
+        "id_student",
+        "date_submitted",
+        "is_banked",
+        "score"
+      ]
+    },
+    "studentVle": {
+      "bytes": 453836331,
+      "columnas": [
+        "code_module",
+        "code_presentation",
+        "id_student",
+        "id_site",
+        "date",
+        "sum_click"
+      ]
+    }
+  },
+  "notebooks": {
+    "01_carga_exploracion.ipynb": {
+      "celdas_codigo_sintaxis_valida": 8
+    },
+    "02_feature_engineering.ipynb": {
+      "celdas_codigo_sintaxis_valida": 5
+    },
+    "03_analisis_estadistico.ipynb": {
+      "celdas_codigo_sintaxis_valida": 8
+    }
+  },
+  "kernel_real_y_celda_inicial": "correcto",
+  "analisis_completo_ejecutado": false
+}

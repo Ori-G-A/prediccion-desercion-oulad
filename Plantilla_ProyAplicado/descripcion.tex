@@ -1,0 +1,395 @@
+%%%%%%%%%%%%%%%%%%%%%%
+% DESCRIPCION DEL PROBLEMA
+%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Definición del Problema}
+
+\subsection{Planteamiento del Problema}
+
+
+
+
+La deserción estudiantil en educación superior representa la interrupción de una trayectoria formativa y plantea dificultades para la permanencia y el acompañamiento académico. Su medición depende del nivel analizado, de la definición de salida y del tiempo de seguimiento; por ello, no deben compararse directamente tasas anuales, porcentajes acumulados por cohorte y proporciones de no graduación. En Colombia, el Ministerio de Educación Nacional reportó una tasa de deserción anual de 8,97\,\% para 2023, con cierre estadístico de 2024. El indicador considera la ausencia de matrícula durante dos o más periodos consecutivos y excluye al SENA del cálculo tecnológico señalado en la publicación \cite{revspadies2023}. Esta cifra sitúa el problema en el contexto nacional, pero no mide el retiro de un curso de OULAD ni constituye una prevalencia transferible a este estudio.
+
+En modalidades virtuales o mediadas por plataformas digitales, el seguimiento dispone de registros de participación que permiten examinar señales anteriores a una salida. Sin embargo, los estudios sobre MOOC, cursos universitarios a distancia y programas de educación superior no necesariamente comparten población, compromiso de matrícula ni definición de abandono. La revisión de esos trabajos permite reconocer factores y métodos de predicción, pero sus tasas y desempeños requieren interpretarse dentro del diseño de cada investigación \cite{1049482020222124425,0007767901540164}. En consecuencia, la delimitación del evento y del instante de observación debe preceder a la comparación de resultados.
+
+En los entornos de aprendizaje virtual o mediados por Sistemas de Gestión de Aprendizaje (LMS), las plataformas registran de manera continua las interacciones de los estudiantes con los recursos educativos, las evaluaciones, los foros, los contenidos y las actividades del curso. Estos registros permiten observar señales de participación, como la frecuencia de acceso; de continuidad, como la regularidad de interacción, el tiempo transcurrido desde la última actividad y la variación semanal de la participación; de intensidad de uso, como el número de clics y el uso de recursos educativos; y de participación académica, como la entrega de evaluaciones, que pueden anteceder al retiro formal \cite{sdata2017171,0007767901540164}. Sin embargo, la sola disponibilidad de datos no garantiza su aprovechamiento para la toma de decisiones educativas; por el contrario, muchas instituciones continúan actuando de forma reactiva, cuando la pérdida de participación ya se ha convertido en retiro, fracaso académico o desvinculación definitiva \cite{eks30080}.
+ 
+
+Desde la perspectiva de la analítica de aprendizaje y la minería de datos educativos, el comportamiento en un LMS se describe mediante patrones observables de interacción: cómo, cuándo, cuánto y con qué continuidad participa un estudiante. Estos patrones permiten construir indicadores a partir de los registros de la plataforma, sin asumir que midan directamente la motivación o la intención de abandonar \cite{sdata2017171,0007767901540164,bonviewJDSIS42023777}. La baja interacción requiere examinarse dentro de una trayectoria temporal, porque su relación con el riesgo puede variar según la participación previa \cite{1049482020222124425,arXiv260408870}. Por ello, el problema consiste en representar las señales académicas, conductuales y temporales que pueden ayudar a identificar riesgo temprano \cite{bdcc9110297,03064190261439624}.
+
+
+\subsection{Formulaci\'on}
+¿Cómo puede un modelo predictivo temprano e interpretable de aprendizaje automático, basado en variables académicas,  conductuales y temporales, identificar estudiantes en riesgo de abandono en entornos LMS y apoyar la toma de decisiones educativas mediante resultados explicables y visualizables?
+
+\subsection{Sistematizaci\'on}
+\begin{itemize}
+	\item ¿Qué variables académicas, conductuales y temporales disponibles en el dataset pueden identificarse y caracterizarse para establecer su pertinencia en el estudio del abandono estudiantil en un entorno LMS?
+	
+	\item ¿Qué variables derivadas de la interacción estudiantil en el LMS pueden construirse para caracterizar patrones de acceso, participación, continuidad, desempeño e inactividad?
+	
+	
+	\item ¿Qué modelos supervisados de aprendizaje automático permiten predecir tempranamente el abandono estudiantil a partir de variables académicas, conductuales y temporales?
+	
+	\item ¿Qué modelo presenta el mejor equilibrio entre desempeño predictivo e interpretabilidad para identificar estudiantes en riesgo de abandono en entornos LMS?
+	
+	\item ¿Cómo pueden estructurarse los resultados del análisis exploratorio, las predicciones del modelo y las explicaciones asociadas al riesgo estudiantil en un prototipo de visualización que apoye la lectura educativa de los hallazgos?
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Nueva sección
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Objetivos}
+
+\subsection{Objetivo General}
+Desarrollar un modelo predictivo temprano e interpretable de aprendizaje automático, basado en variables académicas, conductuales y temporales, para identificar a estudiantes en riesgo de abandono en entornos LMS y apoyar la toma de decisiones educativas mediante resultados explicables y visualizables.
+
+\subsection{Objetivos Espec\'ificos}
+
+\begin{itemize}
+	\item Identificar las variables académicas, conductuales y temporales disponibles en el conjunto de datos, mediante técnicas de preprocesamiento y análisis exploratorio, con el fin de establecer su pertinencia para el estudio del abandono en un entorno LMS.
+	
+	
+	\item Derivar variables a partir de la interacción estudiantil en el LMS, tales como frecuencia de acceso, número de clics, regularidad de participación, variación temporal de la actividad y tiempo transcurrido desde la última interacción.
+	
+	
+	\item Desarrollar y comparar modelos supervisados de aprendizaje automático para la predicción temprana del abandono estudiantil, mediante métricas de clasificación que permitan valorar su capacidad para identificar estudiantes en riesgo.
+	
+	
+	\item Analizar la interpretabilidad del modelo seleccionado, identificando las variables que contribuyen en mayor medida a la clasificación de riesgo, con el fin de seleccionar la alternativa que presente el mejor equilibrio entre capacidad predictiva, explicación comprensible y utilidad educativa.
+	%posible objetivo
+	%\item Implementar el análisis de interpretabilidad en el modelo predictivo seleccionado, mediante la aplicación de técnicas de Inteligencia Artificial Explicable (XAI) sobre las variables académicas y conductuales, para explicar con claridad las causas específicas del riesgo de abandono detectado en los estudiantes.
+	
+	
+	\item Diseñar un prototipo de visualización que comunique de forma clara los resultados del análisis exploratorio, las predicciones del modelo y las explicaciones asociadas al riesgo estudiantil, con el fin de apoyar a los actores educativos en la toma de decisiones y el diseño de intervenciones oportunas.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Nueva sección
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alcance y estado de desarrollo}
+El proyecto utiliza OULAD para estudiar el retiro administrativo futuro de una inscripción en un módulo y una presentación. Se mantienen las exclusiones del anteproyecto: predicción de reprobación, modelo longitudinal institucional completo, integración con un LMS activo, alerta en tiempo real, validación con estudiantes de una institución específica, intervenciones pedagógicas y evaluación de su efecto. Tampoco se realiza una evaluación exhaustiva de equidad algorítmica ni se generalizan automáticamente los resultados a otras instituciones.
+
+El anteproyecto se refiere al retiro voluntario registrado. Los archivos disponibles permiten observar una fecha administrativa, pero no comprobar el motivo de la salida. Esta precisión limita la interpretación del evento y se mantiene explícita en la preparación de datos. Las variables académicas disponibles al corte comprenden entregas y oportunidades de evaluación; los puntajes requieren evidencia de su fecha de publicación antes de incorporarse como predictores.
+
+Esta versión documenta la comprensión y preparación de datos y la comparación exploratoria de cinco cortes. El entrenamiento y evaluación de modelos, el análisis SHAP y el prototipo visual permanecen pendientes. Los capítulos correspondientes conservan su ubicación institucional y explicitan el trabajo por desarrollar.
+
+\section{Marco de Referencia}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Nueva sección
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Marco Te\'orico}
+
+El presente proyecto se fundamenta en la convergencia entre analítica de aprendizaje, minería de datos educativa y aprendizaje automático supervisado, aplicados a la identificación temprana de estudiantes en riesgo de abandono en entornos mediados por LMS. El desarrollo parte de la plataforma y de la definición del abandono, continúa con los indicadores observables y presenta después los modelos candidatos. La metodología CRISP-DM organiza estas actividades y el apartado de SHAP delimita cómo se prevé interpretar las predicciones. Esta secuencia permite distinguir el fenómeno educativo, su representación mediante datos y las herramientas utilizadas para estudiarlo.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plataformas de aprendizaje en línea: LMS y VLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Plataformas de aprendizaje en línea: LMS y VLE}
+
+Un sistema de gestión del aprendizaje (LMS, \textit{Learning Management System}) es la plataforma digital que administra la matrícula, distribuye los contenidos, aplica las evaluaciones y registra la actividad de los estudiantes en un curso o en un conjunto de cursos \cite{educsci11090552}. 
+
+La literatura utiliza distintas denominaciones para estas plataformas. En sentido estricto, un LMS gestiona el aprendizaje de una organización, mientras un sistema de gestión de cursos se concentra en el curso. Sin embargo, ambos nombres suelen usarse de manera intercambiable \cite{watson2007}. En la tradición británica también se utiliza entorno virtual de aprendizaje (VLE, \textit{Virtual Learning Environment}). La Open University emplea esa denominación para su plataforma y OULAD la conserva en los nombres de sus tablas \cite{sdata2017171}.
+
+Para mantener una convención de lectura, el estudio adopta LMS como designación general del tipo de plataforma, por ser la más extendida en la literatura sobre predicción de abandono, y reserva VLE para las referencias directas a las tablas y variables del conjunto de datos, como \texttt{studentVle} y \texttt{vle}. La plataforma de la Open University opera como un LMS convencional, de modo que la alternancia entre ambos nombres responde al contexto de uso y no a una diferencia de objeto.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deserción estudiantil: definiciones y tipologías
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Deserción estudiantil: definiciones y tipologías}
+
+La delimitación de la deserción determina qué estudiantes se cuentan como desertores y cuál es la prevalencia del fenómeno. En una tarea de clasificación supervisada, también determina qué observaciones reciben la etiqueta positiva \cite{tinto1975}. 
+
+Un mismo comportamiento puede recibir clasificaciones diferentes según el punto de referencia adoptado. Por ejemplo, quien abandona una institución para matricularse en otra deserta de la primera pero permanece en el sistema de educación superior, y quien interrumpe sus estudios y se reincorpora dos periodos después resulta desertor en el corte intermedio y persistente en el corte final \cite{tinto1975,himmel2002}. Por lo tanto, toda definición operativa queda subordinada a una unidad de análisis y a un horizonte temporal explícitos.
+
+Los modelos teóricos que estructuran el campo conciben el abandono como el desenlace de un proceso longitudinal de interacción entre el estudiante y los sistemas académico y social de la institución, en el que la integración insuficiente reduce el compromiso institucional y eleva la probabilidad de salida \cite{spady1970,tinto1975,tinto1993}. Su formulación original supone, sin embargo, estudiantes residentes de tiempo completo. En el caso de poblaciones no tradicionales (de mayor edad, en modalidad parcial, sin residencia en el campus), las variables de integración social pierden capacidad explicativa frente al desempeño académico y a los factores del entorno externo \cite{beanmetzner1985}. En la educación a distancia y en línea, la ausencia de un entorno físico compartido obliga a sustituir los indicadores de integración presencial por medidas de participación en el entorno mediado \cite{rovai2003}.
+
+El contraste entre esos contextos obliga a precisar de qué abandono se habla en cada caso. La literatura distingue el abandono mediante cuatro criterios de clasificación \cite{himmel2002,men2009,1049482020222124425}:
+\begin{enumerate}
+\item \textbf{Unidad de análisis.} Distingue entre la deserción del curso, del programa, de la institución y del sistema educativo.
+\item \textbf{Momento de ocurrencia.} Separa la deserción temprana de la tardía. La distinción importa porque la temprana se concentra en los primeros periodos, antes de que el vínculo académico se consolide.
+\item \textbf{Permanencia del abandono.} Diferencia la salida definitiva de la interrupción temporal o \textit{stopout}, en la que el estudiante retoma sus estudios tras un periodo de ausencia.
+\item \textbf{Formalidad del acto de salida.} Separa la baja administrativa, que la institución registra con fecha, del cese de la participación que no deja constancia formal.
+\end{enumerate}
+
+
+Este último criterio ocupa un lugar secundario en la investigación sobre educación presencial, donde la matrícula periódica resuelve la ambigüedad en cada corte, pero resulta determinante en entornos mediados por plataformas y organiza la definición de abandono adoptada en este trabajo.
+
+En un LMS, el retiro administrativo y la ausencia de participación son observaciones distintas. OULAD contiene una fecha de retiro en la tabla de matrícula y una categoría de resultado final \texttt{Withdrawn} \cite{sdata2017171}; la auditoría del Capítulo~\ref{cap:caracterizacion} muestra que ambas fuentes no coinciden en todas las inscripciones. Por ello, el estudio define el evento mediante la fecha administrativa y no infiere a partir de ella el motivo voluntario de la salida.
+
+La inactividad prolongada se examina como indicador complementario de la trayectoria registrada. Su presencia no demuestra abandono: puede depender del calendario de actividades, de formas de estudio no registradas en el LMS o de otras circunstancias que los archivos no permiten identificar. En consecuencia, no se construye una segunda etiqueta de deserción a partir de la inactividad. La clase negativa representa ausencia de retiro administrativo dentro del horizonte definido y no certifica participación continua ni culminación satisfactoria.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Analítica de aprendizaje y datos de \textit{clickstream} en entornos LMS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Analítica de aprendizaje y datos de \textit{clickstream} en entornos LMS}
+
+La analítica de aprendizaje utiliza datos de los estudiantes y de su contexto para comprender el proceso educativo y apoyar su mejora \cite{longsiemens2011,educsci11090552}.
+
+La minería de datos educativos se concentra en encontrar patrones y desarrollar métodos para analizarlos. La analítica de aprendizaje pone mayor atención en cómo interpretar esos resultados y comunicarlos a docentes e instituciones \cite{siemensbaker2012,romeroventura2020}. El proyecto reúne ambas perspectivas: construye indicadores y prevé comparar modelos, pero también busca que sus resultados sean comprensibles para quienes podrían utilizarlos.
+
+La huella de interacción o \textit{clickstream} reúne acciones digitales con una referencia temporal. En un LMS puede incluir accesos, aperturas de recursos, reproducciones de material, publicaciones en foros, intentos de cuestionario y envíos de evaluaciones, asociados a un estudiante, un recurso y un momento. Estos eventos acompañan el proceso educativo, pero no miden directamente el aprendizaje \cite{03064190261439624,educsci11090552}. La literatura suele relacionarlos con el compromiso estudiantil o \textit{engagement}, que comprende tres dimensiones \cite{fredricks2004}:
+\begin{enumerate}
+\item \textbf{Conductual.} Participación observable y esfuerzo invertido.
+\item \textbf{Emocional.} Vínculo afectivo con la institución y con la tarea.
+\item \textbf{Cognitiva.} Inversión deliberada en la comprensión profunda del contenido.
+\end{enumerate}
+Los registros del LMS permiten observar una parte de la participación conductual. No muestran directamente la motivación, el bienestar o la intención de continuar estudiando. La literatura advierte que la presencia de actividad digital puede confundirse con un mayor compromiso con el aprendizaje \cite{henrie2015}. Por ello, los clics y las entregas se interpretan aquí como señales observables de participación, con ese límite.
+
+La literatura describe familias de indicadores de volumen, regularidad, diversidad, recencia, tendencia y actividad evaluativa \cite{macfadyendawson2010,agudoperegrina2014,wolff2013,halawa2014}. Su pertinencia depende del evento y de la población analizados: un resultado sobre rendimiento académico no demuestra, por sí solo, capacidad para predecir retiro administrativo. En el presente estudio se contrastan las familias con los registros disponibles y las oportunidades de participación de cada corte. La recencia conserva un papel exclusivamente conductual; las entregas y las notas se distinguen porque la existencia de la primera no acredita la disponibilidad de la segunda. La Tabla~\ref{tab:familias-clickstream} presenta los indicadores derivables y sus principales condiciones de interpretación.
+
+
+\begin{table}[htbp]
+\centering
+\caption{Familias de indicadores derivables de los registros de plataforma y riesgo asociado a cada una. Elaboración propia a partir de \cite{macfadyendawson2010,agudoperegrina2014,wolff2013,halawa2014}.}
+\label{tab:familias-clickstream}
+\small
+\begin{tabular}{p{0.20\textwidth} p{0.34\textwidth} p{0.32\textwidth}}
+\hline
+\textbf{Familia} & \textbf{Qué captura} & \textbf{Riesgo asociado} \\
+\hline
+Volumen e intensidad & Cantidad total y media de actividad en la ventana & Confunde presencia con implicación \\
+Regularidad temporal & Dispersión de la actividad entre días y semanas activas & Requiere ventanas de longitud comparable \\
+Diversidad de la interacción & Amplitud de tipos de recurso y de destinatario de la interacción & Depende del diseño de cada módulo \\
+Recencia & Días transcurridos desde la última interacción registrada & Requiere actividad previa observable \\
+Tendencia & Cambio de la participación entre semanas consecutivas & Inestable con actividad escasa \\
+Desempeño & Entregas realizadas, oportunidad y calificación obtenida & Disponibilidad de entrega y publicación de nota distintas \\
+\hline
+\end{tabular}
+\end{table}
+
+ Este trabajo está enfocado en la predicción temprana, por lo que estas familias no se calculan sobre el curso completo, sino sobre un tramo inicial. De esta manera, se busca identificar a los estudiantes en riesgo a partir de la información disponible en las primeras semanas, antes del retiro administrativo, cuando todavía puede existir tiempo para un acompañamiento cuya eficacia deberá evaluarse \cite{bdcc9110297,gardnerbrooks2018}. 
+
+La formulación exige distinguir dos periodos. La ventana de observación es el tramo sobre el que se acumulan los datos y se calculan los predictores. El horizonte de predicción corresponde al intervalo futuro en el que se observa el evento. La extensión de ambos periodos condiciona la interpretación de los resultados. 
+ 
+ Una ventana corta permite predecir antes, pero reúne menos información: al comienzo del curso puede haber pocos registros de participación. Por ello, la comparación de varias ventanas debe examinar conjuntamente la anticipación disponible y la capacidad para distinguir inscripciones con y sin retiro futuro.
+
+La huella de interacción tiene dos límites para la predicción temprana. El primero es su comparabilidad entre cursos: un mismo volumen de actividad puede tener significados distintos según el uso educativo de la plataforma \cite{gasevic2016}. OULAD reúne módulos de áreas y duraciones diferentes; por ello, la generalización entre ellos deberá comprobarse durante la evaluación. El segundo límite es temporal. Cada predictor debe utilizar información disponible al momento de emitir la predicción. Incorporar registros posteriores produce fuga de información: el modelo aprovecha datos que no tendría al utilizarse y puede mostrar un desempeño demasiado favorable \cite{kaufman2012,gardnerbrooks2018}.
+%La restricción es delicada en OULAD, donde la actividad puede aparecer con fechas posteriores a la desmatriculación de un estudiante y donde la etiqueta de abandono de hecho consume información de inactividad que no puede reutilizarse como predictor.
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modelos supervisados de clasificación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Modelos supervisados de clasificación}
+
+La predicción del abandono se formula como una tarea de clasificación binaria supervisada. En un corte fijado, cada inscripción elegible se representa mediante sus características observables; el modelo buscará relacionarlas con la presencia o ausencia de retiro posterior. La estimación de probabilidad y la asignación de una clase son pasos distintos, porque esta última requiere un umbral de decisión.
+
+El conjunto de entrenamiento se representa como $\mathcal{D}=\{(\mathbf{x}_i,y_i)\}_{i=1}^{n}$. Contiene $n$ inscripciones; para cada una, el vector $\mathbf{x}_i\in\mathbb{R}^{p}$ reúne $p$ características observadas en la ventana y la etiqueta $y_i\in\{0,1\}$ indica ausencia o presencia de retiro futuro. El clasificador estima $\hat{p}(\mathbf{x})=\widehat{\Pr}(Y=1\mid\mathbf{X}=\mathbf{x})$, la probabilidad del evento dadas esas características. Después la compara con el umbral $\tau$: $\hat{y}=\mathbf{1}\{\hat{p}(\mathbf{x})>\tau\}$. La función indicadora $\mathbf{1}$ asigna la clase 1 si la estimación supera el umbral y la clase 0 en caso contrario \cite{james2023,han2012}.
+
+La probabilidad estimada permite ordenar las inscripciones según su riesgo, pero es necesario comprobar si esas estimaciones se ajustan a lo que ocurre: esto se conoce como calibración. Además, convertir una probabilidad en una clase requiere elegir un umbral. El valor $\tau=0{,}5$ minimiza el coste esperado cuando las probabilidades son correctas y ambos tipos de error tienen el mismo coste. Con costes positivos $c_{FP}$ y $c_{FN}$ para falsos positivos y falsos negativos, la comparación entre $c_{FP}(1-p(\mathbf x))$ y $c_{FN}p(\mathbf x)$ conduce al umbral $c_{FP}/(c_{FP}+c_{FN})$.
+
+Otras métricas o restricciones de capacidad pueden requerir un criterio distinto. El umbral se elegirá con datos de validación dentro del entrenamiento, antes de evaluar la prueba final \cite{revthreshold}.
+
+La selección de los algoritmos candidatos considera el desempeño reportado en la literatura, la compatibilidad con el análisis de interpretabilidad y la representación de familias metodológicas distintas. Se incluyen un modelo lineal generalizado, un ensamble que combina árboles ajustados sobre muestras aleatorias (\textit{bagging}), dos métodos que añaden árboles para corregir errores sucesivos (\textit{gradient boosting}) y una red neuronal para datos tabulares, organizados en filas y columnas. 
+
+La comparación entre familias resulta pertinente porque la evidencia acumulada sobre datos tabulares no favorece de manera uniforme a los métodos más complejos: estudios comparativos sistemáticos muestran que los ensambles de árboles con potenciación de gradiente igualan o superan a las arquitecturas profundas en la mayoría de los conjuntos de datos tabulares, con un costo de ajuste sensiblemente menor \cite{shwartzziv2022,grinsztajn2022}.
+
+\paragraph{Regresión logística}
+
+La regresión logística permite estimar la probabilidad de retiro futuro a partir de los predictores. Para ello, transforma una combinación lineal de sus valores mediante la función logística, que produce un resultado entre cero y uno:
+\[
+\hat{p}(\mathbf{x})=\sigma_{\mathrm{log}}(\eta)=\frac{1}{1+e^{-\eta}},
+\qquad
+\eta=\beta_{0}+\sum_{j=1}^{p}\beta_{j}x_{j},
+\]
+Aquí $\eta$ es la combinación lineal, $\beta_0$ es el intercepto y $\beta_j$ pondera el predictor $x_j$. Para interpretar esos coeficientes se utiliza el \textit{logit}, es decir, el logaritmo de la razón entre la probabilidad del evento y la de su ausencia:
+\begin{equation}\label{eq:logit}
+\operatorname{logit}\big(\hat{p}(\mathbf{x})\big)
+=\ln\frac{\hat{p}(\mathbf{x})}{1-\hat{p}(\mathbf{x})}
+=\beta_{0}+\sum_{j=1}^{p}\beta_{j}x_{j}.
+\end{equation}
+Cada coeficiente $\beta_j$ indica cómo cambia el logaritmo de la razón de probabilidades al aumentar una unidad su predictor, manteniendo los demás constantes. La cantidad $e^{\beta_j}$ expresa ese cambio como un factor multiplicativo. Esta interpretación corresponde a una asociación dentro del modelo, no al efecto de intervenir sobre el estudiante.
+
+Como ejemplo hipotético, un coeficiente de $0{,}40$ para los días desde la última interacción multiplicaría la razón de probabilidades por aproximadamente 1,49 por cada día adicional, con los demás predictores constantes \cite{hosmer2013}. Esto representa un aumento cercano al 49\,\% en esa razón, no un aumento de 49 puntos porcentuales en la probabilidad. Esta posibilidad de interpretar sus coeficientes justifica utilizar la regresión logística como referencia.
+
+El ajuste busca coeficientes que representen la relación entre los predictores y el retiro. Para evitar valores excesivos puede aplicarse regularización, una penalización de la magnitud de los coeficientes. Esta decisión y el tratamiento de variables relacionadas deberán definirse durante el entrenamiento. La formulación del ajuste, sus condiciones y la penalización se conservan en el Anexo~\ref{clara:logistica}.
+
+\paragraph{Random Forest}
+
+Random Forest combina árboles de decisión para estimar la probabilidad de retiro. Cada uno se ajusta sobre una muestra \textit{bootstrap}, obtenida al seleccionar filas del entrenamiento con reposición. Con $B$ árboles y $\hat p^{(b)}(\mathbf x)$ como la probabilidad estimada por el árbol $b$, el resultado es su promedio:
+\[
+\hat{p}(\mathbf{x})=\frac{1}{B}\sum_{b=1}^{B}\hat{p}^{(b)}(\mathbf{x}),
+\]
+con la particularidad de restringir cada división candidata a un subconjunto aleatorio de $m_{\mathrm{RF}}$ predictores de los $p$ disponibles. Los cortes de cada árbol se eligen por reducción de impureza; para clasificación binaria, el índice de Gini de un nodo con proporción $\hat p_{\mathrm{nodo}}$ de la clase positiva es $G=2\hat p_{\mathrm{nodo}}(1-\hat p_{\mathrm{nodo}})$ \cite{breiman2001,james2023}.
+
+Promediar árboles puede reducir la variación de las predicciones, pero el beneficio depende de cuánto se parezcan sus errores. Esta relación se expresa mediante la covarianza, que describe cómo varían conjuntamente. Añadir árboles no garantiza una mejora de todas las métricas, porque el error también depende del sesgo y del problema evaluado. El Anexo~\ref{editorial:rf} conserva la expresión matemática, sus supuestos y la demostración \cite{breiman2001}.
+
+
+
+En un remuestreo de $n$ filas con reposición, la probabilidad de omitir una fila es $(1-1/n)^n$, que converge a $e^{-1}\simeq0{,}368$. La evaluación fuera de bolsa utiliza las predicciones de árboles que omitieron esa fila. En OULAD, omitir una inscripción no implica omitir a la persona, porque otras inscripciones suyas pueden permanecer en el ajuste; por ello, este diagnóstico no sustituye una validación por personas o presentaciones acorde con la generalización buscada.
+
+Los árboles permiten representar interacciones y relaciones no lineales sin especificarlas de forma aditiva. El tratamiento de categorías y faltantes depende de la implementación; no debe asumirse que todo ensamble admite directamente cadenas de texto o cualquier patrón de ausencia. Su medida nativa de importancia, basada en la reducción acumulada de impureza, debe emplearse en cambio con cautela: presenta un sesgo sistemático a favor de los predictores continuos y de los categóricos con muchos niveles, con independencia de su relación real con la respuesta \cite{strobl2007}. Esta advertencia es pertinente en un conjunto donde conviven variables de conteo de alta cardinalidad con indicadores binarios, y constituye una de las razones para apoyar el análisis de interpretabilidad en atribuciones de Shapley en lugar de en las importancias por impureza.
+
+\paragraph{XGBoost}
+
+XGBoost construye árboles sucesivos para reducir el error del ensamble. En clasificación logística, $z_i$ es la puntuación de la inscripción $i$ antes de transformarla en probabilidad y $\pi_i=\sigma_{\mathrm{log}}(z_i)$ es esa probabilidad. Cada actualización se expresa como $z_i^{(t_{\mathrm{boost}})}=z_i^{(t_{\mathrm{boost}}-1)}+\nu f_{t_{\mathrm{boost}}}(\mathbf{x}_{i})$: el árbol $f_{t_{\mathrm{boost}}}$ se añade a la puntuación anterior y la tasa de aprendizaje $\nu$ regula su aporte. El índice $t_{\mathrm{boost}}$ cuenta iteraciones, no días del curso. Cada árbol se ajusta a partir de la dirección de descenso de la pérdida, que mide el error de las predicciones acumuladas \cite{friedman2001}. Para derivar el ajuste se considera primero el árbol sin reducir su aporte ($\nu=1$); la tasa se aplica después al incorporarlo. El objetivo regularizado es
+\begin{equation}\label{eq:xgb-obj}
+\mathcal{L}^{(t_{\mathrm{boost}})}=\sum_{i=1}^{n}l\big(y_{i},z_i^{(t_{\mathrm{boost}}-1)}+f_{t_{\mathrm{boost}}}(\mathbf{x}_{i})\big)+\Omega(f_{t_{\mathrm{boost}}}),
+\qquad
+\Omega(f)=\gamma_{\mathrm{XGB}} T+\tfrac{1}{2}\lambda_{\mathrm{XGB}}\lVert\mathbf{w}\rVert_{2}^{2},
+\end{equation}
+Aquí $l$ es la pérdida individual, $\mathcal L$ combina las pérdidas con la penalización $\Omega$, $T$ cuenta las hojas y $\mathbf w$ reúne sus pesos. Los coeficientes $\gamma_{\mathrm{XGB}}$ y $\lambda_{\mathrm{XGB}}$ penalizan el número de hojas y la magnitud de sus pesos, respectivamente. El modelo equilibra dos propósitos: reducir el error de clasificación y limitar la complejidad de los árboles. Esta distinción permite interpretar la regularización antes de examinar su desarrollo algebraico.
+
+La expansión de Taylor, las condiciones del peso óptimo y la ganancia de división se conservan en el Anexo~\ref{editorial:xgb}, ecuaciones~\eqref{eq:xgb-taylor} y~\eqref{eq:xgb-gain}. Allí se detalla por qué las derivadas de la pérdida determinan el ajuste de cada hoja. 
+
+La regularización limita tanto los pesos como el número de hojas. En la solución del Anexo~\ref{editorial:xgb}, $\lambda_{\mathrm{XGB}}$ aparece en el denominador del peso: al aumentarlo, ese peso se reduce en magnitud, especialmente cuando la suma de segundas derivadas de la pérdida es pequeña. Por su parte, $\gamma_{\mathrm{XGB}}$ exige que la mejora de una división compense el coste de añadir una hoja. Así se puede descartar una división que reduzca poco el error.
+
+La tasa $\nu$ escala cada actualización, con la consecuencia de que su reducción puede requerir más iteraciones, sin garantizar que se alcance un ajuste idéntico. El desbalance puede tratarse ponderando por un factor constante las primeras y segundas derivadas de la pérdida, $g_i$ y $h_i$, para los casos de la clase minoritaria. Estas cantidades se definen en el Anexo~\ref{editorial:xgb}; la ponderación concreta deberá fijarse en el entrenamiento. 
+
+La implementación añade un algoritmo de búsqueda de cortes consciente de la dispersión, que asigna las observaciones con valor ausente a la rama de mayor ganancia sin imputación previa, y un esquema aproximado de cuantiles ponderados que permite escalar a conjuntos grandes \cite{chen2016}.
+
+El resultado es un método de alto desempeño sobre datos tabulares estructurados, ampliamente adoptado en predicción educativa \cite{eks30080,educsci11090552,computers15030164}. Su contrapartida es una sensibilidad marcada a la configuración de $\nu$, de la profundidad, del submuestreo y de los coeficientes de regularización, y una propensión al sobreajuste si el número de iteraciones no se controla mediante detención temprana sobre un conjunto de validación. La naturaleza secuencial del ensamble impide además cualquier lectura directa del efecto de un predictor, por lo que se prevé utilizar explicaciones \textit{post-hoc} cuya interpretación se contrastará con el protocolo elegido.
+
+\paragraph{LightGBM}
+
+LightGBM también construye árboles de manera secuencial. Agrupa los valores de las variables en intervalos para buscar divisiones con menos trabajo de cálculo y suele ampliar la hoja que ofrece mayor mejora \cite{revlightfeatures,revlighttuning}. Por ello, controlar la profundidad y el número de hojas será importante para evitar ajustes demasiado complejos.
+
+Sus procedimientos de muestreo y agrupación de variables buscan mejorar la eficiencia \cite{ke2017}. El Anexo~\ref{clara:lightgbm} conserva los detalles y las condiciones de esas operaciones. Su inclusión como candidato no supone que vaya a superar a los demás modelos en OULAD.
+
+\paragraph{TabNet}
+
+TabNet es una red neuronal diseñada para datos organizados en filas y columnas. Procesa cada observación en varios pasos y asigna pesos a las variables que utiliza en cada uno. Esos pesos forman una máscara de atención: algunas variables reciben mayor peso y otras pueden quedar en cero. Una variable puede volver a utilizarse en pasos posteriores \cite{arXiv190807442}.
+
+Este mecanismo permite examinar qué variables atiende la red, aunque sus máscaras no equivalen a explicaciones causales ni a valores SHAP. Las ecuaciones de las máscaras y de su penalización se conservan en el Anexo~\ref{clara:tabnet}.
+
+El artículo de TabNet utiliza variables numéricas sin normalización global previa y normalización por lotes dentro de la arquitectura; también contempla representaciones entrenables de las categorías \cite{arXiv190807442}. Por ello, no corresponde imponer como requisito del método un escalado global externo. La preparación concreta dependerá de la implementación y se ajustará dentro del entrenamiento. Las máscaras y el tamaño de los lotes añaden decisiones que deberán documentarse; no se presume una superioridad de TabNet ni una cantidad mínima universal de datos frente a los ensambles.
+
+La selección mediante máscaras depende de cada observación. Al reunirlas a lo largo de los pasos se obtiene una importancia por caso, distinta de la selección global de variables antes del entrenamiento y de las atribuciones \textit{post-hoc}. Las comparaciones sobre conjuntos tabulares muestran que los ensambles de árboles siguen siendo competitivos o superiores y que las redes profundas pueden requerir mayor esfuerzo de ajuste \cite{shwartzziv2022,grinsztajn2022}. Por ello, el desempeño de TabNet deberá evaluarse en OULAD. El proyecto lo incorpora como candidato con reglas comunes de comparación; junto con la regresión logística, ofrece una interpretación basada en su propia estructura. La Tabla~\ref{tab:modelos-candidatos} resume los cinco candidatos.
+
+\begin{table}[htbp]
+\centering
+\caption{Modelos candidatos: familia, mecanismo e interpretabilidad. Elaboración propia a partir de \cite{hosmer2013,breiman2001,chen2016,ke2017,arXiv190807442}.}
+\label{tab:modelos-candidatos}
+\small
+\begin{tabular}{p{0.15\textwidth} p{0.15\textwidth} p{0.30\textwidth} p{0.28\textwidth}}
+\hline
+\textbf{Modelo} & \textbf{Familia} & \textbf{Mecanismo} & \textbf{Interpretabilidad} \\
+\hline
+Regresión logística & Lineal generalizado & Combinación lineal en la escala del \textit{logit} & Intrínseca: coeficientes y razones de probabilidad \\
+Random Forest & Ensamble por \textit{bagging} & Promedio de árboles sobre muestras y variables aleatorias & Importancia nativa sesgada; requiere apoyo \textit{post-hoc} \\
+XGBoost & \textit{Boosting} por gradiente & Árboles secuenciales con aproximación de segundo orden y regularización & \textit{Post-hoc} exclusivamente \\
+LightGBM & \textit{Boosting} por gradiente & Histogramas, crecimiento por hoja, muestreo por gradiente & \textit{Post-hoc} exclusivamente \\
+TabNet & Aprendizaje profundo & Pasos de decisión con máscaras de atención dispersas & Intrínseca por instancia mediante máscaras \\
+\hline
+\end{tabular}
+\end{table}
+
+La comparación deberá considerar que las clases pueden tener tamaños distintos. Un modelo que asigne a todos los estudiantes a la clase más frecuente puede acertar muchas veces y, aun así, no identificar los retiros. Por ello, se prevé evaluar su capacidad para distinguir ambas clases mediante las curvas ROC, que relacionan la proporción de retiros detectados con la proporción de falsas alertas, y las curvas de precisión y exhaustividad, que relacionan la proporción de alertas correctas con la proporción de retiros detectados. También se utilizarán métricas para el umbral elegido \cite{1049482020222124425,s41598025939181}. El protocolo, las métricas definitivas y el tratamiento del desbalance aún deben fijarse; el capítulo de modelos conserva ese estado pendiente.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Metodología CRISP-DM
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Metodología CRISP-DM}
+
+CRISP-DM (\textit{Cross-Industry Standard Process for Data Mining}) ofrece una forma de organizar el trabajo, desde la comprensión del problema hasta la entrega de los resultados. Su utilidad en este proyecto consiste en hacer explícito qué se busca en cada etapa y qué decisiones permiten pasar a la siguiente. La preparación de datos forma parte de este proceso y no es solo un paso previo al entrenamiento \cite{fayyad1996,chapman2000,wirth2000}.
+
+La metodología comprende seis fases. Primero se define el problema y se revisan las fuentes disponibles. Luego se preparan los datos y se construyen los modelos. La evaluación examina si los resultados responden al propósito del estudio, mientras que el despliegue organiza su entrega en una forma útil, como un informe, un procedimiento o una herramienta \cite{chapman2000,shearer2000}.
+
+Estas fases permiten volver sobre decisiones anteriores. Por ejemplo, encontrar una limitación en las fechas puede exigir cambiar la forma de construir una variable antes de continuar \cite{chapman2000}. En este estudio, la revisión de las matrículas, los retiros y el calendario de evaluación orientó la selección de inscripciones y de indicadores para cada corte.
+
+CRISP-DM no resuelve por sí solo todas las decisiones de un proyecto de ciencia de datos. La operación de un modelo, su seguimiento posterior y las implicaciones éticas requieren atención adicional \cite{martinezplumed2021}. En educación, también interesa saber si el desempeño cambia entre grupos de estudiantes. Una evaluación exhaustiva de equidad queda fuera del alcance actual y no puede darse por resuelta con los resultados descriptivos \cite{zenodo8115786}.
+
+En educación, los resultados deben poder ser comprendidos por docentes, tutores y responsables institucionales, además de analistas \cite{romeroventura2020,educsci11090552}. Por ello, el proyecto prevé comunicar las predicciones y sus explicaciones mediante un prototipo. Su desarrollo no equivale a demostrar que una intervención reduzca el abandono.
+
+Las visualizaciones ayudan a comunicar patrones de participación, niveles de riesgo y resultados de evaluación \cite{info16040326}. En esta fase se utilizan para explicar el análisis realizado. La Tabla~\ref{tab:crispdm-proyecto} relaciona las fases de CRISP-DM con los objetivos y capítulos del documento.
+
+\begin{table}[htbp]
+\centering
+\caption{Correspondencia entre las fases de CRISP-DM y el desarrollo de este proyecto. Elaboración propia a partir de \cite{chapman2000,martinezplumed2021}.}
+\label{tab:crispdm-proyecto}
+\small
+\begin{tabular}{p{0.20\textwidth} p{0.40\textwidth} p{0.30\textwidth}}
+\hline
+\textbf{Fase} & \textbf{Actividades en este proyecto} & \textbf{Capítulo o sección} \\
+\hline
+Comprensión del negocio & Delimitación del fenómeno, definición operativa de deserción y criterios de éxito & Contextualización del proyecto; Marco teórico \\
+Comprensión de los datos & Descripción de OULAD, verificación de calidad y análisis exploratorio & Caracterización de variables \\
+Preparación de los datos & Construcción de la etiqueta, derivación de variables por ventana y selección de características & Ingeniería de características \\
+Modelado & Definición de particiones, evaluación del desbalance, entrenamiento y ajuste de hiperparámetros (pendientes) & Desarrollo y comparación de modelos \\
+Evaluación & Comparación por métricas sensibles al desbalance, análisis de interpretabilidad y revisión del proceso & Evaluación comparativa; Interpretabilidad mediante SHAP \\
+Despliegue & Prototipo de visualización para la comunicación de resultados a actores educativos & Prototipo de visualización \\
+\hline
+\end{tabular}
+\end{table}
+
+Este trabajo adopta CRISP-DM como marco de proceso, con dos precisiones derivadas de las limitaciones anteriores. La primera es que la fase de despliegue se materializa en un prototipo de visualización de carácter exploratorio, no en la puesta en operación de un sistema institucional, por lo que la supervisión del modelo en producción queda fuera del alcance y se enuncia como trabajo futuro. La segunda es que la evaluación prevista incorpora interpretabilidad y reconocimiento de las limitaciones de generalización. Una evaluación exhaustiva de equidad entre grupos permanece fuera del alcance, conforme al anteproyecto.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Interpretabilidad \textit{post-hoc}: SHAP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Interpretabilidad \textit{post-hoc}: SHAP}
+
+La interpretabilidad busca que una explicación sea comprensible para su destinatario y responda a una pregunta concreta; por ello, su definición y evaluación dependen del contexto \cite{doshivelez2017}. Se distinguen los modelos cuya estructura permite una lectura directa y las técnicas \textit{post-hoc}, aplicadas después del entrenamiento. También se distingue la explicación global, que resume el comportamiento del modelo sobre un conjunto de casos, de la local, que examina una predicción particular \cite{03064190261439624,bdcc9110297}. En este proyecto, la lectura global permitirá reconocer qué variables utiliza el modelo y la local examinará su predicción para una inscripción. Ambas forman parte del análisis previsto; no constituyen una intervención educativa evaluada.
+
+Las explicaciones \textit{post-hoc} requieren cautela: una aproximación que representa bien el comportamiento promedio del modelo puede resultar poco fiel en casos particulares. Por ello, se ha recomendado utilizar modelos de lectura directa cuando las decisiones afectan a personas y su desempeño resulta comparable \cite{rudin2019}. El proyecto conserva dos condiciones para la comparación: incluir un modelo base interpretable, de modo que la diferencia de desempeño pueda medirse, y presentar las explicaciones como atribuciones del modelo. Estas atribuciones no identifican causas del abandono.
+
+SHAP (\textit{SHapley Additive exPlanations}) permite descomponer una predicción en un valor de referencia y contribuciones de las variables. Para ello utiliza los valores de Shapley, que distribuyen el resultado de un juego entre sus participantes según su contribución \cite{shapley1953,lundberg2017}. En la aplicación al modelo, los participantes son las variables de una inscripción. El cálculo considera distintas combinaciones de variables, no solo un orden de incorporación. Su formulación completa se conserva en el Anexo~\ref{clara:shapcalculo}.
+
+El resultado formal de unicidad y sus condiciones se conservan en el Anexo~\ref{editorial:shap}. En la lectura aplicada, la propiedad central es que las contribuciones reconstruyen la salida explicada a partir de una referencia fijada.
+
+El enunciado preciso y su demostración se encuentran en \cite{lundberg2017}, y su fundamento axiomático, en \cite{shapley1953}. La propiedad de exactitud local se expresa mediante la siguiente identidad:
+\begin{equation}\label{eq:shap-aditivo}
+f(\mathbf{x})=\phi_{0}+\sum_{j=1}^{p}\phi_{j},
+\qquad
+\phi_{0}=v_x(\varnothing).
+\end{equation}
+En la identidad, $f(\mathbf x)$ es la salida explicada para la inscripción, $\phi_0$ es el valor de referencia y $\phi_j$ es la contribución de la variable $j$, entre las $p$ variables. El conjunto vacío $\varnothing$ representa la referencia sin variables presentes en la explicación. Bajo la formulación habitual, ese valor es $\mathbb{E}[f(X)]$. Las contribuciones se suman en la misma escala de la salida explicada. Si el modelo se explica en puntuación logística, no pueden leerse como aumentos o disminuciones directas de probabilidad. También importa qué datos se toman como referencia: cambiar esa elección puede cambiar la explicación \cite{revshapdocs}.
+
+El cálculo directo requiere examinar $2^{\,p-1}$ subconjuntos por variable en la ecuación~\eqref{eq:shapley}; su coste crece rápidamente con el número de predictores. Los métodos que no utilizan la estructura del modelo pueden aproximarlo mediante muestras ponderadas de coaliciones. Para ensambles de árboles existe un algoritmo exacto que aprovecha esa estructura y reduce el coste a $O(B\,L\,D^{2})$, donde $B$ es el número de árboles, $L$ el máximo de hojas y $D$ la profundidad máxima. Esta notación expresa cómo crece el trabajo de cálculo con esas cantidades \cite{lundberg2020}.
+
+Para resumir la importancia de una variable en un conjunto de casos se promedian las magnitudes de sus contribuciones: $I_{\mathrm{SHAP},j}=n^{-1}\sum_{i=1}^{n}\big|\phi_{j}^{(i)}\big|$. Aquí $n$ es el número de casos explicados y $\phi_j^{(i)}$ la atribución de la variable $j$ al caso $i$. El valor absoluto evita que contribuciones positivas y negativas se cancelen; por ello, esta medida resume magnitud, no dirección. Las atribuciones también permiten examinar interacciones y curvas de dependencia. Su agregación vincula la lectura local y la global mediante un mismo procedimiento, pero no certifica ausencia de sesgo ni resuelve automáticamente la dependencia entre predictores.
+
+La dependencia entre variables requiere distinguir la definición de la explicación de su aproximación computacional. TreeExplainer dispone de alternativas como \texttt{interventional} y \texttt{tree\_path\_dependent}, con diferentes referencias y tratamientos de las variables ausentes; ninguna elección debe presentarse como una explicación causal del abandono \cite{revshapdocs,aas2021}. La variante, la referencia, la escala y la comprobación de aditividad se documentarán cuando exista un modelo entrenado. Las atribuciones describen su comportamiento, no el efecto de intervenir sobre una característica. Tampoco certifican equidad: existen ejemplos de modelos cuyas explicaciones pueden ocultar dependencias problemáticas \cite{slack2020}. La Tabla~\ref{tab:interpretabilidad} resume alternativas y límites.
+
+\begin{table}[htbp]
+\centering
+\caption{Alternativas de interpretabilidad consideradas en el proyecto. Elaboración propia a partir de \cite{breiman2001,ribeiro2016,lundberg2017,lundberg2020,rudin2019}.}
+\label{tab:interpretabilidad}
+\small
+\begin{tabular}{p{0.20\textwidth} p{0.13\textwidth} p{0.30\textwidth} p{0.26\textwidth}}
+\hline
+\textbf{Técnica} & \textbf{Alcance} & \textbf{Fundamento} & \textbf{Limitación principal} \\
+\hline
+Coeficientes del modelo lineal & Global y local & Estructura del propio modelo & Válida solo bajo el supuesto de linealidad \\
+Importancia por impureza & Global & Reducción acumulada de impureza en los árboles & Sesgo hacia variables continuas y de alta cardinalidad \\
+Importancia por permutación & Global & Pérdida de desempeño al permutar cada variable & Distorsionada por correlación entre predictores \\
+Explicación local por sustitución lineal & Local & Modelo lineal ajustado en el entorno de la observación & Inestable ante la definición del entorno \\
+SHAP & Local con agregación global & Valores de Shapley con garantías axiomáticas & Definición de referencia y dependencia; costo computacional \\
+\hline
+\end{tabular}
+\end{table}
+
+El proyecto prevé utilizar SHAP después de comparar los modelos. Se buscarán explicaciones individuales, que muestren qué variables intervienen en una predicción, y resúmenes del conjunto, que permitan reconocer cuáles usa más el modelo. Para ensambles de árboles se prevé utilizar la variante exacta correspondiente. El capítulo de interpretabilidad indica que este análisis aún no se ha ejecutado; las futuras explicaciones describirán el modelo y no las causas del abandono.
+
+\subsection{Antecedentes}
+
+Diversos trabajos han abordado la predicción del abandono o el rendimiento académico mediante técnicas de minería de datos educativa y aprendizaje automático. Estos antecedentes permiten reconocer avances relevantes, así como limitaciones que justifican la propuesta del presente proyecto.
+
+Un punto de partida necesario para situar el campo es la revisión panorámica de los métodos y problemas de predicción educativa. Albreiki, Zaki y Alashwal desarrollaron una revisión sistemática que analiza la literatura sobre predicción del desempeño estudiantil, clasificando los tipos de datos utilizados, los problemas frecuentes del área y los algoritmos aplicados, entre ellos árboles de decisión, redes neuronales, máquinas de soporte vectorial y modelos de ensamble \cite{educsci11090552}. Una perspectiva complementaria la ofrece Córdova-Esparza y colaboradores, cuya revisión sistemática se centra específicamente en la intersección entre inteligencia de negocios, analítica predictiva y prevención de la deserción en educación superior, sintetizando evidencia sobre herramientas de visualización, tableros y modelos de aprendizaje automático aplicados a la identificación de estudiantes en riesgo \cite{info16040326}. Ambas revisiones coinciden en que, si bien existe un repertorio amplio de algoritmos con buen desempeño, persisten desafíos relacionados con la interpretabilidad de los resultados y la comunicación de hallazgos a actores educativos no técnicos.
+
+Dentro de los estudios que abordan directamente el fenómeno del abandono en cursos en línea, Chen, Fang, Zhang y Xue realizaron una revisión sistemática sobre predicción de abandono en MOOC que identifica definiciones operativas del evento, factores asociados, métodos de extracción de características y métricas de evaluación, señalando además desafíos como el desbalance de clases y el modelado de trayectorias de aprendizaje \cite{1049482020222124425}. Esta preocupación por la dimensión temporal del riesgo se profundiza en el trabajo de Da Silva, Eicher y Longo, quienes proponen un enfoque de modelado orientado a supervivencia aplicado a OULAD, donde el abandono se concibe como un proceso cuyo riesgo evoluciona a partir de señales conductuales y de desempeño, en lugar de tratarse como un resultado estático \cite{arXiv260408870}.
+
+Precisamente sobre OULAD se ha desarrollado una línea considerable de investigación empírica. Jha, Ghergulescu y Moldovan emplearon este dataset para predecir tanto el abandono como el resultado final de los estudiantes mediante técnicas de ensamble, aprendizaje profundo y regresión, reportando que las variables asociadas a la interacción con la plataforma alcanzaron un desempeño alto en términos de AUC \cite{0007767901540164}. El presente proyecto se diferencia de este antecedente en que busca reforzar el componente temprano, temporal e interpretable del análisis, además de orientar los resultados hacia una visualización exploratoria.
+
+Más allá de OULAD, otros estudios han explorado la predicción de abandono a partir de registros de interacción en plataformas LMS distintas. Marcolino y colaboradores trabajaron con datos de logs de Moodle utilizando CatBoost, técnicas de balanceo y optimización multiobjetivo, mostrando la importancia de construir variables a partir de los registros de actividad y de atender problemas como el desbalance de clases y la generalización a cursos no vistos \cite{s41598025939181}. En una dirección similar, Vaarma y Li analizaron la predicción del abandono en educación superior finlandesa mediante datos demográficos, académicos y de Moodle, observando cómo la importancia relativa de los predictores cambia en función del tiempo desde la matrícula \cite{jtechsoc2024102474}. Estos hallazgos refuerzan la pertinencia de considerar la dimensión temporal como un eje de análisis, aspecto que el presente proyecto incorpora mediante el uso de ventanas temporales y variables acumuladas por semana.
+
+Desde la perspectiva de la utilidad práctica del modelo, Shaikhanova y colaboradores desarrollaron un sistema de apoyo a decisiones para la identificación temprana de estudiantes en riesgo, enfatizando tres aspectos: predicción temprana, carga de trabajo docente e interpretabilidad. Su estudio muestra que un modelo útil en educación no debe evaluarse únicamente por su AUC o exactitud, sino también por su capacidad de generar alertas manejables y explicaciones comprensibles \cite{bdcc9110297}. Este planteamiento es afín al enfoque del presente proyecto, donde la interpretabilidad y la comunicación visual de los resultados se conciben como componentes inseparables del proceso de modelado.
+
+El trabajo de Shaikhanova y colaboradores constituye un antecedente de comunicación de alertas y capacidad de acompañamiento, pero su evento de fracaso académico no coincide con el retiro administrativo futuro definido aquí \cite{bdcc9110297}. Su sección de datos presenta, además, magnitudes y filtros que no se reproducen directamente en las fuentes locales auditadas. Por ello, no se trasladan sus cifras de población ni sus métricas como expectativas de desempeño del presente proyecto; su pertinencia se limita a las decisiones de diseño que puedan evaluarse separadamente.
+
+Por último, en el contexto latinoamericano se han desarrollado estudios que confirman la aplicabilidad de estas técnicas en entornos con particularidades propias. Kuz y Morales presentaron un estudio de caso sobre deserción universitaria en México desde la ciencia de datos educativa, resaltando el valor de las métricas y la visualización para analizar patrones institucionales \cite{eks30080}. Madrid Orrego y colaboradores, por su parte, aplicaron técnicas de minería de datos para identificar factores determinantes de la deserción en una universidad pública colombiana, utilizando árboles de decisión como herramienta de análisis \cite{latamv4i2697}. Estos antecedentes sitúan la propuesta en la región, sin sustituir su evaluación en OULAD.

@@ -1,0 +1,62 @@
+[
+  {
+    "verificacion": "CSV originales idénticos a las huellas de entrada",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Inscripciones retiradas en día 28 excluidas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Matrículas desconocidas o posteriores al corte excluidas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Horizonte respetado",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Predictores sin desenlaces ni notas retrospectivas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Una fila por inscripción",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "No confundir cero con recencia no definida",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Sin evaluación programada implica proporción no definida",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Agregación contrastada con filas CSV originales para 60 inscripciones muestreadas",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Ceros también contrastados con el CSV",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Entregas sin banked ni Exam y fuera del día 28",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Efecto de rangos ponderado respeta empates y multiplicidad",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Ejecución completa sin errores: 01_carga_exploracion.ipynb",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Ejecución completa sin errores: 02_feature_engineering.ipynb",
+    "estado": "correcta"
+  },
+  {
+    "verificacion": "Ejecución completa sin errores: 03_analisis_estadistico.ipynb",
+    "estado": "correcta"
+  }
+]

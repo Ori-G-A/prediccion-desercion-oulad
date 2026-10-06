@@ -1,0 +1,11 @@
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[font=\small\sffamily,>=Stealth,
+ etapa/.style={draw=PUJAzul,text=PUJTexto,rounded corners,align=left,text width=11cm,inner sep=8pt}]
+\node[etapa] (a) {\textbf{Registros de actividad disponibles hasta el corte}\\Identificación de la inscripción, fecha y clics. Las filas no identifican sesiones.};
+\node[etapa,below=5mm of a] (b) {\textbf{Agregación por inscripción y día}\\Suma de clics diarios $c_{id}$ en el calendario $0,\ldots,t$; los días sin actividad aportan cero.};
+\node[etapa,fill=PUJClaro,below=5mm of b] (c) {\textbf{Indicadores con interpretaciones diferentes}\\Volumen: cuánto se registra. Días activos: con qué frecuencia. Intensidad: cuánto por día activo. Recencia: cuánto tiempo desde la última actividad.};
+\node[etapa,below=5mm of c] (d) {\textbf{Una fila por inscripción y corte}\\Se conservan las claves y los indicadores que no pueden calcularse. La etiqueta futura se conserva separada de los predictores.};
+\draw[->,PUJAzul] (a)--(b);\draw[->,PUJAzul] (b)--(c);\draw[->,PUJAzul] (c)--(d);
+\end{tikzpicture}
+\caption{Transformación del registro de actividad en indicadores interpretables. Elaboración propia.}\label{editorial:indicadores}
+\end{figure}

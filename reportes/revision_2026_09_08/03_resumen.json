@@ -1,0 +1,14 @@
+{
+  "inscripciones": 27515,
+  "personas": 24826,
+  "subpoblacion_pca": 26292,
+  "pca_dos_componentes": 0.7613700783941034,
+  "mcd_muestra": 5000,
+  "mcd_umbral_empirico": 267.3356181421342,
+  "mcd_marcados": 658,
+  "bootstrap_repeticiones": 500,
+  "semilla": 20260908,
+  "inferencia": "exploratoria por persona; presentaciones fijas",
+  "seleccion_modelos": false,
+  "prueba_final_intacta_acreditada": false
+}
