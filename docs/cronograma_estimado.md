@@ -32,12 +32,16 @@ Según las capturas de la plataforma aportadas por el usuario:
 
 El cierre del curso en noviembre se distingue del cierre estimado del proyecto en mayo. Se propone revisar el cronograma general al terminar las entregas del semestre; fecha y responsables por actividad pendientes de acordar.
 
-## Actividades y evidencia
+## Seguimiento actualizado al 22 de octubre de 2026
+
+El registro de corte del 21 de octubre sitúa el proyecto en M3, con modelado, evaluación y SHAP técnicamente ejecutados y prototipo parcial. Se adelantaron productos previstos para M5–M9; no se modifican las fechas planificadas ni se atribuye aprobación académica. El detalle vigente de actividades y pendientes está en [seguimiento del cronograma](../reportes/seguimiento_cronograma_2026_10_21/estado.md). Próximas entregas guardadas: 9, 16 y 30 de noviembre; cierre estimado del proyecto: 26 de mayo de 2027.
+
+## Antecedente: actividades y evidencia al 6 de octubre
 
 Se mantienen los periodos y bloques del anteproyecto. Su correspondencia de actividades y estado está en [el informe de avance](../reportes/entrega_avance_2026_10_06/Cronograma_y_avance.md). Este archivo actualiza únicamente las referencias de calendario que ese informe aún marcaba desconocidas. Se conserva la propuesta de versión candidata del avance el 16 de octubre y entrega hasta el 19.
 
 Al 6 de octubre, bajo la convención anterior, transcurre M3. La exploración y construcción de indicadores tienen evidencia, pero las ratificaciones metodológicas, el protocolo de evaluación, los modelos, SHAP y el prototipo mantienen sus pendientes. No se deduce un porcentaje global o un adelanto por el número de commits. El historial de junio y julio documenta trabajo previo al inicio previsto del semestre.
 
-## Próxima revisión
+## Próxima revisión (criterio conservado)
 
 Actualizar las fechas por actividad según las observaciones del director y el avance efectivo. Conservar el plan previo y explicar los cambios; distinguir productos disponibles, cierre técnico y aprobación académica. El PDF de cronograma preparado antes de estas aclaraciones aún requiere actualización antes de usarse como entrega definitiva.

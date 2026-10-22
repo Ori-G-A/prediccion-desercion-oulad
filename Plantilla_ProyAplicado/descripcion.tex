@@ -69,11 +69,11 @@ Desarrollar un modelo predictivo temprano e interpretable de aprendizaje automá
 %Nueva sección
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Alcance y estado de desarrollo}
-El proyecto utiliza OULAD para estudiar el retiro administrativo futuro de una inscripción en un módulo y una presentación. Se mantienen las exclusiones del anteproyecto: predicción de reprobación, modelo longitudinal institucional completo, integración con un LMS activo, alerta en tiempo real, validación con estudiantes de una institución específica, intervenciones pedagógicas y evaluación de su efecto. Tampoco se realiza una evaluación exhaustiva de equidad algorítmica ni se generalizan automáticamente los resultados a otras instituciones.
+El proyecto utiliza OULAD para estudiar el retiro administrativo futuro de una inscripción en una oferta del módulo en un periodo específico, denominada presentación. Se mantienen las exclusiones del anteproyecto: predicción de reprobación, modelo longitudinal institucional completo, integración con un LMS activo, alerta en tiempo real, validación con estudiantes de una institución específica, intervenciones pedagógicas y evaluación de su efecto. Tampoco se realiza una evaluación exhaustiva de equidad algorítmica ni se generalizan automáticamente los resultados a otras instituciones.
 
-El anteproyecto se refiere al retiro voluntario registrado. Los archivos disponibles permiten observar una fecha administrativa, pero no comprobar el motivo de la salida. Esta precisión limita la interpretación del evento y se mantiene explícita en la preparación de datos. Las variables académicas disponibles al corte comprenden entregas y oportunidades de evaluación; los puntajes requieren evidencia de su fecha de publicación antes de incorporarse como predictores.
+El anteproyecto se refiere al retiro voluntario registrado. Los archivos disponibles permiten observar una fecha administrativa, pero no determinar el motivo de la salida ni establecer si fue voluntaria. Esta precisión limita la interpretación del evento y se mantiene explícita en la preparación de datos. Las variables académicas disponibles al corte comprenden entregas y evaluaciones con vencimiento hasta el corte, es decir, aquellas cuya fecha límite se encuentra entre el día 0 y el corte, excluyendo los exámenes de tipo \textit{Exam}; los puntajes requieren evidencia de su fecha de publicación antes de incorporarse como predictores.
 
-Esta versión documenta la comprensión y preparación de datos y la comparación exploratoria de cinco cortes. El entrenamiento y evaluación de modelos, el análisis SHAP y el prototipo visual permanecen pendientes. Los capítulos correspondientes conservan su ubicación institucional y explicitan el trabajo por desarrollar.
+Esta versión documenta la comprensión y preparación de datos, la comparación exploratoria de cinco cortes y la evaluación predictiva para personas nuevas dentro de las ofertas disponibles. Se completaron las búsquedas, la evaluación reservada y el cálculo de SHAP. Se implementó una primera versión local del prototipo; su evaluación con usuarios y la revisión académica de los resultados permanecen pendientes.
 
 \section{Marco de Referencia}
 
@@ -151,7 +151,7 @@ La literatura describe familias de indicadores de volumen, regularidad, diversid
 
 \begin{table}[htbp]
 \centering
-\caption{Familias de indicadores derivables de los registros de plataforma y riesgo asociado a cada una. Elaboración propia a partir de \cite{macfadyendawson2010,agudoperegrina2014,wolff2013,halawa2014}.}
+\caption[Familias de indicadores derivables de los registros de plataforma y riesgo asociado a cada una.]{Familias de indicadores derivables de los registros de plataforma y riesgo asociado a cada una. Elaboración propia a partir de \cite{macfadyendawson2010,agudoperegrina2014,wolff2013,halawa2014}.}
 \label{tab:familias-clickstream}
 \small
 \begin{tabular}{p{0.20\textwidth} p{0.34\textwidth} p{0.32\textwidth}}
@@ -267,11 +267,11 @@ Este mecanismo permite examinar qué variables atiende la red, aunque sus másca
 
 El artículo de TabNet utiliza variables numéricas sin normalización global previa y normalización por lotes dentro de la arquitectura; también contempla representaciones entrenables de las categorías \cite{arXiv190807442}. Por ello, no corresponde imponer como requisito del método un escalado global externo. La preparación concreta dependerá de la implementación y se ajustará dentro del entrenamiento. Las máscaras y el tamaño de los lotes añaden decisiones que deberán documentarse; no se presume una superioridad de TabNet ni una cantidad mínima universal de datos frente a los ensambles.
 
-La selección mediante máscaras depende de cada observación. Al reunirlas a lo largo de los pasos se obtiene una importancia por caso, distinta de la selección global de variables antes del entrenamiento y de las atribuciones \textit{post-hoc}. Las comparaciones sobre conjuntos tabulares muestran que los ensambles de árboles siguen siendo competitivos o superiores y que las redes profundas pueden requerir mayor esfuerzo de ajuste \cite{shwartzziv2022,grinsztajn2022}. Por ello, el desempeño de TabNet deberá evaluarse en OULAD. El proyecto lo incorpora como candidato con reglas comunes de comparación; junto con la regresión logística, ofrece una interpretación basada en su propia estructura. La Tabla~\ref{tab:modelos-candidatos} resume los cinco candidatos.
+Al reunir las máscaras a lo largo de los pasos se obtiene una importancia por caso, distinta de la selección global de variables antes del entrenamiento y de las atribuciones \textit{post-hoc}. Su desempeño en OULAD deberá contrastarse con el de los ensambles, atendiendo a la evidencia comparativa ya descrita \cite{shwartzziv2022,grinsztajn2022}. TabNet se incorpora como candidato bajo reglas comunes; junto con la regresión logística, ofrece una interpretación basada en su propia estructura. La Tabla~\ref{tab:modelos-candidatos} resume los cinco candidatos.
 
 \begin{table}[htbp]
 \centering
-\caption{Modelos candidatos: familia, mecanismo e interpretabilidad. Elaboración propia a partir de \cite{hosmer2013,breiman2001,chen2016,ke2017,arXiv190807442}.}
+\caption[Modelos candidatos: familia, mecanismo e interpretabilidad.]{Modelos candidatos: familia, mecanismo e interpretabilidad. Elaboración propia a partir de \cite{hosmer2013,breiman2001,chen2016,ke2017,arXiv190807442}.}
 \label{tab:modelos-candidatos}
 \small
 \begin{tabular}{p{0.15\textwidth} p{0.15\textwidth} p{0.30\textwidth} p{0.28\textwidth}}
@@ -287,7 +287,7 @@ TabNet & Aprendizaje profundo & Pasos de decisión con máscaras de atención di
 \end{tabular}
 \end{table}
 
-La comparación deberá considerar que las clases pueden tener tamaños distintos. Un modelo que asigne a todos los estudiantes a la clase más frecuente puede acertar muchas veces y, aun así, no identificar los retiros. Por ello, se prevé evaluar su capacidad para distinguir ambas clases mediante las curvas ROC, que relacionan la proporción de retiros detectados con la proporción de falsas alertas, y las curvas de precisión y exhaustividad, que relacionan la proporción de alertas correctas con la proporción de retiros detectados. También se utilizarán métricas para el umbral elegido \cite{1049482020222124425,s41598025939181}. El protocolo, las métricas definitivas y el tratamiento del desbalance aún deben fijarse; el capítulo de modelos conserva ese estado pendiente.
+La comparación deberá considerar que las clases pueden tener tamaños distintos. Un modelo que asigne a todos los estudiantes a la clase más frecuente puede acertar muchas veces y, aun así, no identificar los retiros. Por ello, se prevé evaluar su capacidad para distinguir ambas clases mediante las curvas ROC, que relacionan la proporción de retiros detectados con la proporción de falsas alertas, y las curvas de precisión y exhaustividad, que relacionan la proporción de alertas correctas con la proporción de retiros detectados. También se utilizarán métricas para el umbral elegido \cite{1049482020222124425,s41598025939181}. El protocolo, las métricas utilizadas y el tratamiento del desbalance se especifican en el capítulo de modelos, junto con la evaluación reservada.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Metodología CRISP-DM
@@ -309,7 +309,7 @@ Las visualizaciones ayudan a comunicar patrones de participación, niveles de ri
 
 \begin{table}[htbp]
 \centering
-\caption{Correspondencia entre las fases de CRISP-DM y el desarrollo de este proyecto. Elaboración propia a partir de \cite{chapman2000,martinezplumed2021}.}
+\caption[Correspondencia entre las fases de CRISP-DM y el desarrollo de este proyecto.]{Correspondencia entre las fases de CRISP-DM y el desarrollo de este proyecto. Elaboración propia a partir de \cite{chapman2000,martinezplumed2021}.}
 \label{tab:crispdm-proyecto}
 \small
 \begin{tabular}{p{0.20\textwidth} p{0.40\textwidth} p{0.30\textwidth}}
@@ -319,14 +319,14 @@ Las visualizaciones ayudan a comunicar patrones de participación, niveles de ri
 Comprensión del negocio & Delimitación del fenómeno, definición operativa de deserción y criterios de éxito & Contextualización del proyecto; Marco teórico \\
 Comprensión de los datos & Descripción de OULAD, verificación de calidad y análisis exploratorio & Caracterización de variables \\
 Preparación de los datos & Construcción de la etiqueta, derivación de variables por ventana y selección de características & Ingeniería de características \\
-Modelado & Definición de particiones, evaluación del desbalance, entrenamiento y ajuste de hiperparámetros (pendientes) & Desarrollo y comparación de modelos \\
+Modelado & Partición por personas y búsquedas completas de cinco familias, con candidatos congelados & Desarrollo y comparación de modelos \\
 Evaluación & Comparación por métricas sensibles al desbalance, análisis de interpretabilidad y revisión del proceso & Evaluación comparativa; Interpretabilidad mediante SHAP \\
 Despliegue & Prototipo de visualización para la comunicación de resultados a actores educativos & Prototipo de visualización \\
 \hline
 \end{tabular}
 \end{table}
 
-Este trabajo adopta CRISP-DM como marco de proceso, con dos precisiones derivadas de las limitaciones anteriores. La primera es que la fase de despliegue se materializa en un prototipo de visualización de carácter exploratorio, no en la puesta en operación de un sistema institucional, por lo que la supervisión del modelo en producción queda fuera del alcance y se enuncia como trabajo futuro. La segunda es que la evaluación prevista incorpora interpretabilidad y reconocimiento de las limitaciones de generalización. Una evaluación exhaustiva de equidad entre grupos permanece fuera del alcance, conforme al anteproyecto.
+En este proyecto, la fase de despliegue se limita al prototipo exploratorio; la supervisión de un sistema en producción queda como trabajo futuro. La evaluación prevista incorpora interpretabilidad y límites de generalización, de acuerdo con el alcance establecido.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Interpretabilidad \textit{post-hoc}: SHAP
@@ -358,7 +358,7 @@ La dependencia entre variables requiere distinguir la definición de la explicac
 
 \begin{table}[htbp]
 \centering
-\caption{Alternativas de interpretabilidad consideradas en el proyecto. Elaboración propia a partir de \cite{breiman2001,ribeiro2016,lundberg2017,lundberg2020,rudin2019}.}
+\caption[Alternativas de interpretabilidad consideradas en el proyecto.]{Alternativas de interpretabilidad consideradas en el proyecto. Elaboración propia a partir de \cite{breiman2001,ribeiro2016,lundberg2017,lundberg2020,rudin2019}.}
 \label{tab:interpretabilidad}
 \small
 \begin{tabular}{p{0.20\textwidth} p{0.13\textwidth} p{0.30\textwidth} p{0.26\textwidth}}
@@ -374,7 +374,7 @@ SHAP & Local con agregación global & Valores de Shapley con garantías axiomát
 \end{tabular}
 \end{table}
 
-El proyecto prevé utilizar SHAP después de comparar los modelos. Se buscarán explicaciones individuales, que muestren qué variables intervienen en una predicción, y resúmenes del conjunto, que permitan reconocer cuáles usa más el modelo. Para ensambles de árboles se prevé utilizar la variante exacta correspondiente. El capítulo de interpretabilidad indica que este análisis aún no se ha ejecutado; las futuras explicaciones describirán el modelo y no las causas del abandono.
+La aplicación del procedimiento de permutaciones al predictor calibrado principal se presenta en el Capítulo~\ref{editorial:shapestado}, junto con los resultados y sus límites.
 
 \subsection{Antecedentes}
 
@@ -393,3 +393,4 @@ Desde la perspectiva de la utilidad práctica del modelo, Shaikhanova y colabora
 El trabajo de Shaikhanova y colaboradores constituye un antecedente de comunicación de alertas y capacidad de acompañamiento, pero su evento de fracaso académico no coincide con el retiro administrativo futuro definido aquí \cite{bdcc9110297}. Su sección de datos presenta, además, magnitudes y filtros que no se reproducen directamente en las fuentes locales auditadas. Por ello, no se trasladan sus cifras de población ni sus métricas como expectativas de desempeño del presente proyecto; su pertinencia se limita a las decisiones de diseño que puedan evaluarse separadamente.
 
 Por último, en el contexto latinoamericano se han desarrollado estudios que confirman la aplicabilidad de estas técnicas en entornos con particularidades propias. Kuz y Morales presentaron un estudio de caso sobre deserción universitaria en México desde la ciencia de datos educativa, resaltando el valor de las métricas y la visualización para analizar patrones institucionales \cite{eks30080}. Madrid Orrego y colaboradores, por su parte, aplicaron técnicas de minería de datos para identificar factores determinantes de la deserción en una universidad pública colombiana, utilizando árboles de decisión como herramienta de análisis \cite{latamv4i2697}. Estos antecedentes sitúan la propuesta en la región, sin sustituir su evaluación en OULAD.
+

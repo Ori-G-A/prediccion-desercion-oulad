@@ -1,0 +1,20 @@
+{
+  "fecha": "2026-10-21T14:50:35.795740-05:00",
+  "datos_identicos_respaldo": true,
+  "datos_sha256": "fb6455956f2df4f1be7aa51b08af74ed913b4f0be61fb94c469032ef445ec1b7",
+  "html_estructura_correcta": true,
+  "html_sha256": "a7079856e7ed0e0d378295078044f8e3316a49bdf4e3bd19381ddd501d4f946b",
+  "funciones": {
+    "correcto": true,
+    "cortes": 5,
+    "casos_probados": 500,
+    "consultas_exploratorias": 20,
+    "barras_con_cero_central": true,
+    "graficos_narrativos": true,
+    "identificadores_html_verificados": true,
+    "archivo_autonomo": true,
+    "identificadores_exportados": false,
+    "limite": "Prueba de funciones y eventos con DOM mÃ­nimo; revisiÃ³n visual y uso real en navegador pendientes por fallo de herramienta CUA."
+  },
+  "limite": "Revisión visual de esta versión en navegador pendiente. No se acredita comprensión ni aprobación académica."
+}

@@ -1,0 +1,37 @@
+{
+  "filas_csv": 145,
+  "celdas_anexo_cotejadas": 145,
+  "conteos_y_porcentajes_coinciden": true,
+  "totales_por_corte": {
+    "7": {
+      "n": 29076,
+      "retiros": 6632
+    },
+    "14": {
+      "n": 28054,
+      "retiros": 5580
+    },
+    "28": {
+      "n": 27515,
+      "retiros": 5012
+    },
+    "42": {
+      "n": 27005,
+      "retiros": 4500
+    },
+    "56": {
+      "n": 26506,
+      "retiros": 3998
+    }
+  },
+  "valores_individuales": 500,
+  "fuentes_valores_sha256": {
+    "7": "af66fb852b4204e9bc77079f2c9382fe4eea0ddaa1355c90b444c2facec7d6f6",
+    "14": "f2aad76c0d73907f923171d18bc869774c61e4608014c777f07d49712dfd5185",
+    "28": "9783a8c0d807d60a8795d8314ce24397b2611f2bda63e1865f7e3ba846419dc0",
+    "42": "621dfdba04da796d257ff8ee3635fb3137f26970015924a768bb776b4d2994eb",
+    "56": "1bb0514d94bf0923b721691b672b5db17a2f3ea8c997bb3f0816d32152a143bc"
+  },
+  "fuente_eda_sha256": "da06ff22725b8706642e1368761c05f58652b320b0926688eac193f87794a03d",
+  "modelos_reajustados": false
+}

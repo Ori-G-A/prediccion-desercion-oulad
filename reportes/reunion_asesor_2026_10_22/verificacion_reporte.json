@@ -1,0 +1,19 @@
+{
+  "fecha": "2026-10-21T14:33:37.412200-05:00",
+  "paginas": 7,
+  "paginas_revisadas_version_actual": [
+    1,
+    5,
+    6,
+    7
+  ],
+  "paginas_revisadas_version_anterior_sin_cambios_sustantivos": [
+    2,
+    3,
+    4
+  ],
+  "pdf_sha256": "012a43914464acac7edca230edfad396167fd5eb52b85d4e5806f34dca5d66a2",
+  "registros_tiempos": 3200,
+  "huellas_salidas_evaluacion_verificadas": 56,
+  "limite": "No aprobación académica ni cierre integral del proyecto"
+}

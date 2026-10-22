@@ -1,10 +1,10 @@
 \markboth{Anexos}{Anexos}
-\Needspace{.42\textheight}\section{Reproducibilidad y decisiones de la versión}\label{anexo:reproducibilidad}
+\Needspace{6\baselineskip}\section{Reproducibilidad y decisiones de la versión}\label{anexo:reproducibilidad}
 La versión \texttt{correcciones\_2026\_09\_10} conserva el protocolo temporal de la versión multiventana anterior. Los tres notebooks se ejecutaron en procesos Python nuevos. Los CSV originales se preservan; el respaldo previo de código, notebooks y plantilla está identificado en el registro de entrega. La autorización de trabajo y las diferencias de A3.1 y A2.5 se documentan sin presumir ratificación institucional.
 
 Se contrastaron los clics, los días activos y el CV entre días activos sobre toda la fuente, para las inscripciones elegibles de los cinco cortes. También se comprobaron los límites de fechas, los indicadores candidatos y las etiquetas, así como que añadir información futura no modificara los predictores del corte. La alternativa sin duplicados exactos conserva la población y el evento. Los intervalos utilizan 5\,000 remuestreos de personas; su estabilidad numérica se examina comparando las primeras 500 y 2\,000 repeticiones con la secuencia completa. Esta comprobación no demuestra una convergencia universal.
 
-El archivo \texttt{README\_\allowbreak{}REVISION.md} documenta los comandos de generación, comprobación e integración. Los registros independientes y las huellas digitales de los archivos permiten identificar la ejecución documentada y sus productos. No se entrenaron clasificadores ni se eligió una ventana óptima. La revisión bibliográfica del marco continúa parcial y el protocolo de validación predictiva permanece pendiente.
+El archivo \texttt{README\_\allowbreak{}REVISION.md} documenta los comandos de generación, comprobación e integración. Los registros independientes y las huellas digitales de los archivos permiten identificar la ejecución documentada y sus productos. En esa versión de preparación no se entrenaron clasificadores ni se eligió una ventana óptima. La revisión bibliográfica del marco continúa parcial y el protocolo predictivo era entonces un pendiente; su ejecución posterior se documenta en el capítulo de modelado.
 
 \subsection{Archivos de consulta de la revisión de datos}\label{kami:archivos}
 La ejecución de los notebooks se documentó el 10 de septiembre de 2026. La edición de claridad del 30 de septiembre conserva esas salidas; no representa una nueva ejecución completa. La Tabla~\ref{kami:salidas} identifica las principales comprobaciones. Los nombres corresponden a archivos CSV del directorio de tablas de esa revisión.
@@ -23,9 +23,9 @@ La ejecución de los notebooks se documentó el 10 de septiembre de 2026. La edi
 \end{longtable}\endgroup
 El peso de una evaluación es su porcentaje asignado en el esquema de evaluación. Como ejemplo de la salida guardada, AAA en 2013J tiene cinco actividades de evaluación continua cuyos pesos suman 100 y un examen con peso 100. CCC en 2014B tiene ocho actividades que suman 100 y dos registros de examen que suman 200. Esta diferencia muestra por qué no se exigió una suma conjunta de 200 para todos los cursos; no demuestra por sí sola que exista un error en la fuente.
 
-\Needspace{.42\textheight}\section{Resultados por nivel de las variables de contexto}\label{corr:anexocontexto}
+\Needspace{6\baselineskip}\section{Resultados por nivel de las variables de contexto}\label{corr:anexocontexto}
 Cada celda presenta el número de retiros futuros, el total de inscripciones elegibles de esa categoría y el porcentaje obtenido al dividir ambos conteos. Las columnas corresponden a días de corte; sus poblaciones y periodos de seguimiento pueden variar. Las categorías no disponibles permanecen explícitas y el análisis no atribuye causalidad ni certifica equidad.
-\Needspace{0.2\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.225\linewidth}>{\raggedright\arraybackslash}p{0.135\linewidth}>{\raggedright\arraybackslash}p{0.135\linewidth}>{\raggedright\arraybackslash}p{0.135\linewidth}>{\raggedright\arraybackslash}p{0.135\linewidth}>{\raggedright\arraybackslash}p{0.135\linewidth}}
 \caption{Retiros futuros / inscripciones elegibles (porcentaje) por nivel y corte.}\label{corr:niveles}\\
@@ -67,12 +67,12 @@ Región / West Midlands Region & 568/2\,238 (25,4\%) & 459/2\,133 (21,5\%) & 413
 Región / Yorkshire Region & 422/1\,775 (23,8\%) & 341/1\,696 (20,1\%) & 299/1\,654 (18,1\%) & 261/1\,617 (16,1\%) & 218/1\,574 (13,9\%) \\
 \end{longtable}\endgroup
 
-\Needspace{.42\textheight}\section{Diccionario reconciliado de indicadores}\label{corr:anexodiccionario}
+\Needspace{6\baselineskip}\section{Diccionario reconciliado de indicadores}\label{corr:anexodiccionario}
 El diccionario permite relacionar los indicadores del texto con los nombres utilizados en el código. Se documentan 26 candidatos, incluidos ambos CV; no se han seleccionado variables mediante desempeño predictivo. El conteo de filas aparece únicamente como auditoría. Los identificadores, las variables de contexto y los desenlaces permanecen separados. En la tabla, $t$ es el día de corte; los intervalos de días incluyen ambos extremos. NaN identifica un valor que no puede calcularse con la información disponible, no un cero; SD significa desviación estándar. La función \texttt{floor} toma la parte entera inferior y permite contar semanas completas.
-\Needspace{0.2\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.29\linewidth}>{\raggedright\arraybackslash}p{0.43\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}}
-\caption{Diccionario de candidatos y conteo de filas de auditoría; nombres idénticos al código.}\label{corr:diccionario}\\
+\caption[Diccionario de candidatos y conteo de filas de auditoría.]{Diccionario de candidatos y conteo de filas de auditoría; nombres idénticos al código.}\label{corr:diccionario}\\
 \toprule
 \textbf{Variable} & \textbf{Definición} & \textbf{Dominio y ausencia} \\
 \midrule\endfirsthead
@@ -102,17 +102,17 @@ log\_\allowbreak{}ratio\_\allowbreak{}7d & ln((clics últimos 7d+1)/(clics 7d pr
 log\_\allowbreak{}ratio\_\allowbreak{}14d & Razón logarítmica suavizada entre últimos dos bloques de 14 días & NaN con historia <28 días o cero en ambos bloques \\
 n\_\allowbreak{}evaluaciones\_\allowbreak{}entregadas & Evaluaciones no Exam ni banked entregadas en 0..t & entero >= 0 \\
 n\_\allowbreak{}entregas\_\allowbreak{}pre\_\allowbreak{}inicio & Entregas no Exam ni banked anteriores a 0 & entero >= 0 \\
-n\_\allowbreak{}evaluaciones\_\allowbreak{}programadas & Evaluaciones no Exam con fecha de calendario en 0..t & entero >= 0 \\
-n\_\allowbreak{}programadas\_\allowbreak{}entregadas\_\allowbreak{}al\_\allowbreak{}corte & Evaluaciones programadas en 0..t entregadas hasta t, sin banked & 0..n programadas \\
-proporcion\_\allowbreak{}programadas\_\allowbreak{}entregadas & Entregadas programadas / programadas; no mide puntualidad & NaN si no hay programadas \\
-sin\_\allowbreak{}evaluacion\_\allowbreak{}programada & 1 si no existen evaluaciones programadas en 0..t & 0/1 \\
+n\_\allowbreak{}evaluaciones\_\allowbreak{}programadas & Evaluaciones no Exam con vencimiento conocido en 0..t, inclusive & entero >= 0 \\
+n\_\allowbreak{}programadas\_\allowbreak{}entregadas\_\allowbreak{}al\_\allowbreak{}corte & Evaluaciones con vencimiento en 0..t entregadas hasta t, sin banked & 0..n programadas \\
+proporcion\_\allowbreak{}programadas\_\allowbreak{}entregadas & Entregadas con vencimiento en 0..t / total con ese vencimiento; no mide puntualidad & NaN si no hay programadas \\
+sin\_\allowbreak{}evaluacion\_\allowbreak{}programada & 1 si no existen evaluaciones no Exam con vencimiento en 0..t & 0/1 \\
 sin\_\allowbreak{}entregas\_\allowbreak{}acumuladas & 1 si no hay entregas no Exam ni banked en 0..t; no implica incumplimiento & 0/1 \\
 \end{longtable}\endgroup
 
-\Needspace{.42\textheight}\section{Enlace con la versión anterior y productos}
+\Needspace{6\baselineskip}\section{Enlace con la versión anterior y productos}
 La versión anterior del corte 28 observaba actividad hasta el día 27. La versión actual incorpora también el día 28 y mantiene las 27\,515 inscripciones elegibles. Esta modificación explica cambios de cifras sin atribuirlos a alteraciones de las fuentes.
 
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.25\linewidth}}
 \caption{Efecto de incluir el día 28 en las mismas inscripciones.}\label{multi02:enlace}\\
@@ -128,18 +128,17 @@ Entregas & 22\,870 & 23\,136 & 263 \\*
 \end{longtable}\endgroup
 Se exportan conjuntos separados de datos auditables, predictores y etiquetas para cada corte; las claves se conservan para vincularlos, sin convertir el identificador de estudiante en predictor. El diccionario documenta 26 indicadores candidatos y separa las variables de contexto. La tabla apilada tiene una fila por inscripción y corte, no por persona. La intersección de los cinco conjuntos contiene 26\,429 inscripciones y se utiliza únicamente para una sensibilidad retrospectiva.
 
-Los productos permiten continuar con un protocolo predictivo común. El ajuste de imputación, escalado, selección y cualquier remuestreo deberá realizarse dentro del entrenamiento de cada partición \cite{revsklearnpitfalls}. Esta fase no entrenó clasificadores, no seleccionó una ventana óptima y no ofrece evidencia de desempeño fuera de muestra. Antes de modelar deberán fijarse la generalización buscada y la separación por personas o presentaciones; una persona presente en varios cortes no debe contaminar conjuntos de entrenamiento y evaluación.
+El entrenador ajusta la imputación, el escalado y la eliminación de columnas constantes dentro de cada partición de entrenamiento \cite{revsklearnpitfalls}. El Capítulo~\ref{editorial:modelos} presenta la separación por personas y distingue la validación interna ejecutada de la evaluación reservada completada.
 
 
 
-\clearpage
-\Needspace{.42\textheight}\section{Esquema relacional OULAD}
+\Needspace{6\baselineskip}\section{Esquema relacional OULAD}
 \begin{figure}[H]\centering
-\includegraphics[width=.95\textwidth]{model.png}
+\includegraphics[width=.82\textwidth]{model.png}
 \caption{Esquema relacional de OULAD. Fuente: \cite{sdata2017171}.}\label{fig:esquema-oulad}
 \end{figure}
 
-\clearpage
+\FloatBarrier
 \section{Desarrollos matemáticos complementarios}\label{editorial:matematica}
 Estas derivaciones explican la relación entre las formulaciones del marco teórico y sus condiciones matemáticas. Se conserva el detalle para consultar cómo se obtienen los resultados y bajo qué hipótesis son válidos. No constituyen evidencia de modelos entrenados.
 
@@ -254,4 +253,5 @@ Dentro de las técnicas \textit{post-hoc}, SHAP (\textit{SHapley Additive exPlan
 \Big[v\big(S\cup\{j\}\big)-v(S)\Big],
 \end{equation}
 Aquí $S$ recorre los subconjuntos de variables que no incluyen a $j$, y $v_x(S)$, abreviado como $v(S)$, es el valor asignado a cada conjunto para la observación $x$. La diferencia entre corchetes mide cuánto cambia ese valor al incorporar $j$. El símbolo $|S|$ cuenta sus variables y $!$ denota el factorial utilizado en la ponderación. Una elección condicional es $\mathbb{E}[f(X)\mid X_S=x_S]$: promedia la salida del modelo condicionada a los valores observados de las variables de $S$. Otra integra $f(x_S,X_{-S})$ sobre una distribución de referencia, fijando esas variables y variando las restantes. $X_S$ es el subvector de variables de $S$, $x_S$ sus valores observados y $X_{-S}$ las variables complementarias. Esas elecciones no son equivalentes en general y deben fijarse antes de calcular las atribuciones. El factor combinatorio pondera cada contribución marginal por la proporción de órdenes de incorporación en que se produce, de modo que la atribución no depende de un orden particular. La formulación unificada mostró que un conjunto de métodos de atribución previamente independientes, entre ellos las explicaciones locales por sustitución lineal, pertenecen a una misma clase de modelos aditivos de atribución, y estableció dentro de ella un resultado de unicidad.
+
 

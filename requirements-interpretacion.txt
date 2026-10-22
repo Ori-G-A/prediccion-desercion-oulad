@@ -1,0 +1,6 @@
+# Añade explicación sin modificar las versiones del entrenamiento.
+-r requirements-modelado.txt
+shap==0.51.0
+numba==0.68.0
+llvmlite==0.50.0
+slicer==0.0.8

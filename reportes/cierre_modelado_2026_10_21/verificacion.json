@@ -1,0 +1,10 @@
+{
+  "correcto": true,
+  "modelos_referencia_cortes_verificados": 35,
+  "huellas_evaluacion": 56,
+  "metricas_recalculadas": true,
+  "intervalos_y_diferencias_recalculados_desde_replicas": true,
+  "shap_inscripciones_verificadas": 500,
+  "limitaciones": "No repite entrenamientos ni 2000 remuestreos; verifica huellas, métricas, percentiles guardados y aditividad. No demuestra estabilidad de SHAP.",
+  "paquete_sha256": "b1c95c4bd8bff458e95c94f1ef4a30a3c1a4d951295fce318830209cfc10470b"
+}

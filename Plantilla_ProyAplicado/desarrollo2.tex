@@ -1,8 +1,8 @@
 \label{cap:ingenieria}
-\Needspace{.16\textheight}\section{Momento de predicción e indicadores de actividad}
+\Needspace{6\baselineskip}\section{Momento de predicción e indicadores de actividad}\label{sec:actividad}
 El propósito de esta etapa es transformar los registros de OULAD en información que pueda utilizarse para anticipar un retiro. Para ello, primero se define a quién se observaría, hasta qué día se reuniría información y durante qué periodo posterior se buscaría el retiro.
 
-La unidad de análisis es una inscripción: la participación de una persona en un módulo y en una edición concreta de ese módulo, denominada presentación. Una misma persona puede aportar varias inscripciones. El día 0 marca el inicio de cada edición; una fecha negativa corresponde a un momento anterior.
+Se conserva la inscripción como unidad de análisis. El día 0 marca el inicio de cada oferta del módulo; una fecha negativa corresponde a un momento anterior.
 
 El día de corte, representado por $t$, es el momento al finalizar el cual se haría la predicción. Por ejemplo, en el corte 28 se reúnen los registros desde el día 0 hasta el 28, ambos incluidos: son 29 días. Ese periodo es la ventana de observación. Después del corte comienza el seguimiento, que termina al finalizar la edición del curso. La actividad anterior al día 0 se resume por separado.
 
@@ -17,7 +17,7 @@ El conjunto $\mathcal E(t)$ contiene las inscripciones que cumplen las condicion
 N(t)&=|\mathcal E(t)|,\quad Y_i(t)=\mathbf 1\{t<u_i\le L_i\},\label{corr:evento}\\
 E(t)&=\sum_{i\in\mathcal E(t)}Y_i(t),\qquad \pi(t)=E(t)/N(t).\label{corr:prevalencia}
 \end{align}
-La función $\mathbf 1$ vale uno cuando se cumple su condición y cero en otro caso; en particular, una fecha ausente no genera evento. Las barras $|\cdot|$ representan el número de elementos de un conjunto. El valor $Y_i(t)=0$, denominado clase negativa, significa que no hay un retiro registrado dentro del periodo de seguimiento. No permite afirmar que la persona haya aprobado o permanecido académicamente activa. La proporción $\pi(t)$ se calcula cuando $N(t)>0$; si no hubiera inscripciones elegibles, esa proporción no estaría definida. Los retiros del día del corte ya ocurrieron y quedan excluidos. El periodo disponible para observar un retiro se acorta cuando se predice más tarde y también depende de la duración del curso. Por eso se aplican las mismas reglas en los distintos cortes, aunque el seguimiento no dure siempre lo mismo.
+La función $\mathbf 1$ vale uno cuando se cumple su condición y cero en otro caso; en particular, una fecha ausente no genera evento. Las barras $|\cdot|$ representan el número de elementos de un conjunto. El valor $Y_i(t)=0$, denominado clase negativa, significa que no hay un retiro registrado dentro del periodo de seguimiento. No permite afirmar que la persona haya aprobado o permanecido académicamente activa. La proporción $\pi(t)$ se calcula cuando $N(t)>0$; si no hubiera inscripciones elegibles, esa proporción no estaría definida. El periodo disponible para observar un retiro se acorta cuando se predice más tarde y también depende de la duración del curso. Por eso se aplican las mismas reglas en los distintos cortes, aunque el seguimiento no dure siempre lo mismo.
 
 Una vez seleccionadas las inscripciones, se resume su actividad. El volumen es el total de clics; la frecuencia se describe mediante los días con al menos un clic; la proporción activa indica qué parte del calendario tuvo actividad, y la intensidad indica cuántos clics hubo, en promedio, en los días activos. Para una inscripción $i$, $c_{id}$ cuenta los clics del día $d$ y $A_i(t)=\{d\in\{0,\ldots,t\}:c_{id}>0\}$ reúne los días con actividad. Con $n_t=t+1$ días observados, estas medidas se escriben como
 \begin{equation}
@@ -52,7 +52,7 @@ La Figura~\ref{editorial:indicadores} representa el paso de registros a indicado
 
 \input{ejemplo_cv}
 
-\Needspace{.16\textheight}\section{Criterios para seleccionar los indicadores}
+\Needspace{6\baselineskip}\section{Criterios para seleccionar los indicadores}
 \label{entrega:seleccionbase}
 La selección inicial busca conservar información que describa la participación y que pueda conocerse al finalizar cada corte. Para esta versión se eligieron los clics y sus fechas, las entregas y el calendario de evaluación, y los registros de matrícula y duración de la presentación. Estas fuentes permiten construir indicadores de actividad, continuidad, inactividad, cambios temporales y participación académica. Las fechas de retiro se emplean para definir la población y el resultado futuro; no se incorporan como predictores. Los identificadores permiten unir tablas y reconocer inscripciones de una misma persona, sin tratarlos automáticamente como atributos predictivos.
 
@@ -67,12 +67,12 @@ Los indicadores construidos no incluyen la variedad de recursos o tipos de activ
 El anteproyecto plantea definir el abandono a partir del retiro registrado y explorar la inactividad prolongada (actividad A3.1). También denomina voluntario a ese retiro. Los archivos permiten ubicar la baja pero no demostrar su motivo; por ello, se adopta el retiro registrado futuro y se mantiene la inactividad como indicador complementario. Por ejemplo, varios días sin clics describen una pausa en la participación, pero no confirman que la persona haya abandonado el curso. En consecuencia, la inactividad se utiliza para describir el comportamiento previo y no como un segundo resultado que el modelo deba predecir. La actividad A2.5 incluye calificaciones; estas se conservan para revisar los datos, pero no como predictores, porque se desconoce cuándo estuvieron disponibles. Estas precisiones y la selección de inscripciones que aún no se han retirado se documentan como diferencias respecto de lo previsto; su ratificación académica permanece pendiente.
 
 Los cinco cortes representan una, dos, cuatro, seis y ocho semanas desde el inicio. Se fijaron antes de comparar modelos. Las presentaciones duran entre 234 y 269 días, por lo que el día 56 todavía está dentro del primer cuarto del curso. Esta elección permite comparar distintas cantidades de historia disponible, pero no demuestra que sean los mejores cortes posibles ni que se hayan elegido sin conocimiento previo del retiro. El calendario también permite examinar indicadores académicos, ya disponibles en el corte 14.
-\Needspace{.16\textheight}\section{Población elegible y cambio de composición}
+\Needspace{6\baselineskip}\section{Población elegible y cambio de composición}
 La Tabla~\ref{multi02:poblacion} responde cuántas inscripciones siguen siendo elegibles y cuántos retiros ocurren después de cada corte. Por ejemplo, al día 28 se incluyen 27\,515 inscripciones; 5\,012 tienen un retiro registrado después de ese día y hasta el final de su curso. El porcentaje es $5\,012/27\,515\times100\simeq18{,}22\,\%$. Se calcula sobre inscripciones, no sobre las 24\,826 personas distintas. La Tabla~\ref{multi02:transiciones} identifica entradas y salidas entre cortes consecutivos; por ello, la disminución del total no debe interpretarse como seguimiento de una población fija.
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.0870967741935484\linewidth}>{\raggedright\arraybackslash}p{0.23225806451612904\linewidth}>{\raggedright\arraybackslash}p{0.20322580645161292\linewidth}>{\raggedright\arraybackslash}p{0.22258064516129036\linewidth}>{\raggedright\arraybackslash}p{0.1548387096774194\linewidth}}
-\caption{Población y evento propios de cada corte; el porcentaje usa inscripciones elegibles.}\label{multi02:poblacion}\\
+\caption[Población y evento propios de cada corte.]{Población y evento propios de cada corte; el porcentaje usa inscripciones elegibles.}\label{multi02:poblacion}\\
 \toprule
 \textbf{Corte} & \textbf{Inscripciones} & \textbf{Personas} & \textbf{Retiros futuros} & \textbf{Porcentaje} \\
 \midrule\endfirsthead
@@ -88,7 +88,7 @@ La Tabla~\ref{multi02:poblacion} responde cuántas inscripciones siguen siendo e
 \end{longtable}\endgroup
 El número de inscripciones disminuye sobre todo porque se excluyen retiros que ya ocurrieron. También entran algunas matrículas nuevas entre cortes. Por tanto, las filas de la tabla no representan exactamente al mismo grupo de estudiantes. La menor proporción de retiro en los cortes posteriores no demuestra una mejora educativa: cambian el grupo analizado y el tiempo que queda para observar el evento. Las tablas de filtros y de módulo y presentación conservan los denominadores de cada comparación.
 
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.12000000000000001\linewidth}>{\raggedright\arraybackslash}p{0.12000000000000001\linewidth}>{\raggedright\arraybackslash}p{0.24000000000000002\linewidth}>{\raggedright\arraybackslash}p{0.21000000000000002\linewidth}>{\raggedright\arraybackslash}p{0.21000000000000002\linewidth}}
 \caption{Cambio de composición entre cortes consecutivos.}\label{multi02:transiciones}\\
@@ -105,19 +105,19 @@ El número de inscripciones disminuye sobre todo porque se excluyen retiros que 
 42 & 56 & 26\,503 & 502 & 3 \\*
 \end{longtable}\endgroup
 
-\begin{figure}[htbp]\centering
+\begin{figure}[!htbp]\centering
 \includegraphics[width=.94\linewidth]{figuras_multiventana/02_poblacion_cortes.pdf}
-\caption{Inscripciones elegibles, retiros futuros y prevalencia: índice con corte 7 igual a 100. Las líneas unen poblaciones distintas; no son trayectorias de una cohorte.}\label{multi02:figpoblacion}\end{figure}
-\Needspace{.16\textheight}\section{Cascadas completas de elegibilidad}
+\caption[Inscripciones elegibles, retiros futuros y prevalencia: índice con corte 7 igual a 100. Las líneas unen poblaciones distintas.]{Inscripciones elegibles, retiros futuros y prevalencia: índice con corte 7 igual a 100. Las líneas unen poblaciones distintas; no son trayectorias de una cohorte.}\label{multi02:figpoblacion}\end{figure}
+\Needspace{6\baselineskip}\section{Cascadas completas de elegibilidad}
 La Figura~\ref{editorial:cascada28} resume la aplicación de los filtros al día 28. Cada exclusión se calcula sobre las inscripciones que superaron la etapa anterior, de modo que las cantidades no se suman como categorías superpuestas. El evento futuro se cuenta únicamente después de completar la elegibilidad.
 \input{figura_cascada28}
 La proporción de 30,90\,\% describe fechas de retiro en la fuente completa; el 18,22\,\% utiliza 5\,012 retiros futuros entre 27\,515 inscripciones elegibles. El cambio responde a otra población y otro intervalo del evento, no a una reducción del abandono producida por el estudio. Las 5\,017 exclusiones por retiro hasta el corte coinciden numéricamente con los 5\,017 retiros posteriores al día 28 de la Tabla~\ref{rev01:retiro}; son conjuntos distintos, definidos en etapas y poblaciones diferentes.
 
-La Tabla~\ref{corr:flujos} publica cada filtro y sus denominadores. Las exclusiones son secuenciales, no categorías superpuestas. Después del filtro de matrícula quedan 2\,643 retiros anteriores al inicio; los 35 restantes de la fuente completa ya fueron excluidos por matrícula.
-\Needspace{0.2\textheight}
+La Tabla~\ref{corr:flujos} publica cada filtro y sus denominadores. Después del filtro de matrícula quedan 2\,643 retiros anteriores al inicio; los 35 restantes de la fuente completa ya fueron excluidos por matrícula.
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.0670212765957447\linewidth}>{\raggedright\arraybackslash}p{0.32553191489361705\linewidth}>{\raggedright\arraybackslash}p{0.19148936170212766\linewidth}>{\raggedright\arraybackslash}p{0.1723404255319149\linewidth}>{\raggedright\arraybackslash}p{0.14361702127659576\linewidth}}
-\caption{Flujo secuencial en cada corte; las exclusiones corresponden a la etapa indicada.}\label{corr:flujos}\\
+\caption[Flujo secuencial en cada corte.]{Flujo secuencial en cada corte; las exclusiones corresponden a la etapa indicada.}\label{corr:flujos}\\
 \toprule
 \textbf{Corte} & \textbf{Etapa} & \textbf{Inscripciones} & \textbf{Personas} & \textbf{Excluidas} \\
 \midrule\endfirsthead
@@ -151,26 +151,37 @@ La Tabla~\ref{corr:flujos} publica cada filtro y sus denominadores. Las exclusio
 56 & Sin retiro hasta corte & 26\,506 & 24\,105 & 6\,033 \\
 56 & Final posterior al corte & 26\,506 & 24\,105 & 0 \\
 \end{longtable}\endgroup
-\Needspace{.16\textheight}\section{Construcción y disponibilidad de indicadores}
-La actividad se resume mediante volumen de clics, días activos, frecuencia relativa, recencia y variabilidad de los totales diarios. Un día activo contiene al menos un clic; la proporción de días activos usa $t+1$ como denominador. Esta normalización facilita una lectura temporal, pero no corrige la menor exposición de las matrículas posteriores al inicio. Se exporta adicionalmente el número de días matriculados dentro de la ventana para identificar esta condición. El número de filas VLE no se denomina número de sesiones.
+\Needspace{6\baselineskip}\section{Construcción y disponibilidad de indicadores}
+Los indicadores de volumen, frecuencia, intensidad, recencia y variabilidad se definieron en la Sección~\ref{sec:actividad}. Al calcularlos sobre el calendario inclusivo, una matrícula posterior al inicio dispone de menos días para registrar actividad: dividir por $t+1$ no corrige esa diferencia. Por ejemplo, al corte 7 se cuentan ocho días, aunque una inscripción matriculada el día 4 solo haya estado matriculada durante cuatro de ellos. Se exporta el número de días matriculados dentro de la ventana para identificar esta condición; el ejemplo es hipotético.
 
-La recencia es la diferencia entre el corte y el último día activo; se conserva ausente cuando no existe actividad en la ventana. El coeficiente de variación emplea la desviación estándar muestral de los totales diarios, incluidos los ceros, dividida por su media. También se cuentan semanas completas desde el día 0 y se omite el bloque final incompleto. Estos indicadores describen conductas observables; los clics no constituyen una medición directa de motivación.
+La continuidad semanal se describe contando los bloques completos de siete días desde el día 0 que registran actividad. Se omite el bloque final incompleto: al corte 7 se considera el bloque de los días 0 a 6; el día 7 no completa una segunda semana. Este conteo complementa la recencia y la variabilidad, sin medir directamente la motivación.
 
 La tendencia compara bloques contiguos de igual longitud que terminan en el corte. Para $s=7$ o $s=14$, se calcula
 \[
 T_{i,s}(t)=\log\!\left(\frac{1+\sum_{d=t-s+1}^{t}c_{id}}
 {1+\sum_{d=t-2s+1}^{t-s}c_{id}}\right).
 \]
-En la fórmula, $s$ es la duración de cada bloque y $T_{i,s}(t)$ es la tendencia de la inscripción $i$. El numerador suma los clics del bloque más reciente y el denominador los del anterior. Un valor positivo indica más clics recientes y uno negativo, menos. Añadir 1 permite calcular el cociente cuando uno de los bloques no tiene clics. Este suavizado conserva la inversión del signo al intercambiar los bloques, pero multiplicar todos los conteos por una misma cantidad puede cambiar el valor. Ambos bloques nulos se representan como no observables. La tendencia de siete días requiere $t\ge13$ y la de catorce $t\ge27$; 14 y 28 son los primeros cortes elegidos que cumplen esas condiciones, no los primeros matemáticamente posibles.
+En la fórmula, $s$ es la duración de cada bloque y $T_{i,s}(t)$ es la tendencia de la inscripción $i$. El numerador suma los clics del bloque más reciente y el denominador los del anterior. Un valor positivo indica más clics recientes y uno negativo, menos. Añadir 1 permite calcular el cociente cuando uno de los bloques no tiene clics. Este suavizado conserva la inversión del signo al intercambiar los bloques, pero multiplicar todos los conteos por una misma cantidad puede cambiar el valor. Si ambos bloques tienen cero clics, el indicador queda ausente: no se interpreta esa ausencia de actividad como una tendencia estable. La tendencia de siete días requiere $t\ge13$ y la de catorce $t\ge27$; 14 y 28 son los primeros cortes elegidos que cumplen esas condiciones, no los primeros matemáticamente posibles. Por eso, en la tabla de efectos no aplica la tendencia de siete días al corte 7, ni la de catorce días a los cortes 7 y 14.
+
+Al corte 28, la tendencia de siete días compara los clics de los días 22 a 28 con los de los días 15 a 21; la de catorce compara los días 15 a 28 con los días 1 a 14. En un ejemplo hipotético, pasar de diez clics en el bloque anterior a veinte en el reciente produce una tendencia positiva; invertir esos conteos produce una negativa. Si ambos bloques tienen la misma cantidad positiva de clics, la tendencia es cero. La comparación resume el cambio de volumen entre bloques, sin indicar que la actividad haya aumentado o disminuido cada día.
 
 La inactividad acumulada y la ausencia de clics en los últimos 7, 14 o 28 días se conservan como indicadores complementarios. Una ventana reciente sin historia suficiente se representa como no observable, no como actividad ni como inactividad. Ninguno de estos indicadores binarios, con valores 0 o 1, sustituye la etiqueta administrativa; su interpretación depende del calendario y de las oportunidades de participación.
 
-Las entregas incluyen evaluaciones distintas de \textit{Exam}, sin reconocimiento de otra presentación (\textit{banked}), observadas entre 0 y $t$. Se distinguen las evaluaciones programadas hasta el corte y cuántas de ellas ya fueron entregadas; estas últimas pueden haberse entregado antes del inicio. La proporción entregada no mide puntualidad y queda ausente cuando no hay evaluaciones programadas. Los puntajes y su disponibilidad se conservan únicamente para auditoría, porque la fecha de entrega no acredita la fecha de publicación de la nota.
+Las entregas incluyen evaluaciones distintas de \textit{Exam}, sin reconocimiento de otra oferta del módulo (\textit{banked}), observadas entre 0 y $t$. Este conteo se distingue de las \textbf{evaluaciones con vencimiento hasta el corte}: aquellas cuya fecha límite registrada se encuentra entre el día 0 y el día $t$, ambos incluidos, excluyendo \textit{Exam}. El conteo se toma del calendario de la oferta del módulo; no se determina a partir de las entregas de cada persona. Una evaluación sin fecha conocida no puede situarse en ese intervalo.
 
-\Needspace{0.3\textheight}
+\paragraph{Ejemplo hipotético del calendario de evaluaciones}
+Supóngase que tres actividades distintas de examen vencen los días 15, 25 y 40. Al cierre del día 28 se cuentan dos evaluaciones con vencimiento hasta el corte: las dos primeras. La tercera todavía no forma parte de ese denominador, aunque pudiera haberse entregado anticipadamente. Si una inscripción entregó una de las dos primeras actividades hasta el día 28, la proporción entregada es $1/2=50\,\%$. Si no entregó ninguna, la proporción es cero. En cambio, al día 7 todavía no hay vencimientos: el denominador es cero, la proporción queda ausente y la falta de entregas no permite afirmar que se incumplió una fecha límite. Estos valores son ilustrativos, no resultados calculados de OULAD.
+
+Para calcular la proporción se cuentan, entre las evaluaciones con vencimiento en $[0,t]$, las entregadas hasta $t$, sin resultados reconocidos de otra oferta. Estas entregas pueden ser anteriores al día 0. El indicador no mide puntualidad: en el ejemplo, una actividad que vence el día 15 y se entrega el día 20 cuenta como entregada al corte 28, aunque se entregó tarde. Tampoco indica cuándo se hizo accesible la actividad ni cuántos intentos se permitieron. El calendario corresponde a la oferta del módulo y no acredita por sí solo las oportunidades efectivamente disponibles para cada persona.
+
+Los nombres de columnas se conservan para mantener la correspondencia con el código: \texttt{n\_\allowbreak{}evaluaciones\_\allowbreak{}programadas} cuenta los vencimientos en $[0,t]$; \texttt{n\_\allowbreak{}programadas\_\allowbreak{}entregadas\_\allowbreak{}al\_\allowbreak{}corte} cuenta cuáles de esas evaluaciones estaban entregadas; y \texttt{proporcion\_\allowbreak{}programadas\_\allowbreak{}entregadas} es su cociente cuando el denominador es mayor que cero. El Anexo~\ref{corr:anexodiccionario} conserva el diccionario. En las tablas, «evaluación programada» se refiere a este mismo criterio de vencimiento, no a cualquier actividad futura del calendario.
+
+Los puntajes se conservan únicamente para auditoría, porque la fecha de entrega no acredita la fecha de publicación de la nota. Por ejemplo, de manera hipotética, una actividad entregada el día 20 puede recibir su nota el día 35; esa calificación no habría estado disponible para predecir al día 28. Por ello, la existencia de una entrega no permite suponer que su nota ya era conocida.
+
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.07422680412371135\linewidth}>{\raggedright\arraybackslash}p{0.18556701030927839\linewidth}>{\raggedright\arraybackslash}p{0.25979381443298977\linewidth}>{\raggedright\arraybackslash}p{0.17628865979381445\linewidth}>{\raggedright\arraybackslash}p{0.2041237113402062\linewidth}}
-\caption{Disponibilidad y exposición en la población elegible; conteos de inscripciones.}\label{multi02:disponibilidad}\\
+\caption[Disponibilidad y exposición en la población elegible.]{Disponibilidad y exposición en la población elegible; conteos de inscripciones.}\label{multi02:disponibilidad}\\
 \toprule
 \textbf{Corte} & \textbf{Sin actividad} & \textbf{Sin evaluación programada} & \textbf{Con entregas} & \textbf{Matrícula después de 0} \\
 \midrule\endfirsthead
@@ -186,26 +197,26 @@ Las entregas incluyen evaluaciones distintas de \textit{Exam}, sin reconocimient
 \end{longtable}\endgroup
 En el corte 7 ninguna inscripción tiene evaluaciones con vencimiento entre 0 y 7, aunque 772 ya presentan entregas. Por ello, ausencia de entregas y falta de cumplimiento no son equivalentes. En el corte 28 persisten 4\,988 inscripciones sin evaluación programada y en el corte 56 son 2\,407; la ampliación de la ventana no elimina toda la heterogeneidad del calendario.
 
-\Needspace{.16\textheight}\section{Disponibilidad y calendario}
-La Figura~\ref{corr:calendario} muestra el primer vencimiento de evaluación según módulo y presentación, no la fecha en que cada actividad se hizo accesible. La Figura~\ref{corr:observabilidad} permite examinar qué indicadores pueden calcularse en cada corte; un porcentaje menor indica falta de observabilidad y no menor riesgo de abandono.
-El primer vencimiento de evaluación continua varía entre los días 12 y 61 según la presentación. En el corte 7 hay entregas anticipadas aunque no haya vencimientos. La falta de oportunidad no equivale a incumplimiento.
-
+\Needspace{6\baselineskip}\section{Disponibilidad y calendario}
 \begin{figure}[H]\centering
-\includegraphics[width=.94\linewidth]{figuras_multiventana/02_calendario_evaluaciones.pdf}
+\includegraphics[width=.65\linewidth]{figuras_multiventana/02_calendario_evaluaciones.pdf}
 \caption{Primer vencimiento de una evaluación distinta de examen (\textit{Exam}), por módulo y presentación.}\label{corr:calendario}\end{figure}
+La Figura~\ref{corr:calendario} permite comparar el primer vencimiento entre ofertas del módulo. Sus valores se sitúan entre los días 12 y 61; indican fechas límite, no fechas de acceso a las actividades.
+
+La Figura~\ref{corr:observabilidad} muestra en qué proporción de inscripciones elegibles puede calcularse cada indicador. Un porcentaje menor significa que faltan las condiciones necesarias para obtenerlo, como actividad previa o evaluaciones con vencimiento hasta el corte; no significa menor riesgo de retiro.
 
 \begin{figure}[H]\centering
-\includegraphics[width=.94\linewidth]{figuras_multiventana/02_disponibilidad_indicadores.pdf}
-\caption{Disponibilidad de cada indicador para su cálculo; porcentaje de inscripciones elegibles en cada corte.}\label{corr:observabilidad}\end{figure}
+\includegraphics[width=.88\linewidth]{figuras_multiventana/02_disponibilidad_indicadores.pdf}
+\caption[Disponibilidad de cada indicador para su cálculo.]{Disponibilidad de cada indicador para su cálculo; porcentaje de inscripciones elegibles en cada corte.}\label{corr:observabilidad}\end{figure}
 Los nombres, dominios y reglas de ausencia de los candidatos se publican en el Anexo~\ref{corr:anexodiccionario}, Tabla~\ref{corr:diccionario}.
-\Needspace{.16\textheight}\section{Redundancia y estructura multivariada}
+\Needspace{6\baselineskip}\section{Redundancia y estructura multivariada}
 Varios indicadores pueden describir aspectos cercanos de la misma actividad. Para revisar esa relación se utilizaron correlaciones, VIF y análisis de componentes principales (PCA). Las correlaciones comparan pares de variables; el VIF examina su dependencia lineal dentro de un conjunto definido; el PCA resume cómo varían en conjunto. Estos procedimientos ayudan a entender la información disponible antes del modelado.
 
 Se calcularon correlaciones de Spearman, que comparan el orden de los valores de dos indicadores. Un signo positivo indica que valores mayores de uno tienden a acompañarse de valores mayores del otro; un signo negativo indica el orden contrario. Se contó cuántos pares de datos estaban disponibles en cada corte. El VIF se calculó con cuatro indicadores y un intercepto. El VIF indica cuánto aumenta la varianza de un coeficiente lineal por su relación con los demás predictores del conjunto. Un valor mayor señala más redundancia lineal, pero no determina qué variables serán más útiles para predecir el retiro. En particular, el volumen de clics, los días activos y las filas VLE no representan aportes completamente independientes.
 
-El PCA combina cinco indicadores conductuales: el logaritmo de uno más los clics, la proporción de días activos, el logaritmo de uno más los clics por día activo, la recencia relativa y el CV. Se utilizan únicamente los casos con actividad y datos completos. Las variables se estandarizan restando su media y dividiendo por su desviación estándar, para llevarlas a una escala comparable y el análisis se ajusta por separado en cada corte \cite{revpca}. Cada componente es una combinación lineal de los indicadores que resume parte de su variación conjunta. El porcentaje de varianza de la Tabla~\ref{multi03:pca} expresa cuánto de esa variación recogen los dos primeros componentes. Por ello, los componentes de un corte no son los mismos ejes de los demás cortes y no deben usarse para seguir trayectorias individuales entre ventanas.
+El PCA combina cinco indicadores conductuales: el logaritmo de uno más los clics, la proporción de días activos, el logaritmo de uno más los clics por día activo, la recencia relativa y el CV de calendario. Se utilizan únicamente los casos con actividad y datos completos. Las variables se estandarizan restando su media y dividiendo por su desviación estándar, para llevarlas a una escala comparable y el análisis se ajusta por separado en cada corte \cite{revpca}. Cada componente es una combinación lineal de los indicadores que resume parte de su variación conjunta. La Tabla~\ref{multi03:pca} informa el porcentaje de esa variación que conservan los dos primeros componentes al resumir los cinco indicadores en dos ejes. Por ello, los componentes de un corte no son los mismos ejes de los demás cortes y no deben usarse para seguir trayectorias individuales entre ventanas.
 
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.13\linewidth}>{\raggedright\arraybackslash}p{0.29\linewidth}>{\raggedright\arraybackslash}p{0.5\linewidth}}
 \caption{Resumen descriptivo del PCA ajustado separadamente por corte.}\label{multi03:pca}\\
@@ -222,11 +233,13 @@ El PCA combina cinco indicadores conductuales: el logaritmo de uno más los clic
 42 & 26\,087 & 87,57 \\*
 56 & 25\,741 & 87,10 \\*
 \end{longtable}\endgroup
+Al corte 28, los dos componentes resumen el 87,24\% de la variación de los cinco indicadores estandarizados en las 26\,312 inscripciones con información completa. Este porcentaje describe la información conservada sobre esos indicadores; no es el porcentaje de retiros identificados ni una medida de precisión predictiva. La columna de casos cuenta inscripciones, no personas únicas.
+
 También se utilizó el método de determinante mínimo de covarianza (MCD) para revisar observaciones alejadas del patrón conjunto de las variables. Este método estima el centro y la variación de los datos buscando reducir la influencia de valores extremos \cite{revmcd}. Se ajustó con una muestra reproducible de 5\,000 casos por corte y después se calcularon distancias para todos los casos completos. Se marcaron los que superaron el percentil empírico 97,5 de esas distancias. La marca es descriptiva: no equivale a una probabilidad de anomalía ni a una prueba de Hotelling, y no se eliminaron observaciones. Los resultados detallados de MCD, PCA y VIF se conservan en los CSV.
 
-\Needspace{.16\textheight}\section{VIF publicado y decisión sobre el conteo de filas}
+\Needspace{6\baselineskip}\section{VIF publicado y decisión sobre el conteo de filas}
 La Tabla~\ref{corr:vif} conserva la especificación utilizada para auditar la redundancia del conteo de filas. Su publicación permite justificar la decisión de exclusión sin presentar ese conjunto de cuatro variables como el diseño definitivo del clasificador.
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.08617021276595743\linewidth}>{\raggedright\arraybackslash}p{0.17234042553191486\linewidth}>{\raggedright\arraybackslash}p{0.15319148936170213\linewidth}>{\raggedright\arraybackslash}p{0.18191489361702126\linewidth}>{\raggedright\arraybackslash}p{0.15319148936170213\linewidth}>{\raggedright\arraybackslash}p{0.15319148936170213\linewidth}}
 \caption{VIF con intercepto en la especificación de auditoría de cuatro indicadores.}\label{corr:vif}\\
@@ -243,10 +256,10 @@ La Tabla~\ref{corr:vif} conserva la especificación utilizada para auditar la re
 42 & 27\,005 & 5,839 & 5,372 & 12,334 & 1,323 \\*
 56 & 26\,506 & 6,157 & 5,673 & 13,694 & 1,394 \\*
 \end{longtable}\endgroup
-El mayor VIF corresponde al conteo de filas en cada corte y llega a 10,929 al día 28. Se conserva esta especificación como diagnóstico de la decisión de exclusión; no es el conjunto predictivo final. La redundancia y la procedencia no resuelta del conteo se consideran conjuntamente, sin imponer un umbral universal para todos los modelos.
-\Needspace{.16\textheight}\section{Sensibilidad de variabilidad y componentes principales}
+El mayor VIF corresponde al conteo de filas en cada corte y llega a 10,929 al día 28. La redundancia y la procedencia no resuelta del conteo se consideran conjuntamente, sin imponer un umbral universal para todos los modelos.
+\Needspace{6\baselineskip}\section{Sensibilidad de variabilidad y componentes principales}
 La Tabla~\ref{corr:cv} contrasta los dos CV con la proporción de días activos. Las dos columnas de observabilidad informan tamaños distintos, pero ambas correlaciones se calcularon sobre los mismos casos con al menos dos días activos. Esta precisión evita comparar correlaciones como si procedieran de las dos poblaciones observables completas.
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.09574468085106384\linewidth}>{\raggedright\arraybackslash}p{0.2297872340425532\linewidth}>{\raggedright\arraybackslash}p{0.22021276595744685\linewidth}>{\raggedright\arraybackslash}p{0.1819148936170213\linewidth}>{\raggedright\arraybackslash}p{0.17234042553191492\linewidth}}
 \caption{Correlación con proporción activa en los mismos casos con al menos dos días activos.}\label{corr:cv}\\
@@ -263,17 +276,16 @@ La Tabla~\ref{corr:cv} contrasta los dos CV con la proporción de días activos.
 42 & 26\,087 & 25\,323 & -0,918 & 0,102 \\*
 56 & 25\,741 & 25\,147 & -0,926 & 0,076 \\*
 \end{longtable}\endgroup
-La asociación con la proporción activa es menor en valor absoluto para el CV activo que para el CV de calendario en todos los cortes de la Tabla~\ref{corr:cv}. Esta diferencia es compatible con sus definiciones, ilustradas en la Figura~\ref{editorial:cv}, y se obtiene a costa de una menor observabilidad. No se identifica independencia estadística ni ganancia predictiva. El CV de calendario combina ambos componentes y no se descarta retrospectivamente como cálculo erróneo.
-La Figura~\ref{fig:cv-actividad} facilita esta comparación: el CV de calendario presenta una relación negativa más marcada con la proporción de días activos, mientras el CV entre días activos muestra valores positivos próximos a cero. En cada corte, ambas series utilizan las mismas inscripciones con al menos dos días activos. Las líneas conectan resúmenes de cortes distintos; no representan trayectorias individuales ni un contraste de cambios en el tiempo.
-\begin{figure}[H]\centering
+En todos los cortes, la asociación con la proporción activa es menor en valor absoluto para el CV activo que para el CV de calendario, a costa de una menor disponibilidad para calcularlo. La Figura~\ref{fig:cv-actividad} muestra el patrón: una relación negativa más marcada para el CV de calendario y valores positivos próximos a cero para el activo. Ambas correlaciones usan las mismas inscripciones con al menos dos días activos en cada corte. Esta diferencia concuerda con las definiciones ilustradas en la Figura~\ref{editorial:cv}, pero no demuestra independencia estadística ni ganancia predictiva. Las líneas conectan resúmenes de cortes distintos, no trayectorias individuales ni contrastes de cambios en el tiempo. El CV de calendario conserva su interpretación y no se descarta como un cálculo erróneo.
+\begin{figure}[!htbp]\centering
 \includegraphics[width=\linewidth]{figuras_contexto/relacion_cv_actividad.pdf}
 \caption[Relación entre variabilidad de clics y proporción de días activos.]{Relación entre variabilidad de clics y proporción de días activos. Elaboración propia a partir de las dos correlaciones sobre casos comunes de la Tabla~\ref{corr:cv}; se conservan en ella los conteos de observabilidad.}\label{fig:cv-actividad}
 \end{figure}
 En los cortes 7 y 14, los intervalos puntuales del efecto biserial del CV activo frente al retiro futuro incluyen cero y no respaldan una dirección clara. Esta diferencia respecto del CV de calendario muestra que cambiar la definición modifica la interpretación del indicador; no prueba ausencia de utilidad conjunta en un clasificador.
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.09574468085106384\linewidth}>{\raggedright\arraybackslash}p{0.1819148936170213\linewidth}>{\raggedright\arraybackslash}p{0.22021276595744685\linewidth}>{\raggedright\arraybackslash}p{0.22021276595744685\linewidth}>{\raggedright\arraybackslash}p{0.1819148936170213\linewidth}}
-\caption{Varianza porcentual de dos componentes; comparación descriptiva sobre la misma población.}\label{corr:pcasens}\\
+\caption[Varianza porcentual de dos componentes.]{Varianza porcentual de dos componentes; comparación descriptiva sobre la misma población.}\label{corr:pcasens}\\
 \toprule
 \textbf{Corte} & \textbf{n común} & \textbf{Original (5)} & \textbf{Sin volumen (4)} & \textbf{CV activo (4)} \\
 \midrule\endfirsthead
@@ -288,9 +300,9 @@ En los cortes 7 y 14, los intervalos puntuales del efecto biserial del CV activo
 56 & 25\,147 & 86,34 & 83,41 & 69,77 \\*
 \end{longtable}\endgroup
 La primera versión del PCA utiliza los cinco indicadores originales. La segunda retira el volumen de clics. La tercera, además, reemplaza el CV de calendario por el CV entre días activos. Las tres versiones se ajustan sobre los mismos casos, con variables estandarizadas y por separado en cada corte. Como cambia el conjunto de variables, también cambia la variación que se intenta resumir. Un porcentaje mayor no significa que el PCA explique mejor el abandono.
-\Needspace{.16\textheight}\section{Sensibilidad de asociaciones a los duplicados exactos}
+\Needspace{6\baselineskip}\section{Sensibilidad de asociaciones a los duplicados exactos}
 La Tabla~\ref{corr:duplicadosefectos} muestra cuánto cambia cada asociación al retirar filas exactamente repetidas antes de agregar la actividad. La diferencia se calcula restando el efecto de la fuente original al de la alternativa sin duplicados exactos; un valor próximo a cero indica un cambio descriptivo pequeño en esa comparación, no la validación de una política general de deduplicación.
-\Needspace{0.42\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.2709677419354839\linewidth}>{\raggedright\arraybackslash}p{0.12580645161290321\linewidth}>{\raggedright\arraybackslash}p{0.12580645161290321\linewidth}>{\raggedright\arraybackslash}p{0.12580645161290321\linewidth}>{\raggedright\arraybackslash}p{0.12580645161290321\linewidth}>{\raggedright\arraybackslash}p{0.12580645161290321\linewidth}}
 \caption{Cambio del efecto biserial al retirar duplicados exactos: alternativa menos fuente original.}\label{corr:duplicadosefectos}\\
@@ -310,12 +322,12 @@ Recencia & 0,0000 & 0,0000 & 0,0000 & 0,0000 & 0,0000 \\*
 Clics & 0,0001 & 0,0007 & 0,0007 & 0,0011 & 0,0014 \\*
 \end{longtable}\endgroup
 La alternativa elimina repeticiones en todas las columnas de la fuente antes de agregar; conserva población y evento. La actividad original sigue siendo el análisis principal. Estas diferencias cuantifican sensibilidad descriptiva, no identifican cuál registro es verdadero ni prueban robustez de un modelo aún no entrenado.
-\Needspace{.16\textheight}\section{Estabilidad de los intervalos por remuestreo}
+\Needspace{6\baselineskip}\section{Estabilidad de los intervalos por remuestreo}
 La Tabla~\ref{corr:bootstrap} examina cuánto cambian los extremos de los intervalos al ampliar el número de remuestreos. Las 66 comparaciones publicadas permanecen dentro de la tolerancia descriptiva de 0,005; este resultado caracteriza la secuencia utilizada y no una garantía general de convergencia.
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.14\linewidth}>{\raggedright\arraybackslash}p{0.25\linewidth}>{\raggedright\arraybackslash}p{0.29\linewidth}>{\raggedright\arraybackslash}p{0.26\linewidth}}
-\caption{Cambio máximo de extremos entre 2.000 y 5.000 remuestreos; comparación numérica, no contraste de hipótesis.}\label{corr:bootstrap}\\
+\caption[Cambio máximo de extremos entre 2.000 y 5.000 remuestreos.]{Cambio máximo de extremos entre 2.000 y 5.000 remuestreos; comparación numérica, no contraste de hipótesis.}\label{corr:bootstrap}\\
 \toprule
 \textbf{Corte} & \textbf{Indicadores} & \textbf{Cambio máximo} & \textbf{Dentro de 0,005} \\
 \midrule\endfirsthead
@@ -331,10 +343,10 @@ La Tabla~\ref{corr:bootstrap} examina cuánto cambian los extremos de los interv
 \end{longtable}\endgroup
 Se compararon los resultados obtenidos con las primeras 500 y 2\,000 repeticiones con los de las 5\,000 de una misma secuencia. Se tomó como referencia una diferencia de 0,005 unidades del efecto entre extremos de los intervalos. Al compartir repeticiones, esta comprobación muestra estabilidad numérica en la secuencia utilizada, pero no asegura el mismo resultado con otras semillas. Los intervalos publicados utilizan 5\,000 remuestreos y mantienen su carácter exploratorio.
 
-\Needspace{.16\textheight}\section{Sensibilidad con población y evento comunes}
+\Needspace{6\baselineskip}\section{Sensibilidad con población y evento comunes}
 Para examinar cuánto influyen los cambios de población, se repitió la comparación con las 26\,429 inscripciones que seguían siendo elegibles en los cinco cortes. En este grupo se definió un mismo evento: retiro después del día 56 y hasta el final de la presentación, con 3\,985 casos. Se compararon cinco indicadores en cada corte. Aunque el grupo y el evento se mantienen, algunos indicadores solo pueden calcularse cuando hay actividad o evaluaciones programadas, por lo que sus tamaños observados todavía pueden variar.
 
-\Needspace{0.3\textheight}
+\Needspace{6\baselineskip}
 \begingroup\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.3375\linewidth}>{\raggedright\arraybackslash}p{0.1125\linewidth}>{\raggedright\arraybackslash}p{0.1125\linewidth}>{\raggedright\arraybackslash}p{0.1125\linewidth}>{\raggedright\arraybackslash}p{0.1125\linewidth}>{\raggedright\arraybackslash}p{0.1125\linewidth}}
 \caption{Efectos descriptivos en la cohorte común, sin intervalos ni contraste entre cortes.}\label{multi03:comun}\\
@@ -353,7 +365,3 @@ Proporción programada entregada & No aplica & -0,097 & -0,101 & -0,118 & -0,199
 \end{longtable}\endgroup
 Este grupo solo puede formarse después de saber quiénes siguen siendo elegibles en el día 56. Por eso sirve para revisar los resultados, pero no para definir a quién se alertaría en el día 7: en ese momento aún no se dispone de esa información. La comparación ayuda a reconocer que el cambio de población importa; no permite medir por sí sola cuánto del cambio se debe a la duración de la ventana.
 
-\Needspace{.16\textheight}\section{Conclusiones y continuidad}
-La comparación documenta que la disponibilidad académica y el significado de los indicadores cambian con el momento de observación. Las señales conductuales conservan asociaciones descriptivas con el retiro, mientras que algunas tendencias recientes presentan resultados menos definidos. La evidencia favorece mantener explícitos los denominadores, el calendario y la historia requerida, en lugar de completar automáticamente con ceros los indicadores no observables.
-
-Los resultados dejan preparados los datos para comparar modelos, pero aún no señalan la mejor ventana. Esa elección deberá considerar qué tan bien se distinguen los retiros, si las probabilidades estimadas se ajustan a lo observado y cuánto tiempo queda para actuar. Las reglas de comparación deben fijarse antes de seleccionar modelos, cortes o umbrales. Además, ya se exploró la fuente completa: separar ahora un conjunto y llamarlo prueba final no permite afirmar que nunca se utilizó información de él.

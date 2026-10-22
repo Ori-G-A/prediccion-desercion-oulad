@@ -1,0 +1,12 @@
+{
+  "correcto": true,
+  "cortes": 5,
+  "casos_probados": 500,
+  "consultas_exploratorias": 20,
+  "barras_con_cero_central": true,
+  "graficos_narrativos": true,
+  "identificadores_html_verificados": true,
+  "archivo_autonomo": true,
+  "identificadores_exportados": false,
+  "limite": "Prueba de funciones y eventos con DOM mínimo; revisión visual y uso real en navegador pendientes por fallo de herramienta CUA."
+}

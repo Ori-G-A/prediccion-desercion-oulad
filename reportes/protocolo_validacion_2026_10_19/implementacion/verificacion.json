@@ -1,0 +1,37 @@
+{
+  "estado": "correcto",
+  "personas": 26089,
+  "filas_cinco_cortes": 138156,
+  "personas_compartidas": 0,
+  "cortes": [
+    7,
+    14,
+    28,
+    42,
+    56
+  ],
+  "conjuntos": [
+    "ajuste",
+    "calibracion",
+    "umbral",
+    "prueba"
+  ],
+  "ofertas_representadas_todos_conjuntos": true,
+  "ambas_clases_cada_conjunto_y_pliegue": true,
+  "etiquetas_y_elegibilidad_verificadas": true,
+  "modelos_entrenados": 0,
+  "python": "3.11.9",
+  "sklearn": "1.8.0",
+  "pandas": "2.3.3",
+  "numpy": "2.4.4",
+  "fuentes_sha256": {
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_07.parquet": "d04732fc2af8d368e8ce0cad492a8fa2306d6731ddb01a65e5fd1bf2a71d154d",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_14.parquet": "0aac2f5803827c49e844df02b3a0eadbaafce5e0fbaa5997724b09cc5dbf9efb",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_28.parquet": "84f5581c8654a305f2089100f42fa33b733120b7eeb3ecaec71d9c45e8eb1ae7",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_42.parquet": "254c52adc7251e28942108cc061d7242e5748c8345c16b821e81f6a8d189a9e2",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_56.parquet": "0845db2b0ef13f9a921591490b410d792d24752e9fb018868d96bf43b2d7f767"
+  },
+  "decision_temporal_sha256": "83cf462541c822d2dff56987709d666a6278ba8612ea4d518102cfe4448bf63a",
+  "predictores_fuente_sha256": "ace199597f60469d7ab74c6bbfa8ab26a939d0eaeaa8541790329c9566b3f59e",
+  "script_sha256": "b092f22ff22303932928e9f934899e1a89b16f379ec36d62898c4df2e908b69d"
+}

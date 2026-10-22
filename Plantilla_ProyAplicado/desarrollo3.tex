@@ -1,7 +1,42 @@
 \label{editorial:modelos}
-\section{Estado del modelado}
-El entrenamiento y la comparación de clasificadores no se han ejecutado en esta versión. Esta fase deberá establecer qué casos nuevos se espera predecir y cómo separar los datos para evaluarlos, teniendo en cuenta las personas con varias inscripciones y las distintas presentaciones. También deberá incluir modelos base y reglas comunes de comparación.
+\section{Propósito y separación de los datos}
+La evaluación se diseñó para estimar la capacidad de predecir el retiro futuro de inscripciones de personas no vistas durante el ajuste, dentro de las ofertas de módulos disponibles. Por ello, todas las inscripciones de una persona se asignaron al mismo conjunto, incluso cuando aparecen en varias ofertas o cortes. Esta separación no evalúa directamente el uso del modelo en periodos futuros, módulos nuevos u otras instituciones.
 
-La actividad A3.2 del anteproyecto propone una partición estratificada, que busca conservar la proporción de clases en entrenamiento y prueba. Antes de aplicarla debe precisarse cómo se tratarán las inscripciones de una misma persona y las presentaciones de distintos periodos. Conservar la proporción de retiros no evita, por sí solo, que una persona aparezca en ambos conjuntos ni permite evaluar cualquier escenario de uso. Esta precisión del protocolo se someterá a revisión del director; en esta versión no se ha ejecutado una partición ni se presenta una alternativa como aprobada.
+Se conservan la población elegible y el evento temporal definidos en los capítulos anteriores. La asignación reúne 26\,089 personas y es común a los cinco cortes y a todas las familias de modelos. Se verificó que ninguna persona pertenece a más de un conjunto, que las ofertas están representadas y que ambos desenlaces aparecen en cada conjunto y corte. La actividad A3.2 del anteproyecto contempla estratificación; su implementación incorpora además agrupación por persona. Esta precisión fue adoptada para ejecutar el estudio, pero no se presenta como una aprobación académica del director.
 
-Las transformaciones, la selección de variables, los hiperparámetros y los umbrales se ajustarán con entrenamiento y validación. La evaluación deberá comprobar la calibración, es decir, la correspondencia entre las probabilidades estimadas y los retiros observados, y el tiempo disponible entre la predicción y el evento. Como ya se exploró la fuente completa, no puede afirmarse que una prueba final permanezca intacta sin evidencia adicional.
+La Tabla~\ref{modelos:conjuntos} distingue el propósito de cada conjunto. Las proporciones son aproximadas porque las personas aportan diferentes cantidades de inscripciones. La separación entre selección y evaluación permite reservar información para comprobar los procedimientos ya fijados \cite{modeloscv2026}.
+
+\begin{table}[!htbp]\centering
+\caption{Conjuntos y usos establecidos antes del entrenamiento.}\label{modelos:conjuntos}
+\begin{tabular}{p{.21\linewidth}cp{.58\linewidth}}
+\toprule
+\textbf{Conjunto} & \textbf{Proporción} & \textbf{Uso}\\
+\midrule
+Ajuste y selección & 60\,\% & Aprender transformaciones y comparar configuraciones mediante cinco pliegues internos.\\
+Calibración & 10\,\% & Ajustar la correspondencia entre puntuaciones y probabilidades de retiro.\\
+Umbral & 10\,\% & Fijar la probabilidad que determina la emisión de una alerta.\\
+Prueba final & 20\,\% & Evaluar los modelos y reglas previamente congelados.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Cada pliegue interno es un grupo de personas que se reserva temporalmente para validar. El modelo se ajusta con los otros cuatro grupos y predice las inscripciones del grupo reservado; el procedimiento se repite hasta que todos han sido validados. Así, cada inscripción de ajuste recibe una predicción de un modelo que no utilizó a esa persona para aprender. Las semillas, las asignaciones y las configuraciones se guardaron antes de iniciar las búsquedas y se reutilizan entre familias.
+
+\section{Ajuste y selección por validación}
+Se entrena un modelo independiente por corte con los 26 indicadores definidos en la ingeniería de características. Los identificadores, las notas sin disponibilidad temporal acreditada y las variables de contexto no forman parte de esta entrada. Dentro de cada entrenamiento se retiran las columnas enteramente ausentes o constantes; las restantes se completan con su mediana y con indicadores de ausencia. La regresión logística y TabNet incorporan escalado. Estas transformaciones se aprenden únicamente con las personas usadas para ajustar, sin consultar el pliegue reservado \cite{revsklearnpitfalls}.
+
+La comparación comprende regresión logística, Random Forest, XGBoost, LightGBM y TabNet. Se añade una referencia que asigna a cada inscripción la proporción de retiros del entrenamiento correspondiente. La logística tiene ocho configuraciones; cada una de las otras familias tiene treinta. Todas se evalúan con los mismos cinco pliegues en los cinco cortes: 200 ajustes de validación para logística y 750 por cada familia restante. El número de árboles o épocas queda fijado por candidato; no se usa el pliegue reservado para detener anticipadamente el entrenamiento. Cuando se ponderan las clases, los pesos se calculan solo con el entrenamiento; en TabNet se aplican a la función de pérdida, sin remuestrear observaciones.
+
+La selección utiliza la media de precisión promedio, denominada AP por \textit{average precision}, en los cinco pliegues. Esta medida resume la precisión de las alertas a medida que se recuperan más retiros; no corresponde a la exactitud ni al área trapezoidal de una curva. Cada inscripción tiene el mismo peso al evaluar. Se elige la configuración con mayor AP media y, una vez terminadas todas las búsquedas, la familia principal de cada corte. Los empates a seis decimales se resuelven con el orden fijado: logística, Random Forest, LightGBM, XGBoost y TabNet; dentro de una familia se conserva el orden de configuraciones. Esta regla operativa no demuestra superioridad estadística.
+
+\section{Calibración, umbral y evaluación reservada}
+La configuración seleccionada de cada familia se reajusta con todo el conjunto de ajuste. Después se aplica calibración sigmoidal con su conjunto exclusivo, manteniendo inmutable el modelo base. Su propósito es mejorar la correspondencia entre probabilidades estimadas y frecuencias observadas; el uso de personas separadas evita calibrar con las mismas respuestas utilizadas para ajustar el clasificador \cite{modeloscalibracion2026}. La calibración no garantiza por sí sola probabilidades correctas en otros contextos.
+
+El umbral se fija posteriormente con el conjunto destinado a esa decisión: se maximiza F1, que combina precisión y sensibilidad, y los empates se resuelven por mayor sensibilidad y menor umbral. Se emite una alerta cuando la probabilidad es estrictamente mayor que el umbral \cite{revthreshold}. Después no se vuelve a ajustar el modelo con calibración o umbral, porque cambiaría la escala sobre la que se tomó la decisión. Las métricas calculadas en el conjunto de umbral son resultados de desarrollo, no una evaluación independiente.
+
+Antes de abrir la prueba se congelaron los candidatos, la familia principal, los umbrales y el procedimiento de evaluación. Se reportaron tamaños, prevalencia, AP, ROC-AUC, Brier y resultados de clasificación, junto con diez intervalos fijos para examinar la calibración. Brier resume error probabilístico y no mide exclusivamente calibración \cite{modeloscalibracion2026}. Los resultados por oferta se presentan como descriptivos y conservan sus denominadores; las medidas que requieran ambas clases se declararon no definidas cuando falte una de ellas.
+
+La incertidumbre se estimó mediante 2\,000 remuestreos de personas, manteniendo juntas sus inscripciones y usando las mismas muestras para comparar modelos. Los intervalos percentiles del 95\,\% describen variación entre personas condicionada a los modelos y ofertas observados; no incorporan toda la incertidumbre del entrenamiento. La mediana y los cuartiles de los días entre corte y retiro describen la anticipación de las alertas correctas, sin demostrar efectividad de una intervención. Las diferencias de población, prevalencia y horizonte impiden elegir una ventana óptima solamente por su AP.
+
+\input{resultados_modelos}
+

@@ -1,0 +1,19 @@
+\section{Qué explica el procedimiento}
+Se explicó el predictor calibrado principal de cada corte, elegido por validación interna, en escala de probabilidad de retiro. El diseño se fijó antes de abrir la prueba. Se utilizaron cincuenta inscripciones del conjunto de ajuste como referencia y cien inscripciones de prueba por corte, seleccionadas con semillas fijas sin utilizar su desenlace ni su puntuación. Las quinientas explicaciones no representan quinientas personas necesariamente diferentes entre cortes.
+
+Se utilizó una aproximación de SHAP mediante permutaciones, con veinte recorridos hacia delante y hacia atrás \cite{modelosshappermutation2026}. La contribución de una variable expresa cuánto desplaza la predicción respecto del valor de referencia dentro de este procedimiento. Un valor positivo aumenta la probabilidad explicada y uno negativo la reduce. La referencia es el promedio de las predicciones del modelo sobre las cincuenta inscripciones de ajuste; no es necesariamente la prevalencia de retiro.
+
+En las quinientas explicaciones, la referencia más la suma de contribuciones reprodujo la probabilidad guardada, con error absoluto máximo menor que $10^{-12}$. Esta comprobación de aditividad verifica una identidad numérica; no demuestra estabilidad del orden de importancia frente a otras muestras, referencias o presupuestos de permutaciones.
+
+\section{Patrones observados en las explicaciones}
+La Tabla~\ref{res:shap} presenta el indicador con mayor promedio de contribuciones absolutas en cada muestra. El valor absoluto describe magnitud, no dirección: una media absoluta de 5,51 puntos porcentuales no significa que todas las inscripciones aumenten su probabilidad en esa cantidad. Para conocer la dirección en un caso se consulta su contribución con signo y su referencia.
+\input{tablas_resultados/shap}
+
+En el día 7 destaca la actividad de los últimos siete días; le siguen los clics previos al inicio y los acumulados. En el día 14 destaca la actividad de los siete días anteriores a la última semana, seguida por los clics acumulados y las evaluaciones entregadas. En los días 28, 42 y 56 domina la proporción entregada de las evaluaciones con vencimiento hasta el corte, con magnitudes medias de 5,51, 3,50 y 4,65 puntos porcentuales. Este patrón describe qué información utiliza cada predictor en las muestras explicadas; no prueba que entregar evaluaciones reduzca causalmente el retiro.
+
+La proporción se refiere a evaluaciones no Exam con fecha conocida entre cero y el corte, ambos incluidos; cuenta las entregas de esas evaluaciones registradas hasta el corte, sin banked. No mide puntualidad y queda ausente cuando no hay evaluaciones con vencimiento en esa ventana. Esta condición ayuda a entender que su papel cambie entre cortes, pero no permite atribuir toda diferencia de importancia a una sola causa, pues también cambian los modelos y las poblaciones.
+
+\section{Dependencia y alcance de la interpretación}
+El enmascaramiento utiliza valores de referencia sin estimar la distribución condicional de una variable dadas las demás \cite{modelosshapindependent2026}. Varios indicadores proceden de la misma actividad y algunos son cocientes de otros; al combinarlos pueden generarse observaciones poco realistas. Las contribuciones pueden repartirse entre predictores relacionados y dependen de la referencia seleccionada. Por ello, no deben interpretarse como efectos causales, motivos del retiro ni una selección definitiva de variables.
+
+El análisis no cambió los modelos después de la prueba. Las explicaciones individuales se conservan para consulta en el prototipo; su propósito es ayudar a entender una predicción concreta, junto con los límites de la evaluación, sin convertirla en una recomendación automática de intervención.

@@ -1,0 +1,18 @@
+{
+  "archivo": "prototipo/OULAD.html",
+  "sha256": "07d12feb8dc5686bbdf70ac19d58f890ead8503fdd8e992a3ac299d325992823",
+  "fecha": "2026-10-21T14:41:39.653285-05:00",
+  "capturas_usuario": "Apertura y secciones visibles versión anterior confirmadas; no validan versión ampliada",
+  "navegador_automatizado": "CUA falla al iniciar: no se encuentra ruta de recursos del kernel (error 3)",
+  "modelo_modificado": false,
+  "pruebas_funcionales": {
+    "correcto": true,
+    "cortes": 5,
+    "casos_probados": 500,
+    "consultas_exploratorias": 20,
+    "barras_con_cero_central": true,
+    "archivo_autonomo": true,
+    "identificadores_exportados": false,
+    "limite": "Prueba de funciones y eventos con DOM mÃ­nimo; revisiÃ³n visual y uso real en navegador pendientes por fallo de herramienta CUA."
+  }
+}

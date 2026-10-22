@@ -1,0 +1,6 @@
+
+# Preservar artefactos binarios sin normalización de fin de línea
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary

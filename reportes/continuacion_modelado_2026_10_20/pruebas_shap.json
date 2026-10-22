@@ -1,0 +1,8 @@
+{
+  "correcto": true,
+  "shap": "0.51.0",
+  "datos": "sintéticos",
+  "contribuciones_analiticas": true,
+  "aditividad": true,
+  "limite": "No verifica todavía modelos OULAD ni estabilidad de la aproximación en ellos."
+}

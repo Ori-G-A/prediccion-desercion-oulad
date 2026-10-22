@@ -1,0 +1,40 @@
+\section{Resultados de la evaluación reservada}
+Las búsquedas completaron 3\,200 ajustes de validación: 200 de logística y 750 de cada otra familia. Se comprobaron los parámetros, las huellas de las predicciones, la cobertura de los pliegues y la reproducción de AP. Se conservaron 25 candidatos calibrados, uno por familia y corte. La familia principal elegida por validación fue XGBoost en los días 7, 28, 42 y 56, y Random Forest en el día 14. Estas decisiones quedaron congeladas antes de abrir la prueba.
+
+La Tabla~\ref{res:principales} muestra el tamaño de cada población de prueba y la precisión promedio del candidato principal. Los intervalos se obtuvieron de los 2\,000 remuestreos previstos por personas. Las personas y las inscripciones se cuentan por corte; no deben sumarse entre cortes como si fueran individuos diferentes.
+\input{tablas_resultados/principales}
+
+La Figura~\ref{res:apfig} compara AP con la referencia constante, cuya AP coincide con la prevalencia de retiro en prueba. Los intervalos de las diferencias pareadas entre cada principal y la referencia quedaron por encima de cero en los cinco cortes: desde [0,040; 0,070] en el día 7 hasta [0,085; 0,129] en el día 56. Estos intervalos describen incertidumbre condicionada al paquete y a las ofertas observadas; no constituyen pruebas confirmatorias múltiples ni permiten ordenar los cortes por utilidad educativa.
+\begin{figure}[!htbp]\centering
+\includegraphics[width=\linewidth]{figuras_resultados/ap_principales.pdf}
+\caption{AP en prueba del principal y referencia de prevalencia. Cada fila corresponde a una población y un horizonte distintos.}\label{res:apfig}
+\end{figure}
+
+La comparación entre familias de la Tabla~\ref{res:comparacion} muestra diferencias puntuales pequeñas en varios cortes. La principal seleccionada no obtiene siempre la AP más alta en prueba: al día 14 XGBoost alcanza 0,237 frente a 0,233 de Random Forest. Se conserva este resultado sin sustituir retrospectivamente a Random Forest. Los intervalos pareados de AP entre el principal y logística incluyen cero en los cinco cortes; por ello, no se sostiene una ventaja concluyente de los principales sobre logística a partir de estos intervalos. Tampoco se establece equivalencia entre algoritmos.
+\input{tablas_resultados/comparacion}
+
+\section{Alertas, errores y anticipación}
+La precisión es la proporción de alertas que corresponde a retiros posteriores; la sensibilidad es la proporción de retiros posteriores que el modelo detecta. La Tabla~\ref{res:alertas} permite leerlas junto con la proporción de inscripciones que recibiría una alerta. Los umbrales se eligieron en desarrollo para maximizar F1 y se mantuvieron sin cambios en prueba; no representan una capacidad institucional de atención acordada.
+\input{tablas_resultados/alertas}
+
+Al día 7 se alertaría sobre el 64,0\,\% de las inscripciones: se detectan 964 de los 1\,327 retiros futuros, pero 2\,756 alertas corresponden a inscripciones sin ese evento. La precisión es 25,9\,\%. Al día 28 se alertaría sobre el 21,8\,\%: se detectan 358 retiros y se omiten 645, con 841 falsas alertas. La mayor precisión de este corte no implica que detecte más retiros ni que sea una ventana óptima. En los principales, la precisión varía entre 22,2\,\% y 29,9\,\%; esa carga de falsas alertas limita una interpretación operativa favorable basada solamente en AP.
+
+En la Tabla~\ref{res:anticipacion}, VP designa retiros correctamente alertados, FP alertas sin retiro posterior y FN retiros no alertados. La anticipación describe exclusivamente los VP: es la diferencia entre la fecha de retiro y el día de corte. Los cuartiles delimitan el 50\,\% central de esos tiempos; no son intervalos de confianza.
+\input{tablas_resultados/anticipacion}
+
+Las medianas de anticipación varían entre 61,5 y 88 días. No significan que una intervención hubiera evitado el retiro ni describen a las personas no detectadas. Tampoco cambian de forma necesariamente ordenada entre cortes: varían la población, los retiros detectados y el horizonte restante de cada oferta.
+
+\section{Probabilidades y límites de generalización}
+La Tabla~\ref{res:calibracion} presenta ROC-AUC, que resume la ordenación de positivos frente a negativos, y Brier, el promedio del error cuadrático entre probabilidades y desenlaces. Una cifra menor de Brier representa menor error probabilístico. Los candidatos principales reducen Brier frente a la referencia constante, aunque la diferencia absoluta es pequeña; esto no demuestra por sí solo calibración perfecta ni una mejora atribuible exclusivamente al calibrador, pues no se realizó aquí una comparación base frente a calibrado.
+\input{tablas_resultados/calibracion}
+
+La Figura~\ref{res:calfig} contrasta la probabilidad media con la frecuencia observada de retiro en los intervalos no vacíos. La diagonal representa coincidencia. Los extremos con pocas observaciones deben leerse con cautela; los tamaños por intervalo se conservan con los resultados. La figura describe las probabilidades calibradas del paquete, sin ajustar una nueva calibración sobre la prueba.
+\begin{figure}[H]\centering
+\includegraphics[width=\linewidth]{figuras_resultados/calibracion_principales.pdf}
+\caption{Probabilidades y frecuencias observadas por intervalos fijos en los candidatos principales. Solo se representan intervalos con observaciones.}\label{res:calfig}
+\end{figure}
+
+Las salidas por oferta conservan inscripciones, personas, retiros y métricas descriptivas; no se utilizaron para seleccionar modelos ni umbrales. Los resultados estiman desempeño en personas nuevas dentro de ofertas ya representadas, no transportabilidad a periodos futuros o instituciones diferentes. Los intervalos por personas no incorporan la variabilidad de volver a entrenar los modelos o incorporar ofertas nuevas.
+
+La exploración previa utilizó OULAD completo antes de la partición. Se mantiene como antecedente documentado; no se ha demostrado que se eligieran variables por mejorar la clasificación en la futura prueba. Desde la fijación del protocolo, la selección se restringió al desarrollo. La evaluación final no autoriza cambios para mejorar estas mismas cifras: cualquier nueva decisión basada en ellas sería exploratoria y requeriría otra evaluación independiente.
+

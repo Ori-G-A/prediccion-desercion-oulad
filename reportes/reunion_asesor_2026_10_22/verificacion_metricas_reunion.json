@@ -1,0 +1,29 @@
+{
+  "paginas": 9,
+  "cortes_verificados": [
+    {
+      "corte": 7,
+      "matriz_y_metricas_coinciden": true
+    },
+    {
+      "corte": 14,
+      "matriz_y_metricas_coinciden": true
+    },
+    {
+      "corte": 28,
+      "matriz_y_metricas_coinciden": true
+    },
+    {
+      "corte": 42,
+      "matriz_y_metricas_coinciden": true
+    },
+    {
+      "corte": 56,
+      "matriz_y_metricas_coinciden": true
+    }
+  ],
+  "matrices": "Filas: realidad; columnas: alerta / sin alerta",
+  "pdf_sha256": "e3c307c56cc5f0a7ad49e2aebf6001c27bb6d6b92ce108119e31f5e444760b7b",
+  "revision_visual": "Nueve páginas examinadas; página 1 reexaminada tras aclaración final de calibración. Sin recortes ni superposiciones observados.",
+  "aviso_render": "Poppler reportó fuentes de sustitución Symbol y ArialUnicode; no se observaron defectos en páginas renderizadas."
+}

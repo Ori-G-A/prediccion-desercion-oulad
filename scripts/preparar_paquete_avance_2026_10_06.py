@@ -44,7 +44,7 @@ def cronograma():
         if not line:
             i += 1
             continue
-        if line == '## Propuesta de preparación de la entrega':
+        if line == '## Calendario de trabajo':
             story.append(PageBreak())
         if line.startswith('|'):
             rows = []
@@ -54,7 +54,7 @@ def cronograma():
                     rows.append(cells)
                 i += 1
             data = [[Paragraph(markup(c), styles['head' if j == 0 else 'cell']) for c in row] for j, row in enumerate(rows)]
-            widths = [119, 62, 96, 226] if rows[0][0] == 'Actividad' else [88, 133, 95, 187]
+            widths = {'Actividad': [119, 62, 96, 226], 'Bloque': [48, 77, 77, 301], 'Entrega': [185, 84, 84, 150]}.get(rows[0][0], [88, 133, 95, 187])
             table = LongTable(data, colWidths=widths, repeatRows=1, hAlign='LEFT')
             table.setStyle(TableStyle([
                 ('BACKGROUND', (0,0), (-1,0), blue), ('VALIGN', (0,0), (-1,-1), 'TOP'),
@@ -73,11 +73,11 @@ def cronograma():
         canvas.line(46, 36, A4[0]-46, 36)
         canvas.setFont('Times-Roman', 9)
         canvas.setFillColor(colors.HexColor(palette['texto_secundario']))
-        canvas.drawString(46, 24, '6 de octubre de 2026 | Para revisión del director')
+        canvas.drawString(46, 24, 'Cronograma y avance del proyecto | 6 de octubre de 2026')
         canvas.drawRightString(A4[0]-46, 24, str(doc.page))
     SimpleDocTemplate(str(OUT / 'Cronograma_y_avance_para_revision.pdf'), pagesize=A4,
                       leftMargin=46, rightMargin=46, topMargin=43, bottomMargin=49,
-                      title='Avance del cronograma y propuesta de seguimiento',
+                      title='Cronograma y avance del proyecto',
                       author='Oriana Giraldo Arcia y Luis Javier Rubio Hernández').build(story, onFirstPage=footer, onLaterPages=footer)
 
 def formulas(text):
@@ -89,7 +89,7 @@ def cites(text):
 def main():
     QA.mkdir(parents=True, exist_ok=True)
     after = {f.name: f.read_text(encoding='utf-8') for f in P.glob('*.tex')}
-    before = {n: (OLD/n).read_text(encoding='utf-8') for n in after}
+    before = {n: (OLD/n).read_text(encoding='utf-8') if (OLD/n).exists() else '' for n in after}
     changed = [n for n in after if after[n] != before[n]]
     for n in after:
         assert formulas(after[n]) == formulas(before[n]), n

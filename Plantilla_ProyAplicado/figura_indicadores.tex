@@ -1,4 +1,4 @@
-\begin{figure}[htbp]\centering
+\begin{figure}[!htbp]\centering
 \begin{tikzpicture}[font=\small\sffamily,>=Stealth,
  etapa/.style={draw=PUJAzul,text=PUJTexto,rounded corners,align=left,text width=11cm,inner sep=8pt}]
 \node[etapa] (a) {\textbf{Registros de actividad disponibles hasta el corte}\\Identificación de la inscripción, fecha y clics. Las filas no identifican sesiones.};
@@ -7,5 +7,5 @@
 \node[etapa,below=5mm of c] (d) {\textbf{Una fila por inscripción y corte}\\Se conservan las claves y los indicadores que no pueden calcularse. La etiqueta futura se conserva separada de los predictores.};
 \draw[->,PUJAzul] (a)--(b);\draw[->,PUJAzul] (b)--(c);\draw[->,PUJAzul] (c)--(d);
 \end{tikzpicture}
-\caption{Transformación del registro de actividad en indicadores interpretables. Elaboración propia.}\label{editorial:indicadores}
+\caption[Transformación del registro de actividad en indicadores interpretables.]{Transformación del registro de actividad en indicadores interpretables. Elaboración propia.}\label{editorial:indicadores}
 \end{figure}

@@ -1,0 +1,97 @@
+{
+  "version": "2026-10-21-cierre-tecnico",
+  "regla_canonica": "PROTOCOLO_EJECUCION_MODELOS.md",
+  "ultima_etapa_completa_global": 6,
+  "proxima_etapa": null,
+  "busquedas": {
+    "regresion_logistica": "completa_cinco_cortes_verificada",
+    "random_forest": "completa_cinco_cortes_verificada",
+    "xgboost": "completa_cinco_cortes_verificada",
+    "lightgbm": "completa_cinco_cortes_verificada",
+    "tabnet": "completa_cinco_cortes_verificada"
+  },
+  "seleccion_entre_familias": "reportes\\continuacion_modelado_2026_10_20\\seleccion_validacion.json",
+  "calibracion_umbral": "25_candidatos_verificados",
+  "paquete_evaluacion": "reportes\\continuacion_modelado_2026_10_20\\paquete_evaluacion.json",
+  "prueba_final": "evaluacion_completa_paquete_congelado",
+  "shap": "calculado_verificado_e_integrado_con_limites",
+  "evidencia": [
+    "reportes/entrenamiento_2026_10_19/logistica/resumen.json",
+    "reportes/entrenamiento_2026_10_19/verificacion_resultados.json",
+    "reportes/entrenamiento_2026_10_19/comprobacion_rf/resumen.json",
+    "reportes/entrenamiento_2026_10_19/comprobacion_adaptadores/resumen.json",
+    "reportes/entrenamiento_2026_10_19/restantes_completo/contrato.json",
+    "reportes/continuacion_modelado_2026_10_19/revision.md",
+    "reportes/continuacion_modelado_2026_10_19/verificacion_interrupcion.json",
+    "reportes/continuacion_modelado_2026_10_20/revision.md",
+    "reportes/continuacion_modelado_2026_10_20/shap/diseno.json",
+    "reportes/continuacion_modelado_2026_10_20/pruebas_shap.json",
+    "reportes/continuacion_modelado_2026_10_20/auditoria_disponibles.json",
+    "reportes/cierre_modelado_2026_10_21/verificacion.json",
+    "reportes/cierre_modelado_2026_10_21/revision.md",
+    "reportes/cierre_modelado_2026_10_21/verificacion_entrega.json"
+  ],
+  "advertencia": "Revalidar este resumen contra artefactos y contratos; no habilita por sí solo la evaluación final.",
+  "actualizado": "2026-10-21T14:41:39.653285-05:00",
+  "ejecucion_actual": {
+    "salida": "reportes/entrenamiento_2026_10_19/restantes_completo",
+    "sesion_terminal": null,
+    "ajustes_cv_previstos": 3000,
+    "modo": "completo",
+    "prueba_final_abierta": true,
+    "estado": "calculos_finalizados_y_resultados_integrados",
+    "ultimo_conteo_confirmado": {
+      "random_forest": 750,
+      "tabnet": 750,
+      "xgboost": 750,
+      "lightgbm": 750
+    }
+  },
+  "verificacion_reanudacion": {
+    "pruebas": 7,
+    "ajustes_logisticos": 200,
+    "modelos_reproducidos": 5,
+    "pip_check": "correcto",
+    "compatibilidad_codigo": "Cambio exclusivo en huella de TabNet; logística conserva implementación y versiones relevantes."
+  },
+  "progreso_observado": {
+    "fecha": "2026-10-21T14:31:02.233616-05:00",
+    "previstos": 3000,
+    "marcadores": 3000,
+    "estados": {
+      "correcto": 3000
+    },
+    "por_familia": {
+      "lightgbm": 750,
+      "random_forest": 750,
+      "tabnet": 750,
+      "xgboost": 750
+    },
+    "segundos_ajustes_terminados": 80854.94899999982,
+    "advertencia": "Conteo de marcadores; el cierre exige verificar predicciones, cobertura y contratos.",
+    "prueba_final_abierta": true
+  },
+  "incidencia": "Carga de bibliotecas volvió a funcionar el 20 de octubre sin reinstalación ni cambio de versiones. Causa del bloqueo anterior no determinada.",
+  "componentes_nuevos": {
+    "consolidador": "Ejecutado; selección por validación conservada.",
+    "metricas_bootstrap": "implementado; seis pruebas sintéticas correctas",
+    "evaluador_y_congelador": "Ejecutados: paquete congelado y evaluación completa; 56 huellas de salidas verificadas.",
+    "sintaxis": "siete archivos verificados"
+  },
+  "continuacion_persistente": "reportes/continuacion_modelado_2026_10_20/continuacion_actual.json",
+  "evaluacion": "reportes\\continuacion_modelado_2026_10_20\\evaluacion",
+  "pendientes": [
+    "Revisión académica por autores y asesor; ratificaciones no acreditadas",
+    "Comprobación visual del prototipo en navegador y evaluación con usuarios",
+    "Completar requisitos del prototipo, incluida exploración pendiente"
+  ],
+  "prototipo": {
+    "archivo": "prototipo/OULAD.html",
+    "estado": "version_autonoma_con_narrativa_visual",
+    "verificacion": "145 celdas descriptivas cotejadas con anexo; 500 casos con valores; eventos comprobados con DOM mínimo. Revisión visual ampliada y comprensión pendientes.",
+    "apertura_anterior_confirmada_por_usuario": true,
+    "revision": "reportes/mejora_prototipo_2026_10_21/revision.md",
+    "revision_visual_narrativa": "reportes/storytelling_prototipo_2026_10_21/revision.md",
+    "revision_visual_version_actual": "pendiente; funciones y conservación de datos comprobadas"
+  }
+}

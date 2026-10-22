@@ -12,6 +12,18 @@
 \renewcommand{\baselinestretch}{1.05}
 %comando faltante
 \usepackage{booktabs,array,graphicx,needspace}
+\usepackage[section,above,below]{placeins}
+% Mantener figuras en su sección y aprovechar el área de texto sin comprimir la tipografía.
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{.90}
+\renewcommand{\bottomfraction}{.80}
+\renewcommand{\textfraction}{.08}
+\renewcommand{\floatpagefraction}{.72}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
 \setlength{\emergencystretch}{3em}
@@ -183,6 +195,7 @@
 \usepackage{hyperref}
 \hypersetup
 {
+unicode=true,
 bookmarksopen=true,
 pdftitle={Predicción temprana del abandono en LMS: versión de trabajo},
 pdfauthor={Oriana Giraldo Arcia y Luis Javier Rubio Hernández}, 
