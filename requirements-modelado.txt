@@ -1,0 +1,9 @@
+# Entorno de modelado añadido el 19 de octubre de 2026.
+# Conserva las versiones de preparación y añade las familias del protocolo.
+-r requirements-revision.txt
+xgboost==3.2.0
+lightgbm==4.7.0
+pytorch-tabnet==4.1.0
+torch==2.14.1
+joblib==1.6.0
+threadpoolctl==3.7.0

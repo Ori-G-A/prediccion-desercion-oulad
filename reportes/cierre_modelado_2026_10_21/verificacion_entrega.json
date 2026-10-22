@@ -1,0 +1,45 @@
+{
+  "fecha": "2026-10-21T14:33:37.412200-05:00",
+  "archivos": {
+    "Plantilla_ProyAplicado/proyecto.pdf": {
+      "bytes": 1644093,
+      "sha256": "8c5454b85b99cf350f1f17c28bf58a097f80638b28df96c13af954c2dc220645"
+    },
+    "output/pdf/Reporte_avance_reunion_22_octubre_2026.pdf": {
+      "bytes": 21608,
+      "sha256": "012a43914464acac7edca230edfad396167fd5eb52b85d4e5806f34dca5d66a2"
+    },
+    "prototipo/OULAD.html": {
+      "bytes": 1069303,
+      "sha256": "1399bb95f1ff5a4496b7d638e984f131ee5cf4c4051ecaf11f604b2e4e99579e"
+    }
+  },
+  "tesis_paginas": 98,
+  "tesis_paginas_revisadas": [
+    2,
+    14,
+    17,
+    27,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "compilacion": "Correcta; sin Overfull ni referencias indefinidas en log final; página 79 final revisada tras eliminar repetición",
+  "reporte_paginas": 7,
+  "prototipo": "Dos scripts embebidos con sintaxis válida; cinco cortes y 500 casos probados con DOM mínimo; apertura solicitada al navegador",
+  "pendientes": [
+    "Revisión académica por autores y asesor; ratificaciones no acreditadas",
+    "Comprobación visual del prototipo en navegador y evaluación con usuarios",
+    "Completar requisitos del prototipo, incluida exploración pendiente"
+  ],
+  "limite": "No constituye revisión visual integral de tesis, prueba visual del navegador ni aprobación académica"
+}

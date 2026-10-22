@@ -1,0 +1,16 @@
+{
+  "fecha": "2026-10-22",
+  "pdf_paginas": 98,
+  "pdf_sha256": "5410f3a97ef03fccf4d3bd377977d4572f35499c5b0b3408c0c01b586c12f54c",
+  "compilacion": "MiKTeX: correcta, fuentes activas",
+  "paginas_revisadas_actualizacion": [
+    77,
+    79,
+    80
+  ],
+  "sintaxis_python": "archivos modificados comprobados con ast.parse",
+  "prototipo": "cinco cortes, 500 casos, 20 consultas; DOM mínimo, no prueba real del navegador",
+  "alcance": "Código, fuentes, PDF, prototipo y resultados agregados; sin repetir entrenamiento",
+  "git_diff_check": "Avisos de espacios de fuentes históricas y paquete externo; PDF tratado como binario mediante atributos Git",
+  "pendientes": "Revisión académica, ratificaciones y evaluación del prototipo con usuarios"
+}

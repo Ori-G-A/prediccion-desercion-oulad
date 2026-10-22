@@ -4,7 +4,13 @@ Proyecto aplicado de la Maestría en Ciencia de Datos, PUJ Cali. Autores: Oriana
 
 ## Estado de esta versión
 
-Se integra el trabajo local de septiembre y octubre de 2026 conservando el historial previo. La fase ejecutada comprende auditoría de OULAD, ingeniería de indicadores y análisis exploratorios. **No se han entrenado y comparado clasificadores; SHAP y el prototipo permanecen pendientes.**
+Actualización del 22 de octubre de 2026: se completaron las búsquedas de cinco familias (3.200 ajustes de validación cruzada), la selección por validación, la calibración, los umbrales y la evaluación final congelada. Se calcularon 500 explicaciones SHAP y se implementó un prototipo local. **El cierre técnico del modelado no equivale al cierre académico: siguen pendientes la revisión con el asesor y la evaluación del prototipo con usuarios.**
+
+- [PDF actualizado del proyecto](Plantilla_ProyAplicado/proyecto.pdf).
+- [Reporte breve para la reunión](output/pdf/Avance_breve_modelado_reunion_22_octubre_2026.pdf).
+- [Resultados y métricas explicadas](output/pdf/Reporte_entrenamiento_metricas_asesor_22_octubre_2026.pdf).
+- [Prototipo autónomo](prototipo/OULAD.html): descargar y abrir en un navegador; GitHub muestra el código, no ejecuta el HTML.
+- [Seguimiento del cronograma](reportes/seguimiento_cronograma_2026_10_21/estado.md).
 
 La unidad es la inscripción (persona, módulo y presentación). Se utilizan los cortes 7, 14, 28, 42 y 56, con observación desde el día 0 hasta el corte inclusive. Se incluyen inscripciones matriculadas y sin retiro hasta el corte, cuyo curso continúa. El evento es el retiro registrado posterior al corte y hasta el final de la presentación. Las notas se conservan solo para auditoría; la inactividad es un indicador complementario. La ratificación académica de estas delimitaciones sigue pendiente. Detalle: [decisión temporal](decision_temporal.json).
 
@@ -38,4 +44,10 @@ Para compilar las fuentes vigentes, usar `./scripts/compilar_proyecto.ps1`, con 
 
 Los registros analíticos del 10 de septiembre y la revisión editorial del 5 de octubre se conservan como evidencia histórica. El 6 de octubre se reejecutaron 49 comprobaciones independientes; tres de ellas inspeccionan salidas guardadas de notebooks, sin reejecutarlos. La integración al repositorio conserva cifras y decisiones y registra su propia comprobación en `docs/validacion_integracion_2026_10_06.json`.
 
-La fuente completa ya fue explorada. No se afirma disponer de una prueba final intacta. Antes de entrenar se debe precisar la generalización buscada, la dependencia entre inscripciones, las particiones y las reglas de comparación.
+La fuente completa fue explorada previamente, antecedente documentado. Posteriormente se fijó la generalización a personas nuevas en ofertas disponibles y se conservaron particiones por persona. La prueba del paquete congelado se abrió el 21 de octubre; no se reutiliza para volver a seleccionar modelos ni umbrales. La capacidad discriminativa observada es limitada y no se demuestra utilidad institucional ni reducción del abandono.
+
+## Alcance de la publicación y reproducción del modelado
+
+Se publican código, configuraciones, resultados agregados, fuentes del documento y reportes. Se conservan localmente los CSV crudos, las particiones individuales, predicciones por inscripción, réplicas y modelos binarios; no se añaden esos archivos al repositorio. El prototipo exporta casos sin identificadores de estudiantes. Los manifiestos conservan rutas y huellas de la ejecución original: clonar el repositorio permite consultar los resultados y abrir el prototipo, pero no equivale a disponer de todos los artefactos para repetir su auditoría.
+
+El orden de ejecución está en [el protocolo](PROTOCOLO_EJECUCION_MODELOS.md). Las dependencias adicionales están en `requirements-modelado.txt` y `requirements-interpretacion.txt`. Los scripts de verificación integral requieren los artefactos locales referenciados. No se afirma haber repetido los 3.200 ajustes durante esta publicación.

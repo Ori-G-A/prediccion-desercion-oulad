@@ -1,0 +1,43 @@
+{
+  "objeto": "Predictor calibrado principal de cada corte, elegido exclusivamente por validación interna.",
+  "escala": "Probabilidad de retiro futuro; enlace identidad. Las contribuciones suman p(x) menos la media en la referencia.",
+  "variante": "shap.PermutationExplainer con masker Independent; 20 ciclos completos hacia delante y atrás.",
+  "referencia": {
+    "7": {
+      "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_07.parquet",
+      "sha256": "c1d9a5a39438b4330923daf4b33cb569a799a0fa9b963c88ca97d61298bdc3ac",
+      "filas": 50
+    },
+    "14": {
+      "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_14.parquet",
+      "sha256": "f59482c7fcf7dff531a2909e0fbdf5d556056abb513161ca50ee0eddc4b17beb",
+      "filas": 50
+    },
+    "28": {
+      "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_28.parquet",
+      "sha256": "1c82caefe7f0d7bcf4786938db7b93de545c065e8649862d35208613f4b7d5a7",
+      "filas": 50
+    },
+    "42": {
+      "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_42.parquet",
+      "sha256": "ce9525ce362f673b55608317794fcee551505e3c2846648ea578e7caed6b2c33",
+      "filas": 50
+    },
+    "56": {
+      "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_56.parquet",
+      "sha256": "467cdd7e850e4fc85f4ccff15fe3650c9b3ec86b1082a477f166c939d97088bd",
+      "filas": 50
+    }
+  },
+  "muestreo": "Hasta 100 inscripciones elegibles de prueba por corte; ordenar por claves y sample(random_state=20261024+corte), sin estratificar por desenlace ni puntuación.",
+  "dependencia": "Enmascaramiento marginal con filas de ajuste. No estima expectativas condicionales; puede formar combinaciones incompatibles entre indicadores derivados y redistribuir contribuciones entre predictores dependientes. No permite inferencia causal.",
+  "n_explicaciones": 100,
+  "ciclos": 20,
+  "semilla": 20261025,
+  "limite": "Aproximación sobre una muestra; no representa certeza de cada contribución ni importancia causal. No se usa para modificar modelos o predictores.",
+  "fuentes": [
+    "https://shap.readthedocs.io/en/latest/generated/shap.PermutationExplainer.html",
+    "https://shap.readthedocs.io/en/latest/generated/shap.maskers.Independent.html"
+  ],
+  "prueba_final_abierta": false
+}

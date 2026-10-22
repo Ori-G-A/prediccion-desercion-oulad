@@ -1,0 +1,398 @@
+{
+  "estado": "congelado",
+  "seleccion": "reportes\\continuacion_modelado_2026_10_20\\seleccion_validacion.json",
+  "principales": {
+    "7": "xgboost",
+    "14": "random_forest",
+    "28": "xgboost",
+    "42": "xgboost",
+    "56": "xgboost"
+  },
+  "cortes": [
+    7,
+    14,
+    28,
+    42,
+    56
+  ],
+  "predictores": [
+    "total_clics",
+    "dias_activos",
+    "proporcion_dias_activos",
+    "promedio_clics_por_dia_activo",
+    "coef_variacion_clics",
+    "cv_intensidad_activa",
+    "dias_desde_ultima_interaccion",
+    "recencia_relativa",
+    "semanas_completas_activas",
+    "proporcion_semanas_completas_activas",
+    "clics_pre_inicio",
+    "clics_ultimos_7d",
+    "clics_7d_previos",
+    "log_ratio_7d",
+    "log_ratio_14d",
+    "sin_actividad_acumulada",
+    "sin_actividad_ultimos_7d",
+    "sin_actividad_ultimos_14d",
+    "sin_actividad_ultimos_28d",
+    "n_evaluaciones_entregadas",
+    "n_entregas_pre_inicio",
+    "n_evaluaciones_programadas",
+    "n_programadas_entregadas_al_corte",
+    "proporcion_programadas_entregadas",
+    "sin_evaluacion_programada",
+    "sin_entregas_acumuladas"
+  ],
+  "personas": "reportes\\protocolo_validacion_2026_10_19\\implementacion\\personas.csv",
+  "datos": {
+    "7": "data/processed/correcciones_2026_09_10/dataset_corte_07.parquet",
+    "14": "data/processed/correcciones_2026_09_10/dataset_corte_14.parquet",
+    "28": "data/processed/correcciones_2026_09_10/dataset_corte_28.parquet",
+    "42": "data/processed/correcciones_2026_09_10/dataset_corte_42.parquet",
+    "56": "data/processed/correcciones_2026_09_10/dataset_corte_56.parquet"
+  },
+  "candidatos": [
+    {
+      "corte": 7,
+      "modelo": "regresion_logistica",
+      "configuracion": 4,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\logistica\\corte_07\\regresion_logistica\\modelo_calibrado.joblib",
+      "umbral": 0.21044829308875504
+    },
+    {
+      "corte": 7,
+      "modelo": "random_forest",
+      "configuracion": 7,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\random_forest\\modelo_calibrado.joblib",
+      "umbral": 0.2094991884874934
+    },
+    {
+      "corte": 7,
+      "modelo": "lightgbm",
+      "configuracion": 9,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\lightgbm\\modelo_calibrado.joblib",
+      "umbral": 0.21284051858616063
+    },
+    {
+      "corte": 7,
+      "modelo": "xgboost",
+      "configuracion": 16,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\xgboost\\modelo_calibrado.joblib",
+      "umbral": 0.20568254647748074
+    },
+    {
+      "corte": 7,
+      "modelo": "tabnet",
+      "configuracion": 20,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\tabnet\\modelo_calibrado.joblib",
+      "umbral": 0.20274967564700136
+    },
+    {
+      "corte": 14,
+      "modelo": "regresion_logistica",
+      "configuracion": 1,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\logistica\\corte_14\\regresion_logistica\\modelo_calibrado.joblib",
+      "umbral": 0.20950093333309525
+    },
+    {
+      "corte": 14,
+      "modelo": "random_forest",
+      "configuracion": 4,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\random_forest\\modelo_calibrado.joblib",
+      "umbral": 0.18829080355750252
+    },
+    {
+      "corte": 14,
+      "modelo": "lightgbm",
+      "configuracion": 9,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\lightgbm\\modelo_calibrado.joblib",
+      "umbral": 0.2042976897341275
+    },
+    {
+      "corte": 14,
+      "modelo": "xgboost",
+      "configuracion": 17,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\xgboost\\modelo_calibrado.joblib",
+      "umbral": 0.1874901687561095
+    },
+    {
+      "corte": 14,
+      "modelo": "tabnet",
+      "configuracion": 17,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\tabnet\\modelo_calibrado.joblib",
+      "umbral": 0.16773157850980674
+    },
+    {
+      "corte": 28,
+      "modelo": "regresion_logistica",
+      "configuracion": 2,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\logistica\\corte_28\\regresion_logistica\\modelo_calibrado.joblib",
+      "umbral": 0.19585927761603017
+    },
+    {
+      "corte": 28,
+      "modelo": "random_forest",
+      "configuracion": 3,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\random_forest\\modelo_calibrado.joblib",
+      "umbral": 0.18965786498142112
+    },
+    {
+      "corte": 28,
+      "modelo": "lightgbm",
+      "configuracion": 9,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\lightgbm\\modelo_calibrado.joblib",
+      "umbral": 0.2146262505346534
+    },
+    {
+      "corte": 28,
+      "modelo": "xgboost",
+      "configuracion": 17,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\xgboost\\modelo_calibrado.joblib",
+      "umbral": 0.2012064648504305
+    },
+    {
+      "corte": 28,
+      "modelo": "tabnet",
+      "configuracion": 9,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\tabnet\\modelo_calibrado.joblib",
+      "umbral": 0.19273575131151005
+    },
+    {
+      "corte": 42,
+      "modelo": "regresion_logistica",
+      "configuracion": 0,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\logistica\\corte_42\\regresion_logistica\\modelo_calibrado.joblib",
+      "umbral": 0.16088022318962014
+    },
+    {
+      "corte": 42,
+      "modelo": "random_forest",
+      "configuracion": 7,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\random_forest\\modelo_calibrado.joblib",
+      "umbral": 0.15128391747892408
+    },
+    {
+      "corte": 42,
+      "modelo": "lightgbm",
+      "configuracion": 9,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\lightgbm\\modelo_calibrado.joblib",
+      "umbral": 0.16415161605531767
+    },
+    {
+      "corte": 42,
+      "modelo": "xgboost",
+      "configuracion": 17,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\xgboost\\modelo_calibrado.joblib",
+      "umbral": 0.14476846361782839
+    },
+    {
+      "corte": 42,
+      "modelo": "tabnet",
+      "configuracion": 19,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\tabnet\\modelo_calibrado.joblib",
+      "umbral": 0.1756555540949674
+    },
+    {
+      "corte": 56,
+      "modelo": "regresion_logistica",
+      "configuracion": 6,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\logistica\\corte_56\\regresion_logistica\\modelo_calibrado.joblib",
+      "umbral": 0.17522263455771217
+    },
+    {
+      "corte": 56,
+      "modelo": "random_forest",
+      "configuracion": 7,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\random_forest\\modelo_calibrado.joblib",
+      "umbral": 0.15167361348057118
+    },
+    {
+      "corte": 56,
+      "modelo": "lightgbm",
+      "configuracion": 9,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\lightgbm\\modelo_calibrado.joblib",
+      "umbral": 0.1944567292356404
+    },
+    {
+      "corte": 56,
+      "modelo": "xgboost",
+      "configuracion": 17,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\xgboost\\modelo_calibrado.joblib",
+      "umbral": 0.1654397202657919
+    },
+    {
+      "corte": 56,
+      "modelo": "tabnet",
+      "configuracion": 14,
+      "archivo_modelo": "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\tabnet\\modelo_calibrado.joblib",
+      "umbral": 0.1554989035361925
+    }
+  ],
+  "prevalencia_ajuste": {
+    "7": 0.22801788375558868,
+    "14": 0.19888321254603777,
+    "28": 0.1821705426356589,
+    "42": 0.16672837220782427,
+    "56": 0.15084255533199195
+  },
+  "clase_mayoritaria_ajuste": {
+    "7": 0,
+    "14": 0,
+    "28": 0,
+    "42": 0,
+    "56": 0
+  },
+  "bootstrap": {
+    "replicas": 2000,
+    "semilla": 20261022,
+    "unidad": "persona"
+  },
+  "diseno_shap": {
+    "objeto": "Predictor calibrado principal de cada corte, elegido exclusivamente por validación interna.",
+    "escala": "Probabilidad de retiro futuro; enlace identidad. Las contribuciones suman p(x) menos la media en la referencia.",
+    "variante": "shap.PermutationExplainer con masker Independent; 20 ciclos completos hacia delante y atrás.",
+    "referencia": {
+      "7": {
+        "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_07.parquet",
+        "sha256": "c1d9a5a39438b4330923daf4b33cb569a799a0fa9b963c88ca97d61298bdc3ac",
+        "filas": 50
+      },
+      "14": {
+        "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_14.parquet",
+        "sha256": "f59482c7fcf7dff531a2909e0fbdf5d556056abb513161ca50ee0eddc4b17beb",
+        "filas": 50
+      },
+      "28": {
+        "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_28.parquet",
+        "sha256": "1c82caefe7f0d7bcf4786938db7b93de545c065e8649862d35208613f4b7d5a7",
+        "filas": 50
+      },
+      "42": {
+        "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_42.parquet",
+        "sha256": "ce9525ce362f673b55608317794fcee551505e3c2846648ea578e7caed6b2c33",
+        "filas": 50
+      },
+      "56": {
+        "archivo": "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_56.parquet",
+        "sha256": "467cdd7e850e4fc85f4ccff15fe3650c9b3ec86b1082a477f166c939d97088bd",
+        "filas": 50
+      }
+    },
+    "muestreo": "Hasta 100 inscripciones elegibles de prueba por corte; ordenar por claves y sample(random_state=20261024+corte), sin estratificar por desenlace ni puntuación.",
+    "dependencia": "Enmascaramiento marginal con filas de ajuste. No estima expectativas condicionales; puede formar combinaciones incompatibles entre indicadores derivados y redistribuir contribuciones entre predictores dependientes. No permite inferencia causal.",
+    "n_explicaciones": 100,
+    "ciclos": 20,
+    "semilla": 20261025,
+    "limite": "Aproximación sobre una muestra; no representa certeza de cada contribución ni importancia causal. No se usa para modificar modelos o predictores.",
+    "fuentes": [
+      "https://shap.readthedocs.io/en/latest/generated/shap.PermutationExplainer.html",
+      "https://shap.readthedocs.io/en/latest/generated/shap.maskers.Independent.html"
+    ],
+    "prueba_final_abierta": false
+  },
+  "verificacion_evaluador": "reportes\\continuacion_modelado_2026_10_19\\pruebas_evaluador.json",
+  "huellas": {
+    "reportes\\continuacion_modelado_2026_10_20\\seleccion_validacion.json": "a87a8d82de02a1c6e53413a2cbd65ac01c1e8d2bc13e1641f912b2a204690f6b",
+    "reportes\\continuacion_modelado_2026_10_20\\shap\\diseno.json": "78cb26d130a0f158065dacbedc5c8e1cab4cc7342b1b4b675047f11bda647f11",
+    "reportes\\continuacion_modelado_2026_10_19\\pruebas_evaluador.json": "3d87761e24e8a513813c9f9481e83ae59d2d0097b4b2ee604dd4829767de770d",
+    "reportes\\protocolo_validacion_2026_10_19\\implementacion\\personas.csv": "c5fd3a1997e879024f770c49870602926b8ce24754462f124014c368265fd123",
+    "reportes\\protocolo_validacion_2026_10_19\\implementacion\\configuracion.json": "d66013e0c76b8a3ad049c471c55d79fe2b0fd36c25d461db57a76bfc36782d2a",
+    "decision_temporal.json": "83cf462541c822d2dff56987709d666a6278ba8612ea4d518102cfe4448bf63a",
+    "src\\evaluacion_reservada_oulad.py": "723e7a7578c9ef220acced1c9c283272d8d35c585f7c9e918d4526f70dae20e0",
+    "src\\metricas_evaluacion_oulad.py": "05b79e9a342904200132212d2394d6ad743682db9bfcbee1d100246f1f916025",
+    "src\\entrenamiento_oulad.py": "2fac38b16607006c3b72256b763cf3d38b94f5f7869cdeb70f69165a4cfd7692",
+    "scripts\\congelar_evaluacion.py": "81621cd923e9df362f52d496c3b1b364121b9048259b65f885179f894c2eb72e",
+    "scripts\\consolidar_validacion.py": "a0d12b9b0b16ac01caf1b3e123a888cbf8dabb2bd75c5bb8f092445e58f3a34e",
+    "scripts\\explicar_modelos.py": "c91990e57c92844bfa73b8c9769e704dd8fa25a12757b63251e97d36beb4c9a5",
+    "requirements-interpretacion.txt": "4dfd405077b653b56c6ebdc00aa5db6afe1cea288dfc7acc1e73c8aad601d9d1",
+    "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_07.parquet": "c1d9a5a39438b4330923daf4b33cb569a799a0fa9b963c88ca97d61298bdc3ac",
+    "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_14.parquet": "f59482c7fcf7dff531a2909e0fbdf5d556056abb513161ca50ee0eddc4b17beb",
+    "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_28.parquet": "1c82caefe7f0d7bcf4786938db7b93de545c065e8649862d35208613f4b7d5a7",
+    "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_42.parquet": "ce9525ce362f673b55608317794fcee551505e3c2846648ea578e7caed6b2c33",
+    "reportes\\continuacion_modelado_2026_10_20\\shap\\referencia_56.parquet": "467cdd7e850e4fc85f4ccff15fe3650c9b3ec86b1082a477f166c939d97088bd",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_07\\regresion_logistica\\modelo_congelado.json": "20be659401218882f33525d9bbcba8db8cd39487e1d304d61323d213ee4271a4",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_07\\regresion_logistica\\modelo_calibrado.joblib": "f7d643050f9241a66a0cbbc8b8283d30b108f69688aa835bc7364f0f02c94395",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_07\\regresion_logistica\\predicciones_umbral.parquet": "c5c691a75f7b32066a7b442efaa48a7bca039e9714422780805767929985cfbc",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\random_forest\\modelo_congelado.json": "1df784f9a9a9a48851a9a2e6e1642c0fbbb1a880243e108b0cced0e75d78d5ad",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\random_forest\\modelo_calibrado.joblib": "518650b3690a32a428d2e37504050f0a56bda92200731614fd8ff497b6826e2f",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\random_forest\\predicciones_umbral.parquet": "521e6ac712459c7cc287270850432d15a3e27c0a08425477ee2a4f19c13cfef4",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\lightgbm\\modelo_congelado.json": "ab14edb7b6f2f89436a16c21cdc0a2779fdb4d403c8df695bb44e7a364dca394",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\lightgbm\\modelo_calibrado.joblib": "c750b9d6d4aede57bd222fdf855f4232a370cab876490f15d6f136c11ae4f440",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\lightgbm\\predicciones_umbral.parquet": "ba0bfab50b82397dec9ac22c1032fc5638e017f08f468ca921691ac209e6a125",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\xgboost\\modelo_congelado.json": "2fe748d2fcca6492d18928c8b91f712aa4412a568db0301e91c7017093db8fd7",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\xgboost\\modelo_calibrado.joblib": "fc06e94f63b109c624fd4f6569e511895f38e4e2a9fbd0bf52cbd4d8fd1f438c",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\xgboost\\predicciones_umbral.parquet": "402a9957de71827bfd63fcbfaaa0c8ac34c0660c2e76a81d5c458a26735bada8",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\tabnet\\modelo_congelado.json": "383df6838ce78e0d4df68680fe95e6227338887e1de960d6216dd6ba95104892",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\tabnet\\modelo_calibrado.joblib": "c48284ed3a968a997ac2366b55992490c9e0e591ae8a8982c611f286b9772d0d",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_07\\tabnet\\predicciones_umbral.parquet": "068c2424e90053b82bc59b4024a8b7a107bcac525be83e5b34334bcd35bbfab8",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_14\\regresion_logistica\\modelo_congelado.json": "b9058a36f36853fb7471ea4c05971160d154a102314bd9ce5beca1d9319af160",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_14\\regresion_logistica\\modelo_calibrado.joblib": "ba63651ec936242dece4c9e3361ccc9ac6db90878a0872b4ff484033735f4d97",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_14\\regresion_logistica\\predicciones_umbral.parquet": "26cece60e7e7c975e39d1207f38aee1de4301269f2937a6a2a744f40f9fbd84f",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\random_forest\\modelo_congelado.json": "37db0d629c404a2488f50263f05437051d09fb3b803e6c07da5008fb0c9c2d84",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\random_forest\\modelo_calibrado.joblib": "bd9d28ff7d36d9655783773782ce1464a16085030c09f50e8a8146d34fa6b07c",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\random_forest\\predicciones_umbral.parquet": "29b580a24296aac7ac1ac924eca1333e9b302f3c80aef73010fb420b6701f99b",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\lightgbm\\modelo_congelado.json": "3b1b9a339a6ec7af65cfde7432649c338398965292c865e27e1312ab6c61cb29",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\lightgbm\\modelo_calibrado.joblib": "d4be47d2dfcf8a31841610c43a6919a425659de8d61f7feffaf84bd1ddc04d44",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\lightgbm\\predicciones_umbral.parquet": "d0cce6799b7499f5462dfc52d30e0b12ace03db3a3cad74f82fa283748bba5b3",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\xgboost\\modelo_congelado.json": "b10a0d974ff8e50960c425145e475495eba7b5e2c433376c41b8d16ff991b4ee",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\xgboost\\modelo_calibrado.joblib": "7f8b5de6e42d2106c0cd48a97c18bd6a1a7fcc4787886fd56d463f5a7ecd98f3",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\xgboost\\predicciones_umbral.parquet": "985fac0490126982bae2793388591cef94efaf84e0bafe70a09ac3d0b1d8c2a4",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\tabnet\\modelo_congelado.json": "2bd689d9bec3b14616db64e58909f3094daf3a306226e92387c968e3f6cf2974",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\tabnet\\modelo_calibrado.joblib": "b9a3be347c64953c5ec6947775aff341dfd63d3c15bbe3955b2fc8b5cc25cc32",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_14\\tabnet\\predicciones_umbral.parquet": "0f71959c3b80179c3676a003243f46327411ba6f01c2fcd24194512dfb7f70cc",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_28\\regresion_logistica\\modelo_congelado.json": "0a0682c7a5e9f43ee7c1b40dc58a287852fa2bd85e04ca1acd99fa17d976314d",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_28\\regresion_logistica\\modelo_calibrado.joblib": "4ff7ad0ebf5192797e1cc1a5d6932543d1b972fcf2e4c7cf8ac66b30575a75ec",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_28\\regresion_logistica\\predicciones_umbral.parquet": "b309188e1853667464d50dd910a5eff703f40f8a411946a596943739f72ee3e4",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\random_forest\\modelo_congelado.json": "95a3cd4ed2fc4b2d3f31da66462a034cc09a03594ff15ea998376ff52f408b84",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\random_forest\\modelo_calibrado.joblib": "58c531bd0de1e9be0b1421047a0990a9209c4cb89d5c1435c331b1d6c697db5b",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\random_forest\\predicciones_umbral.parquet": "85960dfa6320303d226e86dba2fc4b3f09c4bac2125d3f36f4d425764b2b8251",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\lightgbm\\modelo_congelado.json": "e66c696144ef5e64dd6506bea37e18463b63670858c9d2ef3b92272a8afcf07b",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\lightgbm\\modelo_calibrado.joblib": "644c1223edfe59a57101eae1977804cdb27197b8296a59b07c9032ed4241455d",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\lightgbm\\predicciones_umbral.parquet": "81684aeaf11a402313d140c2ba531fbd29a94484de05744c6987f3daab905110",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\xgboost\\modelo_congelado.json": "a537ce01f4dd7fdd4ee088af7404cc340170228b0b17037ef1b3278db38808e4",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\xgboost\\modelo_calibrado.joblib": "1cc4d9c5faad05538e58f9201d87a9b0eb2a1e19fc325b16bf8145d45731d426",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\xgboost\\predicciones_umbral.parquet": "d1319fd9bfa041967b73297e397c48f51d1a4cb0b9f223756fa157abcabf5256",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\tabnet\\modelo_congelado.json": "583405c99effde70c80f08109b2f3307cb3785ee0cad5811323b3dcdb10f92a0",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\tabnet\\modelo_calibrado.joblib": "9c66617d201b7c6e367e34b0324a124853d780ac9c79fce46c7f0eeb3fec0968",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_28\\tabnet\\predicciones_umbral.parquet": "20281737008bdda1a2513bc3bb2b140ed869746dbea22fd57b2913ac0d7c6afd",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_42\\regresion_logistica\\modelo_congelado.json": "ce024cb19e6e686355837bf688acd9ace4edb75316e3aeea4b65000095960f95",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_42\\regresion_logistica\\modelo_calibrado.joblib": "2f8a3e78c308c73e526a6227ae1b7f1441961ea6dea301aea1bc4b5ed766a1b9",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_42\\regresion_logistica\\predicciones_umbral.parquet": "00be669641b1f9fa5c043863785d7601c8796deac28cb35a88b481890d2bbaff",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\random_forest\\modelo_congelado.json": "d0165867023a6407c395793b34bfa1193555a74b3a050af2aa4cf1931ca41e8f",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\random_forest\\modelo_calibrado.joblib": "cb94cff0793cceae6c30ce0eeccd9b0085ea202908e6c7300b99592e36a65775",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\random_forest\\predicciones_umbral.parquet": "760d990ad9f9093a3016a0e2fc30b6a5d8500411b05030609b7deb5add8df8ff",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\lightgbm\\modelo_congelado.json": "495674a30c593970c72a506a807c7d2b1a2da3f17235768d3085bc4e7536e808",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\lightgbm\\modelo_calibrado.joblib": "19ce22c1857aa01df3b61c8a1ae631d5f4e7659cb5851af4544031598a462324",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\lightgbm\\predicciones_umbral.parquet": "788efeadc05792d7851e86dd536eb6d95ef584fb68fbdec94be48b26a016c7b8",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\xgboost\\modelo_congelado.json": "43081c46db21dbf42a217cc4cb8e0ff6704cb4aa88353db9d9d02bd9db86c1e0",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\xgboost\\modelo_calibrado.joblib": "ea5ecd456a4652cd4d37148af05175b208ce804c45c3536b15277a78dbd68a2b",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\xgboost\\predicciones_umbral.parquet": "24553a9e61ef36728edf8e597c42f11071827105a5b5c2b8f379f2200658e470",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\tabnet\\modelo_congelado.json": "e402c5a58277e4add3b096eaf8cbf51a79ef2d335e5e4c2e714a5f1ca2263cfe",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\tabnet\\modelo_calibrado.joblib": "eee3167697fa420c016f408cd97e793472b3905e6a3a5219cdf4ddb47dad6503",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_42\\tabnet\\predicciones_umbral.parquet": "fb4ea39a0c9ed56b07c4cd2e4e2aa6668297b043e1347bf8e0fbeaeb625b730f",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_56\\regresion_logistica\\modelo_congelado.json": "537ad1ddae203d8e49228b452536a7040d9c9e853cfefaeba22f995142ae44ab",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_56\\regresion_logistica\\modelo_calibrado.joblib": "0eb079ef1b1c7f7e7b4911b516af562fcb1ee0b6bc41b16f0f46f2633b14ac81",
+    "reportes\\entrenamiento_2026_10_19\\logistica\\corte_56\\regresion_logistica\\predicciones_umbral.parquet": "4e1ed6f9369ec8c17c0828c84ef3bb3dd40feba7873f39ed92f806609ec8b11a",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\random_forest\\modelo_congelado.json": "6334394a217401aab6cc9e3aab25a997df401c05997aa45fa4842aa0c7897ba1",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\random_forest\\modelo_calibrado.joblib": "6068cb0eb963e9788d3f46a356e9084bc69a3a9e4615ebacc04a8272499a2b0c",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\random_forest\\predicciones_umbral.parquet": "8b5d185379da93911a13959cc214117a6eeb1f39b53ea7cbd4f0ccbcf74abcaf",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\lightgbm\\modelo_congelado.json": "4510eaf002f9e144c48651c1fd223002852d93676ec2a1014912c287e91431b5",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\lightgbm\\modelo_calibrado.joblib": "676f827d22b2e759a902cf7552e8a1bb14f2bb216ff0d3e71271a642da88f889",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\lightgbm\\predicciones_umbral.parquet": "9f62a3343b4d9c651390d195ae4faa4a0172cc0d1fe24564044534982ba77869",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\xgboost\\modelo_congelado.json": "29752324ee4c264d0692feaccb5ac32d24cf2d3f8ae21aab3a08b9db742b4648",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\xgboost\\modelo_calibrado.joblib": "b2185fe3799fa0eddcacdb2f32f136983b32ba4c5ba5185704c4fd64af53a515",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\xgboost\\predicciones_umbral.parquet": "ee367e6755ec1266d3d5cef1db8a6c1c2502536b0a35a314e94838abb6e10bcc",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\tabnet\\modelo_congelado.json": "d2e7987e05f30b80f05beda4511d7eb44d3251a7b38ae483575ee41284db9744",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\tabnet\\modelo_calibrado.joblib": "47c1863ae1530e36002f505dbe80d2a6838eb44a8aa96aed794eb395b5985ed7",
+    "reportes\\entrenamiento_2026_10_19\\restantes_completo\\corte_56\\tabnet\\predicciones_umbral.parquet": "0c41fcc5aff96d97ed82c21cfebb75ad7aedd43b75e681d20407a2d5892b17ee",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_07.parquet": "d04732fc2af8d368e8ce0cad492a8fa2306d6731ddb01a65e5fd1bf2a71d154d",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_14.parquet": "0aac2f5803827c49e844df02b3a0eadbaafce5e0fbaa5997724b09cc5dbf9efb",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_28.parquet": "84f5581c8654a305f2089100f42fa33b733120b7eeb3ecaec71d9c45e8eb1ae7",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_42.parquet": "254c52adc7251e28942108cc061d7242e5748c8345c16b821e81f6a8d189a9e2",
+    "data\\processed\\correcciones_2026_09_10\\dataset_corte_56.parquet": "0845db2b0ef13f9a921591490b410d792d24752e9fb018868d96bf43b2d7f767"
+  },
+  "comparaciones": "Todas las parejas, diferencias a menos b; intervalos percentiles descriptivos sin pruebas de significancia.",
+  "anticipacion": "Mediana y cuartiles de date_unregistration menos corte entre verdaderos positivos; no efectividad educativa.",
+  "subconjunto_comun": "No incluido; análisis opcional no necesario para la evaluación principal.",
+  "prueba_final_abierta": false
+}

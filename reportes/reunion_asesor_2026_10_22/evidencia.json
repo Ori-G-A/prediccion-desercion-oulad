@@ -1,0 +1,263 @@
+{
+  "fecha": "2026-10-21T14:02:30.234135-05:00",
+  "tiempos": [
+    {
+      "modelo": "regresion_logistica",
+      "ajustes": 200,
+      "segundos": 40.38899999999194,
+      "media": 0.20194499999995968,
+      "mediana": 0.17199999999866122,
+      "minimo": 0.07799999999951979,
+      "maximo": 0.8430000000007567,
+      "por_corte": {
+        "7": 5.142999999992753,
+        "14": 8.23399999999674,
+        "28": 8.355000000001382,
+        "42": 6.685999999999694,
+        "56": 11.971000000001368
+      }
+    },
+    {
+      "modelo": "random_forest",
+      "ajustes": 750,
+      "segundos": 6607.854999999935,
+      "media": 8.810473333333247,
+      "mediana": 5.64799999999741,
+      "minimo": 1.485000000000582,
+      "maximo": 29.98399999999674,
+      "por_corte": {
+        "7": 942.8260000000128,
+        "14": 1178.9369999999908,
+        "28": 1525.2219999999797,
+        "42": 1485.920999999973,
+        "56": 1474.9489999999787
+      }
+    },
+    {
+      "modelo": "xgboost",
+      "ajustes": 750,
+      "segundos": 411.22500000007585,
+      "media": 0.5483000000001012,
+      "mediana": 0.4379999999973734,
+      "minimo": 0.18699999999807915,
+      "maximo": 2.812000000005355,
+      "por_corte": {
+        "7": 75.35300000000007,
+        "14": 79.14100000003236,
+        "28": 87.36500000000524,
+        "42": 84.42399999998452,
+        "56": 84.94200000005367
+      }
+    },
+    {
+      "modelo": "lightgbm",
+      "ajustes": 750,
+      "segundos": 343.7269999999371,
+      "media": 0.4583026666665828,
+      "mediana": 0.39100000000325963,
+      "minimo": 0.15599999999994907,
+      "maximo": 3.2969999999986612,
+      "por_corte": {
+        "7": 63.50600000000486,
+        "14": 70.15900000000693,
+        "28": 69.94299999997747,
+        "42": 70.54199999998673,
+        "56": 69.57699999996112
+      }
+    },
+    {
+      "modelo": "tabnet",
+      "ajustes": 750,
+      "segundos": 73492.14199999985,
+      "media": 97.98952266666646,
+      "mediana": 88.24250000000029,
+      "minimo": 45.84399999999732,
+      "maximo": 234.54699999999866,
+      "por_corte": {
+        "7": 16401.53499999997,
+        "14": 14844.343999999975,
+        "28": 14203.06099999995,
+        "42": 14064.54099999994,
+        "56": 13978.661000000007
+      }
+    }
+  ],
+  "total_segundos": 80895.33799999979,
+  "estado": {
+    "version": "2026-10-20-reanudacion",
+    "regla_canonica": "PROTOCOLO_EJECUCION_MODELOS.md",
+    "ultima_etapa_completa_global": 5,
+    "proxima_etapa": 6,
+    "busquedas": {
+      "regresion_logistica": "completa_cinco_cortes_verificada",
+      "random_forest": "completa_cinco_cortes_verificada",
+      "xgboost": "completa_cinco_cortes_verificada",
+      "lightgbm": "completa_cinco_cortes_verificada",
+      "tabnet": "completa_cinco_cortes_verificada"
+    },
+    "seleccion_entre_familias": "reportes\\continuacion_modelado_2026_10_20\\seleccion_validacion.json",
+    "calibracion_umbral": "25_candidatos_verificados",
+    "paquete_evaluacion": "reportes\\continuacion_modelado_2026_10_20\\paquete_evaluacion.json",
+    "prueba_final": "evaluacion_completa_paquete_congelado",
+    "shap": "calculado_pendiente_revision_e_integracion_academica",
+    "evidencia": [
+      "reportes/entrenamiento_2026_10_19/logistica/resumen.json",
+      "reportes/entrenamiento_2026_10_19/verificacion_resultados.json",
+      "reportes/entrenamiento_2026_10_19/comprobacion_rf/resumen.json",
+      "reportes/entrenamiento_2026_10_19/comprobacion_adaptadores/resumen.json",
+      "reportes/entrenamiento_2026_10_19/restantes_completo/contrato.json",
+      "reportes/continuacion_modelado_2026_10_19/revision.md",
+      "reportes/continuacion_modelado_2026_10_19/verificacion_interrupcion.json",
+      "reportes/continuacion_modelado_2026_10_20/revision.md",
+      "reportes/continuacion_modelado_2026_10_20/shap/diseno.json",
+      "reportes/continuacion_modelado_2026_10_20/pruebas_shap.json",
+      "reportes/continuacion_modelado_2026_10_20/auditoria_disponibles.json"
+    ],
+    "advertencia": "Revalidar este resumen contra artefactos y contratos; no habilita por sí solo la evaluación final.",
+    "actualizado": "2026-10-21T13:51:37.892144-05:00",
+    "ejecucion_actual": {
+      "salida": "reportes/entrenamiento_2026_10_19/restantes_completo",
+      "sesion_terminal": 95305,
+      "ajustes_cv_previstos": 3000,
+      "modo": "completo",
+      "prueba_final_abierta": false,
+      "estado": "reanudado_contrato_identico",
+      "ultimo_conteo_confirmado": {
+        "random_forest": 150,
+        "tabnet": 8,
+        "xgboost": 150,
+        "lightgbm": 150
+      }
+    },
+    "verificacion_reanudacion": {
+      "pruebas": 7,
+      "ajustes_logisticos": 200,
+      "modelos_reproducidos": 5,
+      "pip_check": "correcto",
+      "compatibilidad_codigo": "Cambio exclusivo en huella de TabNet; logística conserva implementación y versiones relevantes."
+    },
+    "progreso_observado": {
+      "fecha": "2026-10-21T13:30:16.484987-05:00",
+      "previstos": 3000,
+      "marcadores": 3000,
+      "estados": {
+        "correcto": 3000
+      },
+      "por_familia": {
+        "lightgbm": 750,
+        "random_forest": 750,
+        "tabnet": 750,
+        "xgboost": 750
+      },
+      "segundos_ajustes_terminados": 80854.94899999982,
+      "advertencia": "Conteo de marcadores; el cierre exige verificar predicciones, cobertura y contratos.",
+      "prueba_final_abierta": false
+    },
+    "incidencia": "Carga de bibliotecas volvió a funcionar el 20 de octubre sin reinstalación ni cambio de versiones. Causa del bloqueo anterior no determinada.",
+    "componentes_nuevos": {
+      "consolidador": "implementado; rechazo de búsqueda incompleta comprobado",
+      "metricas_bootstrap": "implementado; seis pruebas sintéticas correctas",
+      "evaluador_y_congelador": "Evaluador: cuatro pruebas sintéticas correctas; congelador pendiente de ejecución con candidatos completos.",
+      "sintaxis": "siete archivos verificados"
+    },
+    "continuacion_persistente": "reportes/continuacion_modelado_2026_10_20/continuacion_actual.json",
+    "evaluacion": "reportes\\continuacion_modelado_2026_10_20\\evaluacion"
+  },
+  "operacion": {
+    "fecha": "2026-10-21T13:51:37.902858-05:00",
+    "etapa": 6,
+    "estado": "calculos_terminados_integracion_academica_pendiente",
+    "pid_supervisor": 14748,
+    "pendiente": "Revisar resultados, integrar capítulos y verificar composición; no declarar cierre integral."
+  },
+  "seleccion": {
+    "7": "xgboost",
+    "14": "random_forest",
+    "28": "xgboost",
+    "42": "xgboost",
+    "56": "xgboost"
+  },
+  "primera_apertura": {
+    "fecha": "2026-10-21T13:40:22.147331-05:00",
+    "paquete_sha256": "b1c95c4bd8bff458e95c94f1ef4a30a3c1a4d951295fce318830209cfc10470b",
+    "salida": "reportes\\continuacion_modelado_2026_10_20\\evaluacion",
+    "estado": "apertura_autorizada_tras_verificar_paquete"
+  },
+  "evaluacion_cierre": {
+    "estado": "evaluacion_completa",
+    "paquete_sha256": "b1c95c4bd8bff458e95c94f1ef4a30a3c1a4d951295fce318830209cfc10470b",
+    "huellas_salidas": {
+      "metricas.json": "98b372387671a39c1405a5ef684a5c7ea2325e105bc579d417c5a2cc0a74cdf0",
+      "corte_07\\calibracion_clase_mayoritaria.csv": "94a9a800215107fb16988862f5e0c6da435fd36bb0048b333c84eac1cfed2a6a",
+      "corte_07\\calibracion_lightgbm.csv": "6c6032924037fd2d306e16c845d38343b4b908a8e9259ce7d75352b7846f270e",
+      "corte_07\\calibracion_random_forest.csv": "fe4a6cf83680cc8b9553fee981aba3a5d4009159d5087ba7e9390e894bf3383f",
+      "corte_07\\calibracion_referencia.csv": "5d683269cfbf64d867c12d5c754f5b88a703714e070c51d7d52db5ad85a44e54",
+      "corte_07\\calibracion_regresion_logistica.csv": "a3ca4c51edc24aaa135edc748c09e0d660558f5e37b9cdb11f4c7984396d6161",
+      "corte_07\\calibracion_tabnet.csv": "86e807a984c679db0a0de6e58834bb23f4cda1f524a9457f7e8b8a6d8f28d747",
+      "corte_07\\calibracion_xgboost.csv": "68b09edab5ce3a5ebe00cd9d4572776049d4bc60034672a2d1df735050c6d00f",
+      "corte_07\\intervalos.json": "44e8e0b3ba49d052fe8254bb7cef65b9ad2433b2358acb66a83235ae4ac12515",
+      "corte_07\\por_oferta.json": "e6b9daa103c4aa02cb3d3e7e9de4ff9f44abfa48ee32234c4a655df3d51d83a9",
+      "corte_07\\predicciones.parquet": "6751f08e74f177cc5b286ce00537190162220810c636ea5e3308b2a8a5f8e0a6",
+      "corte_07\\replicas.parquet": "4d671a17d06cc3fc986063637b325dd65428b80b4ad89a19a2e8a412cc5c7162",
+      "corte_14\\calibracion_clase_mayoritaria.csv": "a5bec6d9d685b9a5f7dc613944d946168c4011fbbe38f0f7aca8b53824eb9feb",
+      "corte_14\\calibracion_lightgbm.csv": "f689e61b7bbf050e14326515334e5674baccb22a84231266b5491cc9785efe3e",
+      "corte_14\\calibracion_random_forest.csv": "2f1480bdcdb71efe2bcf51f59851f2b75efa17285053d0984e004ec8cc03f289",
+      "corte_14\\calibracion_referencia.csv": "60a62d40f03d1f3e868b815439d02d80bcaef2c8608d03ea3262e69fb7bc1aac",
+      "corte_14\\calibracion_regresion_logistica.csv": "a5832ebff6cae854035e21f42981d04ef71cd2c9e01efa6c80276417e54f60db",
+      "corte_14\\calibracion_tabnet.csv": "44600fe4e0401d0f9a1cc5d84bdd648773a7ceb3c3485006cf0373697c9aeeac",
+      "corte_14\\calibracion_xgboost.csv": "0cdb0ca7f9d4d08ba46db6d3c5c5f60ef6a6b6368ef13e8f37cf6bf73ebf7079",
+      "corte_14\\intervalos.json": "2eee2006839ba3e80819f9661336e3a9c732f792841116ed7923694b75df8dc3",
+      "corte_14\\por_oferta.json": "7be965224cb555bc5990c311c08188f07fd13a2e6a823095041cc3aa362f3a73",
+      "corte_14\\predicciones.parquet": "0b5c6867f304467e702025030f45bcebe186f067d3cc9402546234b710155579",
+      "corte_14\\replicas.parquet": "04e1bded4d392f7a1be243d01a9a4b1a55d55baf0b1a9061f8c5d01e4e7a68c3",
+      "corte_28\\calibracion_clase_mayoritaria.csv": "c7703fdfc17340db006260b0e7792d7f9a2161be56e443a06b82956ce56e1582",
+      "corte_28\\calibracion_lightgbm.csv": "6abe305ce41d7123194b1c0267e5eb0f35201281b230962c57b04a66aa18d403",
+      "corte_28\\calibracion_random_forest.csv": "b049404cb36ddd232512fc0ebc35f201a959237cc998da72f398206af55c6fa3",
+      "corte_28\\calibracion_referencia.csv": "085edfbf7d578d1965eb359ff9a9cf4d3fef662536136f925b85b2255aa8e454",
+      "corte_28\\calibracion_regresion_logistica.csv": "b748217ee09087f78acaebc0bc585022c2a26308220aa4379e8d37a0fe9c8be4",
+      "corte_28\\calibracion_tabnet.csv": "1526e1bc3d156772173741105c2f2f5c2ec30e5e0f7020d6f75aaf5cb3cd8655",
+      "corte_28\\calibracion_xgboost.csv": "58b3d4a251687c73f7d3a5a0bb6f36bf801ec5f614f5ae28d455b10a45258c8b",
+      "corte_28\\intervalos.json": "38e739bbf2dfe6579dec6ba721f76e7280b0b01263b4db344b7ce7c426ce0da2",
+      "corte_28\\por_oferta.json": "017a5d0165d672f9ad038c3d97b3217a7b612ae9ca9e383c44cb548d149b513b",
+      "corte_28\\predicciones.parquet": "58871ab54ffe8ff0bec39f57754a75fb5e08b2684914da0553007c6b4d4995a9",
+      "corte_28\\replicas.parquet": "648c59d306e2dadfab87c46d5f2165a1a365e67c7d3841fde0f3b0e885c951e9",
+      "corte_42\\calibracion_clase_mayoritaria.csv": "d94d7c68188dd5897aa701e7ef708fcd1033deae1c634363b93c43acb3321b16",
+      "corte_42\\calibracion_lightgbm.csv": "8f54b30b0792e7376f692d2bac586cbacf9ef70ddc2edb7f650688fa7763a63d",
+      "corte_42\\calibracion_random_forest.csv": "64ae4a0d9a2f859d6614ea0db18c43b3f6b9aa9b16c06ab4e7e701336a45d464",
+      "corte_42\\calibracion_referencia.csv": "2ffb750b9121206f8c29fb3eebcb91f8a98e3591540940df3ad964cd78e86bf8",
+      "corte_42\\calibracion_regresion_logistica.csv": "af58d7492afff9dc0fa1e5768fc858111cfd047932ce695391cbe4911e331a94",
+      "corte_42\\calibracion_tabnet.csv": "a590438c2bd332a65afe8a35241156a6ccf26b8c7dd0c8881db77cb40f084b40",
+      "corte_42\\calibracion_xgboost.csv": "3a6c820cc8dbe75904a0e3d4b9ba65808922ba5bdc0f0bb610b0ad930bfb8f3c",
+      "corte_42\\intervalos.json": "d668ac4d1d3d11ccbb982ba0b856b76032fa8a1584b4a99e36fa6840d5ac5daf",
+      "corte_42\\por_oferta.json": "7bbf041370a6cd21ef3ddad9695c82d630af58edda4c0003d64fd428985d3944",
+      "corte_42\\predicciones.parquet": "e202f616d134a5e427a5978b2834ccb920346b9d14f7e7c657d391c023e4a74b",
+      "corte_42\\replicas.parquet": "40208f2e567d8e7577a3661a54abcfdfee1467fc3fc2e19ae2bd262165b33396",
+      "corte_56\\calibracion_clase_mayoritaria.csv": "575049fb295f72480f8e7319c9b986e0935ee4f03505b1c6ea3d2bf01867fbb3",
+      "corte_56\\calibracion_lightgbm.csv": "818dec8043f9ce8035eeb74fe2e5597d6a252deaddcbdd4b1430119095b8375c",
+      "corte_56\\calibracion_random_forest.csv": "ec54779c513df3854397c878ed6cb1b9f4750cf8ba254f466440b23f9e9d42f6",
+      "corte_56\\calibracion_referencia.csv": "2c1fe76c3e78ae18f0e900b37802cf18653c57a4704a0c19f962c4b40da61dbf",
+      "corte_56\\calibracion_regresion_logistica.csv": "45264ec26bd03d04d9c2df0ea77ae519022897371b6dba9ef81fd34d178b20e1",
+      "corte_56\\calibracion_tabnet.csv": "04cd9add9f0bd30b366df2c9bcafbc0581b444a75e82f13538e78fa5198e0d87",
+      "corte_56\\calibracion_xgboost.csv": "795350029d167b4548ce728e2f78f5b861946c60864922b6ff874d3202fe1fa3",
+      "corte_56\\intervalos.json": "32d50cd5dd20ddef8f266c35dc023ee6404149300c344f22f179928029dbf283",
+      "corte_56\\por_oferta.json": "e3387d3b724c6b2a2939bff82017463cfb612ea40b4771a5a71e8fa184b4de72",
+      "corte_56\\predicciones.parquet": "93c34ba1426b7cb47bcfabea69606cfc8fa9ee3bde7f338684d406be0580ec5f",
+      "corte_56\\replicas.parquet": "0dacf56e108705581eb4dc6fcdde7c778fa594639cc98bf24c0447dbd190066e"
+    }
+  },
+  "cortes_intervalos": [
+    7,
+    14,
+    28,
+    42,
+    56
+  ],
+  "cortes_shap": [
+    7,
+    14,
+    28,
+    42,
+    56
+  ],
+  "huellas_evaluacion_verificadas": 56
+}

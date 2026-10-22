@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-10-21T13:45:04.2270207-05:00",
+  "cpu": {
+    "Name": "Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz",
+    "NumberOfCores": 4,
+    "NumberOfLogicalProcessors": 8,
+    "MaxClockSpeed": 2400
+  },
+  "equipo": {
+    "Manufacturer": "HP",
+    "Model": "HP Pavilion Gaming Laptop 15-dk0xxx",
+    "TotalPhysicalMemory": 8423395328
+  },
+  "sistema": {
+    "Caption": "Microsoft Windows 11 Home Single Language",
+    "Version": "10.0.26300"
+  },
+  "gpu": [
+    {
+      "Name": "NVIDIA GeForce GTX 1650"
+    },
+    {
+      "Name": "Intel(R) UHD Graphics 630"
+    }
+  ],
+  "discos": [
+    {
+      "FriendlyName": "WDC WD10SPSX-60A6WT0",
+      "MediaType": "HDD",
+      "Size": 1000204886016
+    },
+    {
+      "FriendlyName": "Msft Virtual Disk",
+      "MediaType": "SSD",
+      "Size": 33554432
+    },
+    {
+      "FriendlyName": "WDC PC SN520 SDAPNUW-128G-1006",
+      "MediaType": "SSD",
+      "Size": 128035676160
+    }
+  ],
+  "disco_proyecto": {
+    "FriendlyName": "WDC WD10SPSX-60A6WT0",
+    "Size": 1000204886016
+  }
+}
